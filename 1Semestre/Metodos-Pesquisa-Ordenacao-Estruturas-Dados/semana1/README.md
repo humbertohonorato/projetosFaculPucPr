@@ -1,0 +1,2 @@
+A moda de um vetor de números inteiros é o número que é repetido mais vezes. Se há mais de um número com mais repetições do que os outros então não há moda. Escreva um algorítimo que receba o vetor de inteiros abaixo e retorne a moda do vetor. Caso a moda não exista, então informe o usuário.
+int[] vetor = {1, 5, 2, 3, 1, 3, 1}; 
