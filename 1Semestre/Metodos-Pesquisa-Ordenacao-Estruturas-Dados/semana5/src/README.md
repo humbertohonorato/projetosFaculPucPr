@@ -1,0 +1,2 @@
+A sequência Fibonacci é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual cada número seguinte, corresponde à soma dos dois anteriores, por exemplo:  Clique para obter mais opções
+Para essa atividade você deverá implementar uma nova Classe em java que imprima a sequência Fibonacci recursivamente.
