@@ -1,0 +1,2 @@
+Texto para gravar no arq.
+Outro texto para gravar no arq.
