@@ -1,2 +1,0 @@
-ATIVIDADE FORMATIVA: Árvore Binária – remove e procura
-Uma árvore binária é um conjunto finito de elementos que está vazio ou é particionado em três subconjuntos distintos, o primeiro é a informação e os demais são ponteiros para os nós filhos, à direita e à esquerda respectivamente. Construa uma árvore binária em Java com os métodos de remover um filho e procurar um determinado valor dentro da árvore.
