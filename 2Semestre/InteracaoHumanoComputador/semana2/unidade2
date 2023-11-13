@@ -1,0 +1,179 @@
+NIDADE 02
+Identificação dos requisitos do usuário
+Identificação dos requisitos do usuário
+Desenvolver um produto interativo significa considerar o contexto de uso no qual o usuário está inserido, seus objetivos e necessidades e as tecnologias existentes. Nesse processo de conhecimento, existem técnicas de coleta de dados que apoiam a equipe de design na identificação das pessoas envolvidas e suas respectivas necessidades. Assim, os objetivos desta unidade são:
+
+Conhecer as técnicas de coleta de dados.
+Definir personas.
+Criar um mapa do usuário.
+Modelagem do usuário/tipos de usuário
+Introdução
+No projeto de design interativo, uma etapa importante é o entendimento do ambiente do usuário (contexto de uso), dos usuários envolvidos e das tecnologias existentes. Essa atividade visa a compreender o que as pessoas fazem, o que podem querer fazer ou quais são os problemas de um sistema atualmente em uso, a depender de o objetivo do projeto ser a criação de algo ou a melhoria de um sistema ou produto já existente. Na engenharia de software ou nos projetos de sistemas de informação, esta é uma etapa formal chamada análise de requisitos. No design de interação, ela é frequentemente chamada pesquisa (BENYON, 2015).
+
+O primeiro passo é entender o problema e o contexto de uso. Para identificação do problema, é importante:
+
+Descrever o ambiente e identificar os dispositivos usados.
+Identificar a amostra (quantos usuários).
+Descrever o problema ou a oportunidade.
+Uma forma de apresentar essas informações é por meio da construção de um Pixar storytelling. Trata-se de uma ferramenta que ajuda a entender o problema do usuário, com os seguintes objetivos:
+
+Comunicar melhor o produto que vai ser construído.
+Entender as frustrações e realizações dos usuários.
+Entender como o produto se encaixará na vida das pessoas ou em processos de trabalhos organizacionais.
+Um bom storytelling deixa claro: quem são as personagens e o que fazem; como seu produto cria valor para elas; e qual é a visão de futuro a ser alcançada. Portanto, devem-se considerar a mensagem, o ambiente, as personagens e o conflito.
+
+Figura 1. Modelo de Pixar storytelling
+Fonte: Evangelista (2020).
+EXEMPLOExemplo de Pixar storytelling
+Era uma vez uma moça chamada Romilda. TODOS OS DIAS, Romilda  saía de casa 1 hora antes da entrada na faculdade, pois tinha medo de perder o ônibus e se atrasar, porque os horários das linhas disponíveis no site não eram cumpridos.
+
+UM CERTO DIA, ela descobriu um aplicativo de celular que mostra um mapa em tempo real da localização das linhas de ônibus selecionadas e a estimativa de chegada ao destino, utilizando informações de localização dos próprios usuários de transporte coletivo. POR CAUSA DISSO, Romilda pôde planejar com confiabilidade a hora de chegada na parada de ônibus, sem correr o risco de perdê-lo ou ficar esperando em dias frios ou chuvosos de Curitiba.
+POR CAUSA DISSO, Romilda tem mais tempo para realizar atividades físicas, rotinas e tarefas antes de sair de casa para ir a faculdade, sem se preocupar em perder seu ônibus e chegar atrasada em sua faculdade ou qualquer outro lugar. ATÉ QUE FINALMENTE Romilda conseguiu, com o tempo extra, estudar inglês em casa, o que lhe gerou uma promoção no trabalho.
+O storytelling e outras técnicas podem contribuir para que a equipe de design consiga identificar os problemas e necessidades dos usuários e desenvolver um produto centrado em humanos.
+
+Coleta de dados
+A pesquisa de design é o ato de investigar, por meio de várias fontes, o potencial de um produto ou serviço, seus usuários e ambientes existentes. O trabalho de pesquisa implica o uso de técnicas para entender e analisar as necessidades de outra pessoa, suas metas e aspirações. Envolvendo as pessoas por meio de técnicas que estimulam sua participação no processo de design, os designers obterão um grande número de histórias que formarão a base para o trabalho de análise. 
+
+Os designers precisam entender as necessidades de outras pessoas, entrevistando-as, observando-as, registrando suas atividades em vídeo, organizando grupos de interesse (grupos focais), aplicando card sorting e workshops, entre outras técnicas de coleta de dados. No entanto, como essa é uma tarefa que demanda tempo, é importante definir objetivos antes de selecionar uma técnica de coleta de dados. Barbosa e Silva (2010) sugerem identificar as razões para coletar dados, que podem ser, por exemplo:
+
+Identificar como a tecnologia se encaixa no cotidiano de um grupo de pessoas.
+Identificar as dificuldades no dia a dia das pessoas que podem ser reduzidas com a introdução de novas tecnologias.
+Identificar qual dentre duas ou mais alternativas de design melhor satisfaz os desejos de uma classe de usuários.
+Após a definição dos objetivos de coleta, o próximo passo é definir de quem coletar as informações. Segundo Barbosa e Silva (2010), uma parte importante do processo de entendimento é considerar todos os diferentes stakeholders e como eles poderão ser afetados, para decidir quem deverá participar das discussões sobre o design.
+
+IMPORTANTEStakeholders é um termo que se refere a todas as pessoas que serão afetadas por qualquer sistema que resulte do processo de design de sistemas interativos. O número e o tipo de pessoas afetadas por um novo sistema interativo variarão muito conforme o tipo de sistema. Então, nesta etapa, são definidas as necessidades e os requisitos do produto interativo que será desenvolvido, sendo importante saber:
+Quem são os stakeholders envolvidos?
+Quais são os objetivos do projeto?
+Quais são os problemas envolvidos e que devem ser resolvidos?
+Quem são os usuários do produto?
+Quais são os comportamentos, desejos e necessidades dos consumidores e usuários do produto?
+Quais tecnologias estão envolvidas?
+Qual é a situação atual do mercado? Existem produtos concorrentes diretos e indiretos?
+Qual será a principal solução para o projeto? Será inovar ou renovar?
+Qual será o valor investido no projeto?
+A organização para a qual o sistema está sendo projetado, por exemplo, provavelmente tem muitas pessoas que não irão usá‑lo, mas serão afetadas, pois ele pode vir a mudar seu trabalho. Pode ser que haja stakeholders fora da empresa, como autoridades do governo que precisam verificar alguns procedimentos. Por isso, é essencial identificar as metas dos usuários, do consumidor e do negócio, além de ser de extrema importância pensar no ponto de vista do usuário, para proporcionar uma boa experiência.
+
+Diferentes técnicas de pesquisa podem ser utilizadas nesse processo inicial, como o uso de personas, benchmarking, mapas mentais, observação, entrevista em profundidade, metas dos usuários, grupos focais, questionários, entre outras. A imagem a seguir apresenta um comparativo das técnicas de coleta de dados, apontando vantagens e desvantagens.
+
+Figura 3. Técnicas de coleta de dados
+Fonte: Barbosa e Silva (2010, p.144).
+Para aqueles projetos que têm como foco a inovação e um mercado específico, é importante fazer uma análise de mercado, ou seja, fazer uma análise extensa dos produtos concorrentes, mapeando as funcionalidades existentes em cada um deles, de forma comparativa. Isso ajuda a entender os padrões criados na indústria e identificar oportunidades de inovar em determinado mercado.
+
+Resumindo, na coleta de dados, são fundamentais as seguintes tarefas: definir objetivos, definir a técnica de coleta de dados e identificar de quem coletar dados.
+
+Agora, assista a um vídeo sobre brainstorming, que será uma das suas atividades desta semana.
+
+
+Análise e síntese das informações coletadas
+Após a etapa de levantamento de dados da fase de imersão, a primeira do processo de construção do produto interativo, os próximos passos são a análise e a síntese das informações coletadas. Os achados de pesquisa são organizados em insights, que, por sua vez, são categorizados de maneira a identificar perfis de usuários que auxiliem na compreensão do problema. Existem diversas formas de representar esses dados, ou seja, de modelar os tipos de usuário e definir o tipo de representação dos dados coletados na etapa de pesquisa, como, por exemplo, definição do perfil do usuário, cenários, análise de tarefa e personas (BARBOSA; SILVA, 2010). A seguir, vamos apresentar algumas delas.
+
+Perfil do usuário
+O perfil do usuário é o resumo das características dos usuários para quem o sistema está sendo desenvolvido. Normalmente, envolve as seguintes informações: cargo, atividades principais, faixa etária, experiência e nível de instrução etc. (BARBOSA; SILVA, 2010). A partir dessas informações, a equipe de design pode agrupá-las e formar um perfil, a fim de compreender suas necessidades. Além disso, saber o perfil dos usuários ajuda a equipe a priorizar as necessidades por perfil, a depender do tipo de projeto, como, por exemplo, um projeto em que se deseja lançar um produto inovador para um público-alvo, como pessoas com poder aquisitivo elevado.
+
+A Figura 4 apresenta dois perfis de coordenador de curso para um sistema de informação. Veja que consta uma informação importante: experiência em tecnologia. A equipe de design deve entender as dificuldades do perfil com pouco experiência e buscar uma solução para atendê-las, construindo uma interface que ajude na realização das tarefas do dia a dia.
+
+Figura 4. Exemplo de perfis de usuário
+Fonte: Barbosa e Silva (2010, p. 175).
+Definir o perfil dos usuários ajuda a construir as personas.
+
+Persona
+Persona é uma personagem fictícia, arquétipo hipotético de um grupo de usuários reais, criada para descrever um usuário típico (COOPER, 1999). Em design de projetos interativos, é utilizada para descobrir, modelar e refinar as necessidades de um grupo de usuários. Portanto, tem os seguintes objetivos: gerar consenso no time, entender as dores e olhar o problema sob a óptica do usuário.
+
+Podemos dizer que uma persona representa um grupo de usuários, por meio de avatar, com a função de nortear os tópicos, o tom e as propostas de requisitos que serão desenvolvidos, mantendo todos focados no mesmo alvo. Dando um rosto e um nome aos dados de pesquisas de usuários, a persona pode ajudar a manter os usuários em mente durante o processo de design, ao mesmo tempo que cria uma linguagem comum que faça sentido. Esta técnica permite o design centrado no usuário, estando sua força em trazer ao design discussões pertinentes (BENYON, 2011).
+
+Para que os esforços de designers tenham sucesso, é preciso assegurar que cada membro do time do produto entenda pelo menos as características fundamentais e as necessidades de seus usuários ou muito tempo será gasto numa conversa em círculos. Os elementos que devem ser considerados para criar uma persona são (BARBOSA; SILVA, 2010):
+
+Identidade: dê nome, inclua uma foto e inclua os dados demográficos do perfil do usuário (sexo, idade etc.).
+Objetivos: quais são os objetivos desta persona?
+Habilidades: quais são as habilidades desta persona (educação, treinamento e competências específicas)?
+Tarefas: quais tarefas básicas ou críticas a persona realiza?
+Relacionamentos: entender com quem a persona se relaciona ajuda a identificar outros stakeholders.
+Requisitos: quais são as necessidades?
+Expectativas: como ela acredita que o produto funciona?
+Na literatura, existem vários modelos de personas. A Figura 5 apresenta um modelo simplificado para sua elaboração.
+
+Figura 5. Exemplo de persona
+
+Em resumo, como criar uma persona?
+
+Coletar os dados dos diferentes usuários.
+Realizar perguntas a usuários.
+Analisar os dados coletados.
+Estruturar a persona.
+Compartilhar a persona com a equipe.
+SAIBA MAISFicou interessado no tema e quer saber mais? Assista aos vídeos a seguir. Certamente, eles ajudaram com as atividades propostas para esta semana.
+
+
+Estória do usuário e mapa de estórias dos usuários
+Após criar as personas do projeto, é importante definir os requisitos para o produto do projeto interativo. Uma técnica de especificação dos requisitos que pode ser utilizada são as estórias dos usuários.
+
+O que é uma estória do usuário?
+
+São necessidades ou tarefas dos usuários expressas, em geral, como "persona + necessidade + propósito". É uma descrição curta, clara e objetiva de alguma funcionalidade do produto de software, conforme exemplo a seguir.
+
+EXEMPLOFormato da estória do usuário
+Como , eu deveria ser capaz de solicitar um , a fim de adquirir um , ou seja, um serviço/uma funcionalidade do sistema.
+
+Descrição de estória
+
+Como gerente do financeiro, eu quero poder consultar o saldo de todas as vendas para poder tomar uma decisão sobre o negócio.
+
+Critérios de aceitação
+
+Entrar com seu usuário.
+Selecionar o tipo de relatório.
+Entrar com o período ou mês no qual deseja fazer a pesquisa.
+O sistema deve apresentar o relatório em formato PDF para o usuário.
+O que é um mapa de estória do usuário?
+
+Um problema recorrente em projetos de software é a comunicação. Erros de comunicação entre usuário e equipes e entre os membros da equipe podem acarretar retrabalho e, pior, a entrega de algo que não atende às necessidades do usuário. Isso porque não houve o cuidado de entender e validar com o cliente aquilo que ele realmente precisa.
+
+O mapeamento de estórias dos usuários, ou User Story Mapping (USM), é uma técnica popular criada por Jeff Patton (2014) para priorizar projetos ágeis de forma eficaz. Tem como objetivo organizar estórias dos usuários para criar uma visão mais holística de como elas se encaixam na experiência geral do usuário. Organizadas em um eixo horizontal, as etapas fundamentais da jornada do cliente seguem uma ordem cronológica, com base em quando um usuário executaria a tarefa específica em relação ao seu fluxo de trabalho geral com o produto. 
+
+Segue um exemplo de mapeamento de estórias dos usuários para um sistema de hotelaria. Veja como são visuais e mais compreensíveis as funcionalidades, facilitando o entendimento de todos os envolvidos no projeto com relação à especificação das necessidades dos usuários.
+
+EXEMPLO
+
+ 
+O mapeamento de estórias dos usuários possibilita:
+
+Visão macro das funcionalidades de um produto.
+Identificação de falhas na funcionalidade ou áreas em que se deve concentrar, pois pode destacar visualmente lacunas na experiência do usuário.
+Priorização de funcionlidades, tanto para um MVP (qual é o mínimo necessário para concluir o objetivo geral) quanto para lançamentos de versões posteriores.
+SAIBA MAIS
+Ficou interessado no assunto? No vídeo a seguir, você saberá mais sobre como o mapeamento de estórias dos usuários funciona (em inglês).
+
+
+Mapa da jornada do usuário x persona
+De acordo com Nunes et al. (2018), um mapa da jornada do usuário conta a história da sua experiência desde o contato inicial com o produto, por meio do processo de engajamento e em um relacionamento de longo prazo. A jornada pode se concentrar em determinada parte da história ou dar uma visão geral de toda a experiência e tem como objetivo identificar interações fundamentais que o usuário tem com a organização que deu origem ao produto.
+
+É importante que se tenha um conjunto sólido de personas e das tarefas realizadas por elas. Essas duas informações contribuem para informar se a jornada do usuário está seguindo na direção correta, podendo ser usadas durante o desenvolvimento ou no lançamento do produto (NUNES et al., 2018). Por sua vez, o mapa da jornada do usuário é um método visual cujo processo auxilia na conceituação e estruturação das experiências das pessoas (NUNES et al., 2018). De acordo com Macedo (2016), ele deve apresentar as seguintes informações:
+
+Linha horizontal superior com os passos do usuário antes, durante e depois da atividade.
+Coluna vertical com os canais e pontos de contato.
+Linha horizontal inferior representando as emoções do usuário.
+Oportunidades de melhorias.
+IMPORTANTE
+Veja um exemplo de mapa da jordana do usuário para compra on-line, em que se observam os pontos positivos e negativos no uso do sistema.
+
+Fonte: Auris Ideias digitais.
+
+https://www.youtube.com/watch?v=wbLP6kz_nA0
+https://www.youtube.com/watch?v=NWFxxhLmDC4
+https://www.youtube.com/watch?v=AorAgSrHjKM
+https://www.youtube.com/watch?v=q_NrzJBS7QI
+https://www.youtube.com/watch?v=kdUk7DZS6aQ
+https://www.youtube.com/watch?v=CnKZpFP0p4k
+
+
+
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+EVANGELISTA, F. S. Inovação HCD. 2020. Disponível em: https://www.ciamakers.com/inovacao-hcd/. Acesso em: 20 abr. 2021.
+
+PATTON, J. User story mapping: discover the whole story. [S.l.: s.n.], 2014.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.

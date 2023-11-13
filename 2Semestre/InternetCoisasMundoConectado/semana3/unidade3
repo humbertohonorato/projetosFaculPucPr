@@ -1,0 +1,51 @@
+UNIDADE 03
+Plataformas em nuvem para IoT
+Esta unidade inicia com um estudo sobre computação em nuvem, convergindo posteriormente para computação em nuvem voltada a Internet das coisas. Apesar de um serviço estar incluído dentro de outro, a computação em nuvem voltada para Internet das coisas exige alguns detalhes específicos que precisam ser ponderados na fase de seleção do serviço em nuvem a ser contratada. O estudo a seguir irá tratar de detalhes técnicos para o armazenamento e processamento dos dados, bem como apresentar critérios básicos para seleção de um serviço em nuvem.
+
+Plataformas em nuvem para IoT
+
+Quando falamos em plataforma em nuvem para Internet das coisas estamos falando em um sistema que permite o gerenciamento de dados contendo ferramentas que auxiliam a conversão de dados para informações. Mais do que apenas um banco de dados, essas plataformas integram vários recursos garantindo a grande disponibilidade de serviços, a escalabilidade, a integridade, confidencialidade e segurança. Além dessas características indispensáveis, um serviço em nuvem deve ser capaz de tratar um grande volume de dados, resolvendo problemas como distribuição geográfica e diferença entre os relógios de dispositivos e fusos horários.
+
+Antes de extrair o conhecimento diretamente dos dados, estes precisam passar por um processo de sanitização, ou seja, expurgar destes dados informações redundantes, incompletas ou corrompidas. Inicialmente é necessário haver a coleta dos dados. Esta coleta realizada através da rede e processada por serviços backend, ou seja, processos internos a plataforma. Além dos dados mais relevantes, essa etapa adiciona informações como identificação dispositivo e estampa de tempo, assegurando a rastreabilidade da informação.
+
+A próxima fase para tratamento dos dados é o armazenamento. Via de regra, esse armazenamento realizado em bancos de dados relacionais assegurando que os dados ficam armazenados em uma estrutura que permita fácil correlação.
+
+A seguir uma etapa de pré-processamento deve ser realizada para extrair um nível básico de comportamento permitindo algum grau de limpeza dos dados. Técnicas como cálculo da média, média móvel, desvio padrão entre outros podem servir como estratégias para realizar algum processo de filtragem dos dados eliminando discrepâncias e outliers (pontos fora da curva de comportamento). Outros processamentos podem ser empregados para tratar as lacunas de dados, ou seja, períodos de tempo em que nenhum dado e recebido.
+
+Finalmente, sobre os dados “limpos” é possível realizar alguma extração de conhecimento, empregando técnicas de Analytics e Big Data.
+
+Agora, pare um pouco e faça uma reflexão sobre os serviços em nuvem que existem atualmente e anote-os em um papel. Você pode utilizar serviços de busca para confirmar os nomes que surgiram em sua reflexão. Como sugestão inicial, recomendo localizar os seguintes serviços de nuvem:
+
+AWS IoT;
+Arduino IoT Cloud;
+Cayenne MyDevides.
+EXERCÍCIOAgora é sua vez. Tente localizar pelo menos mais 5 serviços em nuvem disponíveis na Internet.
+Os critérios para seleção de qual plataforma é mais adequada a uma solução passa por vários fatores, que vão além do custo:
+
+Conta gratuita para avaliação: antes de contratar um serviço em nuvem, é fundamental poder experimentá-lo avaliando não apenas o seu desempenho, mas também suas funcionalidades básicas;
+Permite a criação de páginas públicas: algumas plataformas são restritas aos usuários previamente cadastrados. Estou limita o acesso a dados públicos intencionalmente disponíveis pelo projeto;
+Gerenciamento e comunicação entre dispositivos: em muitos tipos de projetos a comunicação entre dispositivos se faz necessária. Esta comunicação assegura que o servidor pode compartilhar os dados recebidos com outros dispositivos do mesmo sistema;
+Protocolos para Internet das coisas disponíveis: além do serviço HTTP que um servidor pode disponibilizar, vários serviços também disponibilizam acesso através de protocolos voltados para Internet das coisas como MQTT e CoAP.
+Interface web imóvel: a interface para análise de dados extremamente importante nestes serviços, pois facilita muito a criação de painéis para tratamento e visualização dos dados;
+Criação de mecanismos de alarme: alarmes configuráveis em plataformas em nuvem permitem a notificação através de SMS ou redes sociais em uma eventual circunstância. Esses mecanismos permitem a criação e configuração fácil destas notificações;
+Níveis de usuário: para criar uma solução robusta muitas vezes temos que atribuir perfis diferentes para diferentes usuários. Por exemplo: visualizador, administrador, super usuário.
+Mecanismos de backup, exportação importação de dados: uma plataforma em nuvem deve permitir que o contratante possa exportar seus dados para uma cópia local garantindo fácil migração desses dados para outros ambientes.
+Permite a utilização de dispositivos não proprietários: várias plataformas permitem, além da utilização de dispositivos dedicados, utilizar dispositivos criados pelo próprio usuário (como Arduino, Raspberry Pi e ESP32). Isto permite maior flexibilidade e compatibilidade com futuras adaptações;
+O custo em função da escala: outro fator importante a ser analisado é o custo a ser pago em função do crescimento do sistema. Não há nada mais frustrante do que desenvolver uma solução baseado em uma plataforma e, quando tiver que crescer, descobrir que os custos não são viáveis;
+Suporte: o suporte é outro fator importante pois, em caso de problemas, podemos precisar de uma resposta rápida.
+Avaliação positiva de seus clientes: assim como qualquer outro produto para internet, uma detalhada pesquisa pela satisfação dos usuários pode esclarecer muitas dúvidas.
+Conclusão
+A escolha de um serviço em nuvem para Internet das coisas não é algo trivial. Exige uma análise detalhada para evitar futuros constrangimentos. Nesta aula podemos estudar as principais características de um serviço em nuvem para Internet das coisas e elencar vários fatores que podem ser determinantes na seleção de um serviço.
+
+
+https://www.youtube.com/watch?v=4K25rth9dMU
+
+
+
+Referência
+SILVA, F.; SOARES, J. Cloud Computing. SAGAH, Porto Alegre, 2020. Disponível em: <https://integrada.minhabiblioteca.com.br/#/books/9786556900193/cfi/2!/4/4@0.00:48.3>. Disponível na Minha Biblioteca – PUCPR
+
+SANTOS, B.; SILVA, L. Internet das Coisas: da Teoria à Prática. Departamento de Ciência da Computação - UFMG, Belo Horizonte, MG, 2016. Disponível em: <https://homepages.dcc.ufmg.br/~mmvieira/cc/papers/internet-das-coisas.pdf>. Acesso em: 5 jun. 2021.
+
+DIGITAL, S. CLOUD Computing e IoT: por que as duas tecnologias não sobrevivem separadas? Santo Digital. Cloud Consulting Services., 2021. Disponível em: <https://santodigital.com.br/cloud-computing-e-iot-por-que-duas-tecnologias-nao-sobrevivem-separadas/>. Acesso em: 7 jun. 2021.
+

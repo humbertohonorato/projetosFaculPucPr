@@ -1,0 +1,31 @@
+O incidente no Banco de Tóquio 
+
+Esta atividade consiste em promover um debate no fórum direcionado aos crimes virtuais associados ao estudo de caso do “banco de Tóquio”. O debate deve fomentar os principais aspectos da segurança da informação, avaliar as políticas de segurança da informação, os padrões, normas e a legislação vigente. No debate você deve correlacionar as ameaças e ataques com avaliação e gerenciamento de risco a segurança da informação. Utilizando as normas ISO 27001 e ISO 27002 você deverá apresentar procedimentos de segurança e boas práticas que podem ser adotados para prevenir ou mitigar os problemas de segurança relacionados ao cenário de estudo.  
+
+Acesse o estudo de caso e o roteiro da atividade no arquivo em anexo. 
+
+================
+
+Análise do Estudo de Caso: Banco de Tóquio
+
+1. Tipificação Criminal:
+   a) Crimes cibernéticos associados ao estudo de caso:
+      - Ação Maliciosa: O malware utilizado para comprometer os sistemas do Banco de Tóquio configura um ato criminoso relacionado à invasão de sistemas, acesso não autorizado e danos a dados. O invasor, ao escalar privilégios e alterar senhas, comete crimes de manipulação de dados e violação de privacidade.
+      - Propagação de Malware: O ato de disseminar o malware pela rede interna é uma violação grave, constituindo crime de propagação de software malicioso, previsto em diversas legislações.
+   b) Vulnerabilidades e Ameaças Relacionadas ao Incidente:
+      - Falhas na Gestão de Privilégios: A escalada de privilégios destaca a existência de falhas na gestão de acessos, uma vulnerabilidade que permitiu ao malware obter controle administrativo.
+      - Firewall Desatualizado: A abertura de portas no firewall destaca a falta de atualização e configuração inadequada, tornando o sistema vulnerável a acessos não autorizados.
+   c) Políticas e Procedimentos Ignorados ou Não Previstos:
+      - Ausência de Políticas de Segurança Atualizadas: A falta de políticas de segurança abrangentes e atualizadas pode ter contribuído para a exploração de vulnerabilidades. A revisão e atualização periódica dessas políticas são essenciais para manter a resiliência contra ameaças.
+      - Falta de Conscientização e Treinamento: A ausência de programas de conscientização e treinamento pode ter levado a práticas inseguras por parte dos usuários, facilitando a propagação do malware.
+Ações e Contramedidas ao Incidente:
+2. Requisitos e Boas Práticas da ISO 27001 e ISO 27002:
+   a)Implementação de Controles de Acesso:
+      - Reforçar a gestão de privilégios, garantindo que apenas usuários autorizados tenham acesso a recursos críticos.
+      - Adotar a autenticação multifatorial para fortalecer a segurança de contas administrativas.
+   b) Contramedidas no Padrão FIPS PUB 200:
+      - Implementar criptografia robusta para proteger dados sensíveis durante a transmissão e armazenamento.
+      - Estabelecer controles de integridade para detectar modificações não autorizadas nos sistemas.
+   c) Legislação Brasileira sobre Crimes Virtuais:
+      - Conformidade com a Lei Carolina Dieckmann: Garantir a preservação de registros e evidências digitais para facilitar investigações e processos judiciais.
+      - Notificação de Incidentes: Cumprir com as obrigações de notificação de incidentes conforme estabelecido por legislações brasileiras.

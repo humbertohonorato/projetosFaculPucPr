@@ -1,0 +1,438 @@
+UNIDADE 08
+Software Malicioso
+Nesta Unidade, iremos estudar os softwares maliciosos. Será abordado como os adversários exploram as vulnerabilidades dos sistemas a partir de rotinas de códigos maliciosas. Será discutido as principais razões que motivam o adversário a desenvolver e a propagar rotinas de código malicioso. Na sequência, vamos apresentar quais são os principais tipos de malwares, como que eles atuam e se propagam. Conhecer os elementos estruturais de malware; qual a diferença entre um vírus e um worm; descobrir a relação entre os botnets e ataques de negação de serviço; conhecer os spyware, como os adversários utilizam este recurso para obter acesso a informações confidenciais do usuário tais como login, senha, número de cartão de créditos; como o adversário utiliza um backdoor para permitir retornar a um sistema que foi invadido; quais os diferentes tipos de Trojan e como são disseminados; por que devemos estar atentos contra ataques de ransomware. Adicionalmente, demostrar os golpes e ataques que são realizados pelos adversários utilizando tais rotinas de código maliciosas. Mas sobretudo, apresentar como profissional da área de segurança pode atuar para se proteger contra essas ameaças.
+
+Software Malicioso
+Os softwares maliciosos são programas desenvolvidos para realizar alguma atividade maliciosa no computador. Os códigos maliciosos também conhecidos pelo termo inglês "malware", em geral realizam ações prejudiciais e nocivas ao sistema. Entre as principais formas que o malware pode infectar uma máquina, podemos destacar: 
+
+Explorar vulnerabilidades existentes no sistema operacional ou programas instalados; 
+
+Utilização de mídias removíveis infectadas, tais como HD externo, pendrives e cartões de memória, em geral a infecção realizada pelo “auto-execução” dos dispositivos; 
+
+Acesso a sites maliciosos, uso de navegadores vulneráveis; 
+
+
+
+Realizada por meio da ação direta do adversário após invadir o sistema, adicionam arquivos contendo códigos malicioso para poder retornar a máquina que já foi invadida; 
+
+Execução de arquivos infectados, obtidos em anexos de e-mail, mídias externas (removíveis), páginas web ou ainda disseminado na rede por outro computador que compartilha o mesmo recurso.   
+
+O código malicioso ao ser instalado passa a ter acesso aos dados armazenados na máquina e podem executar processos em nome dos usuários legítimos, utilizar os recursos de acordo com as permissões definidas para cada usuário.
+
+
+
+Fonte: ©James Thew/Adobe Stock
+As principais razões que motivam o adversário a desenvolver e a propagar rotinas de código malicioso são a tentativa de obter vantagens financeiras, ter acesso informações confidenciais, vandalismo ou apenas pelo propósito de se autopromover. Além do mais, os malwares muitas vezes podem ser utilizados em tarefas intermediárias que possibilitam realizar golpes, ataques, disseminação de spam ou outras atividades de fins maliciosos.
+
+
+Tipos de Malware
+Os termos utilizados para classificar malwares na área de segurança talvez sofram um problema em relação a estabelecer uma nomenclatura que seja de concordância universal para todos os termos, dado que existe algumas das categorias de malware que se sobrepõem, ou seja, existem diversos malwares que estão dentro de mais de uma família. 
+
+Embora existam diversos aspectos que podem ser avaliados para classificar um malware, uma abordagem bastante aceita pelos profissionais da área é classificar o malware em duas categorias gerais, primeiramente avaliando o modo como este malware se propaga (como que ele contamina suas vítimas), posteriormente baseado nas ações ou cargas úteis que são executadas quando o malware contamina seu alvo. Os termos apresentados abaixo denotam um comportamento específico de cada uma das famílias de malware, reforçando que um único malware pode ser classificado em mais de uma família
+
+
+Vírus
+Um vírus é um programa escrito como uma rotina de código malicioso, que se propaga na rede e nos computadores efetuando cópias de si mesmo e se inserindo como parte de outros programas e arquivos. Para que o vírus consiga entrar em atividade no processo de infecção, esse necessita que o programa ou arquivo hospedeiro seja executado, deste modo, para que o computador seja infectado é necessário que um programa que contenha uma carga de código malicioso seja executado.
+
+Existem diferentes meios de propagação do vírus, sendo os mais comuns a disseminação por meio de e-mails, acesso a sites contaminados ou ainda pelo uso de mídias externas, tais como pendrives, disco externo ou cartões de memória.
+
+
+
+Fonte: ©Weissblick/Adobe Stock
+Existem diferentes tipos de vírus, podendo ser classificados conforme seu comportamento. Uma grande maioria dos vírus procura manter-se ocultos, infectando os arquivos do disco e realizando várias atividades sem o conhecimento e consentimento dos usuários da máquina. Alguns vírus para se camuflar permanecem inativos por um determinado período, então entram em atividade em uma data estipulada. Entre os principais vírus mais comuns, podemos citar: 
+
+Vírus propagado por e-mail: programa malicioso anexado como arquivo em e-mail, o adversário tenta induzir o usuário a clicar em um arquivo contaminado, fazendo que o programa seja executado. Quando esse programa é executado ele infecta os arquivos e programas do computador reproduzindo cópias de si e enviando e-mails contaminados para lista de contatos do usuário. 
+
+Vírus de script: é uma rotina de código malicioso escrita em uma determinada linguagem script, em geral carga maliciosa descarregada no computador ao acessar uma determinada página Web, podendo ainda ser enviado por e-mail como anexo de arquivo ou ainda como parte do próprio e-mail quando o e-mail é estruturado no formato HTML. Dependendo da configuração do navegador ou do cliente de e-mail o script pode ser automaticamente executado. 
+
+
+
+Vírus de macro: este é um tipo específico de vírus de script, escrito em linguagem de macro utilizado, infectam arquivos dos aplicativos que utilizam tal linguagem - arquivos Microsoft Office como Excel, Word e Power Point. 
+
+Vírus de dispositivos móveis: como o aumento do uso dos dispositivos móveis o adversário tem explorado os vírus que se propagam pelo celular, principalmente com a adoção dos smartphones. Esses vírus podem ser disseminados em lojas de aplicativo, também presente nas diferentes plataformas, em destaque no Android e iOS. Ainda, pode se propagar por meio da tecnologia bluetooth, mensagens SMS (Short Message Service) ou mensagens MMS (Multimedia Message Service). O dispositivo é infectado geralmente quando o usuário permite o recebimento de um determinado arquivo infectado e passa a executá-lo. Então o vírus após infectar o aparelho ele pode modificar o comportamento do aparelho, destruir e sobrescrever arquivos do sistema, ainda remover ou transmitir contatos da agenda do usuário, realizar ligações telefônicas utilizando o número do usuário. O vírus ao infectar um aparelho irá tentar se reproduzir (gerar cópias de si mesmo) e se propagar para outros dispositivos.
+
+
+CURIOSIDADE
+MMS - Serviço de Mensagens Multimídia é um padrão de envio de mensagens que incluem conteúdo multimídia para o telefone celular em uma determinada rede.
+
+Worm 
+O worm é um programa malicioso que possui a capacidade de se propagar automaticamente pelas redes, enviando cópias de si próprio para outros computadores na rede. Tal programa também é conhecido como "verme" referente a tradução do termo worm para o português. O worm se distingui de um vírus pelo meio de propagação, um Worm não se propaga por meio de inserção de cópias contaminando programas e arquivos, esse se reproduz pela execução direta de suas cópias, então explora vulnerabilidades nos sistemas e nos programas instalados para poder se disseminar.
+
+
+
+Fonte: ©andriano_cz/Adobe Stock
+Ressalta-se que este malware é responsável por consumir uma grande quantidade de recurso, dado que existe uma grande quantidade de cópias que costumam se disseminar, comportamento que pode impactar no desempenho da rede e da utilização dos computadores. O ciclo de propagação do worm ocorre da seguinte maneira: 
+
+
+Identificação dos alvos: assim que um computador é infectado o worm tenta se propagar, para atingir este objetivo o worm precisa identificar os computadores alvos para replicar suas cópias. Nesse processo o worm pode realizar uma das seguintes ações: 
+
+Realizar uma busca na rede para identificar computadores ativos; 
+
+Aguardar que seja realizado a conexão de outros computadores com o computador infectado; 
+
+Fazer uso de listas predefinidas contendo a identificação dos alvos;  
+
+Utilizar informações extraídas do computador infectado, arquivos de configuração e listas de endereços de e-mail. 
+
+Envio de cópias: o worm após identificar os alvos realiza a cópia de si mesmo, então passar a enviar estas cópias a seus alvos, utiliza uma das seguintes maneiras para transmitir as cópias: 
+
+Explorando vulnerabilidades existentes dos computadores alvos; 
+
+Transmitido via programas de troca de mensagens instantâneas; 
+
+Transmitida por meio de anexo de e-mail; 
+
+Transmitida utilizando canais IRC (Internet Relay Chat); 
+
+Utilizando pasta de compartilhamento P2P (Peer to Peer); 
+
+Disseminadas via torrent. 
+
+Ativação das cópias: após o processo de envio da cópia é necessário o worm seja executado para que a infecção aconteça, esta ação pode ser realizada de uma das seguintes formas: 
+
+O worm pode ser executado imediatamente após ser transmitido, ação realizada pela exploração de vulnerabilidades em programas sendo executados no computador no instante que o malware é recebido. 
+
+Pode ser executado diretamente pelo usuário por meio da execução das cópias que são enviadas para o seu computador. 
+
+Aguardar uma ação do usuário, por exemplo esperar que o usuário insira uma mídia de armazenamento externo, por exemplo: contaminar um pendrive assim que ele for adicionado no computador. 
+
+Reinício do processo:  Para manter o ciclo de propagação, logo após o alvo ser infectado o processo de infecção recomeça, porém neste caso, o computador que anteriormente era o alvo, passa também a realizar o mesmo ataque.
+
+Bot e Botenet 
+Um bot é um programa malicioso que possui um mecanismo de comunicação que permite que o adversário consiga controlar o computador infectado remotamente. Este malware dissemina-se de forma similar a um worm, tem a capacidade de se propagar de forma automática, este também explora vulnerabilidades existentes no computador alvo. 
+
+A comunicação do adversário com o host infectado pelo bot, pode ser realizada de diferentes modos, utilizando canais de IRC, por meio de servidores web e ainda torrent e redes P2P, entre outras maneiras. O adversário ao se comunicar com o bot pode enviar instruções solicitando que sejam realizadas ações maliciosas, realizar ataques, roubar dados e enviar spams. 
+
+Uma máquina infectada por um bot é denominada computador zumbi, dado que pode ser controlada remotamente sem que haja conhecimento do proprietário do hardware. A variante do malware bot que utiliza a máquina hospedeira como servidor de e-mails é denominada como spam zumbi.
+
+
+Fonte: ©nicescene/Adobe Stock
+
+Um conjunto de máquinas infectadas por um tipo de bot é denominada botnet. As Botnets são formadas por milhares de computadores zumbis, isto permite que o adversário intensifique seus ataques. Assim, quanto maior for a quantidade dos computadores zumbis na botnet mais potente é o ataque realizado. O adversário além de utilizar as botnet para realizar seus próprios ataques, ainda fornecem serviços na Deep Web, alugam as botnets para grupos ou pessoas que desejam executar uma ação maliciosa específica.
+
+CURIOSIDADE
+Deep Web - termo que se refere a todas as páginas da Web que os mecanismos de pesquisa não conseguem identificar.
+Entre as principais ações maliciosas que são realizadas por meio das botnets podemos destacar: Ataques de negação de Serviço (DoS), propagação de malware, coletar informação de uma quantidade expressiva de computadores, envio de spam e camuflar a identidade real do adversário - a origem dos ataques é realizada em computadores de terceiros, o uso de proxy instalado na estação zumbi permite que atacante esconda sua identidade (endereço IP). Basicamente o funcionamento básico de uma botnet pode ser estruturado nas seguintes etapas:
+
+O adversário dissemina um tipo específico de bot com o objetivo de infectar o maior número possíveis de computadores;
+
+Os computares infectados (zumbis) ficam a disposição do adversário, ficam inativos aguardando uma ação do adversário (comandos a serem executados);
+
+Quando o adversário deseja realizar uma determinada ação então envia aos zumbis os comandos que deverão ser executados;
+
+
+
+Os zumbis ao receber a requisição do adversário, executam os comandos que foram enviados.
+
+A finalizar esta ação os computadores zumbis retornam a ficar inativos aguardando a próxima sequência de comandos que deverá ser executada.
+
+
+Spyware
+O Spyware é um programa malicioso utilizado para espionar as atividades de um sistema, posteriormente envia as informações coletadas para o adversário. Este programa compromete a privacidade dos usuários e a segurança do computador, podem monitorar e capturar informações referentes a navegação do usuário ou informações inseridas em outros programas que despertem o interesse do adversário, por exemplo login e senha. Existem diferentes tipos de spyware, classificados conforme seu comportamento, destacam-se os principais:
+
+Keylogger: este programa permite capturar as teclas que foram digitadas no teclado do computador. Utilizada principalmente para obter as credenciais dos usuários, tais como login e senha. 
+
+Screenlogger: este programa, programa captura a posição do cursor do mouse e realiza um printscreen da tela, apresenta a região na tela onde o mouse foi clicado. Este programa é bastante utilizado pelo adversário para tentar capturar as teclas digitadas pelos usuários em teclados virtuais, tais como os teclados disponíveis pelos sites de Internet Banking.
+
+Adware: este programa é projetado especificamente para apresentar propagandas. Quando usado para fins maliciosos as propagandas apresentadas são direcionadas, de acordo com a navegação realizada pelo usuário, ou seja, sem efetivamente o usuário saber que está sendo monitorado.
+
+
+Backdoor
+O backdoor é um programa malicioso que permite que um intruso abra uma porta no sistema para que consiga retornar no computador que foi comprometido, para isto o adversário insere serviços criados ou modificados para este fim. As rotinas de código malicioso backdoor podem ser inseridas por meio da ação de outros malwares, que tenham previamente infectado o computador, ou ainda por atacantes que exploram as vulnerabilidades dos sistemas ou programas existente no computador a fim de invadi-lo.
+
+Com adição da rotina de backdoor o adversário consegue garantir uma maneira de acessar futuramente o computador comprometido, permitindo o acesso remoto sem a haver a necessidade de realizar novamente os métodos de invasão ou infecção. A maneira convencional utilizada pelo intruso para adicionar um backdoor consiste em adicionar um novo serviço ou substituir um serviço que esteja rodando por uma versão modificada do programa, normalmente incluindo recurso que possibilitam um acesso remoto.
+
+Os programas de acesso remoto se mal configurados ou usados sem que haja o consentimento dos usuários também podem ser considerados um tipo de backdoor, um exemplo típico é o programa de conexão remota VNC. Existem alguns casos de backdoors inseridos de forma proposital por fabricantes de software, justificam sob o pretexto de necessidades administrativas, Tais casos constituem uma séria ameaça à segurança de computador que possua um desses programas instalados, sendo que além de afetar a privacidade do usuário, também podem ser explorados pelo adversário em tentativas de acesso remoto.
+
+
+Trojan 
+O trojan também conhecido como “Cavalo de Tróia”, é um programa malicioso que além de executar as funções que teoricamente foi projetado para realizar, adicionalmente executa outras funções, em geral maliciosas, sem que haja conhecimento e consentimento de seus usuários.
+
+Os trojans tipicamente são distribuídos em grande escala em sites onde é realizado downloads alternativos de programas licenciados que são “crackeados” e estão sendo fornecidos de maneira gratuita, também podem ser inseridos em fotos, vídeos, jogos, entre outros. Tais programas em geral são estruturados em um único arquivo e exige que sejam executados explicitamente para que sejam instalados na máquina.
+
+
+
+Fonte: ©Alexander Limbach/Adobe Stock
+Os trojans podem ainda ser instalados pelos adversários, após invasão de uma estação, o intruso pode alterar um programa já existente para que além de executar as funções originais do programa, ele ainda executa determinadas ações de caráter malicioso. Existem vários tipos de trojans, em geral são classificados de acordo com as ações maliciosas que executam no computador ao infectá-lo, entre os principais tipos podemos citar:
+
+Trojan Downloader: este programa instala outros softwares maliciosos hospedados em determinados servidores na Internet.
+
+Trojan Dropper: este programa instala outros softwares maliciosos que estão embutidos no próprio código dentro do trojan.
+
+Trojan Backdoor: este programa é utilizado para inserir rotinas maliciosas de backdoors, tais programas possibilitam o acesso remoto do adversário na máquina.
+
+Trojan DoS: este programa instala ferramentas utilizadas para ataques de negação de serviço, são utilizadas para desferir um ataque.
+
+
+
+Trojan Destrutivo: este programa tem como objetivo deixar o computador fora de operação, para isto ele modifica e exclui arquivos e diretórios, ainda pode formatar determinadas partições do disco.
+
+Trojan Clicker: este programa redireciona as páginas sendo navegadas pelo usuário, acaba direcionando o usuário a alguns sites específicos, tem como finalidade aumentar a quantidade de acessos a esses sites ou ainda apresentar propagandas.
+
+Trojan Proxy: este programa instala um servidor de proxy, permitindo que o computador infectado seja utilizado para navegação anônima ou envio de spam.
+
+Trojan Spy: este programa instala uma rotina de código maliciosa spyware, posteriormente este código é utilizado para coletar informações sensíveis dos usuários, tais como senhas e números de cartão de crédito, para na sequência enviar tais informações para os criminosos.
+
+Trojan Banker: este programa permite coletar dados bancários dos seus usuários, por meio de programas que são ativados quando os sites de Internet Banking são acessados. O comportamento deste Trojan é bastante similar ao Trojan Spy, porém neste caso possui um objetivo mais específico.
+
+
+Ransomware
+O ransomware é um tipo de malware que sequestra o computador das vítimas. Em geral, este malware criptografa os dados armazenados em um equipamento, então exige um pagamento de resgate para restabelecer o acesso ao usuário, é comum que o adversário solicite o pagamento utilizando moedas virtuais, tais como bitcoin, dado a características de não serem rastreáveis. Este tipo de "vírus sequestrador" age codificando os dados do sistema operacional de forma com que o usuário não tenha mais acesso.
+
+Uma vez que algum arquivo do sistema operacional esteja infectado, o malware codificará os dados do usuário, tarefa que é realizada em segundo plano, sem que o usuário perceba, então quando tudo estiver pronto, o malware emiti um aviso informando que o computador foi bloqueado e que o usuário não poderá mais utilizá-lo. Então, o malware solicita o resgate, solicitando que o usuário pague o valor de resgate exigido para obter a chave que dá acesso novamente aos seus dados.
+
+
+
+Fonte: ©Andrey Popov/Adobe Stock
+Destaca-se a dificuldade na detecção de um ransomware e seus disfarces, fatores que os tornam mais perigosos. Este malware pode infectar o computador de diversas maneiras, através de sites maliciosos, links suspeitos por e-mail, ou instalação de aplicativos vulneráveis. O ransomware também pode aparecer em links enviados em redes sociais, atualmente um meio muito utilizado para espalhar diferentes malwares.
+
+Uma vez que o computador esteja infectado, é muito difícil realizar a remoção do ransomware, principalmente porque o usuário não consegue nem mesmo acessar o sistema. Deste modo, toda ação preventiva é bem-vinda. Conforme as melhores práticas, a estratégia é manter o antivírus sempre atualizado e fazer buscas regulares no sistema operacional atrás de malware, para que o malware seja detectado antes de ser ativado.
+
+É necessário ter sempre backups atualizados de suas informações e arquivos, caso precise formatar o computador que esteja infectado, esta estratégia vai garantir que você não perca nenhum arquivo importante. As mesmas ações adotadas para se precaver de outros malwares também são válidas para se afastar de um ransomware, nunca clique em links de SPAM em e-mails, sempre desconfie de links e vídeos supostamente enviados por amigos nas redes sociais. Caso não seja comum tal pessoa enviar este tipo de conteúdo, certifique-se com a pessoa antes de clicar em tal conteúdo. Não baixe arquivos de torrents ou sites suspeitos e instale apenas programas baixados de sites confiáveis.
+
+Classificação de Malware
+Existem diferentes maneiras de classificar um malwares, conforme já mencionado não existe um consenso universal para classificar os malwares, porém existem algumas propostas. A classificação mais comum dos malwares é obtida pelo seu modus operandi, ou seja, seu comportamento em execução, o que o malware faz e como ele se replica. Este tipo de classificação não está isento de sobreposição, descarta-se ainda que muitas vezes as diferenças entre os malwares também não são tão fáceis de identificar.
+
+CURIOSIDADE
+Modus operandi - expressão em latim que significa "modo de operação" traduzido para língua portuguesa.
+Outra abordagem que também é bastante difundida é classificação do malware a partir da sua taxonomia. A taxonomia é a ciência da identificação. Observando que pode não existir uma única classificação para os malwares, e ainda dificuldade em diferenciar as famílias de malware esta abordagem pode ser utilizada. Contudo, ainda sim possui enfrenta alguns desafios, esta abordagem não será capaz de tratar os casos de classificação que o malware sofre mutações.
+
+Em vista disto, surgem abordagens secundárias para classificação, algumas propõem classificar o malware pela maneira que ele se propaga, outros autores defendem a ideia de classificar o malware pela necessidade ou não do um hospedeiro. Contudo, os códigos maliciosos podem possuir características advindas de mais de um tipo de família. Deste modo, ressalta-se a classificação de malware mais adequada deve considerar as diferentes características do malware. Assim, atualmente os fabricantes de soluções de antivírus tem agrupado os malware conforme suas características elementares, sendo que muitas vezes um código malicioso do malware é derivado de outro é possível organizá-los em determinadas famílias.
+
+Conforme Caldas [Caldas,2016] grande maioria dos trabalhos publicados na área de classificação de malware hoje visa classificar amostras de malware entre famílias. Destaca-se que o conceito de classificação baseado em família se difere do tradicional, onde o malware deve ser classificado em uma determinada classe. Na classificação baseado em família de malware é realizado o agrupamento de amostras de malwares que implementam as mesmas funcionalidades no código fonte, ou que possuem semelhanças estruturais [Caro, 2016]. Tais amostras são denominadas de variantes do malware.
+
+Mecanismo de Propagação
+Os mecanismos de propagação podem atuar por infecção de conteúdo executável existente ou ainda ser exposto por um vírus, utilizado para disseminar o malware para outros sistemas. Os malware podem explorar vulnerabilidades dos softwares instalados na máquina ou também por meio da rede, um exemplo típico worms ou drive-by downloads. Ainda, os adversários podem utilizar ataques de engenharia social, onde convencem os usuários desativar os mecanismos de segurança para instalar algum Trojan ou responder a algum ataque de phishing.
+
+
+CURIOSIDADE
+Drive-by downloads - download não autorizado e sem o conhecimento do usuário para permitir a reprodução do malware. 
+
+Fonte: ©sitthiphong/Adobe Stock
+Uma das principais categorias de propagação de malware utiliza fragmentos de código malicioso que se ligam com algum conteúdo executável existente. Este fragmento pode ser algum trecho de código de máquina que infecta a aplicação, utilitário ou até mesmo programa do sistema existente. Este código em geral é adicionado junto a rotina que inicializam automaticamente junto com os programas do sistema operacional. Existem diversos fragmentos que são escritos em forma de scripts, também utilizados para utilizados para fornecer suporte a conteúdo ativo dentro de dados, tais como documentos no formato Word, Excel, Power Point ou PDF.
+
+A carga útil do código malicioso, também denominada como payload, quando executada no sistema ela realiza as atividades a qual foi projetada, podendo incluir corrupção dos arquivos de dados ou sistema; atuar como agente zumbi em ataques, fazer parte de uma botnet; realizar o furto de informações confidenciais dos usuário e do sistema, entre os mais visados  o login, senha e número de cartão de crédito, onde em geral o adversário utiliza um software spyware; e ainda estratégias de camuflagem, onde o malware tenta ocultar sua presença no sistema contra ferramentas de segurança como o antivírus utilizado para detectar e bloquear os malwares.
+
+No decorrer do tempo, houve uma evolução no desenvolvimento de código malicioso, sendo observado um crescimento na quantidade de malware mistos, onde o malware incorpora vários mecanismos de propagação e cargas úteis, o que aumentam sua capacidade de disseminação, camuflagem e capacidade de execução (ações que podem ser realizada contra seus alvos) os alvos.
+
+Uma tentativa de ataque utilizando um malware contendo uma carga maliciosa mista utiliza vários métodos de infecção ou propagação para maximizar a velocidade de contágio e a gravidade do ataque. Existem até mesmo alguns malwares que possuem um mecanismo de atualização, permitindo que o malware sofra uma mutação, tanto na forma de atuar como também na propagação.
+
+Entre os comportamentos de propagação dos malwares mais notórios, destaca-se o vírus de computador que acaba sendo expirado em vírus biológicos entrado na natureza. Um vírus de computador possui um conjunto de instruções que permitem realizar uma cópia integra de si mesmo. Este vírus em geral fica embutido em um programa, ou elemento portador de conteúdo executável no computador. Então, sempre que o computador infectado entra em contato com algum trecho de código que ainda não esteja infectado, uma cópia integra do vírus é realizada passando a ser copiado para o novo local. Deste modo, ocorre a proliferação do vírus de um computador para outro.
+
+Um determinado vírus que se insere em um programa executável pode realizar qualquer ação que o programa hospedeiro tenha permissão de realizar. Este executa de maneira oculta assim que o programa hospedeiro é executado. Uma vez que o vírus esteja em execução, o código irá realizar as funções para qual foi projetado, qualquer função que seja permitida pelos privilégios fornecidos pelo usuário corrente (permissões de leitura, escrita e execução), podendo até mesmo excluir arquivos e programas. Alguns pesquisadores na área de segurança direcionados ao estudo dos malwares afirmam que um vírus de computador possui três partes [Aycock, 2006]. De forma ampla, muitos dos tipos de malwares atuis incluem um ou mais variantes de cada um dos seguintes componentes:
+
+Mecanismo de infecção: componente de código malicioso responsável pela disseminação do vírus, como vai ser propagado e espalhado entre os computadores, ou seja, contempla a atividade de reprodução do malware. Este mecanismo também chamado de vetor de infecção.
+
+Carga útil: este componente contém o código malicioso que efetivamente vai realizar a atividade malicioso, principal atividade do malware que foi projetada pelo adversário - intenção de tirar vantagens ou causar algum dano.
+
+Mecanismo de ativação: este componente corresponde a um código malicioso que fornece um gatilho para que o processo do vírus entre em execução, em geral um evento ou condição que vai ativar a carga útil do malware, este componente também é conhecido como "bomba lógica".
+
+A grande parte dos vírus que infectam os arquivos de programas executáveis realizam sua atividade de forma específica, projetado para atingir um sistema operacional em particular, podendo também ser projetado para atacar uma plataforma de hardware especifica. Tal como o exemplo do Stuxnet, um worm que foi projetado especificamente para atacar o sistema operacional SCADA da Siemens, foi utilizado como arma cibernética para controlar as centrífugas de enriquecimento de urânio iranianas, onde foram danificadas cerca de 1000 centrífugas [Kaspersky,2014]. Destaca-se que em geral os malware são projetados para tirar proveito dos detalhes e fraquezas dos sistemas específicos. Porém, existem uma classe de vírus de macro que permite explorar determinados documentos específicos, tais vírus foram projetados para atuar em diferentes sistemas operacionais.
+
+
+Exploração de Vulnerabilidades
+A exploração de vulnerabilidades é uma técnica amplamente explorada pelos worms. O worm é um programa malicioso que busca ativamente contaminar cada vez mais máquinas, onde cada máquina contaminada serve como meio de disseminação para novos ataques a outras máquinas.
+
+Os worms são projetados para explorar vulnerabilidades de softwares, tanto programas clientes como servidores, deste modo conseguem ter acesso a novos sistemas. Ainda, podem utilizar conexões de rede para percorrer de sistema para sistema e se disseminar entre mídias compartilhadas. Os worms de e-mail conseguem se espalhar em códigos scripts ou macro, em geral inseridos em documentos anexados em e-mail ou por meio de transferência de arquivos via mensagens instantâneas.
+
+
+
+Fonte: ©James Thew/Adobe Stock
+O worm quando ativado, pode se reproduzir e se propagar novamente. Além de se propagar, o worm também é munido de alguma forma de carga útil maliciosa, como as que discutiremos mais adiante. Para se replicar o worm explora algumas estratégias e vulnerabilidades para conseguir acessar o sistema remotamente. Entre as principais desacatam-se os exemplos a seguir:
+
+Recursos de e-mail ou de mensagem instantânea: Um worm envia por e-mail uma cópia integra de si mesmo para outros sistemas, bastante comum que seja enviado como anexo, ainda pode ser enviado utilizando um serviço de mensagens instantâneas (utilizando um chat ou até por meio de aplicativos como Telegram ou Whatsapp), o código pode ser executado quando o e-mail ou o anexo é recebido ou visualizado.
+
+Compartilhamento de arquivo: o worm cria uma cópia de si mesmo ou infecta outros arquivos em mídia externa removível, por exemplo um dispositivo USB como um pendrive ou HD externo, então quando este dispositivo for conectado e executado em outro sistema, possivelmente outro computador será infectado. Ao ser disseminado na máquina o worm vai tentar explorar vulnerabilidade de software.
+
+
+
+Capacidade de execução remota: o worm pode executar uma cópia de si mesmo em um outro sistema utilizando um recurso explícito de execução remota ou também explorando alguma falha de programação em um determinado serviço em rede para poder realizar suas ações.
+
+Capacidade de acesso/transferência de arquivos remotos: o worm pode utilizar um serviço de acesso remoto de compartilhamento de arquivos ou ainda pela transferência de arquivos remotos para outro sistema, deste modo o malware faz uma cópia de si mesmo e envia de um sistema para o outro, de maneira que os usuários do outro sistema sejam infectados.
+
+Capacidade de login remoto: O worm pode acessar um sistema remotamente com as credenciais de um determinado usuário, então pode executar determinados comandos que irão permitir que seja realizado uma cópia de si mesmo para outro sistema. O worm vai explorar as vulnerabilidades do sistema para executar sua carga útil e continuar a se propagar.
+
+Outra abordagem utilizada pelos adversários para explorar vulnerabilidades em softwares, envolve a exploração de bugs em aplicações comuns do usuário, utilizadas para instalar um malware.
+
+Uma estratégia bastante comum é explorar as vulnerabilidades em um navegador Web, o adversário pode controlar o navegador, assim que o usuário abrir uma página Web, um código malicioso será executado no navegador permitindo que seja explorado um bug. Esta ação irá permitir baixar e instalar um malware no sistema sem haver o conhecimento ou consentimento do usuário. Esta é uma técnica conhecida como download não autorizado, um exploit comum que atualmente vem sendo disponibilizadas em ferramentas de ataques recentes. Em geral, este malware não se propaga de forma ativa como um worm, ao contrário este malware aguarda que o usuário sem suspeitar visite a página maliciosa para que ele possa infectá-lo.
+
+
+CURIOSIDADE
+Exploit - é um conjunto de intrusões, dados ou software elaborados por "hackers" para tirar proveito de um defeito ou vulnerabilidade do sistema.
+Existem outras variantes que exploram bugs em clientes de e-mail comuns, alguns worms realizam o envio de e-mails em massa, permitindo a execução automática de si mesmo. Entre outras vulnerabilidades em bugs de software, os malwares também visavam leitores de PDF, permitindo baixar e instalar malware sem consentimento do usuário, quando o usuário abria o documento PDF contendo a rotina de código malicioso. Ainda, tais documentos eram espalhados por e-mail através spam ou a partir de ataques de phishing.
+
+
+Engenharia Social
+Engenharia social consiste na técnica no qual o adversário procura persuadir um usuário legitimo a realizar uma determinada ação. Para o nosso contexto, consideraremos com sendo a prática utilizada por golpistas para explorar a ingenuidade e confiança de outras para lhes aplicar golpes cibernéticos, obtendo vantagem financeira ou informações sigilosas.
+
+Em geral, atacar e fraudar os dados em um servidor de uma instituição bancária ou financeira não é uma tarefa simples, devido a isto, golpistas concentram-se seus esforços em explorar a fragilidades dos usuários. Deste modo, técnicas de engenharia social são aplicadas, utilizando os mais diferentes meios e discursos, desta forma o golpista procura enganar e convencer potenciais vítimas a fornecerem informações sensíveis ou a realizar ações, tais como executar um determinado código malicioso ou então acessar um páginas falsas ou com algum conteúdo com código malicioso.
+
+
+
+Fonte: ©oz/Adobe Stock
+Posteriormente, tendo posse dos dados de suas, o adversário costuma realizar transações financeiras, acessar sites utilizando as credenciais de suas vítimas, enviar mensagens eletrônicas em nome das vítimas (e-mail ou whatsapp), abrir contas bancárias ilegítimas ou até mesmo empresas fantasmas, entre muitas outras atividades realizadas pelos golpistas. Muitos dos crimes que são realizados pela internet pode até mesmo serem tipificados como crimes realizados contra o patrimônio, nos quais acabam sendo tipificados como crime de estelionato. Abaixo é apresentado alguns dos principais golpes que são realizados na internet:
+
+Furto de identidade: caracterizado como a ação pelo qual uma pessoa tenta se passar por outra, utilizando uma falsa identidade, tendo como o objetivo obter vantagens indevidas.
+
+Fraude de antecipação de recursos: está fraude é realizada quando o um golpista induz a vítima a fornecer informações confidenciais, ou então realizar um pagamento adiantado, iludindo a vítima com a promessa receber certo benefício por isto.
+
+
+
+Phishing: esse tipo de fraude o adversário tenta obter dados pessoais e financeiros das suas vítimas, em geral combinam técnicas de engenharia social em conjunto com recursos tecnológicos.
+
+Golpes de comércio eletrônico: neste golpe os adversários têm objetivo de obter vantagens financeiras, então exploram a relação de confiança existente entre as partes envolvidas em uma determinada transação comercial.
+
+Boatos: também conhecido com Hoax, é caracterizado como uma mensagem que possui um conteúdo alarmante falso, em geral tem como remetente uma instituição bastante conhecida - uma empresa bem-conceituada ou até mesmo um órgão do governo. Analisando o conteúdo da mensagem normalmente é possível identificar informações não fundamentadas e tentativas de golpes.
+
+
+Corrupção do Sistema
+Uma das grandes preocupações após um malware ser ativa está relacionado a quais ações este malware poderá realizar no sistema, ou seja, qual é a carga útil que ele carrega. Existem exemplares de alguns malwares que não possuem uma carga funcional, a carga útil é inexistente, projetado apenas com a finalidade de disseminar. Porém, a grande maioria dos malwares contém uma carga útil nociva e executam ações secretas e maliciosas para o adversário.
+
+Os primeiros exemplares de vírus e worms continham uma carga útil que destruía os dados no sistema infectado quando determinadas condições eram satisfeitas. Sendo que existem diferentes tipos de malwares, cada um dispõem de sua própria carga útil, deste modo podemos ter cargas úteis distintas. Podemos citar por exemplo a carga útil relacionada, essa carga quando ativada apresenta mensagens ou conteúdos indesejados aos usuários dos sistemas. Contudo, existem outras variantes de cargas úteis que são bastante perigosas que acarretam danos ao sistema no mundo real.
+
+Destaca-se que grande parte das ações realizadas pelos malware visam a integridade de software ou hardware do sistema computacional, bem como os dados dos usuários. Normalmente as mudanças não ocorrem de forma imediata, em geral são executadas quando determinadas condições acabam sendo satisfeitas em código malicioso (código correspondente a bomba lógica).
+
+Existem malware que foram intencionalmente projetados para destruir dados, conforme mencionado anteriormente, existe um tipo de malware que cifra os dados do usuário e solicitam pagamento para que a chave criptográfica necessária para recuperar os dados seja fornecida, os malware conhecidos como ransomware. Esse tipo de malware possui uma carga útil bastante nociva, o que gera uma grande preocupação para os profissionais que atuam na área de segurança da informação.
+
+Ainda, outra variante de cargas úteis que gera grande preocupação são aquelas cargas que foram projetadas para corromper o sistema, causando até mesmo danos ao equipamento físico. Para o atacante um sistema infectado é sem dúvida um dispositivo mais fácil de invadir. Existem determinado vírus, conhecido como Chernobyl que além de corromper os dados, ele ainda consegue reescrever o código do SETUP, também conhecido como BIOS, programa utilizado para inicializar um computador. Este ataque quando bem-sucedido prejudica o processo de inicialização (boot) do computador, o sistema falha na inicialização, onde para correção do problema é necessário reprogramar o chip da BIOS (gravar o chip novamente) ou substituí-lo fisicamente.
+
+Ressalta-se que o componente fundamental do malware de corrupção de dados é a bomba lógica. A bomba lógica é caracterizada como código malicioso que em determinadas condições é ajustado para "explodir", ou seja, realizar a ação maliciosa a qual foi projetado. Entre alguns exemplos de condições que podem ser utilizadas para ativar uma bomba lógica: a presença ou ausência de um determinado arquivo ou dispositivo no sistema; um dia específico da semana ou certa data; a versão ou configuração em particular de um programa; a execução de uma aplicação por um usuário específico. Então, uma vez que a bomba lógica seja ativada ela poderá alterar ou excluir um conjunto de dados ou arquivos inteiros, causar dados ao sistema operacional a fim de que o computador trave ou causar um outro tipo de dano.
+
+
+Denial of Service (DoS)
+Ataque de negação, ou termo em inglês DoS (Denial of Service), consiste e um técnica utilizada pelo atacante para indisponibilizar um serviço, servidor ou rede conectada na internet. Em geral, neste ataque o adversário realiza diversas requisições ao seu alvo a fim de sobrecarregá-lo, deste modo os recursos do sistema ficam indisponíveis para seus usuários. Existem uma versão deste ataque que é realizado de forma coordenada e distribuída, onde um conjunto de computadores é utilizado para realizar o ataque, esse tipo é denominado como ataque de negação de serviço distribuído, ou o termo inglês DDoS (Distributed Denial of Service).
+
+
+
+Fonte: ©Stuart Miles/Adobe Stock
+Com um objetivo diferente estes ataques não têm a intenção de invadir e nem coletar informações do usuário ou sistema, seu propósito na verdade é consumir todo recurso do seu alvo para causar indisponibilidade do serviço. Consequentemente, quando isto ocorre, todos os usuários que utilizam este sistema serão afetados, pois ficarão sem ter acesso a tais recursos, ficando impossibilitados de realizar as operações pretendidas.
+
+Em geral, nos casos reportados os alvos que foram vítimas deste tipo de ataque, ficaram impedidos de fornecer o serviço naquele período que foram "objeto" do ataque, porém, após o incidente conseguiram voltaram a operar normalmente, na maioria dos casos não foi reportado vazamento de informação ou comprometimento dos servidores ou sistema.
+
+Apesar de existir alguns indivíduos cedem por si próprio seu computador para que seja utilizado nos ataques, em geral executando ferramentas para este fim. Ressalta-se que a grande maioria dos computadores que estão sendo utilizados para realizar este tipo de ataque, os donos desses recursos (em geral computadores), em geral não têm conhecimento que seu computador foi infectado e está fazendo parte de uma botnet. Os Ataques de negação de serviço, seja realizado de forma distribuída ou não, podem ser realizados de diferentes formas, as mais comumente utilizadas são:
+
+Realizando o envio de uma grande quantidade de requisição para um serviço específico, deste modo, consumindo todos os recursos do sistema (processamento, memória, espaço em disco, rede) e impedindo assim que requisições legitimas dos seus usuários sejam atendidas;
+
+Efetuado pela exploração de vulnerabilidades existentes no sistema operacional ou ainda em programas instalados que podem fazer que um determinado serviço fique indisponível;
+
+Gerando um extenso volumo de tráfego de dados em uma rede, desta forma ocupando toda banda de rede disponível e indisponibilizando o acesso de qualquer computador ou serviço que tente utilizar aquela rede.
+
+Relacionado ao assunto, existe um outro aspecto que também deve ser considerado, situações em que o serviço disponibilizado não foi corretamente dimensionado, desta forma é possível que haja uma saturação dos recursos. Consequentemente, o serviço poderá ficar inoperante ao tentar atender solicitações que sejam legítimas. Por exemplo, um site de comércio eletrônico que realiza promoções de produtos em uma "Black Friday", caso uma grande quantidade de clientes tente acessar o site simultaneamente se os recursos computacionais não forem estimados corretamente pode haver indisponibilidade do serviço ou o servidor não conseguir gerir todas as solicitações dos clientes.
+
+
+Contramedidas Contra Malwares
+A execução de rotinas de softwares maliciosos insere inúmeros riscos à segurança da informação. Devemos estar cientes da existência de tais riscos, saber detectar as ameaças e principalmente aprender a se proteger. Visando garantir a segurança da informação, alguns cuidados que devem ser tomados, tanto no uso adequado dos computadores como da internet. Para isto, esta secção fornece um conjunto de boas práticas e mecanismos de segurança que podem ser utilizados para se proteger, entre alguns requisitos básicos de segurança, nos deparamos com os pilares da segurança:
+
+Identificação: permitir que uma entidade se identifique no sistema, "dizer quem ela é".
+
+Autenticação: verificar se a entidade é realmente quem ela diz ser.
+
+Autorização: determinar quais as ações uma entidade pode realizar.
+
+Integridade: proteger a informação contra alterações não autorizada.
+
+Confidencialidade: proteger uma informação contra um acesso não autorizado.
+
+Não repúdio ou irretratabilidade: evitar que uma entidade negue a autoria de uma determinada ação.
+
+Disponibilidade: garantir que o recurso esteja disponível sempre que for necessário.
+
+Para fornecer e garantir estes requisitos, foram desenvolvidos os mecanismos de segurança, quando devidamente configurados e utilizados, podem auxiliar o usuário a se proteger contra os riscos e segurança da informação. Primeiramente, vamos citar alguns dos cuidados necessários envolvendo o uso seguro da Internet, conforme orientados pelo CERT [Cert,2021]:
+
+
+Mantenha seus equipamentos atualizados:  Utilize apenas programas originais. Tenha sempre as versões mais recentes dos programas instalados. Instale todas as atualizações disponíveis, principalmente atualizações referentes a segurança. Crie um disco de recuperação e tenha-o por perto no caso de emergências;
+
+Instale um antivírus: Mantenha sua solução de antivírus sempre atualizada, procedimento que deve incluir os arquivos de assinaturas, atualize o arquivo de assinaturas pela rede, o ideal que este processo seja realizado de preferência diariamente. Configure o antivírus para verificar automaticamente toda e qualquer extensão de arquivo, arquivos anexados aos e-mails, obtidos pela Internet, discos rígidos e as unidades removíveis. O ideal é sempre verificar os arquivos recebidos, antes de abri-los ou executá-los. Evite executar simultaneamente diferentes soluções de antivírus, eles podem entrar em conflito, afetar uns aos outros e ainda o desempenho do equipamento e interferir na capacidade de detecção. Você poderá criar um disco de emergência (mídia de emergência, pode ser criado em um pendrive) da sua solução de antivírus, caso você suspeite que o antivírus instalado está desabilitado ou foi comprometido, ou ainda o seu equipamento tem apresentado um comportamento estranho você poderá recorrer a este disco de emergência.
+
+Utilize um firewall: Certifique-se de ter um firewall pessoal instalado e habilitado. Tenha o hábito de verificar os logs do firewall para verificar se não houve nenhuma tentativa de acesso malicioso pelos programas ou por um adversário.
+
+Instalação de aplicativos: Efetue download dos programas e aplicativos apenas de fontes confiáveis. Certifique-se que as permissões de instalação e execução estão coerentes. Selecione aplicativos que sejam bem avaliados e possua uma com grande quantidade de usuários.
+
+Efetue Backup: Proteja seus arquivos e programas fazendo backups regularmente. Você deve garantir que seus backups estejam armazenados em um lugar seguro, mantenha os backups desconectados do sistema. Não recupere um backup caso desconfiar que este contenha dados que não são confiáveis.
+
+Cuidado ao clicar em links: Atenção ao clicar em qualquer tipo de link, inclusive mensagens vindas de contatos conhecidos, nem todas as mensagens vindas de conhecidos são sempre confiáveis. O adversário pode alterar o campo do remetente do e-mail, falsificando sua origem, o e-mail pode ter sido enviado de contas falsas ou contas que foram invadidas. Antes de acessar um link curto procure utilizar complementos que permitam visualizar a url de destino.
+
+Execução de arquivos: Utilize a conta de administrador apenas quando for realmente necessário. Tenha cuidado com extensões ocultas, alguns sistemas operacionais possuem a opção de configuração padrão para ocultar a extensão dos tipos de arquivos conhecidos. Desabilite a auto-execução de mídias removíveis e de arquivos anexados.
+
+Explorando os mecanismos de segurança para prevenção de ataques de malware
+Este vídeo vai fornecer uma visão mais ampla sobre os mecanismos de segurança para proteção contra malwares, vamos apresentar como funciona tais ferramentas, quais as vantagens e desvantagens de utilizar estas abordagens, dicas e boas práticas para implementação destes mecanismos de segurança.
+
+
+
+EXERCÍCIOExercícios de Fixação
+O que é um malware?
+
+Cite três formas que o malware utiliza para infectar um dispositivo.
+
+O que é um Vírus?
+
+O que é um Hoax?
+
+O que é um Worm?
+
+Descreva o ciclo de progagação de um worm.
+
+Descreva o que é um Bot e uma Botnet.
+
+Quais são os tipos de Spyware? Descreva como funciona cada um deles.
+
+O que é um Trojan?
+
+Cite três mecanismos de segurança da informação. Descreva o que se trata cada um deles.
+
+O que é um Ransomware?
+
+O que é um Phishing?
+
+Quais os componentes estruturais de malware?
+
+O que é uma técnica de engenharia social?
+
+Qual a diferença entre um ataque DoS e DDoS?
+
+Conclusão
+Esta unidade abordou os conceitos relacionados a software malicioso, descobrimos o que é um malware, quais suas ações e como ele atua sobre o sistema para infectar e se disseminar. Discutimos quais são as principais motivações que levam o adversário a desenvolver e a propagar rotinas de código malicioso. Ainda, apresentamos os principais termos utilizados para categorizar os tipos de malware. Discutimos também que não existe um consenso universal para classificação, pois alguns tipos de malware se sobrepõem, estão dentro de mais de uma família.
+
+Por conseguinte, apresentamos cada um dos tipos. Abordamos o processo de infecção pelo vírus de computador, como ele atua e infecta uma máquina hospedeira e ainda como se reproduz. Discutimos também, sobre a capacidade de um worm se propagar automaticamente pelas redes, enviando cópias de si próprio para outros computadores na rede, bem como a carga útil que eles carregam.
+
+Posteriormente, foi apresentado como funciona uma botnet e as principais ações maliciosas que são realizadas, entre as principais os ataques de DDoS. Conhecemos também os diferentes tipos de spyware e como os adversários utilizam este malware para espionar suas vítimas.
+
+Exploramos também o programa backdoor, foi discutido como este programa permite que um intruso consiga retornar a um computador que foi comprometido. Ainda, mostramos os diferentes tipos de Trojan, e quais as ações maliciosas que executam no computador após infectá-lo. Adicionalmente, abordamos o ransomware um dos mais nocivos tipos de malware, discutimos porque este tipo de malware é tão perigoso e cuidados que devem ser tomados para se precaver contra esta ameaça.
+
+Ainda, foi apresentado algumas abordagens difundidas para classificação de malware, e porque atualmente tem sido classificado os malwares pelas funcionalidades no código fonte e através das semelhanças estruturais. Demostramos também, como os mecanismos de propagação atuam em uma infecção, quais as formas utilizadas para disseminar outros computadores e sistemas. Destacamos, os componentes elementares dos malware, o mecanismo de infecção, a carga útil e o mecanismo de ativação.
+
+Por fim, discutimos sobre vulnerabilidades dos sistemas operacionais e programas instalados. Enfatizamos como os adversários exploram as vulnerabilidades e bugs no sistema por meio dos códigos maliciosos. Discutimos que o adversário para ter maior êxito em seus ataques utiliza técnicas de engenharia social associado ao uso de códigos maliciosos. Ainda, destacamos que existe uma grande preocupação com malware que foram projetados para corromper o sistema. Por último, discutimos sobre os desafios do profissional de segurança da informação para proteger os sistemas, apresentamos as contramedidas que devem ser adotadas para lidar com tais ameaças, cuidados necessários para proteger os sistemas computacionais e ativos da informação.
+
+
+https://www.youtube.com/watch?v=XLv04cGkFFg
+
+
+
+Referências Bibliográficas
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014.
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008.
+
+SHIREY R. RFC 2828 - Internet Security Glossary. The Internet Society, 2000.
+
+NBRISO/IEC27002: Tecnologia da Informação - Técnicas de segurança - Código de Prática para Controles de Segurança da Informação.
+
+RNP. Relatório Anual de Segurança 2020 - RNP. Rede Nacional de Ensino e Pesquisa (RNP), 2021. Disponível em: <https://www.rnp.br/noticias/rnp-lanca-relatorio-anual-de-seguranca-2020>. Acesso em: 31 de ago. de 2021.
+
+CERT.BR. Estatísticas dos Incidentes Reportados ao CERT.br, CERT.br., 2021. Disponível em: <https://www.cert.br/stats/incidentes/>. Acesso em: 31 de ago. de 2021.
+
+CERT.BR. Cartilha de Segurança para Internet. CERT.br., 2021. Disponível em:  https://cartilha.cert.br/ Acesso em: 15 de ago. de 2021.
+
+NORTON. Relatório de Informações de Segurança Cibernética do NortonLifeLock. NortonLifeLock, 2021. Disponível em: <https://br.norton.com/nortonlifelock-cyber-safety-report>. Acesso em: 5 de set. de 2021.
+
+AYCOCK, J. Computer Viruses and Malware. New York: Springer, 2006.
+
+CALDAS, Daniel M. Análise e Extração de Características Estruturais e Comportamentais para Perfis de Malware. Universidade de Brasília. Brasília, 2016.
+
+CARO. The CARO Website. Disponível em: <http://www.caro.org/index.html>. Acesso em: 15 ago. 2021.
+
+KASPERSKY. Dicas de como se proteger contra crimes cibernéticos. Kaspersky, 2021. Disponível em: <https://www.kaspersky.com.br/resource-center/threats/what-is-cybercrime>. Acesso em: 7 de set. de 2021.
+
+
+
+

@@ -1,0 +1,68 @@
+UNIDADE 02
+Topologia para Internet das Coisas
+Olá. Seja muito bem-vindo a esta segunda semana no curso. Nesta semana vamos iniciar nossos estudos discutindo o que é internet das coisas e o que é Web das coisas. Este novo conceito importante, tem como foco o uso de tecnologias já existentes aplicadas para assegurar o crescimento mais rápido da Internet das coisas. A seguir vamos discutir a topologia básica de Internet das coisas, os blocos básicos para Internet das coisas e como os dispositivos são construídos. Espero que esteja empolgado em conhecer tudo isso. Vamos lá?
+
+Topologias para Internet das Coisas
+
+A internet das coisas integra uma série de tecnologias permitindo que coisas antes inanimadas agora possam interagir através do mundo digital. A figura seguir ilustra os principais módulos utilizados para integrar a internet das coisas.
+
+Módulos básicos para Internet das Coisas
+(SANTOS, B.; SILVA, L. 2016)
+O primeiro módulo aqui apresentado é a identificação. Este módulo é de extrema importância para garantir uma identificação inequívoca e única de cada dispositivo ligado à rede. Tecnologias como IP, endereço MAC, RFID e NFC podem ser utilizados para garantir que cada dispositivo tenha uma identificação, geralmente numérica, única.
+
+O segundo módulo aqui apresentado são os sensores. De fato, sensores são meios pelo qual os dispositivos leem a informação do mundo natural. Exemplos de sensores podem ser: de temperatura, pressão atmosférica, acelerômetros, luminosidade, giroscópio, etc. Dentro desta categoria também podemos considerar os dispositivos atuadores. Entendemos como atuadores: motores, servo motores, displays, avisos sonoros, etc.
+
+O terceiro módulo é a comunicação. O papel do módulo de comunicação é permitir que as informações coletadas possam ser enviadas através da rede a servidores e por fim usuários finais. Diversas tecnologias podem ser utilizadas aqui: Wi-Fi, internet, Bluetooth, etc. A comunicação sem fio é a mais comum, apesar de seu alcance ser limitado.
+
+O quarto importante módulo é a computação. Aqui podemos ter tanto a computação local realizada nos dispositivos, como a computação distribuída através dos serviços de rede. Nos dispositivos, empregamos microprocessadores, microcontroladores ou processadores DSP para realizar um processamento prévio antes de enviar os dados através da nuvem.
+
+O quinto módulo importante são os serviços. Entendemos como serviços o gerenciamento de dispositivos e tratamento da informação, garantindo a integridade do sistema. Como exemplo, podemos ter serviços de identificação, serviços de agregação de dados e serviços de colaboração inteligência que permitem a conversão de dados em informações relevantes.
+
+Por fim temos o módulo de semântica. Aqui, o termo semântica refere-se ao sentido das informações coletadas. Geralmente são algoritmos que processam a informação extraindo comportamentos gerando novos conhecimentos sobre o domínio tratado.
+
+Vamos agora estudar a topologia básica para Internet das coisas que integra todos os módulos acima descritos. Observe a figura abaixo:
+
+
+Nesta figura podemos ver três entes importantes: os dispositivos, o serviço de nuvem e o usuário. De uma forma geral os dispositivos podem ser máquinas, veículos, eletrodomésticos, eletroeletrônicos, ou até mesmo móveis e qualquer outra coisa que possa comportar eletrônica embutida. O nome dado a esta eletrônica embutida em dispositivos é Sistemas Embarcados (Embedded Systems).
+
+Através dos anos temos percebido uma forte corrente que tem o propósito de embutir em dispositivos, antes totalmente passivos, computadores eletrônicos tornando-os mais “espertos”. Como exemplo temos O smartphone, a SmartTV, o Smartwatch, dentre muitos outros dispositivos “Smart” que ainda estão sendo criados. Esta tendência está alinhada com outra conhecida como computação ubíqua:
+
+“Um modelo de interação humano-computador introduzido por Mark Weiser (Weiser 1991), em que a tecnologia computacional permite, em alto grau, residir silenciosamente no fundo da atenção dos usuários. Uma noção central da Computação Ubíqua é integrar os computadores perfeitamente em nossas atividades cotidianas e ambientes físicos. Ao permitir que esses computadores incorporados detectem e se adaptem automaticamente ao seu contexto de uso, a Computação Ubíqua procura tornar o computador "invisível" em uso.” (SORBY, I. et al. 2010).
+
+O ponto central desta tendência é termos uma computação pervasiva, ou seja, em todos os lugares, e invisível ou oculta, garantindo que todos possamos usufruir da tecnologia sem a necessidade de conhecermos detalhes técnicos.
+
+
+Para construir um dispositivo inteligente são necessários pelo menos cinco elementos:
+
+Unidade de processamento e memória: aqui temos um pequeno computador embutido. Este computador, geralmente na forma de microcontrolador, tem a função de ler os dados de sensores, armazenados na memória, enviar estes dados através da rede a servidores na nuvem, e também interagir com atuadores controlando o meio. Essas unidades de processamento geralmente são as mesmas utilizadas para construir sistemas embarcados, podendo ter uma pequena ou grande capacidade de processamento;
+Unidades de comunicação: consiste em um meio de comunicação com ou sem fio.
+Fonte de energia: consiste em adaptadores de energia, baterias ou de fontes que coletam a energia do ambiente, com o propósito de manter o dispositivo funcionando. Em muitos casos, todo sistema fica a maior parte do tempo desligado e, quando a necessidade de intervenção, o sistema “acorda”, realiza o processamento, transmite informação e volta a “dormir” assegurando assim um tempo maior de sobrevida de sua bateria.
+Unidade de sensores: os sensores são responsáveis por ler a informação do meio ambiente convertendo sinais analógicos e digitais. A escolha de quais sensores são necessários a função exclusivamente da aplicação do dispositivo.
+Unidade de atuadores: Os atuadores são dispositivos de saída responsáveis por transferir ao ambiente externo alguma informação gerada pelo microprocessador. Como exemplo temos motores, sinais luminosos, telas, sinais sonoros, servo motores, entre outros.
+Os meios de comunicação utilizados para transporte da Informação podem utilizar diversas tecnologias. Uma das mais comuns é a tecnologia Wi-Fi que é responsável pelo transporte informação através de ondas eletromagnéticas. A principal vantagem desta tecnologia é a não necessidade de cabos. Como desvantagem, podemos citar o consumo moderado de energia que, para alguns dispositivos, pode comprometer o tempo de funcionamento quando não conectados a rede elétrica.
+
+Outra tecnologia que é bom para a comunicação de dados é a Ethernet. O padrão conhecido como IEEE 802.3, apesar de possuir várias décadas de uso, tem se mantido constantemente atualizado empregando cabos do tipo par trançado ou fibras óticas. A principal vantagem desta tecnologia é a estabilidade, pois está bem menos sujeita a interferências eletromagnéticas e obstáculos como Wi-Fi está.
+
+Um padrão de comunicação bem menos conhecido, porém bem formalizado há vários anos é o ZigBee. Sendo especificado como protocolo IEEE 802.15.4, é um protocolo de enlace que possui como principais características o baixo consumo energético e o baixo custo. Sua principal limitação é a taxa de transferência limitada geralmente a 250 kbps.
+
+Outro padrão bastante conhecido é o Bluetooth. Este protocolo foi desenvolvido pela Ericsson e tem sido utilizado como padrão para redes de pequena distância conhecidas como PAN (Personal Area Network). A utilização mais comum para este tipo de tecnologia é o transporte de informações de áudio, geralmente encontrados em fones de ouvidos smartphones. Alguns anos o Bluetooth foi atualizado para a versão BLE (Bluetooth Low Energy), garantindo um baixo consumo para dispositivos alimentados por bateria.
+
+Recentemente, padrões de telefonia celular 3G, 4G e atualmente 5G também têm sido aplicados a dispositivos para Internet das coisas. A grande vantagem destas tecnologias é a facilidade de instalação e a mobilidade em meios urbanos.
+
+Por fim, estes dispositivos, assim como qualquer outro computador, possui um software embarcado que executa um algoritmo desenvolvido para realizar atividade fim. O software embarcado nesses dispositivos geralmente é chamado de Firmware. O termo foi criado para distinguir os algoritmos que são armazenados nesses dispositivos em memória não volátil, ou seja, que mantém as informações mesmo com a falta de energia. Como aplicação é, via de regra, focada em uma atividade específica, grande parte desses algoritmos ocupam alguns poucos quilo bytes, podendo chegar a alguns megabytes.
+
+Recentemente, o desenvolvimento de dispositivos para Internet das coisas popularizou-se através da abordagem “faça você mesmo” (DIY), tendo muitos desenvolvedores independentes criando a soluções mais inusitadas. Para isso, diversos módulos microprocessados estão sendo lançados constantemente a um custo muito baixo. Como exemplo temos as plataformas Arduino, Raspberry Pi e ESP32, O que são comercializados popularmente por alguns poucos dólares.
+
+EXERCÍCIOProcure por projetos com Arduino em sites de busca (“DIY Arduino Projects”).
+ 
+
+Conclusão
+Nesta semana iniciamos nosso estudo entendendo a diferença entre Internet das coisas e web das coisas. Além disso, compreendemos qual é a topologia básica da internet das coisas e os principais módulos que permitem seu funcionamento. Estudamos também como são construídos os dispositivos para Internet das coisas e quais as principais unidades incorporadas. Por fim, aprendemos o significado de Firmware, e como se popularizou o desenvolvimento de dispositivos para Internet das coisas utilizando módulos microprocessados de baixo custo.
+
+
+https://www.youtube.com/watch?v=FqcQgI_HMjY
+https://us.bbcollab.com/collab/ui/session/playback/load/a840225b88764866bb9c985f66fc09b0?authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYkNvbGxhYkFwaSIsInJlY29yZGluZ1VpZCI6ImE4NDAyMjViODg3NjQ4NjZiYjljOTg1ZjY2ZmMwOWIwIiwiaXNzIjoiYmJDb2xsYWJBcGkiLCJleHAiOjE2OTk5MjQ5NzcsInR5cGUiOjEsImlhdCI6MTY5OTkxNzc3NywiY29uc3VtZXIiOiJlMDU0ZmIzYzk0NWU0ZmIzOWRiNTMwMTVjZGYyMWY0OCJ9.rM_bGeh9Q7XIaYBWiwkacOMiBixljzskSSdQ3y4b-p4
+https://us.bbcollab.com/collab/ui/session/playback
+
+Referência
+SORBY, I. et al. O projeto MOBEL: experiências de aplicação de métodos centrados no usuário para o projeto TIC móveis para hospitais. IGI Global, 2010. Disponível em: < https://translate.google.com/translate?sl=auto&tl=pt&u=https://translate.google.com/translate?hl%3Dpt-BR%26sl%3Den%26tl%3Dpt%26u%3Dhttps%253A%252F%252Fwww.igi-global.com%252Fchapter%252Fmobel-project-experiences-applying-user%252F36374%26sandbox%3D1>. Acesso em: 8 jul. 2020.

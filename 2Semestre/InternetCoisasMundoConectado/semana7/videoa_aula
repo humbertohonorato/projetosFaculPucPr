@@ -1,0 +1,15 @@
+Vídeo
+Programando em Python para IoT
+Nesta unidade você terá uma vídeoaula no formato Screencast e será conduzido a desenvolver um dispositivo para Internet das Coisas em Python. Para isto, iremos acessar o serviço on-line e gratuito HiveMQ junto com um programa que será desenvolvido passo a passo usando a IDE Pycharm da JetBrains. Este último pode ser baixado diretamente do site do desenvolvedor, e você, como estudante da PUCPR, pode solicitar a licença Profissional deste produto acessando o link 
+Licenças educacionais gratuitas - Suporte da comunidade (jetbrains.com)
+ ou fazendo uma busca na internet por “jetbrains pycharm student license”.
+Apesar de ter uma duração longa, ela foi dividida em tópicos que possibilitará realizar em momentos diferentes, bastando pausar o vídeo e continuar depois. Mas por favor, preste bem atenção: é fundamental que você não apenas assista a aula, mas sim, realize também os passos indicados, sendo fortemente indicado que você faça experiências pessoais usando como exemplo o material de aula.
+Na aula passada utilizamos os navegadores como dispositivos para acessar o Broker MQTT da HiveMQ (Figura 1).
+Descrição da imagem não disponível
+
+Neste encontro, ainda usaremos um navegador como ferramenta de visualização dos dados, mas nosso foco será o desenvolvimento de um dispositivo em Python que ficará monitorando a temperatura e umidade, além de controlar um aquecedor (Figura 2). Este dispositivo ainda usará o processador local, mas na aula seguinte será substituído por um Raspberry Pi.
+Descrição da imagem não disponível
+
+
+https://www.youtube.com/watch?v=VntoU_xM0uU
+https://us.bbcollab.com/collab/ui/session/guest/e16d0755913e4d41bdac3829a89d5bb4

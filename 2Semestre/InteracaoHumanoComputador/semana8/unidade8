@@ -1,0 +1,66 @@
+https://www.youtube.com/watch?v=kRFGB77yOO0
+https://www.youtube.com/watch?v=G6aNyrZGYDY
+
+
+
+UNIDADE 08
+Testes de Usabilidade
+A avaliação a partir da observação do usuário realizando uma tarefa especifica é um tipo de avaliação por observação, que permite ao avaliador verificar a usabilidade do sistema interativo por meio da experiência  e identificar problemas de designem e quão usáveis é um sistema ou produto.
+
+Nesta unidade você aprenderá:
+
+O que é um teste de usabilidade.
+Quais os procedimentos de um teste de usabilidade.
+Avaliação de IHC
+Introdução
+A avaliação de usabilidade é essencial para garantir uma boa experiência do usuário. Imagine a seguinte situação: você está em sua casa pesquisando em sites online o valor de um produto que você deseja comprar a muito tempo. Finalmente você encontra o produto com uma promoção de 70% de desconto. Você seleciona o produto para realizar a compra. No momento que você confirma a compra, o site da uma mensagem de erro. No entando, não indica qual o erro você está comentendo. Você realiza o procedimento várias vezes e continua dando erro. Até que você se cansa de ficar esperando e desiste da compra.
+
+A situação descrita acima é mais comum do que você imagina e é um clássico exemplo de problemas de falta de feedback ao usuário que afetam diversas aplicações web. Uma das maneiras para a identificação e prevenção desses problemas é a realização de testes de observação com a participação dos usuários. Barbosa et al. (2010) cita alguns exemplos de testes de observação, como: testes de usabilidade, método de avaliação de comunicabilidade e protótipos.
+
+A seguir, vai ser apresentado os principais conceitos relacionados ao teste de usabilidade.
+
+Teste de usabilidade
+O teste de usabilidade é uma avaliação em IHC (Interação Humano Computador) que visa avaliar o sistema interativo a partir da experiência do usuário em uso (BARBOSA et al., 2010). A coleta de dados é feita por meio da observação do usuário realizando uma tarefa especifica com um sistema ou produto interativo, podendo ser realizada com o uso da tecnologia ou não. 
+
+De acordo com Rogers et al. (2013), uma maneira de realizar um teste de usabilidade é por meio da observação em laboratório. Esta abordagem de avaliação tem sido utilizada para avaliar aplicações desktop, como sites, processodores de texto e ferramentas de busca. O objetivo é testar se o sistema ou produto permite que o usuário realize as tarefas para o qual foi projetado.
+
+Na condução de uma avaliação é importante definir os objetivos que se deseja testar. Segundo Rogers et al., (20,13), a partir da definição dos objetivos do teste de usabilidade, o avliador terá condições de definir quais os critérios de usabilidade devem ser medidos. Estes critérios são medidos por meio de perguntas especificas associadas a uma medida (dado mensurável). Por exemplo, imagine que o objetivo do teste de usabilidade seja avaliar a performance de um sistema de vendas online. Neste tipo de teste você pode fazer perguntas especificas como: Quanto tempo o usuário demorou para realizar uma determinada tarefa? Quanto tempo o usuário demorou para realizar uma determinada tarefa quando existem 1000 usuários silmutâneos (teste de carga, um tipo de teste de performance)? A resposta a estas pergutas é uma medida, que indicará o quanto o sistema é bom em termos de perfomance.
+
+Para realizar estas medidas é necessária a definição de tarefas e dos métodos de coletas apropriados para execução dos testes de usabilidade (ROGERS et al., 2013). Existem diferentes tipos de coleta de dados, como: observação, gravações, questionário de satisfação preenchido pelo usuário, os usuários podem realizar uma tarefa em voz alta, entrevistas e outros métodos de coleta (ROGERS et al., 2013).
+
+A participação do usuário é um aspecto central para o sucesso do teste de usabilidade. De acordo com Rogers et al., (20,13), um número aceitável para condução do teste de usabilidade pode variar entre 05 e 12 participantes. Mas, explica que pode haver menos participante debido a restrições de orçamento e tempo.
+
+Preparação
+Definir tarefas para os participantes executarem
+Definir o perfil dos participantes e recrutá-los
+Preparar material para observar e registrar o uso
+Executar teste piloto
+
+Coleta de dados
+Observar o usuário realizando a tarefa, registrando a performance e a opinão do usuário durante a realização da tarefa.
+
+Interpretação e consolidação dos dados
+Sumarizar os dados coletados dos participantes
+
+Relato dos resultados
+Relatar a performance e a opinião dos participantes
+
+
+Em Resumo
+Primeiramente deve-se definir os objetivos a serem alcançados com os teste de usabilidade. Normalemnte são feitos da seguinte forma:
+
+Você seleciona alguns usuários em potenciais do sistema;
+Pede para que eles realizem tarefas predeterminadas usando o sistema;
+Em seguida, o avaliador analisa como as tarefas foram feitas e o que o usuário sentiu.
+
+Essa é forma básica de um teste de usabilidade. Geralmente, eles são divididos em formato quantitativo e qualitativo. Mas, tudo depende do que você quer obter:
+
+Quantitativo é ideal para obter métricas precisas, como tempo de execução;
+Qualitativo é recomendado para obter informações mais intangíveis, como facilidade de uso.
+SAIBA MAISQuer entender ainda mais sobre o assunto? Realize a leitura do capítulo 14 do livro ROGERS, Y.; SHARP, H.; PREENCE, J. Design de Interação – Além da interação humano-computador. Editora: bookman – 3ª edição,2013, 585p.
+Referências Bibliográficas
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015. [Minha Biblioteca].
+
+BARBOSA, S. D. J.; SILVA, B. S. 2010. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de Interação – Além da interação humano-computador. Editora: bookman – 3ª edição,2013, 585p.

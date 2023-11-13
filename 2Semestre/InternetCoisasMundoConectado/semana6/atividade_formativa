@@ -1,0 +1,25 @@
+Na vídeo aula desta semana foram apresentadas características básicas do protocolo MQTT, tais como qualidade de serviço, tópicos e coringas em tópicos.
+1. Sobre qualidade de serviço, monte uma tabela relacionando cada um dos níveis com:
+A quantidade mínima e máxima possível de entregas de uma mesma mensagem;
+Número de mensagens trocadas entre emissor e Broker.
+2.Sobre os tópicos possíveis em MQTT, crie uma lista de tópicos fictícios VÁLIDOS em que cada linha adicione apenas uma das possíveis características listadas a cada tópico.
+3.Considere a lista de possíveis tópicos de mensagens enviadas em um sistema que usa o protocolo MQTT. As mensagens seguem o padrão “PUCPR/<Cidade>/<Escola>/<Grandeza>”:
+"PUCPR/Curitiba/Escola Politécnica/Temperatura”
+“PUCPR/Curitiba/Escola Politécnica/Umidade”
+"PUCPR/Londrina/Escola de Negócios/Temperatura”
+“PUCPR/Curitiba/Escola Politécnica/Número de estudantes”
+“PUCPR/Londrina/Escola de Negócios/Umidade”
+“PUCPR/Toledo/Escola de Negócios/Temperatura”
+“PUCPR/Londrina/Escola de Negócios/ Número de estudantes”
+Utilizando coringas em tópicos (Wildcards), descreva tópicos para os seguintes filtros:
+Todas as mensagens encaminhadas para Curitiba;
+ Todas as mensagens encaminhadas para a Escola Politécnica;
+Todas as mensagens da grandeza Temperatura.
+**Após concluir a atividade, clique em "Realizado" para aparecer o protocolo de correção. Mas seja honesto, apenas clique se de fato terminou  a atividade. 
+
+
+MQTT Avançado na Prática
+Nesta unidade você terá uma vídeoaula no formato Screencast e irá entender na prática alguns recursos avançados do protocolo MQTT. Para isto iremos acessar um serviço on-line e gratuito que permitirá realizar todos os testes necessários para a compreensão em detalhes deste protocolo. Apesar de ter uma duração longa, ela foi dividida em tópicos que possibilitará realizar em momentos diferentes, bastando pausar o vídeo e continuar depois. Mas por favor, preste bem atenção: é fundamental que você não apenas assista a aula, mas sim, realize também os passos indicados, sendo fortemente indicado que você faça experiências pessoais usando como exemplo o material de aula. 
+Bom estudo! Aproveite ao máximo! 
+
+https://www.youtube.com/watch?v=DKe3HBHZbRw

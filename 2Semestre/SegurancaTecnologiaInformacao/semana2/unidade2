@@ -1,0 +1,536 @@
+https://us.bbcollab.com/collab/ui/session/playback/load/03ec25f5f65e46b089e9bc7f730226eb?authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYkNvbGxhYkFwaSIsInJlY29yZGluZ1VpZCI6IjAzZWMyNWY1ZjY1ZTQ2YjA4OWU5YmM3ZjczMDIyNmViIiwiaXNzIjoiYmJDb2xsYWJBcGkiLCJleHAiOjE2OTk5MjYwMjgsInR5cGUiOjEsImlhdCI6MTY5OTkxODgyOCwiY29uc3VtZXIiOiJlMDU0ZmIzYzk0NWU0ZmIzOWRiNTMwMTVjZGYyMWY0OCJ9.-KTXc85JKxzeNgM4yuwHvDcyUiF2iEOjxIv2VcwaV2A
+
+
+
+
+UNIDADE 02
+Leis, Normas e Boas Práticas
+Nesta Unidade, iremos conhecer as principais normas e padrões de segurança da informação, saber sua importância e quais benefícios podem trazer para uma organização que a implementa.   Entre as principais normas vamos apresentar a ISO 27001, conhecer as etapas necessárias para ter um Sistema de Gestão de Segurança da Informação certificado, bem como as atividades realizadas nessas etapas. Conhecer a norma ISO 27002 que estabelece boas práticas de segurança da informação que podem ser aplicadas em qualquer organização. Ainda, vamos apresentar o FIPS PUB 200 um padrão que estabelece os requisitos mínimos de segurança da informação para os sistemas de informação federais, conhecer cada uma das áreas definidas por este padrão, bem como as atividades envolvidas. Adicionalmente, vamos discutir a tipificação dos crimes cibernéticos e legislação que nos ampara.
+
+
+
+Norma ISO 27001 E ISO 27002
+No sentido de orientar o processo de gestão da segurança de informação foram estabelecidas as normas internacionais ISO/IEC 27001 e a ISO 27002. Normas que foram concebidas em outubro de 2005 pela International Organization for Standardization (ISO) em conjunto com International Electrotechnical Commission (IEC). Tais normas definem os requisitos e as melhores práticas direcionadas à segurança da informação e cibersegurança. 
+
+As organizações podem ser certificadas pela norma ISO/IEC 27001. Esta é considerada uma das principais e mais importantes certificações de segurança da informação. A organização que “conquista” esta certificação, comprova que segue todas as exigências e requerimentos para alcançar a segurança da informação de maneira eficiente.  A norma ISO 27002, por sua vez, funciona como se fosse um guia de práticas e procedimentos que facilitam o alcance da certificação da ISO 27001. Procedimentos e boas práticas que podem ser aplicados em organizações de todos os portes e todos os setores. 
+
+
+Fonte: ©WrightStudio/Adobe Stock
+As empresas que adotam tais normas, garantem um Sistema de Gestão de Segurança da Informação (SGSI) orientado por padrões internacionais. Deste modo, contam com todos seus benefícios, tais como redução de riscos, organização dos processos, fortalecimento das ações estratégicas e diferencial competitivo no mercado.  
+
+Neste sentido, no SGSI a segurança da informação deve ser planejada, implementada, monitorada, analisada e melhorada constantemente. Onde o processo de gestão tem suas responsabilidades bem definidas, nas quais os objetivos devem ser analisados e alcançados. Existem alguns elementos que são definidos especificamente na norma ISO 27001, porém não na norma ISO 27002. Então vejamos o que trata cada uma das normas. 
+
+
+
+ISO 27001
+Essa é uma norma de gestão que define os requisitos para que uma organização tenha e administre um SGSI certificado. Esta norma, leva em consideração os ativos da segurança da informação e as necessidades da área de negócio, define estratégias para melhor administrar a segurança da informação. Neste sentido, estabelece etapas fundamentais para gestão da segurança da informação: análise, planejamento, implementação, monitoramento e ciclo de aperfeiçoamento.  Entre as atividades realizadas nessas etapas destacam-se: 
+
+Redução de risco de responsabilidade (definição de políticas e procedimentos); 
+
+Alinhamento de processos; 
+
+Identificação e correção das falhas e pontos fracos; 
+
+Segurança da informação como elemento estratégico; 
+
+Informações e dados sensíveis devidamente protegidos;  
+
+Responsabilidade da segurança da informação atribuída a alta gestão da organização; 
+
+Permite que seja realizado revisão independente do SGSI; 
+
+Garantia de confiabilidade para os clientes e parceiros; 
+
+Aumento da conscientização interna dos colaboradores sobre segurança da informação; 
+
+Possibilidade de combinar os recursos com outros sistemas de gestão; 
+
+Permite acompanhar o êxito do sistema;    
+
+Visibilidade da organização com uma comprovação oficial que o SGSI está de acordo com os padrões internacionais. 
+
+
+
+ISO 27002
+Essa norma estabelece um código composto pelas melhores práticas de segurança da informação, adotadas para apoiar a implantação do SGSI nas organizações.  Possui como objetivo, estabelecer diretrizes e princípios fundamentais para introduzir, implementar, preservar e otimizar a gestão de segurança da informação em determinada organização. 
+
+A ISO/IEC 27002 fornece um guia completo de implementação que descreve os procedimentos e mecanismos de segurança que devem ser estabelecidos e de qual forma. Por meio desta norma, a organização institui uma avaliação de riscos dos ativos mais importantes da empresa. Ressalta-se que em uma organização a tecnologia, pessoas, processos, segurança e os negócios estão interligados, sendo necessário saber lidar com a informação visando as propriedades fundamentais da segurança da informação (integridade, confidencialidade e disponibilidade). 
+
+Mesmo que uma organização não tenha interesse em ser certificada pela norma ISO 27001, seguir as boas práticas estabelecidas na norma ISO 27002, pode auxiliar a empresa a alcançar um SGSI mais sólido. Consequentemente, garantir que todos na empresa tenham consciência sobre os aspectos de segurança da informação, pois esse é um fator essencial para garantir a proteção dos dados. Além de inúmeros benefícios de aplicar da norma, tais como: 
+
+Fornece maior proteção aos ativos dos sistemas de informação, incluindo dados sensíveis e informações estratégicas;  
+
+Possibilita a identificação dos pontos fracos dos sistemas de informação permitindo realizar correções; 
+
+Permite uma melhor organização com processos e mecanismos segurança bem definidos; 
+
+Fornece redução de custos com a prevenção de incidentes de segurança da informação; 
+
+Estabelece um diferencial competitivo visando os clientes que estimam a conformidade das normas internacionais; 
+
+Estar em conformidade com a legislação vigente e outras regulamentações; 
+
+Introduz uma melhor conscientização da equipa e colaboradores sobre a segurança da informação; 
+
+Reduzir riscos por meio da implementação de um SGSI (políticas e procedimentos de segurança bem definidos); 
+
+Oferece uma abordagem para implantação de políticas de controles. 
+
+
+
+Federal Information Processing Standards 200
+O FIPS PUB 200 é um padrão especificado pela Lei Federal de Gestão de Tecnologia da informação (FISMA - Federal Information Security Management Act), visa estabelecer os requisitos mínimos de segurança da informação para os sistemas de informação federais. Este padrão foi desenvolvido pelo NIST (National Institute of Standards and Technology) em 1996, estipula níveis de segurança baseado no gerenciamento de riscos à segurança da informação. 
+
+Fonte: ©Tierney/Adobe Stock
+Conforme mencionado na Unidade 1, existem algumas maneiras para classificar as contramedidas utilizadas para lidar com as ameaças e reduzir as vulnerabilidades. O FIPS PUB 200 classifica as contramedidas em termos de requisitos funcionais, como resultado fornece uma lista composta de 17 áreas relacionadas à segurança informação.  Tais áreas, fornecem as diretrizes necessárias para garantir a proteção dos pilares fundamentais da segurança da informação (confidencialidade, integridade e disponibilidade). Deste modo, ressalta-se a importância de cada uma das áreas, assim como as atividades a elas relacionadas, então vejamos do se trata cada uma das áreas:  
+
+Controle de acesso
+O controle de acesso é o mecanismo de segurança da informação que permite limitar as ações que um usuário pode realizar sobre determinado recurso. Este mecanismo contempla o uso de políticas, procedimentos, dispositivos de hardware e software para restringir e gerenciar o acesso a determinado ambiente físico ou lógico. Neste sentido, fornece a proteção a informação e seus ativos (sistemas, equipamentos, instalações entre outros) impedindo que ocorra acessos não autorizados em seus ambientes. Entre as principais atividades do controle de acesso destaca-se:  
+
+Limitar o acesso das ações e operações que os usuários autorizados podem realizar sobre determinado recurso; 
+
+Limitar os processos associados aos usuários autorizados ou dispositivos, tipos de transações e funções; 
+
+Definir as permissões que usuários autorizados exerce no sistema. 
+
+
+Conscientização e treinamento
+Esta é uma das áreas mais críticas da segurança da informação, envolve diversos tipos de riscos associados ao fator “humano”. Pessoas não devidamente treinadas podem se tornar um “elo” fraco para segurança da informação. Por exemplo, um colaborador que não foi instruído pode ser vítima de um ataque de phishing, abrir um e-mail ou link contendo um software malicioso, ou ainda, conectar um pendrive contaminado com um malware em um dos computadores da empresa, este malware pode se espalhar para toda rede. Para evitar contratempos, se faz necessário realizar todo um trabalho de educação de segurança da informação com os colaboradores da organização. Ao fornecer instrução aos funcionários esses serão capazes de identificar e se proteger contra todos os tipos de ameaças à segurança cibernética, consequentemente preservando a segurança da informação de toda organização. Na área de conscientização e treinamento destacam-se as atividades: 
+
+Conscientizar os usuários dos sistemas computacionais dos riscos à segurança da informação associados às suas atividades;  
+
+Apresentar aos colaboradores as leis, regulamentações e políticas organizacionais de segurança de informação, bem como as sanções administrativas do não cumprimento das normas;   
+
+Fornecer treinamento aos colaboradores para que esses executem apropriadamente seus deveres e responsabilidades. 
+
+
+Auditoria e responsabilidade
+A área de auditoria e responsabilidade, trata-se de um processo de avaliação sistemática realizada nos sistemas e ativos da informação, têm como objetivo, mensurar o grau de conformidade da segurança da informação conforme os critérios estabelecidos pela organização. Ainda, identifica se os processos estão sendo realizados de forma correta, e unicamente pelas pessoas responsáveis. Deste modo, o processo de auditoria avalia diversos aspectos da segurança da informação, tais como: infraestrutura (hardware e software), ambiente, sistemas, aplicações, manipulação da informação, históricos, práticas do usuário entre outros. A seguir, apresentamos as principais atividades relacionadas a esta área: 
+
+Efetuar o gerenciamento do processo de auditoria dos sistemas de informação - criar, proteger e manter os registros de auditoria pelo período necessário para facilitar monitoramento e análise;  
+
+Proceder investigação de atividades ilegítimas, não autorizadas ou inadequadas no sistema; 
+
+Realizar o rastreamento das ações de cada usuário no sistema a fim responsabilizá-los por suas ações. 
+
+
+Avaliação de certificação, credenciamento e segurança
+A implementação de certificações direcionadas a segurança da informação, semelhante a ISO 27001, trazem diversos benefícios a organização. Entre os benefícios destaca-se a visibilidade externa da organização, frente aos clientes e parceiros - receber uma certificação como a ISO 27001 comprova que a empresa segue todas as diretrizes legais e padrões de segurança da informação. A adequação seguindo os padrões internacionais não são aplicados apenas a setores de tecnologia de informação, mas em todos os setores da organização. A seguir, apresentamos as principais atividades relacionadas a esta área: 
+
+Avaliar periodicamente os mecanismos de segurança nos sistemas de informação a fim de verificar se os controles são efetivos em sua aplicação; 
+
+Desenvolver planos de ação para correção de deficiências no sistema visando reduzir ou eliminar vulnerabilidades; 
+
+Fornecer autorização para operação dos sistemas de informação e conexões associadas; 
+
+Monitorar continuamente os mecanismos de segurança para garantir sua efetividade constante. 
+
+
+Gerenciamento de configuração
+A área de gerenciamento de configuração é ampla, envolve a implantação de soluções de hardware e software considerando os aspectos de segurança da informação. Desse modo, o processo de gerenciamento das configurações dos sistemas, servidores e ativos vai além de realizar apenas procedimentos técnicos. Contempla a definição de um estado segurança da informação desejado que deve estar de acordo com os padrões de conformidade. Sendo que configurações realizadas de maneira incorretas podem gerar inconsistências e afetar tanto a segurança da informação como as estratégias de negócio. Em vista disso, os procedimentos de configuração, seja este de criação ou manutenção devem ser todos devidamente documentados. Segue as principais atividades da área de gerenciamento de configuração:  
+
+Estabelecer e manter configurações dos sistemas de informação e ativos organizacionais (hardware e software); 
+
+Garantir o cumprimento das configurações de segurança para todos os produtos de tecnologia da informação empregados na organização; 
+
+Realizar o processo de documentação de todos os procedimentos de configuração realizados. 
+
+
+Planejamento de contingência
+O plano de contingência é um conjunto de medidas adotadas a fim de assegurar a continuidade dos sistemas vitais para o funcionamento de uma organização quando um determinado problema ocorre. Esse planejamento deve garantir a continuidade do negócio. Para isto, o setor de tecnologia da informação deve estar preparado e atuar rapidamente, seguir os passos de segurança da informação pré-definidos visando reduzir o impacto e recuperar os danos causados o mais breve possível. As atividades da área do planejamento de contingência contemplam: 
+
+Implementar e manter planos de contingência para respostas a emergências, políticas de backup e recuperação pós-desastre para os sistemas de informação;  
+
+Garantir a disponibilidade dos ativos de informação críticos e a continuidade dos serviços em casos de emergências. 
+
+
+Identificação e autenticação
+Esta é uma das principais áreas da segurança da informação definida no FIPS PUB 200, ela implementa o mecanismo de autenticação que é responsável em assegurar que as pessoas são quem realmente dizem ser. Neste sentido, este mecanismo é utilizado para restringir o acesso a informações (sistemas e bancos de dados), serviços e ambientes (infraestrutura/datacenter) entre outros - concedendo o acesso apenas a pessoas autorizadas. O processo de identificação do indivíduo no sistema se dá por meio de um ou ainda mais fatores: conhecimento, propriedade e características. O conhecimento retrata-se aquilo que o indivíduo "sabe", por exemplo uma senha. O fator de propriedade refere-se aquilo que o indivíduo possui, por exemplo um cartão magnético ou um token. Por fim, o fator "características" aquilo que o indivíduo é, ou seja, características que permitem distinguir o indivíduo de outros, por exemplo a biometria (digital, reconhecimento facial, leitura da íris ou retina). Entre as principais atividades da área de identificação e autenticação destaca-se: 
+
+Identificar os usuários no sistema e certificar suas identidades - verificar se o usuário é quem alega ser; 
+
+Identificar os processos e dispositivos que agem sob nome de um usuário; 
+
+Autenticar e liberar acesso dos usuários, processos e dispositivos ao sistema. 
+
+Nota de rodapé
+Token - dispositivo físico que fornece mais uma camada de segurança para o usuário no acesso a conta bancária/financeira, este gera uma senha temporária para cada um dos acessos.
+
+Respostas a incidentes
+A área de Resposta a Incidentes envolve diversos departamentos da organização (tecnologia, jurídico, comunicação e outros), tem como objetivo coordenar ações contra os incidentes de segurança da informação. No contexto de segurança da informação, um incidente é caracterizado como qualquer evento que atente contra os princípios básicos da segurança da informação (confidencialidade, integridade e disponibilidade), podendo ser suspeito ou confirmado. Entre as principais atividades desta área destaca-se: 
+
+Desenvolver processo de capacitação operacional para lidar de forma adequada com incidentes relativos a sistemas de informação, contemplando as atividades de preparação, detecção, análise, tratamento, contenção, recuperação e resposta ao usuário; 
+
+Realizar o rastreamento, documentação e reportar incidentes aos responsáveis e autoridades cabíveis; 
+
+Aprender com o incidente ocorrido. 
+
+
+Manutenção
+A área da manutenção é essencial para garantir a segurança da informação de uma organização. Quando o processo de manutenção na organização não é constante, um sistema ou ativo da informação (hardware ou software) pode passar dias com uma determinada vulnerabilidade, o que insere brechas de segurança que podem ser exploradas pelos adversários (hackers). Toda infraestrutura de tecnologia da informação necessita de manutenção preventiva, deve ser levado em consideração tanto a estrutura de hardware como software, consequentemente os equipamentos e sistemas terão melhor desempenho o que reflete na qualidade do serviço fornecido. Ainda, no processo de manutenção quanto mais tempo se arrasta um problema, mas complexo e custoso este se torna. Entre as principais atividades da área de manutenção destaca-se: 
+
+Realizar processo de manutenção periódica e preventivas nos sistemas de informação e ativos; 
+
+Fornecer os recursos necessários e efetivos para execução dos processos de manutenção nos sistemas de informação e ativos, tais como ferramentas, técnicas e equipe capacitada.   
+
+
+Proteção da mídia
+As mídias contêm o ativo mais valioso de uma organização, a informação. Deste modo, é importante que as mídias sejam devidamente manipuladas, tanto que uma das áreas definidas na FIPS PUB 200 trata especificamente da proteção das mídias. A área de proteção da mídia se preocupa com as informações e dados sensíveis que estão contidos nas mídias, seja de forma física ou digital. Desta forma, tem como objetivo evitar que dados confidenciais se tornem públicos, prejudicando as estratégias de negócios da organização. Neste mesmo sentido, quando uma mídia precisa ser descartada, estratégias adequadas para que as mídias sejam eliminadas corretamente devem ser adotadas. Entre as principais atividades da área de proteção de mídia destaca-se: 
+
+Proteger e armazenar as mídias do sistema de informação de forma adequada, seja em papel ou meio digital;  
+
+Limitar acesso a informações relativas a mídias do sistema de informação apenas aos usuários autorizados;  
+
+Estabelecer políticas de descarte de mídia - a mídia do sistema de informação pode conter dados e informações sensíveis da organização, assim se faz necessário apagar ou destruir a mídia antes de realizar o seu descarte ou liberar a mesma para ser reutilizada.  
+
+
+Proteção física e ambiental
+A área de proteção física e ambiental visa proteção dos ativos da informação contra danos físicos provenientes de ações criminosas ou riscos naturais. Neste sentido, esta área estabelece medidas de segurança da informação tendo em vista a proteção dos ambientes físicos, contra acessos não autorizados, destruição ou modificação dos sistemas de informações ou ativos. Entre as principais atividades desempenhadas nesta área, destacam-se: 
+
+ Limitar o acesso físico a infraestrutura de tecnologia da informação a apenas indivíduos autorizados - acesso ao datacenter, equipamentos, sistemas de informação e respectivos ambientes operacionais;  
+
+Proteger as instalações físicas e a infraestrutura de suporte aos sistemas de informação;  
+
+Fornecer serviços de suporte e manutenção ao ambiente físico;  
+
+Definir estratégias para proteger os sistemas de informação e ativos contra perigos ambientais; 
+
+Garantir que procedimentos ambientais sejam realizados de forma adequada em instalações que contenham sistemas de informação. 
+
+
+Planejamento
+A área de planejamento é o cerne do processo de segurança da informação, concentra o planejamento de cada uma das demais áreas definidas no FIPS PUB 200. Está área fornece ações que estruturam o alicerce que amparam o SGSI de uma organização. Por meio do planejamento é realizado todo um estudo, onde são efetuadas avaliações de riscos, traçados os objetivos de negócios, bem como efetuado um levantamento de quais medidas de segurança da informação devem ser adotadas no SGSI. Entre as principais atividades da área de planejamento destacam-se: 
+
+Definir os planos de segurança da informação para organização; 
+
+Desenvolver e executar os planos de segurança da informação;   
+
+Documentar os planos de segurança da informação; 
+
+Atualizar periodicamente as políticas/procedimentos de segurança da informação adotados na organização (destinado aos sistemas de informação e aos indivíduos que o acessam - regras de comportamento). 
+
+
+Segurança de pessoal
+A área de segurança de pessoal deve estar alinhada como o setor de recursos humanos da organização. No contexto de gestão de pessoas podem existir alguns riscos à segurança da informação, tais como vazamentos de informações sigilosas, ataques de engenharia social e incidentes de segurança ocasionadas por falhas humanas ou ações realizadas de forma deliberada (executadas por pessoas de maneira intencional). Visando garantir a preservação de informações confidenciais e estratégicas algumas medidas podem ser adotadas: estabelecer plano de conduta, contratos de confidencialidade e principalmente treinamentos internos de segurança da informação. Entre as principais atividades desta área destacam-se: 
+
+Garantir que os indivíduos que ocupam posições estratégicas e responsabilidade dentro de organizações são confiáveis e cumprem os critérios de segurança estabelecidos em suas respectivas posições;  
+
+Garantir que os ativos organizacionais (informações e sistemas de informação) estejam protegidos durante o processo relativo ao gerenciamento de pessoal (demissões e transferências) 
+
+Aplicar penalidades formais aos indivíduos que descumpram as políticas e procedimentos de segurança organizacional. 
+
+
+Avaliação de risco
+A área de avaliação de riscos consiste no processo de levantar as principais ameaças que possam impactar o ambiente de uma organização (sistemas de informação ou ativos). Na avaliação de risco três aspectos básicos devem ser analisados: qual é a importância dos ativos em risco, quão crítica é a ameaça e qual o nível de vulnerabilidade do sistema em relação a esta ameaça. Considerando tais aspectos a área de avaliação de risco tenta identificar o risco, mensurar o impacto da ameaça e tentar alcançar um equilíbrio entre o impacto do risco e o custo para estabelecer as contramedidas. Entre as principais atividades da área de avaliação de risco destacam-se:      
+
+Efetuar avaliação periódica dos riscos de segurança da informação; 
+
+Identificar e avaliar riscos de segurança da informação nas operações, ativos e indivíduos da organização; 
+
+Analisar riscos resultante da operação de sistemas de informação organizacionais e do processamento, armazenamento ou transmissão de informações organizacionais. 
+
+
+Aquisição de sistemas e serviços
+A área de aquisição de sistemas e serviços fica responsável em planejar e conduzir o processo de contratação e aquisição da infraestrutura de tecnologia da informação. Deste modo, esta área precisa analisar, especificar e padronizar o processo de aquisição de hardware e software, bem como a contratação de serviços (fornecedores ou terceirizados) para atender as necessidades da organização. Em vista disso, fica responsável pela locação e expansão de equipamentos, adquirir sistemas e soluções de tecnologia e ainda distribuição dos recursos. Entre as principais atividades desta área destacam-se: 
+
+Efetuar gerenciamento de aquisições de maneira adequada e eficaz, selecionar e dimensionar a ativos suficientes para proteção dos sistemas de informação organizacionais;  
+
+Assegurar que os sistemas da informação incorporam a segurança da informação em todo ciclo de vida de desenvolvimento dos sistemas; 
+
+Definir e aplicar políticas adequadas para gestão do uso de software e controle de acesso - restringir à utilização e instalação de software; 
+
+Garantir que provedores de serviços terceirizados empreguem medidas de segurança adequadas para proteger informações, aplicações e serviços fornecidos para a organização. 
+
+
+Proteção de sistemas e comunicações
+A área de proteção de sistemas e comunicações visa garantir a proteção e comunicação segura dos dados dos sistemas de informação. Esta área não se limita apenas aos sistemas de comunicação, engloba todos os âmbitos da proteção de dados, desde a transmissão até recebimento da informação. Deste modo, inclui procedimentos, estruturas organizacionais, processos, políticas, entre outras funcionalidades. Entre as principais atividades da área de proteção de sistemas e comunicações destacam-se: 
+
+Monitoramento, controle e proteção das comunicações da organização (informações transmitidas ou recebidas por sistemas de informação); 
+
+Implementar técnicas de segurança da informação dentro dos sistemas de informação da organização - aplicando boas práticas de segurança nos projetos de arquitetura e técnicas de desenvolvimento de software seguro e os princípios de engenharia de sistemas. 
+
+
+Integridade de sistemas e informações
+Esta área está diretamente ligada a uma das propriedades básicas da segurança da informação, em específico o atributo da integridade. Deste modo, a área de integridade de sistemas e informações visa proteger as informações e os sistemas para que esses não sejam alterados por pessoas terceiras não autorizadas. Nesse contexto, esta área, adota todas as precauções necessárias para que a informação não seja modificada ou eliminada sem autorização, isto é, mantendo sua legitimidade e consistência. Entre as principais atividades desta área destacam-se: 
+
+Garantir a integridade dos sistemas de informação da organização - identificar, corrigir e reportar falhas nos sistemas de informação;  
+
+Garantir a proteção dos sistemas de informação contra rotinas de código malicioso; 
+
+Efetuar o monitoramento e auditoria de segurança dos sistemas de informação, ativos e da rede - gerar alertas para reportar os problemas de segurança e tomar providências adequadas para enfrentá-los. 
+
+
+Lei Brasileira N° 12.737
+Devido o avanço da tecnologia houve um crescente aumento na quantidade de crimes cibernéticos. Para possibilitar que as autoridades sejam capazes de lidar com tais tipos de delitos virtuais se faz necessário que estes estejam previsto em lei.  
+
+Neste sentido, algumas modificações foram realizadas na constituição brasileira, entre a adição de novas leis. A Lei Nº 12.737/2012 sancionada pelo presidente da república em 2012, efetua uma alteração no código penal brasileiro a fim de contemplar a tipificação de crimes virtuais e delitos de informática. Esta lei estabelece penas para crimes cometidos no ambiente virtual, como invasão de computadores, disseminação de vírus, roubo de senhas, falsificação de documentos e uso indevido de dados sem autorização do usuário. 
+
+
+Fonte: ©promesaartstudio/Adobe Stock
+A Lei Nº 12.737/2012 ficou popularmente conhecida como Lei Carolina Dieckmann. Este nome foi atribuido decorrente ao caso ocorrido com a atriz Carolina Dieckmann, que acabou tendo "dados" do computador pessoal roubados e divulgados na internet após ter sido vítima de extorsão. Apesar de ter ganhado grande percursão na mídia graças ao incidente ocorrido com a atriz, o projeto da lei já vinha sendo discutido, dado as reivindicações dos representantes do sistema financeiro que estavam sendo vítimas de um grande número de crimes virtuais. 
+
+Entre os principais delitos previstos na Lei Nº 12.737/2012 podemos citar: 
+
+Art. 154-A – “Invasão de dispositivo informático alheio, conectado ou não à rede de computadores, mediante violação indevida de mecanismo de segurança e com o fim de obter, adulterar ou destruir dados ou informações sem autorização expressa ou tácita do titular do dispositivo ou instalar vulnerabilidades para obter vantagem ilícita. Pena - detenção, de 3 (três) meses a 1 (um) ano, e multa”;
+
+Art. 266 – “Interrupção ou perturbação de serviço telegráfico, telefônico, informático, telemático ou de informação de utilidade pública - Pena - detenção, de um a três anos, e multa”;
+
+Art. 298 – “Falsificação de documento particular/cartão - Pena - reclusão, de um a cinco anos e multa”;
+
+Art. 154-B – “Nos crimes definidos no art. 154-A, somente se procede mediante representação, salvo se o crime for cometido contra a administração pública direta ou indireta de qualquer dos Poderes da União, Estados, Distrito Federal ou Municípios ou contra empresas concessionárias de serviços públicos”.
+
+Alguns delitos no âmbito jurídico ainda são difíceis de serem julgados e processados, principalmente decorrente a própria característica da internet e pela dificuldade de imputar os criminosos. Consequentemente estão surgindo novas leis mais abrangentes e cada vez mais complexas. 
+
+Marco Civil da Internet (Lei N° 12.965)
+O Marco Civil da Internet é a Lei brasileira de N° 12.965 que regulamenta o uso da internet no Brasil, sancionada pelo presidente da república em 23 de abril de 2014. Conforme o Art. 1°: “Esta Lei estabelece princípios, garantias, direitos e deveres para o uso da internet no Brasil e determina as diretrizes para atuação da União, dos Estados, do Distrito Federal e dos Municípios em relação à matéria”. Desta forma, o Marco Civil da Internet estabelece os princípios e direitos do uso da Internet no Brasil amparado pela constituição. Sobretudo, fornece um conjunto de regras sobre o que deve ou não ser realizado na Internet, consequentemente trazendo mais segurança para os usuários e organizações (setor público e privado). 
+
+Entre os principais aspectos definidos na Lei N° 12.965, confere os princípios de uso disponível no Art. 3°: 
+
+“I.garantia da liberdade de expressão, comunicação e manifestação de pensamento, nos termos da Constituição Federal; 
+
+II.proteção da privacidade; 
+
+III.proteção dos dados pessoais, na forma da lei; 
+
+IV.preservação e garantia da neutralidade de rede; 
+
+V.preservação da estabilidade, segurança e funcionalidade da rede, por meio de medidas técnicas compatíveis com os padrões internacionais e pelo estímulo ao uso de boas práticas; 
+
+VI.responsabilização dos agentes de acordo com suas atividades, nos termos da lei; 
+
+VII.preservação da natureza participativa da rede; 
+
+VIII.liberdade dos modelos de negócios promovidos na internet, desde que não conflitem com os demais princípios estabelecidos nesta Lei.”
+
+Entre os principais aspectos definidos no Art. 3° destaca-se o princípio da proteção da privacidade e dos dados pessoais.  
+
+O Art. 7° dispõe dos direitos e garantias dos usuários assegurados por lei: a inviolabilidade, sigilo das comunicações privadas (salvo a quebra do sigilo por ordem judicial) e qualidade dos serviços de conexão de internet contratados.   
+
+Outro artigo extremamente importante é o Art. 10°, esse refere-se à proteção dos registros, dados pessoais e comunicações privadas. Conforme disposto no Art. 10°:  
+
+“A guarda e a disponibilização dos registros de conexão e de acesso a aplicações de internet de que trata esta Lei, bem como de dados pessoais e do conteúdo de comunicações privadas, devem atender à preservação da intimidade, da vida privada, da honra e da imagem das partes direta ou indiretamente envolvidas”.
+
+A Lei N° 12.965 é estruturada em cinco capítulos e dispõe de 32 artigos. Como profissional de segurança da informação é necessário conhecer cada um dos artigos previsto na lei, estar ciente dos direitos e deveres tanto como usuário, mas principalmente no que se refere a organização. Esta lei fornece as diretrizes para o bom uso da internet, porém deve ser complementada com outras leis vigentes, tais como a LGPD.  
+
+Lei Geral de Proteção de Dados Pessoais
+A LGPD (Lei Geral de Proteção de Dados Pessoais) é a Lei Nº 13.709, sancionada pelo presidente da república em 2018 entrou em vigência em agosto de 2020. Esta lei visa garantir a proteção dos dados pessoais de todo cidadão que esteja em território nacional brasileiro, estabelece diretrizes importantes e obrigatórias para a coleta, processamento e armazenamento de dados pessoais. Deste modo, propõe um cenário de segurança jurídica baseado na padronização de normas e boas práticas para promover a segurança dos dados. Conforme o Art. 1°  
+
+"Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural".
+
+Fonte: ©dmutrojarmolinua/Adobe Stock
+Esta lei estabelece que indiferente da organização ser sediada no Brasil ou exterior se existe processamento de conteúdo de pessoas no território nacional a lei deve ser cumprida. Ainda, segundo a lei, é permitido compartilhar dados com entidades internacionais e com outros países desde que sejam seguidas as exigências legais. 
+
+Conforme demostrado na Unidade 1, recentemente houve diversos incidentes de segurança da informação que ficaram públicos, em geral, casos envolvendo vazamento de dados. Neste sentido, a LGPD pode ser de grande valia, pois as novas regras além de garantir a privacidade dos brasileiros, possibilitam evitar impasses comerciais com outros países. 
+
+A Lei Nº 13.709 foi instituída sob diversos valores, entre os seus principais objetivos propõe: 
+
+•Garantir o direito à privacidade e à proteção de dados pessoais dos usuários, por meio de práticas transparentes e seguras, assegurando os direitos fundamentais.
+
+•Definir regras claras sobre a utilização dos dados pessoais.
+
+•Consolidar a segurança das relações jurídicas e a confiança do proprietário no tratamento dos dados pessoais.
+
+•Garantir a livre iniciativa, a livre concorrência e a defesa das relações comerciais e de consumo.
+
+•Promover a concorrência e a livre atividade econômica, inclusive com portabilidade de dados.
+
+General Data Protection Regulation
+O GDPR (General Data Protection Regulation) é uma lei criada pelo Parlamento Europeu em conjunto com Conselho da União Europeia. Esta lei estabelece regras de privacidade e proteção de dados de cidadãos da União Europeia. A sigla GDPR traduzindo para nosso idioma corresponde a Regulamento Geral sobre a Proteção de Dados. O GDPR foi proposto pela primeira vez em 2012, aprovada em 2016 pelo Parlamento Europeu, contudo entrou em vigor apenas em maio de 2018. Este período da aprovação até a data de vigência foi estipulado para que as empresas de adaptassem a nova lei.   
+
+Fonte: ©arrow/Adobe Stock
+O objetivo do GDPR é fornecer aos usuários o controle sobre seus dados pessoais, nos quais são armazenados pelas empresas e trafegam livres pela internet. Deste modo, os usuários passam a ter o poder de decidir o que as empresas podem ou não realizar com os seus dados. Adicionalmente, estabelece que as empresas precisam seguir regras rigorosas para manipular os dados pessoais e informações de seus usuários.  
+
+Tratando-se da proteção dos dados o GDPR compreende dois conceitos fundamentais, a transparência e a responsabilidade.  
+
+A transparência concede a prática de não se esconder nada, ou seja, as empresas que coletam dados dos usuários devem deixar bem claro, qual será o seu uso. Sem haver o preceito da transparência não é possível estipular o consentimento, outro conceito muito importante no GDPR. No consentimento o usuário analisa as políticas de transparência e verifica se o concorda ou não com os termos definidos. Ainda, a partir da política de transparência e dos termos de privacidade, o próprio usuário deve ter controle de quais dados poderão ou não ser utilizados pela empresa.   
+
+Já no que se refere a responsabilidade, corresponde a postura que as empresas devem ter em relação ao compromisso de conduzir os dados de outras pessoas. Desta forma, o GDPR permite restringir o uso das informações coletadas dos usuários para que não sejam indevidamente utilizadas. 
+
+De maneira sucinta, a principal preocupação do GDPR é a privacidade das pessoas e o comprometimento com a segurança dos dados armazenados. Logo, nenhuma empresa pode armazenar informação que permita identificar um usuário sem que haja o consentimento dele.
+
+
+Tipificação de Crimes Virtuais
+Visando alinhar a compreensão referente a tipificação dos crimes virtuais, vamos caracterizar os crimes cibernéticos como sendo qualquer "atividade criminosa que tem como alvo ou faz uso de um computador, uma rede de computadores ou um dispositivo conectado em rede" [Kaspersky, 2020]. Segue abaixo uma lista contendo os principais crimes que podem ser realizados na internet.  
+
+Calúnia: este crime consiste em atribuir falsamente a alguém a autoria de um crime por meio da internet, crime previsto no Código Penal Art. 138; 
+
+Difamação: este crime consiste em atribuir a alguém um fato, com circunstâncias descritivas, ofensiva à sua reputação, por meio da internet, crime previsto no Código Penal Art. 139; 
+
+Injúria: este crime consiste em ofender a dignidade ou decoro de alguém, ferindo sua honra subjetiva, por meio da internet, crime previsto no Código Penal Art. 140; 
+
+Ameaça: este crime consiste no ato de intimidar alguém por meio da internet, mediante promessa de fazer algum mal contra a pessoa, crime previsto no Código Penal Art. 147; 
+
+Divulgação de segredo: este crime consiste em revelar segredos de terceiros na internet ou divulgar material confidencial de documentos/correspondências que possam causar danos, crime previsto no Código Penal Art. 153; 
+
+Invasão de dispositivo informático: este crime consiste em violar indevidamente dispositivos de informática ou contribui para tal, oferecendo, distribuindo ou difundindo programa malicioso, crime previsto no Código Penal Art. 154-A; 
+
+Furto: este crime consiste em subtrair o patrimônio de uma pessoa pela internet, por ex.: colocar os dados de outra pessoa para sacar ou desviar dinheiro de uma conta, pela internet, crime previsto no Código Penal Art. 155; 
+
+Fraude: este crime consiste no ato de má fé de enganar “alguém” a fim de tirar vantagem utilizando a Internet, ex.: fraudes bancárias por meio de Internet Banking ou clonagem de cartão, ou fraude nos setores financeiros, previsto no Código Penal Art. 155, § 4°, inciso II; 
+
+Preconceito e Discriminação: crimes no meio virtual cometidos por intolerância racial, étnica, religiosa ou de nacionalidade, ex.: comentar, em chats, e-mails e outros, de forma negativa, estimulando preconceito e discriminação, crime previsto na LEI Nº 7.716  Art. 20; 
+
+Exposição infracional de crianças e adolescente: este crime consiste em divulgar por meio da internet, nome, ato ou documento de procedimento policial, administrativo ou judicial relativo à criança ou adolescente que se envolva em ato infracional, crime previsto na LEI N° 8.069 Art. 247; 
+
+Pedofilia: este crime consiste em disponibilizar, transmitir, distribuir, publicar ou divulgar por meio de sistema informático, fotografia, vídeo ou qualquer outro registro que contenha qualquer situação que envolva criança ou adolescente em atividades de cunho sexuais, crime previsto na LEI Nº 8.069 Art. 241-A e Art. 241-E;  
+
+Estelionato: este crime consiste em obtenção de vantagens em proveito próprio em esquemas de fraude com uso da internet, crime previsto no Código de Penal Art. 171; 
+
+Falsificação de medicamentos: este crime consiste no ato de adulterar/alterar de forma fraudulenta um produto para fins terapêuticos e medicinais para ser comercializado utilizando a internet, ex.: venda de medicamentos irregulares e insumos farmacêuticos na Internet, crime previsto no Código Penal Art. 273, § 1º; 
+
+Intolerância Religiosa: este crime consiste no desrespeito a liberdade religiosa no ato de ofender ou zombar afrontosamente a religião alheia pela internet, ex.: criar comunidade online que menospreze ou zombe de outras religiões, crime previsto no Código Penal Art. 208; 
+
+Estupro: este crime consiste em constranger alguém por meio de chantagem ou qualquer ameaça no meio virtual utilizando a internet, a fim de satisfazer o prazer sexual por meio de prática imoral, crime previsto no Código Penal Art. 213; 
+
+Favorecimento da prostituição: este crime consiste em induzir ou atrair alguém à prostituição ou outra forma de exploração sexual utilizando a internet, crime previsto no Código Penal Art. 228; 
+
+Crime de ato obsceno / escrito ou objeto obsceno: consiste no crime de criar, importar, exportar, adquirir, portar, para fins de comércio, distribuição ou exposição pública, escrito, desenho, pintura estampa ou qualquer objeto obsceno – neste contexto utilizando o meio digital, crime previsto no Código Penal Art. 233 e Art. 234; 
+
+Interrupção ou perturbação de serviço de informação de utilidade pública: este crime consiste em indisponibilizar ou impedir o restabelecimento de serviços de utilidade pública, ex.: modificar ou danificar um site na internet que contenha informação de utilidade pública, crime previsto no Código Penal Art. 266, § 1º; 
+
+Incitação ao crime: este crime consiste em incentivar a prática de determinado crime por meio da internet, crime previsto no Código Penal Art. 286; 
+
+Apologia ao crime: este crime consiste em criar comunidades virtuais ensinando como burlar a legislação ou divulgar ações ilícitas realizadas, crime previsto no Código Penal Art. 287;  
+
+Pirataria de software: este crime consiste em realizar cópias de programas de computador sem que haja a prévia autorização do autor, crime previsto na Lei Nº 9.610; 
+
+Plágio: este crime consiste em realizar cópia de informações publicadas por terceiros sem a devida citação da fonte, crime previsto na Lei Nº 9.610; 
+
+Falsificação de cartão: este crime consiste em falsificar cartões  de crédito ou débito, crime previsto no Código Penal Art. 298; 
+
+Falsa identidade: este crime consiste em criar uma “identidade” virtual falsa, ex.: a criar um perfil fake nas redes sociais, crime previsto no Código Penal Art. 307. 
+
+Nota de rodapé
+Fake - Termo utilizado para denominar contas criadas na Internet visando ocultar a identidade real de um usuário.
+
+Esta lista dispõe de alguns dos crimes cibernéticos previsto na esfera jurídica, porém existem outros inúmeros crimes virtuais que não foram citados, nos quais muitos dos delitos ainda não foram previstos por lei. Alguns dos crimes citados são próprios da internet, ou seja, dependem da internet para ocorrer, outros utilizam da tecnologia como meio de realizar o delito. Neste sentido, devemos estar atentos aos crimes cibernéticos bem como conhecer as leis que nos amparam. 
+
+Fonte: ©vchalup/Adobe Stock
+Crimes Contra Propriedade Intelectual
+A área de segurança da informação também deve considerar a proteção da propriedade intelectual da organização. Onde devemos caracterizar a propriedade intelectual como sendo um bem imaterial protegido em âmbito jurídico.  A propriedade intelectual é segmentada em três categorias: Direito Autoral, Propriedade Industrial e Proteção Sui Generis. A propriedade intelectual visa garantir o direito de autoria dos inventores ou responsáveis por qualquer produção intelectual, sendo no domínio científico, artístico, literário ou industrial. As violações dos direitos autorais são consideradas crimes contra propriedade intelectual e estão previstas no Código Penal. 
+
+Os direitos autorais são protegidos pela LEI Nº 9.610, conforme disposto no Art. 1° “Esta Lei regula os direitos autorais, entendendo-se sob esta denominação os direitos de autor e os que lhes são conexos”. Esta lei garante os privilégios sobre livros, textos literários, artísticos ou científicos, obras artísticas e fotográficas, programas de computador, entre outras criações proveniente do intelecto humano. 
+
+Os direitos de propriedade industrial são garantidos pela LEI N° 9.279, responsável por regular e proteger legalmente as obras, projetos e ideias voltados às atividades industriais. Esta lei garante os direitos sobre marcas, registro de nomes comerciais, patentes, desenhos industriais, modelos de utilidade entre outros. Consequentemente, fornecendo exclusividade sobre a utilização, difusão e exploração dos bens intelectuais. Porém, deste caso se faz necessário obter um registro no órgão responsável. 
+
+Por fim, a proteção sui generis atua em três diferentes vertentes: topografia de circuitos integrados, técnicas de cultivo e conhecimentos tradicionais. A topografia de circuitos integrados é amparada pela LEI N° 11.484, esta fornece segurança do bem intelectual para as empresas que produzem semicondutores. As técnicas de cultivo também são resguardadas legalmente, a LEI N° 9.456 prevê garantias em relação as pesquisas realizadas nesta área, bem como os produtos vegetais com características claramente distinguíveis das espécies conhecidas. Por último, os conhecimentos tradicionais que são protegidos pela LEI Nº 13.123, também conhecida como lei da biodiversidade, esta lei visa proteger conhecimentos adquiridos por meio de práticas e costumes passados de pais para filhos ao longo do tempo. 
+
+Visando proteger a propriedade intelectual nossa legislação define sua violação como um crime. O profissional de segurança da informação deve zelar pelos bens intelectuais. Por exemplo, prevenir sua organização contra a pirataria. Ainda é muito importante manter os colaboradores devidamente informados a respeito da proibição de fazer cópias ou de distribuir dados sem autorização.  
+
+Observe que a violação dos direitos autorais está descrita no Código Penal, conforme o Art. 184° estabelece pena que varia de três meses até 4 anos de reclusão. No mesmo sentido os crimes direcionados a propriedade industrial tipificadas no Art. 183° e Art. 195° da LEI 9.279. Ainda, relativo aos programas de computadores, os crimes estão previstos no Art. 12° da LEI 9.609 que estabelece pena de seis meses até quatro anos de reclusão. 
+
+
+Políticas de Segurança da Informação
+As políticas de segurança da informação são regras bem definidas que ditam o acesso, controle e transmissão da informação dentro da organização. Tais políticas devem estar devidamente documentadas e sempre atualizadas. Por meio, da implementação de políticas de segurança da informação bem definidas é possível reduzir consideravelmente os riscos relacionados à segurança da informação, fornecendo a devida proteção contra ameaças internas e falhas de segurança. 
+
+Para que a implantação das políticas de segurança da informação seja bem-sucedidas, é necessário a participação de todos os colaboradores da organização, incluindo a diretoria e a equipe de TI. Esta política deve ser escrita de uma forma clara, para que todos na organização tenham o seu correto entendimento, entendam como manusear a informação conforme os padrões e preceitos da segurança da informação. 
+
+A aplicação adequada das políticas de segurança da informação pode reduzir os danos à infraestrutura de TI da organização. Consequentemente, melhora a experiência do usuário que se beneficia significativamente com a qualidade dos serviços fornecidos.  
+
+Sabe-se que a área de segurança da informação possui uma metodologia própria. Então, é fundamental estudar e planejar as políticas de segurança da informação, ajustar para que estejam condizentes com as estratégias de negócio da organização, mas sobretudo desempenhar sua função da proteção da informação. A elaboração da política de segurança da informação depende de certos cuidados, ações prévias podem contribuir na sua construção, ao definir uma estrutura básica e identificar qual cultura mais indicada, sendo que todos na organização deverão ser capazes de compreender os conceitos e saber lidar com as ferramentas. 
+
+
+Avaliação e Gerenciamento de Risco a Segurança da Informação
+Para discutir a avaliação e gerenciamento de riscos à segurança da informação vamos resgatar o cenário de uso do Banco de Tóquio, introduzido na Unidade 1. Analisando o cenário do Banco de Tóquio, podemos perceber a ausência de normas e padrões que estabelecem boas práticas relacionados à segurança da informação. Provavelmente, se as normas fossem devidamente aplicadas muitos dos problemas ocasionados no banco poderiam ter sido evitados.  
+
+Ao adotar a ISO 27001, o banco teria estratégias bem consolidadas para melhor administrar a segurança da informação, contemplando as etapas fundamentais para gestão da segurança da informação: análise, planejamento, implementação, monitoramento e ciclo de aperfeiçoamento.  Neste sentido, na gestão dos riscos de segurança haveria uma redução de riscos de responsabilidades por meio das definições de políticas e procedimentos bem definidos.  
+
+Ainda, no processo de ciclo de aperfeiçoamento seria implantado o alinhamento de processos para identificação e correção das falhas e pontos fracos relacionados à segurança da informação. Consequentemente os dados sensíveis dos clientes do banco estaria devidamente protegido. Sem mencionar o processo de conscientização sobre segurança da informação, trabalho que poderia ter sido desenvolvido com os colaboradores do banco – um funcionário que foi adequadamente treinado sobre os aspectos de segurança da informação estaria consciente das usas ações, reduzindo assim a probabilidade de o banco ter sido contaminado pelo malware. 
+
+No mesmo sentido a norma ISO 27002 poderia auxiliar, fornecendo uma maior proteção aos ativos dos sistemas de informação do banco, incluindo os dados sensíveis e informações estratégias. O banco de Tóquio ao aplicar está norma estaria empregando boas práticas de segurança da informação, ou seja, a implantação de políticas de controles com processos e mecanismos segurança bem definidos. O banco além de contar com a redução de custos com a prevenção de incidentes de segurança da informação, este estaria em conformidade com a legislação vigente e outras regulamentações.  
+
+Tendo em vista que o Japão também possui leis de proteção de dados, o Banco de Tóquio está sujeito a sanções. No Japão a lei de proteção de dados é denominada Act on the Protection of Personal Information (APPI), entrou em vigor em 2017. Esta regulamentação é aplicada sob informações pessoais e as informações que requerem cuidados especiais. Assim, as empresas que não tratarem os dados dos cidadãos japoneses de forma adequada podem sofrer sanções previstas em lei.  
+
+Neste momento, sua missão no “banco de Tóquio” é garantir que as propriedades de segurança da informação sejam preservadas. Para isto, esta “Unidade” tratou alguns dos principais aspectos e requisitos de segurança da informação, contemplando normas, políticas, legislação e boas práticas de segurança de segurança da informação. Adicionalmente, foi mencionado os mecanismos fundamentais de segurança que são imprescindíveis para garantir a proteção da segurança da informação, e contornar o problema no “banco de Tóquio”. Nas próximas unidades vamos conhecer cada um destes mecanismos de segurança, bem como saber aplicá-los.  Mas não se preocupe, vamos nortear você nesta caminhada, ao longo das próximas unidades vamos te preparar para lidar com este e outros problemas de segurança da informação no âmbito real. 
+
+
+Conhecendo a Lei Geral de Proteção de Dados
+Este vídeo vai fornecer uma visão maior sobre a Lei Geral de Proteção de Dados, qual a importância desta nova lei, o que mudou com a regulamentação da LGPD e qual é o impacto desta nova lei para as empresas e pessoas.
+
+
+
+EXERCÍCIOExercícios de Fixação
+Quais as etapas fundamentais para gestão da segurança da informação estabelecidas na norma ISO 27001?
+
+Cite três atividades estabelecidas na norma ISO 27001?
+
+Quais os benefícios de ser certificado pela norma ISO 27001?
+
+Qual o objetivo da norma da norma ISO 27002?
+
+Quais os benefícios que a norma ISO 27002 pode trazer?
+
+O que propõe o FIPS PUB 200?
+
+Cite três das áreas definidas no FIPS PUB 200?
+
+Do que se trata a Lei Brasileira N° 12.737 (Lei Carolina Dieckmann)? 
+
+O que estabelece o Marco Civil da Internet?
+
+Qual a importância da LGPD e da GDPR?
+
+Cite três tipos de crimes cibernéticos, descreve do que se trata cada um desses crimes.
+
+O que é o crime contra propriedade intelectual?
+
+Qual a importância das políticas de segurança da informação dentro de uma organização?
+
+Avalie o caso de uso do "Banco de Tóquio", baseado nas normas e padrões que foram estudados apresente três medidas que poderiam ter sido tomadas para evitar o incidente.
+
+Conclusão
+Esta unidade abordou as principais normas e padrões no processo de gestão da segurança de informação. Entre as normas internacionais destacam-se a ISO 27001 e a ISO 27002, conforme discutido, tais normas definem os requisitos e as melhores práticas de segurança da informação e cibersegurança. Ainda, foi ressaltado os benefícios que uma organização pode obter ao ser certificada pela norma ISO 27001. Adicionalmente, apresentamos a norma ISO 27002 que estabelece as melhores práticas de segurança da informação, fundamentais para introduzir, implementar, preservar e otimizar a gestão de segurança da informação nas organizações. 
+
+Na sequência, detalhamos o padrão FIPS PUB 200 que estabelece os requisitos mínimos de segurança da informação exigidos nos sistemas de informação federais. Conforme visto, este padrão classifica as contramedidas em termos de requisitos funcionais, como resultado foram elencadas 17 áreas relacionadas à segurança informação, fundamentais para garantir a proteção dos sistemas de informação e seus ativos. 
+
+Enfatizamos o grande aumento na quantidade dos crimes cibernéticos e os desafios da segurança da informação. Em contrapartida, no âmbito jurídico apresentamos as principais leis que permitem combater os crimes virtuais. Primeiramente a Lei Nº 12.737 que estabelece penas para crimes cometidos no ambiente virtual, como invasão de computadores, disseminação de vírus, roubo de senhas, falsificação de documentos e uso indevido de dados sem autorização do usuário. Posteriormente, foi apresentado o Marco Civil da Internet que estabelece os direitos e deveres para o uso adequado da internet no Brasil. Adicionalmente, destacamos as leis de proteção dos dados, tanto no território nacional como em outros países (LGPD, GDPR e APPI). Também, tratamos da tipificação dos crimes virtuais, onde foram caracterizados os crimes virtuais mais comuns e outros que migram para contexto virtual. Abordamos também os crimes que atentam contra propriedade intelectual, bem como as leis que as resguardam. 
+
+Ainda, foi enfatizado a importância de implementar políticas de segurança da informação adequadas nas organizações, ressaltamos os benefícios e as etapas necessárias. Por fim, resgatamos o caso de uso do “banco de Tóquio”, onde foi aplicado o método de avaliação e gerenciamento de riscos à segurança da informação. O objetivo foi que você pudesse identificar os problemas de segurança da informação que esta instituição está enfrentando, mas sobretudo como eles poderiam ter sido evitados se tivesse sido adotado boas práticas de segurança da informação. Demostramos qual a importância dentro de uma organização, de orientar a segurança da informação a partir das normas, políticas e padrões, bem como conhecer no âmbito jurídico a legislação que nos protege.  
+
+
+
+https://www.youtube.com/watch?v=dc3lAnGKMHg
+
+
+
+
+Referências Bibliográficas
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27001: Tecnologia da informação - Técnicas de segurança – Técnicas de segurança – Sistemas de gestão de segurança da informação – Requisitos. Rio de Janeiro. 2006. 
+
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27002: Tecnologia da informação - Técnicas de segurança - Código de prática para controles de segurança da informação. Rio de Janeiro. 2006. 
+
+BRASIL. Lei N° 11.484, de 31 de maio de 2007. Dispõe sobre os incentivos às indústrias de equipamentos para TV Digital e de componentes eletrônicos semicondutores e sobre a proteção à propriedade intelectual das topografias de circuitos integrados. Disponível em: <http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11484.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. Lei N° 12.965, de 23 de abril de 2014. Estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil. Disponível em: <http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm>. Acesso em 05 de jun. de 2021.   
+
+BRASIL. Lei N° 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: <http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. LEI N° 2.848, de 7 de dezembro de 1940. Código Penal. Disponível em: <http://www.planalto.gov.br/ccivil_03/decreto-lei/del2848.htm>. Acesso em 05 de jun. de 2021.   
+
+BRASIL. LEI N° 7.716, de 5 de janeiro de 1989. Define os crimes resultantes de preconceito de raça ou de cor. Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l7716.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. LEI N° 8.069, de 13 de julho de 1990. Dispõe sobre o Estatuto da Criança e do Adolescente e dá outras providências. Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l7716.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. LEI N° 9.279, de 14 de maio de 1996. Regula direitos e obrigações relativos à propriedade industrial. Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9279.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. LEI N° 9.456, de 25 de abril de 1997. Institui a Lei de Proteção de Cultivares e dá outras providências. Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9456.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. Lei N° 9.610, de 19 de fevereiro de 1998. Altera, atualiza e consolida a legislação sobre direitos autorais e dá outras providências. Disponível em: <http://www.planalto.gov.br/ccivil_03/leis/l9610.htm>. Acesso em 05 de jun. de 2021. 
+
+BRASIL. Lei Nº 12.737, de 30 de novembro de 2012. Dispõe sobre a tipificação criminal de delitos informáticos. Disponível em: <http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm>. Acesso em 05 de jun. de 2021. 
+
+COELHO, Flávia E. S.; ARAÚJO, L. G. S. Gestão da Segurança da Informação - NBR 27001 e 27002. Rio de Janeiro: Escola Superior de Redes, RNP, 2013. Disponível em: http://pt.scribd.com/doc/58008255/Gestao-da-Seguranca-da-Informacao-NBR-27001-e-NBR-27002. 
+
+EU General Data Protection Regulation (GDPR): Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), OJ 2016 L 119/1. Disponível em: <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679>. Acesso em 05 de jun. de 2021. 
+
+JAPÃO. Act on the Protection of Personal Information (APPI), de 1 de abril de 2005. Disponível em: <https://www.cas.go.jp/jp/seisaku/hourei/data/APPI.pdf>. Acesso em 05 de jun. de 2021.   
+
+KASPERSKY. Dicas de como se proteger contra crimes cibernéticos. Kaspersky, 2021. Disponível em: <https://www.kaspersky.com.br/resource-center/threats/what-is-cybercrime>. Acesso em: 4 de jun. de 2021. 
+
+NIST. FIPS PUB 199 - Federal Information Processing Standards Publication. National Institute of Standards and Technology (NIST), 2021. Disponível em: <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf>. Acesso em: 7 de mai. de 2021. 
+
+NIST. FIPS PUB 200 - Federal Information Processing Standards Publication. National Institute of Standards and Technology (NIST), 2021. Disponível em: <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf>. Acesso em: 7 de mai. de 2021. 
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008. 
+
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014. 

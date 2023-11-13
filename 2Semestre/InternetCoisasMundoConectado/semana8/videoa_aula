@@ -1,0 +1,17 @@
+Vídeo
+Conectando dispositivos à nuvem
+Esta aula está no formato Screencast e foi toda gravada em vídeo. Apesar de ter uma duração longa, ela foi dividida em tópicos que possibilitará realizar em momentos diferentes, bastando pausar o vídeo e continuar depois. Mas por favor, preste bem atenção: é fundamental que você não apenas assista a aula, mas sim, realize também os passos indicados, sendo fortemente indicado que você faça experiências pessoais usando como exemplo o material de aula.
+Na aula utilizamos o Broker MQTT público da HiveMQ. Apesar de versátil, este último era um serviço gratuito que tinha recursos muito limitados e não apresentava mecanismos de segurança (usuário e senha). Nesta aula usaremos o serviço em nuvem para Internet das Coisa da Cayenne MyDevice que, apesar de permitir testes gratuitos, tem recursos muito interessantes e apresenta um nível de segurança bem maior, exigindo a criação de uma conta de usuário (usuário e senha), e cadastro de cada dispositivo criado.
+A Cayenne MyDevice é um serviço em nuvem que integra um Broker MQTT associado a uma infraestrutura (Figura 1) contendo:
+Serviço de Administração que permite controle de usuários, dispositivos e demais recursos;
+Recursos de Backend responsáveis por receber os dados dos dispositivos através de um Broker MQTT;
+Um banco de dados para armazenamento dos dados recebidos;
+Mecanismos de notificação para a criação de alarmes;
+Um Frontend responsável pela visualização da informação WEB e compartilhamento de dados com os aplicativos móveis da própria Cayenne MyDevices.
+Descrição da imagem não disponível
+Estaremos estabelecendo a conexão do dispositivo que criamos na nossa última aula com o Broker da Cayenne MyDevices e visualizaremos os dados através da interface web da ferramenta. Finalmente estaremos movendo o código de nosso dispositivo para um dispositivo Raspberry Pi.
+Bom estudo! Aproveite ao máximo!
+
+https://www.youtube.com/watch?v=aQDFU7oeS5U
+
+https://www.youtube.com/watch?v=cmdBLcrFc2I

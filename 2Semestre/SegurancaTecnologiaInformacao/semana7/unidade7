@@ -1,0 +1,335 @@
+https://www.youtube.com/watch?v=QTX7_5JqaVs
+
+
+Logotipo PUCPR
+Segurança da Tecnologia da Informação
+UNIDADE 07
+Detecção de intrusão
+Nesta Unidade, iremos estudar os mecanismos defesa para detecção de intrusão. Será abordado como os adversários exploram as vulnerabilidades dos sistemas para ter acesso aos seus recursos, mas sobretudo como o profissional da área de segurança pode atuar para evitar que as tentativas de intrusão sejam bem-sucedidas. Para tal, apresentaremos os Sistemas de Detecção de Intrusão (IDS), como os tais sistemas são utilizados para monitorar e analisar os eventos no sistema. Conhecer os elementos fundamentais do IDS. Na sequência, vamos apresentar os tipos de IDS, como são classificados e as técnicas utilizadas para detectar um ataque. Adicionalmente, vamos apresentar as abordagens detecção de intrusão em rede e realizado em nível de host. Conheceremos também como é realizado a detecção de intrusão utilizando assinaturas e por meio da identificação de anomalias. Ainda, será abordado a evolução do processo detecção das IDS, verificaremos as técnicas de intrusão adaptativa, ou seja, como os mecanismos de segurança podem agir para detectar os eventos de intrusão. Por fim, iremos apresentar o Honeypot, ferramenta que permite analisar o comportamento do adversário visando identificar aspectos que devem ser fortalecidos para proteger os sistemas.
+
+Sistemas de Detecção de Intrusão
+A intrusão de segurança é caracterizada como sendo um evento de segurança (este isolado ou composto por uma série de eventos), onde o intruso obtém ou tenta conseguir acesso ao sistema e seus recursos em ter a devida autorização. A grande maioria dos ataques exploram vulnerabilidades nos sistemas ou softwares, permitem que o adversário execute rotinas de código projetadas para abrir portas de entrada para conseguir acesso ao sistema. 
+
+Os adversários podem conseguir acesso ao sistema explorando diversas vulnerabilidades, entre elas ataques de estouro de um buffer de memória executado em um programa que possui determinados privilégios. Ainda, o intruso pode tentar ter acesso a informações que deveriam estar protegidas, tal como informações de acesso como usuário e senha. Adicionalmente, caso o intruso consiga acesso à senha de um usuário no sistema, ele poderá usufruir de todos os privilégios que o usuário legítimo possui. 
+
+Por sua vez, a detecção de intrusão pode ser definida como sendo um serviço de segurança utilizado para monitorar e analisar tais eventos no sistema. Têm como propósito identificar e notificar o administrador do sistema que estão ocorrendo tentativas de acesso não autorizado ao sistema e aos seus recursos. Os alertas devem ser gerados em tempo real ou quase que em tempo real para que o responsável pelo sistema possa realizar determinadas ações. Neste sentido, para auxiliar o profissional de segurança da informação sistemas de detecção de intrusão (Intrusion Detection System - IDS) e sistemas de prevenção de intrusão (Intrusion Prevention System — IPS) podem ser utilizados.  
+
+
+Fonte: ©leowolfert/Adobe Stock
+Em geral os IDS são classificados do seguinte modo: 
+
+Baseado em estação: este sistema monitora as características de uma única máquina, analisa os eventos que ocorrem dentro da máquina em busca de alguma atividade suspeita. 
+
+Baseado em rede: este sistema monitora o tráfego de rede dos dispositivos conectados analisando os protocolos de rede, transporte e aplicação visando identificar alguma atividade suspeita. 
+
+ 
+
+Basicamente o IDS é constituído por três elementos: 
+
+ 
+
+Sensor: os sensores são responsáveis por efetuar a coleta de dados; 
+
+Analisador: os analisadores recebem os dados coletados dos sensores e determinam se ocorreu alguma intrusão; 
+
+Interface do usuário: a interface do usuário permite que o usuário avalie e controle o comportamento do sistema. 
+
+Os IDS utilizam os sensores que realizam a coleta dos dados. Entre os tipos de dados capturados são obtidos pacotes de rede, arquivos de registro e eventos de chamadas do sistema. Após efetuar a coleta dos dados os sensores transmitem essas informações ao componente analisador. Na sequência o analisador verifica os dados e determina se ocorreu uma intrusão. O analisador ao identificar uma intrusão produz uma saída com o resultado da intrusão para que seja tomada uma providência.  O administrador do sistema poderá verificar a ocorrência de uma intrusão por meio da interface do usuário com um IDS, desta forma poderá avaliar e tomar as ações necessárias. 
+
+Quando a intrusão é detectada com prontidão o intruso pode ser identificado e imediatamente expulso do sistema, antes que cause qualquer dano ou comprometa os dados do sistema. Ainda que a detecção do intruso não ocorra em tempo real para inibir as ações do invasor, quanto antes for identificado a intrusão menor será o impacto e mais rápido será o processo de recuperação. 
+
+Um sistema de detecção de intrusão efetivo pode ser útil tanto para inibir como prevenir que a intrusão ocorra. A partir da coleta das informações no processo de detecção de intrusão é possível extrair informações técnicas que podem ser utilizadas para definir ações para fortalecer os sistemas na prevenção da intrusão. 
+
+A detecção de anomalia é efetiva contra a ação do adversário que tenta se passar um usuário legitimo, sendo que este não conseguirá reproduzir os mesmos padrões do comportamento das contas que eles obtêm acesso. Contudo, esta abordagem não será capaz de lidar com os adversários que tem intenção de perturbar o sistema. Para este tipo de ataque, as abordagens baseadas em assinaturas são mais eficazes, sendo capazes de reconhecer eventos e sequências de eventos, pois inseridas em um determinado contexto permitem identificar que está ocorrendo uma determinada intrusão. O ideal é que na prática, o sistema implemente ambas as abordagens, a combinação das duas técnicas será mais efetiva contra um número maior de tipos de ataques. 
+
+
+Tipos de Sistemas de Detecção de Intrusão
+Os sistemas de detecção de intrusão podem ser classificados conforme as técnicas utilizadas para identificar o ataque, sendo basicamente os sistemas baseados em regras e os sistemas adaptáveis.  
+
+Sistemas Baseados em Regras: esta abordagem utiliza regras a partir de padrões de ataques que compõem uma base de dados, conhecidas como assinaturas. A base de dados deve estar constantemente atualizada. Uma das limitações de utilizar esta abordagem é que ela possibilita detectar apenas os ataques conhecidos. Ainda, se a regra definida para identificar um ataque for muito específica, alguns ataques similares que não sejam idênticos certamente não serão identificados.  
+
+Sistemas Adaptáveis: esta abordagem em geral utiliza inteligência artificial para tentar identificar novos ataques. Apesar de ser uma técnica promissora, exige um custo computacional mais alto e impõe uma certa dificuldade no gerenciamento, que engloba conhecimentos específicos de matemática e estatística. 
+
+
+Fonte: ©Dmitry/Adobe Stock
+
+Arquitetura IDS
+Os sistemas de intrusão podem ser classificados também por meio da sua arquitetura, sendo classificado como arquitetura centralizada ou distribuída.  
+
+Arquitetura Centralizada: o IDS é classificado como arquitetura centralizada quando realiza a coleta, análise e gerência dos dados em um único componente. Este tipo de arquitetura permite simplificar a topologia de um projeto IDS, praticamente não interfere no desempenho da rede. A desvantagem é que esta arquitetura estabelece um único ponto de falha, onde uma falha nesse componente pode comprometer todo o processo de análise de intrusão do IDS. Destaca-se, a dificuldade da implementação e manutenção desta abordagem em grandes redes, dificultando a escalabilidade do sistema. 
+
+Arquitetura distribuída: a arquitetura distribuída pode ser classificada em distribuída hierárquica ou livremente distribuída. Na arquitetura distribuída hierárquica as funções são distribuídas em diversos componentes, porém existe um forte acoplamento em relação à hierárquica. Apesar desta arquitetura facilitar em escalabilidade e desenvolvimento, ainda apresenta o problema de ter um ponto único de falha, destaca-se que um problema no componente que possui maior grau de hierarquia compromete todo o sistema. Em contrapartida a arquitetura livremente distribuída não tem esta dependência hierárquica, o que reflete em uma certa facilidade de escalabilidade do sistema, incluindo o crescimento modular, detecção abrangente e facilidade para distribuir as tarefas. Porém, para implementar este sistema existe uma certa complexidade dada a necessidade de integrar todos os componentes, sendo necessário a adoção de um mecanismo de autenticação, contudo a adição de tal ferramenta pode impactar no desempenho da rede. 
+
+
+Tipificação dos Sistemas de Detecção de Intrusão
+Os IDS podem ser divididos em três tipos: NIDS, HIDS e IDS Híbrido. 
+
+NIDS (Network-based IDS): Um sistema de intrusão baseado em rede examina os pacotes transmitidos tentando identificar pacotes que se assemelham com os padrões de assinaturas correspondentes a uma intrusão no sistema. Esta abordagem é bastante eficiente contra os ataques mais conhecidos, por outro lado novos ataques podem passar despercebidos caso não possuam padrões semelhantes aos padrões de ataques já conhecidos e representados pelas assinaturas.  
+
+HIDS (Host-based IDS): nesta abordagem o sistema de detecção de intrusão analisa informações obtidas de computadores individuais. O HIDS verifica as atividades e acessos realizados em servidores que dispõe de tais serviços, verificam as atividades determinando os processos e usuários associados a um determinado ataque. Ainda, podem observar os impactos causados por uma tentativa de ataque, ao identificar arquivos e processos alvos de ataques, o administrador do sistema pode estruturar estratégias para proteger tais recursos. O HIDS é importante tanto para detectar uma intrusão externa como também acessos indevidos de origem interna. O HIDS tenta identificar qualquer atividade suspeita, falhas de acesso (login), alterações nas políticas de controle de acesso não autorizadas (arquivos ou sistemas).  
+
+IDS Híbrido: IDS Híbrido: esta abordagem basicamente é a combinação de um HIDS (Host-based IDS) com um NIDS (Network-based IDS). 
+
+
+Fonte: ©sdecoret/Adobe Stock
+Detecção de Intrusão em Rede
+O sistema de intrusão baseado em rede é denominado NIDS, acrônimo do termo inglês Network-based Intrusion Detection System. O NIDS é uma ferramenta que monitora o tráfego da rede em "tempo real", analisa pacote por pacote, a fim de tentar detectar comportamento de intrusão. Esta ferramenta atua sobre os protocolos de rede, transporte e aplicação. Deste modo, examina o tráfego da rede identificando padrões de intrusão direcionado a sistema de computadores vulneráveis. 
+
+A topologia tradicional da ferramenta de NIDS dispõe de sensores, servidores e consoles. Existem diversos sensores distribuídos na rede, estes são utilizados para monitorar o tráfego de pacotes. Um NIDS pode incluir um ou mais servidores, sendo responsáveis pelo gerenciamento da ferramenta. Por fim, o console permite que o administrador da rede interaja com o NIDS por meio da sua interface. O processo de análise dos padrões de tráfego pode ser realizado tanto no sensor como também diretamente no servidor, ou então utilizando uma estratégia realizada a partir da combinação dos dois componentes. Existem algumas limitações em relação a esta abordagem: 
+
+Velocidade de análise: uma rede que possui um número expressivo de dispositivos os sistemas baseados em redes não serão capazes de processar todo grande volume de dados que é transmitido na rede.  
+
+Ambiente switches: existe um esforço computacional bastante grande para examinar todos os pacotes que chegam no switch. Destaca-se que nem todos os switches permitem realizar monitoramento das portas, o que permite que o NIDS analisar apenas uma única estação de trabalho. Alternativamente, uma solução seria adicionar o NIDS diretamente no próprio switch. 
+
+Dados criptografados: utilizando uma ferramenta NIDS não é possível analisar pacotes que transitam com dados criptografados, sendo que não possuem a chave para decifrar os dados. Para que o NIDS conseguisse examinar os pacotes com dados cifrados o sistema deveria:      . 
+
+Ser estruturado com as chaves cifração ou adquiri-las ao realizar a conexão. 
+
+Identificar o algoritmo de criptografia. 
+
+Compreender o protocolo da aplicação. 
+
+Capturar e decifrar toda a sessão em tempo de execução (quase em tempo real).  
+
+Fornecer garantia que o NIDS não seja comprometido. 
+
+Grande parte dos NIDS não permite determinar se a ocorrência de um ataque foi bem-sucedida, apenas indicam que um ataque identificado. 
+
+Alguns sistemas de detecção de intrusão têm dificuldades para tratar dados fragmentados. 
+
+
+Fonte: ©Niall/Adobe Stock
+Entre as principais vantagens de utilizar um NIDS é que podemos ressaltar é que esta abordagem tem pouco impacto sobre o desempenho da rede. Ainda, um NIDS posicionado de forma estratégica pode permitir monitorar grandes redes de forma transparente ao atacante. Deste modo, é comum instalar o NIDS em pontos de acesso à rede interna, trabalhando em conjunto com firewalls a fim de proteger o perímetro da rede. Adicionalmente, podem ser inseridos em alguns pontos críticos da LANs e WANs. 
+
+Um sistema de detecção de intrusão pode reagir com respostas passivas ou ativas. Atuando de forma passiva ele apenas alertam os administradores do sistema, podendo disparar mensagens e e-mail. Por sua vez, a resposta ativa requer que haja uma integração entre o NIDS e o firewall. Entre as ações típicas realizadas pelo sistema podemos citar: 
+
+Encerrar a sessão de usuário. 
+
+Bloquear uma conexão TCP. 
+
+Executar um script pré-configurado pelo administrador do sistema, em geral para introduzir regras no firewall. 
+
+Bloquear determinados endereços IP (origem do ataque) no firewall. 
+
+Bloquear o tráfego entre IPs e portas específicas no firewall. 
+
+Efetuar a desconexão de um serviço realizado em uma determinada porta. 
+
+
+Sensores de Rede NIDS
+Existem basicamente dois tipos de sensores no NIDS: inline e passivo. O sensor inline é adicionado em ponto estratégico da rede de modo que todo tráfego que está sendo monitorado passe por este sensor. Em geral este comportamento é obtido a partir da combinação do sensor NIDS com outros dispositivos de rede, tais como o firewall ou switch. Uma das principais vantagens desta abordagem é não ser necessário dispositivos de hardware adicionais para realizar a tarefa do sensor, podendo neste caso ser substituído por um componente de software. O incentivo de utilizar sensores inline é a possibilidade de bloquear ataques assim que eles são detectados. Deste modo, o sensor inline permite habilitar o NIDS para atuar na detecção e prevenção da intrusão. 
+
+Em geral os sensores passivos são mais utilizados, a abordagem a adotada por este sensor é realizar uma cópia do tráfego de rede, destaca-se que o tráfego real não passa por este dispositivo. Esta abordagem é mais interessante que o sensor inline, pois não acrescenta nenhuma etapa adicional no tratamento do tráfego da rede, evitando assim atrasos na transmissão dos pacotes. O sensor passivo estabelece uma conexão física para transmissão da rede, fornecendo uma cópia de todo o tráfego de rede transmitido. Em geral, a placa de rede utilizada para esta conexão não possui um endereço IP configurado. O tráfego que passa pela placa de rede é absorvido sem qualquer interação com o protocolo de rede. Adicionalmente, o sensor passivo possui uma segunda placa rede que possui um endereço IP configurado que permite se comunicar com o servidor NIDS. 
+
+
+Detecção de Intrusão em Nível de Host
+Os IDS's baseado em nível de host em geral adicionam uma camada adicional de software especializada em segurança em sistemas sensíveis ou vulneráveis. Este sistema monitora as atividades nos servidores tentando identificar comportamentos suspeitos. O objetivo principal deste mecanismo é detectar as intrusões, realizar o registro de eventos que sejam suspeitos e emitir alertas ao responsável pelo servidor. Em determinadas situações, o IDS permite até mesmo interromper um ataque antes que seja causado qualquer dano. 
+
+
+Fonte: ©shane/Adobe Stock
+A principal vantagem do IDS baseado em Host que este pode ser utilizado tanto para detectar intrusões internas como externas. Neste aspecto, o IDS baseado em Host fornece alguns recursos adicionais ao IDS baseado em rede ou firewall que detecta apenas intrusões externas. Os IDS baseados em Host são estruturados basicamente de duas maneiras: 
+
+Detecção de anomalia: nesta abordagem primeiramente é realizado por um certo tempo a coleta dos dados de usuários legítimos, dados utilizados para definir um padrão do comportamento desses usuários. Posteriormente, testes estatísticos são aplicados sobre os eventos no sistema para definir com um nível de confiança se um determinado comportamento corresponde a um usuário legítimo ou não.  
+
+Detecção de assinatura: nesta abordagem são definido um conjunto de regras estruturadas a partir da identificação de padrões de ataques, na sequência tais regras podem ser utilizadas para detectar se um determinado comportamento corresponde a um intruso ou não. 
+
+ 
+
+As abordagens baseadas em anomalia são projetadas para definir se determinado comportamento é normal, por sua vez as abordagens baseadas em assinaturas são utilizadas para definir se determinado comportamento é apropriado. Um HIDS atua especificamente sobre as máquinas que devem proteger. Esta abordagem possui algumas limitações: 
+
+Análise em tempo real: para que o HIDS de uma resposta em tempo real ele necessita utilizar recursos do resto do sistema. Acaba consumindo uma quantidade considerável de recurso, o que muitas vezes acaba não sendo proveitoso para determinadas aplicações.   
+
+Complexidade no gerenciamento: esta abordagem é difícil de gerenciar, sendo necessário realizar a configuração em cada um dos hosts.   
+
+Ponto de análise único: os HIDS não permitem reconhecer ataques que sejam direcionados a toda a rede. 
+
+ 
+
+Em contrapartida existem diversas vantagens em adotar esta abordagem: 
+
+ 
+
+Esta abordagem permite monitorar eventos locais de um determinado host, detectando ataques que acabariam passando despercebidos por um IDS baseado em redes.  
+
+O HIDS pode atuar em ambiente cujo tráfego de rede é criptografado, pois é possível analisar a informação antes que o mecanismo de criptografia seja aplicado, caso esteja posicionado no emissor, ou ainda após a mensagem ser decifrada, quando estiver situado no receptor.  
+
+Quando o HIDS atua no nível de sistema operacional ele pode detectar determinados malware, prevenindo ataques relacionados a problemas de integridade em alguns programas. 
+
+
+Detecção de Intrusão Baseado em Assinatura e Anomalia
+As técnicas baseadas em assinatura permitem detectar a intrusão mediante a observação dos eventos no sistema e a aplicação de um conjunto de regras que levam o sistema a tomar uma decisão em relação ao padrão de atividade ser ou não um comportamento suspeito.  Tais regras são definidas como assinaturas. 
+
+
+Fonte: ©sdecoret/Adobe Stock
+Atualmente os NIDS baseados em assinaturas são as abordagens mais comuns. Nesta abordagem um sensor é instalado em ponto da rede e fica examinando o tráfego dos pacotes, analisa cada um dos pacotes que passa pelo firewall mais próximo. Para detectar uma intrusão o NIDS baseado em assinatura compara cada um dos pacotes que trafegam na rede com as assinaturas. Então, quando o sensor detecta que determinado pacote possui características semelhantes a uma assinatura (padrão suspeito), ele sinaliza ao sistema que ocorreu um comportamento de intrusão, em resposta o sensor deve ativar um alerta. Ressalta-se que as máquinas utilizadas para rodar tais sensores devem executar apenas a ferramenta do IDS garantido que a estação esteja segura contra algum ataque. O valor do padrão da assinatura do IDS é estabelecido pela avaliação de alguns aspectos: 
+
+Capacidade de detecção do IDS de acordo com as taxas de dados com as quais este é projetado para trabalhar. 
+
+Tempo necessário que o IDS leva para conseguir identificar um ataque.  
+
+Atualização do banco de dados de assinaturas. 
+
+Experiência do profissional que irá atuar nos problemas referentes à intrusão. 
+
+Outra abordagem para detectar a intrusão na rede são os NIDS baseados em anomalias, esta classe é segmentada em dois grupos: estatísticos e de protocolo. A abordagem estatística em NIDS é menos frequente, nesta abordagem o sistema examina os pacotes que trafegam na rede, por de métodos estatísticos aplicados sobre os dados extraídos do sistema consegue detectar certos padrões de comportamento. Mudanças significativas identificadas em tais padrões indicam um ataque em potencial e em resposta um alerta é gerado.  
+
+Por sua vez, as abordagens baseadas em protocolos tentam identificar anomalias na camada dos protocolos de aplicação, onde são definidas regras a partir da estrutura e funcionamento dos protocolos, posteriormente essas regras são introduzidas nos sensores. Os IDS baseados em protocolos são bastante úteis para identificar ataques como o Code Red, esse ataque consiste em utilizar um worm que causa uma inundação de buffers utilizando uma sequência longa de caracteres com objetivo de estourar o buffer da aplicação. Isso, permite que o malware execute uma rotina de código malicioso e se espalhe ainda mais, por sua vez desfigurando o servidor neste processo. Destaca-se que uma abordagem baseada em assinatura irá permitir que os pacotes transitem até que uma assinatura seja identificada e utilizada para detectar este novo padrão, enquanto a abordagem baseada no protocolo consegue imediatamente identificar e inibir este ataque. 
+
+
+CURIOSIDADE
+Worm - é um malware capaz de se propagar automaticamente através de redes, enviando cópias de si mesmo de computador para computador.
+O Guia de Sistemas de Detecção e Prevenção de Intrusão [Scarfone e Mell,2007] do NIST fornece uma relação dos ataques que são adequados para serem tratados por uma abordagem por assinatura e outra lista de ataques que devem ser tratados com uma abordagem baseada em detecção de anomalia. Para detecção baseada em assinatura são elencados os seguintes ataques: 
+
+Ataques à camada de aplicação: A maioria das ferramentas NIDS analisa vários protocolos de aplicação. Entre os mais comuns destacam-se o DHCP, DNS, FTP, HTTP, IMAP, NFS, POP, RPC, SMB, SMTP, SNMP e Telnet. O NIDS tenta localizar padrões de ataque que visam tais protocolos, ataques tais como estouros de capacidade de buffers, adivinhação de senha e transmissão de malware. 
+
+Ataques à camada de transporte: Para este tipo de ataque as ferramentas NIDS analisam o protocolo da camada de transporte, em especifico os protocolos TCP e UDP. Entre os exemplares deste tipo de ataque podemos citar a fragmentação incomum de pacotes, sniffer (escanear) em busca de portas vulneráveis e ataques direcionados ao protocolo TCP, tal como inundação da flag SYN. 
+
+Ataques à camada de rede: Em geral os NIDSs são estruturados para analisar os protocolos IPv4, ICMP e IGMP. Entre os ataques mais frequentes podemos citar endereços IP falsificados e valores de cabeçalhos IP ilegais. 
+
+Serviços de aplicação inesperados: A ferramenta NIDS tenta definir se uma atividade realizada em uma conexão de transporte possui o comportamento correspondente ao protocolo de aplicação. Podemos citar como exemplo, uma estação que executa um serviço de aplicação que não foi autorizado. 
+
+Violações de políticas: Em relação a este ataque podemos citar o uso de sites Web inadequados e a utilização de protocolos de aplicação proibidos. 
+
+
+CURIOSIDADE
+IGMP - Internet Group Management Protocol é usado por Roteadores em uma rede IP para criar grupos de transmissão múltipla.
+Já em relação a lista de ataques que devem ser tratados pela abordagem baseados em detecção de anomalia o NIST enumera os seguintes ataques: 
+
+ 
+
+Ataques de negação de serviço (DoS): Esse tipo de ataque aumenta significativamente o tráfego de pacotes ou ainda as tentativas de conexão, visando sobrecarregar o sistema. A detecção de anomalia é bem adequada para identificar tais ataques. 
+
+Escaneamento: O ataque de escaneamento é realizado quando o adversário investe contra uma rede ou sistema enviando diferentes tipos de pacotes. Por meio das respostas obtidas do retorno dos pacotes, o adversário pode encontrar muitas características e vulnerabilidades do sistema. Deste modo, o ataque de escaneamento é utilizado como ferramenta de identificação do alvo para o adversário. Este tipo de escaneamento pode ser detectado por padrões de fluxo inesperados nas camadas de aplicação, transporte ou rede. 
+
+Worms: os worms que se espalham entre os computadores podem ser detectados de diferentes formas. Alguns worms propagam-se rapidamente e utilizam uma grande quantidade da largura de banda, o que permite identificá-los. Os worms ainda podem ser detectados quando tentam fazer o computador se comunicar com outras máquinas com as quais normalmente não realizam nenhuma comunicação, adicionalmente podem fazer com que as estações utilizem portas que em geral não são utilizadas. Por fim, devemos salientar que muitos worms também fazem escaneamento. 
+
+
+Intrusão Adaptativa
+Com o passar dos anos, o conceito de IDS comunicante foi aos poucos evoluindo para técnicas que compreendem o uso de sistemas distribuídos, tais sistemas cooperam entre si para identificar intrusões, uma das características dos novos sistemas é a capacidade dos sistemas em adaptar-se a perfis de ataques mutáveis. Tais sistemas esbarram em dois problemas.  
+
+O primeiro problema é que tais ferramentas como os IDSs e firewall podem não reconhecer novas ameaças ou ainda modificações amplas de ameaças já existentes. O segundo problema é que é difícil de atualizar técnicas com a rapidez necessária para conseguir lidar com ataques que são disseminados rapidamente pela rede.  
+
+
+Fonte: ©sdecoret/Adobe Stock
+Adicionalmente, existe um outro problema, relacionado com a defesa de perímetro, como firewalls, uma grande parte das empresas não definem políticas robustas no firewall, estabelecem fronteiras tênue (fracas) onde as estações conseguem entrar e sair da rede. Um típico exemplo são empresas que dispõem do uso de tecnologia sem fio em suas estações de trabalho ou ainda permitem que os notebooks dos colaboradores sejam adicionados as portas de rede. 
+
+Os adversários exploram tais problemas de diferentes formas. Uma das abordagens utilizadas pelos atacantes é o desenvolvimento de worms e outros malwares que se disseminam cada vez mais rápido, ainda elaboram ataques que atingem com uma potência destrutiva, tal como os ataques de DoS. Tais tipos de ataques ainda predominam. Contudo, os adversários recentemente têm investido esforços em algumas abordagens diferentes: tal como reduzir a velocidade da disseminação do ataque a fim de dificultar que os algoritmos tradicionais consigam identificá-los. 
+
+Uma das formas de combater tais ataques é utilizar sistemas cooperativos que são capazes de reconhecer ataques com base em pequenos sinais e então conseguir adaptar-se rapidamente. Considerando esta estratégia, os detectores de anomalia adicionados em nós locais devem procurar por evidências de atividades não usuais. Para ilustrar este cenário podemos dar um exemplo de uma máquina que normalmente realiza poucas conexões de rede, podemos suspeitar que um ataque está sendo realizado caso haja repentinamente um aumento na taxa de transmissão da conexão. Apenas com esta evidência o sistema local pode arriscar um falso positivo se reagir ao ataque suspeito, ou então arriscar um falso negativo se decidir ignorar o ataque aguardando uma evidência adicional. Em contrapartida, um sistema cooperativo adaptativo, utiliza um protocolo "par a par" para informar sua suspeita a outras máquinas, estabelecendo uma certa probabilidade da rede estar sendo alvo de ataque. Caso uma máquina receba um número de mensagens do mesmo tipo que ultrapasse um determinado limiar, esta estação compreende que está ocorrendo um ataque, então pode responder a este. A resposta pode ser apenas localmente para defender a si própria, mas também pode emitir uma mensagem de alerta para um IDS central. 
+
+Um IDS central é configurado com um conjunto padrão de políticas e regras de segurança. O sistema tem como base a entrada de sensores distribuídos, tais políticas são adaptadas e ações específicas são transmitidas para as diferentes plataformas no sistema distribuído. As políticas definidas para um dispositivo podem incluir as ações imediatas que devem ser tomadas ou ainda configurações de parâmetros a serem ajustados. O IDS central também pode transmitir políticas colaborativas para todas as plataformas, estas são utilizadas para ajustar o intervalo de envio e o conteúdo de mensagens colaborativas, mensagens "par a par". Existem basicamente três tipos de entrada que orientam as ações do IDS central: 
+
+Eventos de resumo: são eventos de advindos de várias fontes que são coletados por pontos de coletas intermediários tais como os firewalls, servidores, os sensores IDS que servem como um segmento específico de uma rede organizacional. Tais eventos são concentrados para entrega das políticas para o sistema IDS central. 
+
+Eventos de Detecção e Interferência Distribuídas: são alertas gerados quando o tráfego "par a par" habilita uma plataforma a determinar que um ataque está sendo realizado. 
+
+Eventos Pontos de Imposição de Política: são eventos que residem em plataformas confiáveis (IDSs inteligentes e sistemas com autodefesas). Tais sistemas confrontam informações distribuídas, decisões locais e ações de dispositivos individuais para detectar intrusões que podem não ser evidentes considerando apenas o nível da estação. 
+
+
+Honeypots
+Um honeypot é uma ferramenta de segurança projetada para atrair o adversário e desviar sua atenção dos sistemas críticos. O honeypot também conhecido pelo termo em português "potes de mel", são encarados como um sistema chamarizes. Em um sistema honeypot são instaladas ferramentas que permitem simular o sistema operacional e seus serviços, seu propósito é fornecer um ambiente ao atacante para que este interaja com o sistema, em contrapartida o administrador do sistema analisa o comportamento do adversário a fim de proteger os seus sistemas. Os honeypots são basicamente projetados para: 
+
+Distanciar o alvo do atacante dos sistemas críticos; 
+
+Obter informações relacionadas as atividades do atacante, analisar seu comportamento e as técnicas utilizadas pelo adversário - objetivo de apreender com o ataque; 
+
+Instigar que o atacante permaneça o tempo suficiente no sistema para que o administrador tome as ações necessárias. 
+
+ 
+
+Esses sistemas são constituídos por um conjunto de informações criadas para simular um sistema verdadeiro, porém que um usuário legitimo não acessaria. Deste modo, qualquer tipo de acesso realizado em um honeypot é uma atividade suspeita. O honeypot é estruturado com componentes monitores e registradores de eventos. Tais componentes visam detectar a intrusão e coletar as informações referentes as atividades do atacante no sistema. Em geral, os ataques realizados contra um honeypot parecem ser bem-sucedidos, porém ao mesmo tempo os administradores do sistema estão focados em registar e rastrear o adversário sem que haja exposição dos sistemas reais. 
+
+O honeypot não dispõem de recurso legítimo para organização, deste modo qualquer interação de fora da rede que tente comunicar com o sistema é um possível ataque. Ainda, se o honeypot iniciar uma comunicação com o meio externo, este acabou sendo comprometido. 
+
+As primeiras propostas dos honeypots consistia em uma única máquina que possuía uma faixa de endereços IP que eram estruturados de forma a atrair os adversários. Com o avanço das pesquisas foram surgindo propostas de honeypot mais interessantes, atualmente redes inteiras são construídas para simular uma rede empresarial, até mesmo o tráfego na rede pode ser simulado. Para o adversário o comportamento da rede seria semelhante a uma rede normal. Neste sentido, assim que o adversário consegue ter acesso a rede, o administrador passa a acompanhar suas atividades e então projeta defesas baseadas nas estratégias que foram utilizadas pelo intruso. 
+
+O honeypot pode ser colocado em algumas posições estratégicas. A localização varia conforme o objetivo e nível de risco que as organizações estão dispostas a enfrentar para compreender o comportamento do adversário. 
+
+O honeypot disposto fora do firewall externo da organização possibilita rastrear as tentativas de conexão de endereços IPs advindos de fora da rede. Uma das vantagens desta abordagem é que ela não insere nenhum risco para rede interna, ou seja, o perigo de existir um sistema comprometido atrás do firewall pode ser reduzido. O honeypot disposto nesta localização atrai inúmeros ataques potenciais, ainda reduz a quantidade de alertas emitidos pelo firewall e sistemas de detecção de intrusão internos, consequentemente aliviando o processo de gerenciamento. Porém, como desvantagem é que esta abordagem não consegue identificar os atacantes internos, ainda mais se o firewall externo estiver configurado para filtrar o tráfego de entrada e saída. Na figura abaixo o honeypot está estrategicamente posicionado fora do firewall externo. 
+
+
+
+Outra posição estratégica para adicionar um honeypot é alocar o mesmo dentro da rede DMZ, responsável em fornecer serviços externos (web e e-mail). Neste cenário o profissional de segurança deve garantir que os demais sistemas disponibilizados na rede DMZ estejam seguros contra qualquer tipo de atividade realizada a partir no honeypot. Uma desvantagem de posicionar o honeypot dentro da DMZ é que esta rede não é totalmente acessível, o firewall em geral bloqueia qualquer tráfego quando existe tentativas de acessar serviços que não são necessários. Deste modo, duas abordagens podem ser adotadas para implementação das regras no firewall, ou é liberado o tráfego além do que é permitido, contudo sendo uma tarefa meio arriscada, ou então limita-se a efetividade do honeypot deixando de analisar totalmente o comportamento do adversário. Na figura abaixo o honeypot está estrategicamente posicionado dentro da DMZ. 
+
+
+
+Por fim, configurar um honepot dentro da rede interna pode conceder algumas vantagens, onde a principal é capacidade de capturar ataques internos. Adicionalmente, o honeypot localizado na rede interna permite detectar um firewall mal configurado. Em contrapartida, existem inúmeras desvantagens, sendo talvez a mais crítica seja que um honeypot mal configurado pode ser utilizado para atacar outros sistema internos que sejam legítimos. Neste caso, é necessário observar que qualquer ataque realizado pelo adversário da internet utilizando o honeypot o tráfego no firewall não será bloqueado - será considerado um tráfego normal direcionado ao honeypot. Destaca-se ainda a dificuldade de conceder regras no firewall para permitir tráfego até honeypot, visto que tais regras tem um potencial de comprometer toda a rede interna.  Na figura abaixo o honeypot está estrategicamente posicionado dentro da rede interna. 
+
+
+
+
+
+Explorando os mecanismos de detecção de intrusão
+Este vídeo fornecerá uma visão mais ampla sobre os mecanismos de detecção de intrusão, vamos apresentar como funciona tais ferramentas, quais as vantagens e desvantagens de utilizar estas abordagens, dicas e boas práticas para implementação destes mecanismos de segurança.
+
+
+
+EXERCÍCIOExercícios de Fixação
+O que é uma intrusão de segurança?
+
+O que um IDS?
+
+Qual a diferença entre um IDS baseado em rede e baseado em estação?
+
+Quais os elementos fundamentais do IDS? Explique qual sua função.
+
+Qual a diferença entre a arquitetura centralizada e distribuída do IDS?
+
+O que é um NIDS?
+
+O que é um HIDS?
+
+O que é IDS híbrido?
+
+Qual a diferença entre o sensor inline e passivo do NIDS?
+
+Qual a diferença entre a detecção baseado em assinatura e anomalia?
+
+Qual o conceito da intrusão adaptativa, quais ações podem ser adotadas para proteger o sistema?
+
+O que é um Honeypot? Para que ele é utilizado?
+
+Conclusão
+Esta unidade abordou os conceitos de intrusão de segurança, vimos que o adversário pode explorar as vulnerabilidades para tentar obter acesso ao sistema e seus recursos. Conforme discutido, a detecção de intrusão é serviço de segurança utilizado para monitorar e analisar os eventos no sistema. Vimos que por meio deste processo é possível alertar o administrador do sistema que estão ocorrendo tentativas de acesso não autorizado ao sistema e seus recursos. Demonstramos que para auxiliar o profissional de segurança da informação existem ferramentas que podem ser utilizadas, são os sistemas de detecção de intrusão (IDS) e os sistemas de prevenção de intrusão (IPS). 
+
+Por conseguinte, apresentamos que um IDS pode monitorar uma única máquina ou ainda monitorar todo tráfego de rede. Observamos que um IDS é constituído por três elementos fundamentais o sensor, analisador e interface do usuário, cada um responsável por realizar uma determinada tarefa. Ainda, mostramos que os IDS podem ser classificados conforme as técnicas que são utilizadas para detectar o ataque, então apresentamos os sistemas baseados em regras e os sistemas adaptáveis. Demonstramos também que o IDS pode ser estruturado por meio de uma arquitetura centralizada ou distribuída. 
+
+Exploramos também três tipos de IDS, os sistemas de intrusão baseado em rede (NIDS), os sistemas de intrusão baseados em hosts (HIDS) e os IDS híbridos. Conforme discutido, os NIDS examinam os pacotes que foram transmitidos para tentar identificar pacotes que se assemelham com os padrões de assinaturas correspondente a uma intrusão no sistema. Ainda, mostramos que o HIDS analisa informações obtidas de computadores individuais, verificando as atividades e os acessos que estão sendo realizados no servidor para identificar ataques intrusão. Adicionalmente, abordamos o IDS Híbrido, verificamos que este consiste em uma abordagem estruturada da combinação de um HIDS com um NIDS. 
+
+Ainda, foi apresentado que o IDS baseado em Host pode trabalhar basicamente de duas maneiras, a partir da detecção de anomalia ou por assinatura. Conforme discutido, na detecção de anomalia é analisado o comportamento do usuário legítimo para identificar um determinado padrão, posteriormente são realizados testes estatísticos para determinar o comportamento diferentes dos usuários legítimos. Conhecemos também a abordagem baseada em assinatura, vimos que nesta abordagem é definido um conjunto de regras a partir da identificação de padrões de ataque, na sequência tais regras podem ser utilizadas para detectar um comportamento de intrusão. 
+
+Por fim, demonstramos que com o passar dos anos os ataques de intrusão foram evoluindo, no mesmo sentido abordagens para tratar tais ataques acabaram sendo necessárias. Verificamos que intrusão adaptativa e sistemas distribuídos podem cooperar entre si para identificar intrusões. Conforme observamos tais sistemas possuem a capacidade de adaptar-se a perfis de ataques mutáveis. Adicionalmente, apresentamos o Honeypot uma ferramenta que permite analisar o comportamento do adversário visando identificar aspectos que devem fortalecidos nos sistemas. Por último, discutimos sobre os desafios do profissional de segurança da informação para proteger os sistemas contra os ataques de intrusão, destacamos a importância das ferramentas detecção de intrusão para preservar dos sistemas de recursos da organização. 
+
+
+Referências Bibliográficas
+CERT.BR. Estatísticas dos Incidentes Reportados ao CERT.br, CERT.br., 2021. Disponível em: <https://www.cert.br/stats/incidentes/>. Acesso em: 31 de ago. de 2021. 
+
+RNP. Relatório Anual de Segurança 2020 - RNP. Rede Nacional de Ensino e Pesquisa (RNP), 2021. Disponível em: <https://www.rnp.br/noticias/rnp-lanca-relatorio-anual-de-seguranca-2020>. Acesso em: 31 de ago. de 2021. 
+
+SCARFONE, K.; MELL, P. Guide to Intrusion Detection and Prevention Systems. National Institute of Standards and Technology (NIST) - Special Publication SP 800-94, 2007. Disponível em: <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-94.pdf>. Acesso em: 18 de ago. de 2021. 
+
+SHIREY R. RFC 2828 - Internet Security Glossary. The Internet Society, 2000.  
+
+SNORT. SNORT User’s Manual. Snort Project, 2020. Disponível em: <https://www.snort.org/#documents>. Acesso em: 31 de ago. de 2021. 
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008. 
+
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014. 
+
+VIEGAS, E. K.; Santin, Altair O.; OLIVEIRA, L. E. S. Enabling Anomaly-based Intrusion Detection Through Model Generalization. In: IEEE Symposium on Computers and Communications (ISCC), 2018, Natal. To appear in the proceedings of ISCC. Los Alamitos: IEEE, 2018 
+
+VIEGAS, E.; SANTIN, A. O. Towards Reliable Intrusion Detection in High Speed Networks. In: XXXVII Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos, 2019. Anais Estendidos do Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos (SBRC). p. 169-8.  
+
+VIEGAS, E.; SANTIN, A. O. Towards Reliable Intrusion Detection in High Speed Networks. In: XXXII Concurso de Teses e Dissertações da SBC, 2019. Anais do Concurso de Teses e Dissertações da SBC (CTD-SBC), 2019. 
+
+VIEGAS, E.; SANTIN, A. O.; FRANÇA, A.; JASINSKI, R.; PEDRONI, V.; OLIVEIRA, L. Towards an Energy-Efficient Anomaly-Based Intrusion Detection Engine for Embedded Systems. IEEE Transactions on Computers, v. 1, p. 1-1, 2016.   
+
+VIEGAS, E.; SANTIN, A. O.; OLIVEIRA, L.; FRANÇA, A.; JASINSKI, R.; PEDRONI, V. A Reliable and Energy-Efficient Classifier Combination Scheme for Intrusion Detection in Embedded Systems. COMPUTERS & SECURITY.  2018. 
+
+
+
+ 
+ 
+© PUCPR - Todos os direitos reservados.
+
+ | Privacidade e Proteção de Dados

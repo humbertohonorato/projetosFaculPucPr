@@ -1,0 +1,104 @@
+https://www.youtube.com/watch?v=reZdjTNR9X8
+https://www.youtube.com/watch?v=qUmYez0MZtU
+
+UNIDADE 05
+Prototipação de Produtos Interativos
+Prototipação de produtos interativos
+Um design tem de ser visualizado, tanto para ajudar o designer a clarear suas próprias ideias quanto para que as pessoas possam avaliá-las. Dessa forma, a prototipação é uma técnica utilizada para validar ideias de designers ao longo do desenvolvimento do sistema interativo.
+
+Os objetivos desta unidade são:
+
+Apresentar o conceito de antecipação.
+
+Compreender a importância da prototipação para os sistemas interativos.
+
+Apresentar os diferentes tipos de prototipação.
+
+Projeto de interação
+Introdução
+O design centrado no usuário é um processo de design que se concentra nas necessidades e requisitos dos clientes. Como? Pelo uso constante de fatores humanos, ergonomia, engenharia de usabilidade e outras técnicas girando em torno dos usuários, visando a produzir sistemas úteis ​​e acessíveis, com vistas à satisfação do usuário, evitando quaisquer possíveis efeitos negativos sobre a saúde, a segurança e o desempenho. A Figura 1 apresenta as etapas do projeto de interação.
+
+Processo do design de interação
+Fonte: Adaptado de Benyon (2015).
+Na próxima seção, serão detalhadas as técnicas e atividades da etapa de antecipação.
+
+Antecipação
+De acordo com Benyon (2015), a antecipação preocupa-se em tornar as ideias visíveis, ou seja, com a externalização dos pensamentos. Trata-se de mostrar, por cenários ou esboços de telas, para o usuário qual solução está sendo desenvolvida para atender aos seus objetivos. Ela ocorre ao longo do processo de criação, à medida que o designer gera múltiplas soluções e as reduz até o produto final.
+
+Representar de maneira visual as ideias de design é importante para identificar falhas e dificuldades que só serão apontadas pelo usuário quando estiver usando o produto. O benefício dessa atividade é a equipe de design ver, a partir da perspectiva dos usuários, o sistema ou produto de software interativo. Segundo Benyon (2015), essas representações do sistema interativo ajudam na geração, comunicação e avaliação de ideias de design.
+
+Técnicas de Antecipação
+É tarefa da equipe de design escolher a forma mais adequada para representar um sistema interativo. Uma boa representação é precisa o suficiente para refletir as características do sistema a ser modelado e simples o bastante para evitar confusão (BENYON, 2015).
+
+Storyboard
+O que é storyboard?
+
+É uma técnica extraída do cinema, que representa em forma de desenho uma sequência de ações ou eventos pelos quais o usuário e o produto ou sistema interativo passam para realizar uma tarefa (ROGERS; SHARP; PREENCE, 2013). As vantagens da técnica são (BENYON, 2015):
+
+Opção econômica para representar o design (uma página pode conter de seis a oito cenas).
+Em conjunto com um cenário, é útil para analisar ideias de design com o cliente.
+A Figura 2 mostra um exemplo de storyboard representando um problema em uma empresa fictícia. O principal problema destacado no cenário 1 são as filas, a perda de tempo e a falta de credibilidade dos lançamentos das despesas, porque todo o processo é manual. Nos cenários seguintes, apresenta-se a solução: no cenário 2, o funcionário passa o crachá e faz o registro automático do peso da refeição e demais produtos consumidos; no cenário 3, o funcionário verifica a lista de todos os seus consumos via aplicativo ou sistema web; no cenário 4, o funcionário tem tempo para se divertir no horário de almoço.
+
+Exemplo de storyboard
+BENYON, D. Interação Humano-Computador. 2.ed. São Paulo: Pearson, 2015.[Biblioteca Virtual 3.0, modo e-pub, p. 141].
+Então, usa-se uma estrutura no estilo desenho animado, em que momentos-chave da experiência interativa são representados. Utilize o storyboard com o cenário ou Pixar storytelling para refinar cada vez mais soluções de design.
+
+São elementos de um storyboard:
+
+cenário;
+pessoas envolvidas;
+ambiente;
+tarefa a ser cumprida;
+sequência.
+Para seu desenvolvimento, pergunte-se:
+
+Quais são os passos envolvidos?
+O que faz com que uma pessoa use o artefato?
+Que tarefa está sendo ilustrada?
+Protótipo
+O que são protótipos de telas? Trata-se da representação limitada de um design que permite aos usuários interagir com ele e explorar ideias e soluções. Protótipos podem ser usados para demonstrar um conceito (por exemplo, o protótipo de um aplicativo de celular) nos estágios iniciais do design, para testar detalhes desse conceito em estágios posteriores e, às vezes, como especificação para o produto final (BENYON, 2015).
+
+Os protótipos podem ser classificados em: protótipos de baixa fidelidade; protótipos de média fidelidade; e protótipos de alta fidelidade. A definição do tipo dependerá principalmente dos custos do projeto para desenvolver o sistema interativo.
+
+O protótipo de baixa fidelidade é denominado rascunho ou sketch, sendo concebido ainda na fase inicial, durante a concepção do sistema. Normalmente, são desenhados à mão, com lápis e papel. Essas representações são feitas de maneira rápida, visando a representar a essência de uma funcionalidade, sem se preocupar com aspectos como cores, layouts etc.
+
+A Figura 3 traz um exemplo de rascunho para a funcionalidade de cadastro de usuário de um sistema de vendas. Perceba que não existe alinhamento entre as linhas, tampouco cores, somente as informações necessárias de uma tela de cadastro.
+
+Exemplo de protótipo de baixa fidelidade
+Inserir legenda ou fonte aqui
+O protótipo de média fidelidade, denominado wireframe, é desenvolvido na fase da arquitetura da informação, utilizando softwares de prototipação, como Balsamiq e Axure, e apresenta a estrutura e o conteúdo da interface, definindo o layout básico do projeto. Wireframes são usados ​​no início do processo de desenvolvimento para estabelecer a estrutura básica de uma página antes de acrescentar o design visual e conteúdo, podendo usar HTML/CSS ou aplicativos de software. 
+
+Tem como principais objetivos:
+
+Definir a estrutura de conteúdo da interface.
+Criar um layout básico (com conteúdos e imagens de marcação).
+Criar simulações simples de uso (como clicar em um botão).
+O protótipo de média fidelidade se torna algo navegável, ou seja, o usuário consegue navegar entre as diferentes seções do projeto. Ainda, não utiliza recursos de design avançados, como cores e imagens, e não possui simulações complexas de uso, conforme ilustra a Figura 4.
+
+Exemplo de protótipo de média fidelidade
+Inserir legenda ou fonte aqui
+Já o protótipo de alta fidelidade, também denominado mockup ou protótipo funcional, consiste na representação mais próxima do sistema a ser desenvolvido. É possível simular o fluxo completo das funcionalidades, permitindo a interação do usuário como se fosse o produto final. A aparência visual, as formas de navegação e a interatividade são concebidas e aplicadas aos protótipos de alta fidelidade.
+
+A Figura 5 mostra um exemplo de prototipação de baixa, média (low-fi) e alta fidelidade (hi-fi).
+
+Exemplo de protótipo de baixa, média e alta fidelidade
+Fonte: Peham (2015).
+SAIBA MAISQuando usar o protótipo de alta fidelidade?
+Saiba mais acessando: https://pt.coursera.org/lecture/ux-ui-design-de-interface/quando-construir-um-prototipo-de-alta-fidelidade-ILi0M
+
+
+Mapa de navegação
+O objetivo é verificar, por meio da experiência do usuário, um site ou aplicação, identificando como as pessoas se movimentam por ele. Cada página de um site ou local da aplicação é representado por uma caixa ou cabeçalho e todas as páginas acessadas a partir dela devem fluir daí. A análise dos fluxos possíveis (ou seja, avançar e voltar uma página) destaca as seções em que as pessoas tendem a ficar presas (BENYON, 2015), portanto é uma boa maneira de detectar aspectos deficientes de um design, como páginas órfãs (páginas não acessíveis) ou becos sem saída, conforme ilustra a Figura 6, que apresenta o mapa de navegação de um site mais simples, ou seja, uma visão geral do conteúdo.
+
+Exemplo de mapa de navegação
+Fonte: Benyon (2015).
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+GALVÃO FILHO, T. A. et al. Conceituação e estudo de normas. In: BRASIL. Secretaria Especial dos Direitos Humanos. Tecnologia assistiva. Brasília, DF: CAT/SEDH/PR, 2009. p. 13-39. Disponível em: http://www.galvaofilho.net/livro-tecnologia-assistiva_CAT.pdf. Acesso em: 18 ago. 2021.
+
+PEHAM, T. 5 dicas para você melhorar os mockups e os protótipos de seu site. iMasters, Design & UX, 17 set. 2015. Disponível em: https://imasters.com.br/design-ux/5-dicas-para-voce-melhorar-os-mockups-e-os-prototipos-de-seu-site. Acesso em: 18 ago. 2021.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.

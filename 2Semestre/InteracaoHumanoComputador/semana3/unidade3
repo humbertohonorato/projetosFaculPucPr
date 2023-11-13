@@ -1,0 +1,164 @@
+https://www.youtube.com/watch?v=NMTFbPOkHic
+
+https://www.youtube.com/watch?v=-Vcyz2o77L8
+
+
+
+UNIDADE 03
+Projeto de design interativo
+Considerar a experiência do usuário na construção de um produto interativo é um aspecto competitivo importante no mercado, existindo etapas e atividades que devem ser consideradas pela equipe de design. Assim, os objetivos desta unidade são:
+
+Saber o que é design de interação.
+Entender por que ser centrado no humano é importante.
+Compreender a usabilidade e a experiência do usuário.
+Conhecer as etapas de um projeto interativo.
+Design centrado no usuário
+Introdução
+Muito se fala em design centrado no humano, usabilidade e experiência do usuário. Mas será que se trata da mesma coisa?
+
+Você voltaria a um site de vendas que demorasse minutos para realizar uma funcionalidade, uma pesquisa ou a efetivação da compra? Você recomendaria esse site? É claro que não! Portanto, é importante saber quais são as necessidades dos usuários, suas expectativas, descobrir suas dores e construir um produto que atenda ao problema deles.
+
+Criar produtos e sistemas interativos com essa orientação é criar experiências mais eficientes e satisfatórias ao usuário, o que pode, sim, favorecer as vendas e a fidelização dos clientes.
+
+Isso é ser centrado no usuário. Em vez de exigir que ele se adapte e aprenda a utilizar um sistema ou produto de software, o design centrado no humano (usuário) cria sistemas que se relacionam com o que o usuário realmente precisa, como age e vê o mundo. Trata-se de um processo de design que se concentra nas necessidades e requisitos dos usuários. Por isso, nesta unidade, iremos ver as etapas envolvidas, para compreender e registrar esses requisitos.
+
+Usabilidade e a experiência do usuário
+Barbosa e Silva (2010) apresentam dois conceitos sobre usabilidade:
+
+ISO/IEC 9126:2001 atual ISO/IEC 25010:2011: conjunto de atributos relacionados com o esforço necessário para o uso de um sistema interativo e com a avaliação individual de tal uso por um conjunto específico de usuários.
+ISO 9241-11:2019: grau em que um produto é usado por usuários específicos para atingir determinados objetivos com eficácia, eficiência e satisfação, em um contexto de uso específico.
+De acordo com Rogers, Sharp e Preence (2013), a usabilidade tem o objetivo de assegurar que produtos interativos sejam fáceis de aprender a usar, eficazes e agradáveis, ou seja, facilidade de uso pelas pessoas envolvidas. Os autores apresentam algumas metas de usabilidade que devem ser consideradas pela equipe de design:
+
+Ser eficaz ao uso (eficácia).
+Conceito: o produto faz aquilo para o que foi desenvolvido.
+
+Exemplo: num editor de texto, a funcionalidade de apagar palavras, de destacar uma palavra por meio de negrito, ou seja, o produto faz bem aquilo para o que foi projetado.
+
+Pergunta-chave: o sistema serve ao propósito principal? 
+
+Ser eficiente ao uso (eficiência).
+Conceito: o sistema deve auxiliar o usuário na realização da tarefa; de certa forma, pode ser entendido como a velocidade de uso para o alcance do objetivo.
+
+Exemplo: considerando dois sites de vendas de livros, em qual é mais fácil de realizar uma compra, em termos de tempo e quantidade de passos?
+
+Pergunta-chave: o usuário consegue manter um alto nível de produtividade após aprender a utilizar o sistema? 
+
+Ser seguro no uso (segurança).
+Conceito: é uma solução de proteção do usuário contra condições perigosas (físicas) e situações indesejáveis (evitar acidentes).
+
+Exemplo: o sistema oferecer opção de cancelar uma ação do usuário de apagar um arquivo. Pode apresentar mensagens de alerta ao usuário para evitar alguma situação difícil, como: tem certeza que deseja excluir o arquivo?, ou oferecer funcionalidade de voltar o texto a um estado anterior. 
+
+Evitar que o usuário cometa alguma ação indesejada acidentalmente em qualquer tipo de situação envolve:
+
+Reduzir o risco de ele pressionar botões errados por engano: comando sair (quit) ou excluir (delete) próximo do comando salvar.
+Fornecer ao usuário formas de recuperação de erros (restaurar arquivos deletados).
+Comandos de fazer e desfazer (undo).
+Pergunta-chave: o sistema previne o usuário de cometer erros graves ou de recuperar facilmente ações não desejadas? 
+
+Ter boa utilidade (utilidade).
+Conceito: oferecer o tipo certo de funcionalidade.
+
+Exemplo: um aplicativo de desenho oferece uma única função de criar objetos predefinidos, como quadrados, círculos e formas geométricas com mais de cinco lados; não oferece, no entanto, um recurso para desenhar a “mão livre”.
+
+Pergunta-chave: o sistema oferece ao usuário o tipo certo de funcionalidade?
+
+Ser fácil de aprender (aprendizagem).
+Conceito: ser fácil de aprender a usar o sistema ou produto interativo. Regra dos 10 minutos.
+
+Exemplo: no site da Receita Federal, o usuário conseguir realizar o registro do imposto de renda até o fim, sem a necessidade de consultar um tutorial ou pedir ajuda alguém.
+
+Pergunta-chave: é fácil aprender a usar? Quanto tempo leva para realizar a tarefa? 
+
+Ser fácil de lembrar (lembrança).
+Conceito: esta meta trata da capacidade de memorização.
+
+Exemplo: no site da biblioteca on-line de uma universidade, o usuário consegue pesquisar livros sem aprender como fazer ou precisa aprender os passos toda vez que usa o sistema?
+
+Pergunta-chave: que tipos de suporte de interface foram fornecidos com o objetivo de ajudar os usuários a lembrar como realizar as tarefas, em especial, aquelas que demora a usar?
+
+O que é User Experience (UX)?
+Após aprender que a usabilidade envolve várias características que ajudam o usuário a utilizar o sistema ou um produto interativo, agora vamos entender o que é experiência do usuário. Será que é a mesma coisa que usabilidade?
+
+As metas de usabilidade envolvem aspectos que os designers têm de considerar para que os usuários consigam usar um sistema. Portanto, a usabilidade é algo essencial para proporcionar uma boa experiência do usuário. No entanto, além de ter um produto fácil de usar, tornou-se importante investigar outros aspectos, desejáveis e indesejáveis (Figura 1), caracterizando os sentimentos, estado de espírito, emoções e sensações do usuário decorrentes da interação com um sistema ou produto interativo (ROGERS; SHARP; PREENCE, 2013). Por exemplo, um novo pacote de software infantil que permita às crianças criar suas próprias músicas pode ser projetado com o objetivo principal de ser engraçado e interessante. Assim, é importante identificar o contexto de uso e os tipos de usuário envolvidos nesse contexto.
+
+Figura 1. Aspectos indesejáveis e desejáveis na experiência do usuário
+Fonte: Rogers, Sharp e Preence (2013).
+A experiência do usuário é a experiência de uma pessoa, de forma geral, usando um produto como um aplicativo, especialmente em termos do quão fácil e agradável é. No entanto, ela não está restrita ao produto ou à interface. Representa tudo que acontece com a pessoa que usa o produto e o que está à sua volta. Um bom exemplo são os produtos da Apple, cuja experiência se inicia em sua aquisição no site de vendas e se estende à entrega, forma como os produtos são embalados, com um design diferenciado de embalagem, aplicativo e o próprio design minimalista do produto. Portanto, a experiência pode envolver um serviço, um site, um aplicativo, não se limitando a produtos digitais.
+
+A experiência do usuário é essencial para a construção de um design interativo, pois leva em consideração os sentimentos e necessidades do usuário. O termo foi cunhado por Don Norman, em meados de 1990 (IED, 2016), e consiste em uma área que estuda o meio pelo qual uma pessoa interage ou controla um dispositivo, software ou aplicativo. Essa interação pode ser feita mediante elementos que forneçam ações entre o dispositivo e o usuário, como, por exemplo, botões, links e menus.
+
+Projeto de interação
+De acordo com Benyon (2011), o design centrado no usuário é um processo de design que se concentra nas necessidades e requisitos dos clientes.
+
+Como?
+
+Por meio do uso constante de fatores humanos, ergonomia, engenharia de usabilidade e outras técnicas, girando em torno dos usuários.
+
+Qual é o objetivo?
+
+Produzir sistemas úteis e acessíveis, visando à satisfação do usuário, evitando quaisquer possíveis efeitos negativos sobre a saúde, a segurança e o desempenho.
+
+Existem diferentes processos de design de interação, com a descrição de etapas e atividades para entender e avaliar o que o usuário necessita. Cada processo de design detalha essas atividades básicas de forma particular, definindo como executá-las. A abordagem proposta por Benyon (2015) possui quatro etapas (Figura 2), estando a atividade de avaliação relacionada às demais.
+
+Figura 2. Processo de design de interação
+Fonte: Benyon (2015).
+Entendimento
+De acordo com Benyon (2015), a etapa de entendimento trata do que o sistema tem de fazer, de como ele tem de ser e de como tem de se encaixar com os requisitos do produto, sistema ou serviço. Para isso, é importante que os designers pesquisem a gama de pessoas (stakeholders), atividades e contextos relevantes para o domínio, de forma a entender os requisitos do sistema que estão desenvolvendo. É necessário que entendam as oportunidades fornecidas pelas tecnologias e suas restrições.
+
+Conforme já comentado, são importantes a identificação e a análise dos diferentes usuários, o que pode ser feito por meio de personas.
+
+Afinal, o que é persona?
+
+Persona é a representação fictícia do seu cliente ideal. Ela é baseada em dados reais sobre comportamento e características demográficas dos seus clientes, assim como uma criação de suas histórias pessoais, motivações, objetivos, desafios e preocupações (BENYON, 2015).
+
+Uma boa definição de persona passa justamente pelo contato com o seu público-alvo, de modo que, em uma rápida análise, você possa identificar características comuns entre os potenciais compradores. Se você possui uma base de clientes, esse será o lugar perfeito para começar suas investigações. Mesmo que perfis diferentes de pessoas ou empresas tenham consumido seu produto, alguns tendem a exemplificar a sua persona.
+
+Benyon (2015) dá uma dica importante: deve-se focar tanto em clientes satisfeitos quanto insatisfeitos. Em ambos os casos, você certamente aprenderá algo sobre a percepção do seu produto e quais desafios seus clientes estão encarando.
+
+O resultado principal desta etapa é o entendimento do contexto de uso, dos usuários e dos requisitos destes, ou seja, a especificação dos requisitos do sistema ou produto interativo.
+
+Antecipação
+Um design tem de ser visualizado, tanto para ajudar o designer a clarear suas próprias ideias quanto para que as pessoas possam avaliá-las (BENYON, 2015). A antecipação preocupa‑se em encontrar a mídia apropriada para demonstrar as ideias de design. Isso pode ser feito por meio de técnicas como (BENYON, 2015): esboços "no verso de um envelope", protótipos totalmente funcionais e maquetes de papelão; cenários, às vezes apresentados na forma de storyboards, que são parte essencial da prototipação e da antecipação; e mapa de navegação.
+
+Design
+As atividades de design contemplam tanto o design conceitual quanto o design físico (BENYON, 2015).
+
+Design conceitual: considera as informações e funções necessárias para que o sistema atinja seu propósito.
+Design físico: foca no modo como as coisas funcionarão e no detalhe da aparência e da percepção do produto.
+Algumas técnicas para elaboração do design conceitual são:
+
+modelagem de objetos;
+caso de uso;
+diagrama de entidades e relacionamentos;
+rich picture (imagem rica).
+Segundo Benyon (2015), uma rich picture é um modelo da estrutura de uma situação, que capta os principais relacionamentos entre as principais entidades conceituais de um sistema. É uma ferramenta para o entendimento de determinado contexto de trabalho ou da infraestrutura de determinado sistema de informação. Neste modelo, os principais stakeholders (clientes, atores, donos) devem ser identificados, assim como a perspectiva desses usuários, para conhecer suas atividades e o ambiente. É interessante, porque ajuda a identificar as questões ou preocupações dos stakeholders e as potenciais soluções, conforme ilustra a Figura 3.
+
+Figura 3. Exemplo de rich picture
+Fonte: Benyon (2015).
+Segundo Benyon (2015), o design físico possui três componentes:
+
+Design operacional: preocupa‑se em especificar como tudo funciona e como o conteúdo é estruturado e armazenado. Por exemplo, a definição dos componentes de software, suas propriedades externas e seus relacionamentos com outros softwares.
+Design representacional: preocupa‑se com a escolha de cores, formas, tamanhos e layout da informação, ou seja, trata do estilo e da estética. Por exemplo, a maioria dos produtos da Microsoft provoca uma sensação de "escritório" e "trabalho", de seriedade, em oposição à diversão.
+Design de interação: preocupa-se com o quão fácil e agradável é usar um sistema, considerando as metas de usabilidade. Aqui entra a preocupação com a alocação de funções para o ser humano ou para a tecnologia.
+Avaliação
+Uma vez definidos os requisitos e os protótipos (fase de antecipação e design), é necessário avaliar se realmente o que está sendo idealizado atende às necessidades do usuário, o que depende do tipo de representação selecionado para a prototipação do sistema ou produto interativo (BENYON, 2015). Conforme apresentado na Figura 2, todas as outras atividades de design são seguidas de uma avaliação, que, às vezes, pode ser simplesmente uma verificação do designer para ter certeza de que algo está completo e correto.
+
+As técnicas de avaliação são muitas e variadas e dependem das circunstâncias e etapa da construção do sistema (BARBOSA; SILVA, 2010):
+
+Durante a concepção e o desenvolvimento do sistema, para tentar prever seus possíveis impactos na situação atual (por exemplo, inspecionando as telas produzidas durante o projeto da interface com o usuário).
+Logo antes da etapa de entendimento, para identificar impactos negativos ou problemas que podem ser evitados (por exemplo, fazendo testes com usuários e produzindo material de treinamento a partir dos seus resultados).
+Depois da implementação, para verificar os impactos ocorridos (por exemplo, avaliando como os usuários se apropriaram do sistema interativo desenvolvido e quais mudanças ocorreram na sua prática de trabalho).
+Em resumo, nesta unidade vimos:
+
+conceitos de usabilidade;
+experiência do usuário;
+visão geral do processo de design interativo.
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015. 
+
+INSTITUTO EUROPEO DI DESIGN (IED). O termo 'UX' o que é? 2016. Disponível em: https://ied.edu.br/revista/noticias-sp/termo-ux-o-que-e/. Acesso em: 10 jul. 2021.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.
+

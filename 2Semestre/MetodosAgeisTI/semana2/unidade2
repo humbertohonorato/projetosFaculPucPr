@@ -1,0 +1,59 @@
+UNIDADE 02
+O Manifesto Ágil
+Será estudado nesta Unidade o documento que unifica os valores e princípios comuns aos métodos ágeis, denominado manifesto ágil.
+
+Na primavera de 2000, um grupo de líderes da comunidade do Extreme Programming (XP) se reuniu na parte rural de Oregan, com o intuito de discutir as várias questões que envolviam o processo de desenvolvimento com XP. Na reunião, foi debatida a relação entre XP e processos semelhantes conhecidos inicialmente como métodos leves (lightweight methods), uma denominação aos novos métodos de desenvolvimento de software que começavam a surgir naquela época. Eles seguiam uma reação adversa aos pesados, que tinham como características a formalização exagerada nas documentações e regulamentações, sendo em uma grande maioria, influenciados pelo tradicional e burocrático modelo em cascata.
+
+Como consequência, concluíram que o XP era melhor como um método específico, porém, concordaram que havia um espaço comum entre o XP e os métodos leves. Um dos presentes nesta reunião, Robert Cecil Martin, carinhosamente chamado de Tio Bob, decidiu montar uma reunião com pessoas interessadas nos métodos leves. Uma ampla escala de pessoas foi contatada, sendo elas, interessadas ou atuantes no meio. Em fevereiro de 2001, uma reunião nas montanhas nevadas do estado norte-americano de Utah, no resort de inverno e verão Snowbird (Figura 1), marcava o surgimento e propagação do paradigma de desenvolvimento de softwares ágeis. Infelizmente, muitas das pessoas que estavam dispostas a ir tiveram de se ausentar. No entanto, dezessete pessoas (incluindo o Tio Bob) compareceram: Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland e Dave Thomas. Elas deram início naquele momento, mesmo sem saber, ao manifesto ágil.
+
+Figura 1: Signatários do manifesto ágil
+Foto original dos signatários discutindo sobre o manifesto ágil. Fonte: BECK, K. et al., 2020.
+Manifesto para desenvolvimento ágil de software
+Estamos descobrindo maneiras melhores de desenvolver softwares, fazendo-os nós mesmos e ajudando outros a fazerem o mesmo. Com isso, passamos a valorizar alguns aspectos.
+
+Valores
+Indivíduos e interações mais do que processos e ferramentas.
+
+Software em funcionamento mais do que documentação abrangente.
+
+Colaboração com o cliente mais do que negociação de contratos.
+
+Responder a mudanças mais do que seguir um plano.
+
+Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.
+
+Princípios
+Nossa maior prioridade é satisfazer o cliente por meio da entrega contínua e adiantada de software com valor agregado.
+Mudanças nos requisitos são bem-vindas, mesmo tardiamente no desenvolvimento. Processos ágeis tiram vantagem das mudanças visando à vantagem competitiva para o cliente.
+Entregar frequentemente software funcionando, de poucas semanas a poucos meses, com preferência à menor escala de tempo.
+Pessoas de negócio e desenvolvedores devem trabalhar diariamente em conjunto por todo o projeto.
+Construa projetos em torno de indivíduos motivados. Dê a eles o ambiente e o suporte necessário e confie neles para fazer o trabalho.
+O método mais eficiente e eficaz de transmitir informações para e entre uma equipe de desenvolvimento é por meio de conversa face a face.
+Software funcionando é a medida primária de progresso.
+Os processos ágeis promovem desenvolvimento sustentável. Os patrocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante indefinidamente.
+Contínua atenção à excelência técnica e bom design aumenta a agilidade.
+Simplicidade, a arte de maximizar a quantidade de trabalho não realizado, é essencial.
+As melhores arquiteturas, requisitos e designs emergem de equipes auto-organizáveis.
+Em intervalos regulares, a equipe reflete sobre como se tornar mais eficaz e, então, refina e ajusta seu comportamento de acordo.
+O manifesto ágil se tornou um grito de guerra para a indústria de software e para aquelas dezessete pessoas. Ele consegue expressar claramente o que defende e o que opõe, deixando bem claro o que é, e o que não é, ágil.
+
+Vamos agora interpretar o texto do manifesto, buscando compreender detalhadamente cada item.
+
+
+O manifesto ágil
+Este vídeo oportuniza a leitura e interpretação do manifesto ágil, buscando compreender detalhadamente cada item.
+
+
+Entrevista sobre o manifesto ágil
+Neste vídeo, entrevistarei um profissional de métodos ágeis. Discutiremos as principais características do Manifesto. Abordaremos os principais métodos usados atualmente. Tudo com uma visão atual e prática, de mercado.
+
+Conclusão
+Apesar de as páginas do manifesto serem bastante simples, seguir realmente seus valores e princípios não é uma tarefa fácil. Ao contrário do que muitos pensam, requer disciplina e empenho. Mas garanto a você, o resultado é surpreendente. Um ótimo primeiro passo para desenvolver softwares seguindo esses valores e princípios é adotar um método de trabalho que já esteja alinhado com eles, os chamados métodos ágeis. Nas próximas Unidades, estudaremos os principais métodos ágeis e veremos, na prática, como buscar esses resultados.
+
+
+https://www.youtube.com/watch?v=-cFIFxTQ1DI
+https://www.youtube.com/watch?v=-pd4mDEiL-o
+https://www.youtube.com/watch?v=Ddve-sZXM1w
+
+Referências
+BECK, K. et al. Manifesto para desenvolvimento ágil de software. Agile Manifesto, 2021. Disponível em: https://agilemanifesto.org/iso/ptbr/manifesto.html. Acesso em: 18 abr. 2021.

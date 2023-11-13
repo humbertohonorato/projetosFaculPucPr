@@ -1,0 +1,339 @@
+UNIDADE 03
+Mecanismos de autenticação
+Identificação e Autenticação
+No contexto de segurança da informação, a autenticação é um mecanismo essencial e deve ser utilizado como uma defesa primária. Conforme a definição estabelecida pela RFC 2828, este processo consiste em efetuar uma verificação de uma certa identidade alegada por uma pessoa ou entidade do sistema. Este mecanismo é composto por duas etapas, identificação e verificação. Na etapa de identificação um determinado usuário apresenta uma identidade ao sistema. A verificação consiste no processo de certificar a validade da identidade que foi apresentada.  
+
+O processo mais comum é a autenticação utilizando usuário e senha. O login do usuário corresponde a sua identidade e deve ser um identificador único.  A senha deve ser vinculada com o identificador do usuário. Esta senha deve ser utilizada no processo de verificação, permite comparar a senha fornecida pelo usuário com uma senha previamente armazenada no sistema. Deste modo, conseguimos validar a identidade do usuário, ou seja, verificar se o usuário é realmente quem alega ser, onde apenas o usuário legítimo deve ter conhecimento da sua senha. 
+
+  Assim, o processo de identificação permite identificar os usuários do sistema, bem como os processos que agem associados a este usuário ou dispositivos. Adicionalmente, a autenticação permite verificar (autenticar) a identidade de tais usuários, processos ou dispositivos. Deste modo é possível liberar ou restringir o acesso aos dados ou sistemas de informação de uma organização. 
+
+
+Fonte: ©Blue Planet Studio/Adobe Stock
+
+Princípios da Autenticação
+Conforme os princípios da autenticação, o usuário deve ser devidamente identificado. Além do mais, todo usuário autêntico deve ser automaticamente autorizado a utilizar os sistemas.    
+
+O princípio da autenticação fornece garantias da identidade de quem está enviando a informação. Este mecanismo é utilizado para proteger uma das propriedades fundamentais da segurança da informação, a confidencialidade. Conforme estudamos na primeira Unidade, a confidencialidade permite garantir que a informação somente seja acessada por pessoas autorizadas.  
+
+ A principal forma de garantir a confidencialidade é por meio da autenticação e do controle de acesso, desta forma a informação será acessada apenas por pessoas devidamente autorizadas. Em contrapartida, temos a perda da confidencialidade se alguém não autorizado obtém acesso a tais recursos. Visando a proteção desta propriedade de segurança, a norma ISO 27002 fornece algumas diretrizes para orientar o processo de identificação e autenticação. Conforme a norma ISO 27002: 
+
+Todos os usuários devem ter um identificador único de uso pessoal e exclusivo, convém que uma técnica adequada de autenticação seja selecionada para validar a identidade dos usuários; 
+
+O controle de autenticação deve ser aplicado para todos os tipos de usuários, inclusive administradores do sistema e diretoria; 
+
+Os identificadores dos usuários devem ser utilizados para rastrear as atividades dos indivíduos. Como boas práticas as atividades regulares dos usuários não devem ser realizadas por meio de contas privilegiadas; 
+
+Convém documentar qualquer tipo de circunstância excepcional que exija a utilização de identificador de usuário compartilhado por um grupo de pessoas, controles adicionais podem ser necessários para manter as responsabilidades dos indivíduos que vão utilizar este identificador; 
+
+Identificadores genéricos para uso de um indivíduo só devem ser autorizados onde as ações executadas pelo usuário não precisam ser rastreadas, ou quando existem outros controles implementados para tal; 
+
+É conveniente que onde exista a necessidade de uma autenticação mais robusta, sejam implementados métodos adicionais de autenticação, tais como meios criptográficos, smart cards, tokens e mecanismos para autenticação biométrica; 
+
+Convém que a força dos processos de identificação e autenticação sejam proporcionais a sensibilidade da informação que deve ser acessada. Ideal que as senhas sejam protegidas utilizando meios criptográficos e protocolos de autenticação; 
+
+Objetos como tokens podem ser utilizados para identificação e autenticação; 
+
+Tecnologias de autenticação biométricas que usam características únicas de um indivíduo podem ser utilizadas para autenticar a identidade de um usuário; 
+
+A combinação de diferentes tecnologias e mecanismos de segurança resultam em uma autenticação mais forte. 
+
+
+Fatores da Autenticação
+Conforme mencionado, o processo de autenticação consiste em determinar se um usuário é quem realmente afirma ser, existem basicamente quatro fatores principais que permitem autenticar a identidade de um usuário: 
+
+O que o indivíduo sabe; 
+
+O que o indivíduo possui; 
+
+Características físicas do indivíduo (biometria estática); 
+
+Características comportamentais (biometria mecânica). 
+
+ 
+
+Os fatores podem ser utilizados sozinhos ou ainda combinados.  
+
+O primeiro fator corresponde a algo que apenas o indivíduo “sabe”, por exemplo a senha, o número de identificação pessoal (PIN), respostas a um conjunto de perguntas que foram previamente cadastras (utilizado em combinação com outros fatores para troca de senha), desenhos ou representações gráficas que apenas o usuário consiga identificar.  
+
+O segundo fator é algo que o indivíduo possui, por exemplo tokens (amplamente utilizado nas instituições bancárias), senhas descartáveis enviadas por e-mail, SMS ou aplicativos no smartphones, cartões eletrônicos, smart card, chaves criptográficas. 
+
+O terceiro fator está associado diretamente as características físicas do indivíduo, relacionado ao que o indivíduo é, retrata-se da biometria estática que contempla a impressão digital, identificação da face, leitura biométrica da íris ou retina. 
+
+O último fator está associado as características do que o indivíduo faz, relacionadas as características comportamentais, correspondente a biometria mecânica, tais como o padrão de voz, característica de escrita (em geral utilizado a assinatura), ritmo de digitação entre outros. 
+
+Contudo, cada um dos fatores possui suas próprias limitações. O fator que o indivíduo sabe pode ser adivinhado ou roubado (quebra de senhas por exemplo). Semelhante, o fator que o indivíduo possui pode ser roubado ou ainda falsificado. As características de biometria estática tendem a ser mais precisas, entretanto existe um alto custo associado à sua implementação. Por sua vez, a biometria mecânica pode gerar muitos erros no processo de autenticação (falsos negativos e positivos), ainda dependendo do cenário pode não ser conveniente.  
+
+
+Tipos de Autenticação
+Os fatores de autenticação mencionados anteriormente permitem estabelecer os mecanismos de autenticação, consequentemente podemos ter diferentes tipos de autenticação. Um sistema pode implementar mais de um fator de autenticação para certificar as credenciais dos usuários, atualmente é um procedimento que está se tornando comum e bastante recomendado, esta técnica é denominada como autenticação multifator.  
+
+Existem diferentes tecnologias para autenticação multifator, contudo são estruturas basicamente sobre três tipos: 
+•Autenticação baseado em senha;
+
+•Autenticação baseado em token;
+
+•Autenticação biométrica.
+
+Atualmente a segurança no Ciberespaço exige muito mais do que apenas uma simples senha para garantir a segurança dos usuários. Com a crescente transformação digital, o potencial das ameaças também vem sendo explorado. Nesse sentido, a autenticação multifator está se tornando cada vez mais importante, pois utilizar mais de um elemento para autorizar o acesso, propõe uma camada extra de segurança. Então, primeiramente vamos conhecer brevemente cada um dos tipos de autenticação, na sequência vejamos como podemos combiná-los. 
+
+Fonte: ©Irina Strelnikova/Adobe Stock
+Autenticação baseado em senha
+A autenticação baseada em senha é a principal linha de defesa do sistema de informação contra um adversário, em essência a autenticação é um meio utilizado para validar a identidade fornecida por uma determinada entidade, podendo ser um usuário legítimo ou não. Neste mecanismo o usuário legítimo deve fornecer um identificador e uma senha válida previamente cadastrada no sistema. O sistema irá verificar se as credenciais deste usuário são verdadeiras. Ao validar a identidade alegada o sistema fornece o acesso deste usuário ao sistema. Então outros mecanismos de segurança deverão ser empregados, tal como o mecanismo de controle de acesso que visa garantir que o usuário tenha acesso e privilégios no sistema apenas para aquilo que lhe compete – garantir que um usuário não tenha privilégios superiores do que deve ter (privilégios de administrador na máquina ou sistema). O mecanismo de controle de acesso será estudado na nossa próxima Unidade, mas primeiramente vamos conhecer um pouco mais sobre a nossa principal linha de defesa, a autenticação, por enquanto é apenas necessário que você compreenda que existe uma integração entre esses dois mecanismos.   
+
+
+
+Autenticação baseado em token
+A autenticação baseada em token consiste na utilização de um objeto por parte do usuário para auxiliar no processo de autenticação.   
+
+O token é um dispositivo em geral eletrônico que permite gerar senhas temporárias para reforçar o processo de autenticação. Na maioria das vezes o token não possui uma conexão física com o computador, porém existem algumas versões que devem ser conectadas a porta USB do computador. Entre as tecnologias mais recentes temos a utilização dos smart cards e smartphones que são capazes de realizar a mesma tarefa. A tendência atualmente é a utilização dos smartphones para fornecer a funcionalidade do token, que está sendo bastante utilizado por instituições bancárias e financeiras.  
+
+
+
+Fonte: ©bestforbest/Adobe Stock
+
+Contudo, os adversários também têm explorado estas novas tecnologias, existe uma quantidade significativa de malware destinado aos dispositivos móveis, veremos isto na Unidade correspondente. Em relação aos tokens vamos estudar duas frentes, os tokens como cartões de memória e os smart tokens. 
+
+Cartões de memória 
+
+Este tipo de token permite o armazenamento de informação, contudo não realiza nenhum tipo de processamento. Tal dispositivo, está presente nos cartões bancários que possuem uma fita magnética na parte de trás do cartão. Esta fita magnética possibilita armazenar um código de segurança comum, podendo ser lido na maioria das leitoras de cartões. Uma das grandes desvantagens é que este dispositivo pode ser reprogramado. Existem outros cartões de memória que adicionam uma memória eletrônica interna. 
+
+Os cartões de memória são usados para utilização em acessos físicos, normalmente associados a algum tipo de senha. Um exemplo de uso típico são os cartões de débito com a utilização nos caixas eletrônicos dos bancos. 
+
+O cartão de memória quando associado com uma senha fornece uma segurança maior do que apenas a utilização de uma senha individual. Neste sentido, o adversário precisa ter posse do cartão físico para realizar qualquer tipo de operação. Contudo, mesmo existindo uma limitação física, os criminosos conseguem aplicar golpes por meio de engenharia social ou ainda por clonar o cartão (duplicar o cartão), deste modo devemos estar sempre atentos. 
+
+Smart tokens 
+
+Os smart tokens são dispositivos hardware, mídias que armazenam informações. Em geral seus chips permitem armazenar os dados do certificado digital do usuário. As informações são acessadas por meio da utilização da senha pessoal do usuário. Os smart tokens possuem algumas das seguintes características:  
+
+
+Fonte: ©Sergey Yakovlev/Adobe Stock
+Características físicas: os smart tokens contêm um microprocessador inserido internamente em seus dispositivos, um dos principais exemplos é o cartão smart card. Os smart cards são cartões inteligentes, fabricados em plástico, são muito semelhantes aos cartões de crédito convencionais, porém este tipo de cartão possui um microchip embutido em sua superfície. Existe outros tipos de smart tokens, pequenos objetos portáteis, muito semelhante a um chaveiro, este permite gerar senhas temporárias para acesso. 
+
+Interface: um smart token pode possuir uma interface para permitir interação com o usuário, em geral possui um teclado e um display. Este dispositivo pode se comunicar com um dispositivo externo (leitora ou gravadora). 
+
+
+Fonte: ©JonikFoto.pl/Adobe Stock
+Protocolo de autenticação: o propósito de smart token é fornecer autenticação para os usuários. Desse modo, podemos classificar este dispositivo conforme o protocolo de autenticação utilizado, em geral existem basicamente três categorias básicas: 
+
+Estático: neste protocolo o usuário autentica-se no token e o token faz a autenticação do usuário no computador. 
+
+Gerador de senha dinâmico: o token gera uma senha temporária. Essa senha deve ser digitada no sistema para realizar o procedimento de autenticação, introduzida manualmente ou automaticamente por meio do token. 
+
+Requisição/resposta: o sistema gera uma requisição, posteriormente o token deve fornecer uma resposta para solicitação efetuada. 
+
+
+Autenticação biométrica
+A autenticação por biometria consiste em autenticar um indivíduo utilizando características físicas únicas que os diferem de outros indivíduos. Tais características podem ser classificadas como estáticas ou dinâmicas. Entre as características estáticas temos as impressões digitais, a geometria da palma da mão, padrões da retina e íris dos olhos e identificação facial. Associado as características dinâmicas temos assinatura, padrão da escrita, padrão do reconhecimento de voz e ritmo de digitação.   
+
+
+Fonte: ©-=MadDog=-/Adobe Stock
+
+A biometria é essencialmente baseada na tarefa de reconhecimento de padrões. Vejamos as principais aplicações para autenticação biométrica: 
+
+Impressões digitais: são uma das biometrias mais populares, consiste no padrão de saliências e traços na superfície das pontas dos dedos. As impressões digitais são únicas, o que permite diferenciar um indivíduo dentro da população humana. Desse modo, os sistemas de reconhecimento de impressões digitais extraem diversas características da digital que armazenadas no sistema para realizar o processo de verificação da digital. O processo de verificação consiste em confrontar a digital fornecida pelo usuário com a digital previamente armazenada. 
+
+Assinaturas: no processo de escrita cada indivíduo possui um estilo, o que reflete na sua assinatura que consiste na representação escrita do nome da pessoa. Porém, a assinatura possui algumas limitações, por mais parecidas que as assinaturas sejam, um indivíduo não vai conseguir replicar assinatura idênticas, o que para o computador torna-se um desafio. Outro aspecto é que assinatura do indivíduo pode mudar ao longo do tempo. 
+
+Geometria da mão: esta abordagem consiste em identificar padrões na palma da mão do indivíduo, identifica características tais como forma, comprimento e largura dos dedos. Tais informações são previamente armazenadas nos sistemas de autenticação baseado na geometria da mão, posteriormente são utilizadas para verificar a identidade do usuário. 
+
+Características faciais: esta abordagem consiste em utilizar as características faciais para identificar um indivíduo. Entre as principais características são analisadas a geometria do rosto, aspectos faciais fundamentais como olhos, sobrancelhas, nariz, lábios e formato do queixo. 
+
+Padrão da retina e íris: o formato das veias sanguíneas abaixo da superfície da retina são características únicas de um indivíduo, deste modo pode ser utilizada no processo de identificação. O sistema biométrico de retina obtém uma imagem digital do padrão da retina utilizando um facho de luz infravermelha no olho. Então, armazena esta imagem no sistema, posteriormente utiliza ela para verificar a identidade do usuário. Outra característica biométrica advinda dos olhos é o padrão da íris dos olhos, sendo que a íris fornece um formato único, podendo também ser utilizada para diferenciar os indivíduos. 
+
+Identificação de voz: esta abordagem consiste em identificar padrões de voz que estão fortemente associados a características físicas e anatômicas do locutor. Este tipo de método de autenticação possui uma certa limitação, ao longo do tempo a voz acaba sofrendo uma certa variação, com isto a tarefa de reconhecimento biométrico da voz pode se tornar um desafio. 
+
+
+Fonte: ©vinitdeekhanu/Adobe Stock
+A autenticação biométrica em comparação com autenticação baseada em senhas e tokens é uma abordagem bastante complexa. Um outro fator que deve ser avaliado é o preço necessário para implementar esta tecnologia, ainda é um investimento bastante alto. Apesar de ser uma tecnologia promissora ainda deve ser amadurecida. 
+
+Autenticação Baseada em Senha
+A autenticação baseada em senha é a principal linha de defesa dos sistemas de informação contra intrusos, sendo amplamente utilizada, praticamente todos os sistemas solicitam que um usuário forneça suas credenciais, exigindo tanto um identificador único como também uma senha.  
+
+O sistema deve comparar a senha que está sendo fornecida pelo usuário com a senha que foi previamente cadastrada por um usuário autêntico, sendo preservada em um arquivo de senhas ou armazenada em um banco de dados do sistema. A senha permite autenticar o identificador único do usuário que está acessando o sistema. Desta forma, o identificador único fornece segurança das seguintes maneiras: 
+
+O identificador permite determinar se o usuário está autorizado a acessar o sistema. Em geral, apenas os usuários que tiveram seu identificador armazenado no sistema devem ter permissão de acesso. 
+
+O identificador permite definir quais privilégios serão concedidos ao usuário. O sistema pode fornecer privilégios de super usuário, usuário que contém privilégios para administrar todo o sistema, inclusive executar funções que são protegidas pelo sistema operacional. Em contrapartida, o sistema fornece contas com privilégios restritos, tais contas são mais limitadas, onde o usuário pode realizar poucas ações no sistema. 
+
+O identificador pode ser utilizado no controle de acesso discricionário. Neste sentido, um usuário que apresentar uma lista de identificadores de outros usuários, pode conceder privilégios para que outros usuários manipulem (leitura, escrita e execução) seus arquivos. 
+
+
+Fonte: ©Song_about_summer/Adobe Stock
+Políticas e Estratégias para Definição de Senhas
+Para conceber políticas e estratégias adequadas na definição de senhas devemos primeiramente conhecer algumas das abordagens utilizadas pelo adversário para realizar a “quebra” da senha. Ainda, compreender a importância de estabelecer senhas que sejam efetivamente seguras nos sistemas. 
+
+Abordagens para quebra de senha
+A abordagem tradicional utilizada para “adivinhar” ou “quebrar” a senha, consiste em utilizar um dicionário contendo inúmeras senhas possíveis e testar essas senhas sobre o arquivo de senhas do sistema. Além de existir inúmeros arquivos de dicionários de senhas distribuídos na internet, contendo milhões de senhas cadastradas, os adversários podem criar seus próprios dicionários de senhas.  
+
+Um programa testa exaustivamente todas as senhas contidas no dicionário. Caso não encontre nenhuma senha correspondente no arquivo, o programa de quebra de senhas tenta submeter variações de todas as palavras contidas no dicionário de senhas. Entre as variações temos a inversão da palavra (strings), substituição de caracteres (números e caracteres especiais) e sequência de caracteres.  
+
+Para cada tentativa que o programa realiza para tentar quebrar a senha, um hash correspondente a este valor é criado. Gerar milhões de hash pode levar um tempo considerável para que o programa consiga testar todas as senhas. Neste sentido, os atacantes vêm otimizando tal abordagem, ao invés do programa testar uma senha de cada vez, gerando um hash a cada tentativa, o adversário processa antecipadamente todos os valores contidos no dicionário, obtendo uma tabela contendo todas as senhas e seus hashes correspondentes. Esta tabela que contém todos os hash também é conhecida como Rainbow Table, onde a tradução para o português significa tabela “arco-íris”. Tal estratégias tem otimizado bastante o tempo que o adversário leva para tentar quebrar uma senha do sistema. 
+
+
+Abordagens de seleção de senhas
+Apesar de ser bastante significativo as taxas de adivinhação de senhas por parte do adversário, ainda não viável para o atacante utilizar uma simples técnica de força bruta a fim de testar todas as combinações possíveis de caracteres para descobrir uma determinada senha. Sendo que esta técnica além de exigir recurso computacional irá exigir um tempo considerável. Conforme pesquisa da Kaspersky, uma GPU que consegue testar 10,3 bilhões de hashes por segundo, levaria aproximadamente 526 anos para descobrir uma senha contendo 10 caracteres [Kaspersky, 2021]. Embora a utilização de supercomputadores poderia fazê-lo em poucas semanas, ainda um tempo considerável. 
+
+Deste modo, programas de quebra de senha exploram principalmente o aspecto de haver pessoas que acabam definindo senhas que são extremamente fáceis de adivinhar. Foi observado que quando os usuários podem selecionar suas próprias senhas sem que haja critérios ou políticas para definição de senhas, muitos usuários optam por senhas absurdamente curtas. Em um estudo realizado com 7 mil pessoas demostrou que 3% das pessoas tinham senhas com três ou menos de três caracteres de comprimento [Stallings, 2014].   
+
+Neste sentido, um atacante pode iniciar o ataque testando exaustivamente todas as combinações possíveis de senhas com comprimento de três ou menos caracteres, tendo sucesso em poucos segundos. Seguindo boas práticas, o ideal que o sistema não aceite senhas com um comprimento menor, exigir que o usuário adicione uma senha com pelo menos oito caracteres de comprimento.  
+
+O tamanho da senha é apenas um dos fatores que devem ser avaliados. Quando o usuário possui a liberdade de selecionar sua própria senha, não havendo critérios para a definição de senhas, muitos irão selecionar senhas fracas fáceis de adivinhar, tais como o nome, sobrenome, nome da rua onde mora, alguma palavra comum do dicionário entre outras. Para o adversário é conveniente, pois é algo que acaba facilitando o seu trabalho, pois a tarefa de quebra a senha acaba se tornando algo direto. Assim, o programa de quebra de senha precisa simplesmente testar um arquivo contendo as senhas prováveis que o usuário pode ter cadastrado. Visto que inúmeras pessoas utilizam senhas fáceis de quebrar, tal estratégia será bem-sucedida na maioria dos casos.  
+
+
+Deste modo, é ideal que os usuários sigam alguns requisitos de complexidade na definição de suas senhas, a senha deve contemplar pelo menos três dos requisitos das seguintes categorias:
+•Letras maiúsculas (A à Z);
+
+•Letras minúsculas (a à z);
+
+•Dígitos (0 a 9);
+
+•Caracteres especiais (caracteres não alfanuméricos): (~! @ #$%^&*_-+='|\() {} []:;"' <>,.? /).
+
+
+
+Estabelecer políticas de senhas que definam tais requisitos de complexidade é extremamente aconselhável. Esta configuração de política de senha associado a definição de senha com no mínimo 8 caracteres, garante que exista pelo menos 218.340.105.584.896 possibilidades diferentes para uma única senha [Simpson, 2021]. Este tipo de política de senha dificulta bastante um ataque de força bruta, contudo ainda assim este ataque é possível. 
+
+Controle de acesso em arquivo de senhas
+Uma das maneiras mais efetivas de frustrar um ataque de senha é não permitir que o adversário tenha acesso ao arquivo de senhas. O arquivo de senhas deve ser acessível apenas pelos usuários privilegiados, o adversário não deve ter acesso de leitura sobre o arquivo de senha, desta maneira ele não terá acesso ao hash correspondente a senha de um usuário privilegiado. Em geral, os arquivos de senhas são preservados em um arquivo separado do arquivo que contém os identificadores dos usuários. Bastante comum nas distribuições do sistema operacional Linux, neste caso o arquivo de senhas é denominado “shadow” e o arquivo que contém os identificadores dos usuários é o arquivo “passwd”. É necessário que o arquivo de senhas seja protegido contra acessos não autorizados, sendo definido permissões adequadas. Ainda que a proteção dos arquivos de senhas seja imprescindível, as vulnerabilidades ainda permanecem: 
+
+O adversário pode explorar uma vulnerabilidade do sistema operacional para tentar enganar o sistema de controle de acesso visando obter o arquivo de senhas. Ainda, pode adquirir o arquivo de senhas explorando a fraqueza do sistema de arquivos ou sistema de gerenciamento de banco de dados; 
+
+Procedimentos realizados de forma imprudente ou acidentais podem expor o arquivo de senhas, deixando as senhas legíveis, comprometendo todas as contas dos usuários;  
+
+Usuários que utilizam a mesma senha em diferentes contas, cadastradas em diferentes máquinas ou domínios estão mais suscetíveis a vulnerabilidades com senhas. Pois, caso a senha do usuário seja lida em qualquer que seja das máquinas, consequentemente as demais máquinas estarão comprometidas; 
+
+O adversário pode explorar oportunidades para obter o arquivo de senhas, devemos observar a segurança física do datacenter e suas fraquezas. Destaca-se a importância da manipulação correta dos backups, para que apenas pessoas autorizadas tenham acesso, visto que o backup provavelmente contém os arquivos de senhas. Ressalta-se, que se o adversário tiver acesso a estrutura física do datacenter este poderá inicializar o sistema a partir de outro disco, utilizando um pendrive ou disco de boot (Live CD), tendo acesso ao arquivo de senha por meio de outro sistema operacional (em geral uma distribuição Linux). 
+
+Além de capturar o arquivo de senhas, o adversário poderá utilizar uma estratégia um pouco mais sútil, este poderá analisar os pacotes que trafegam na rede a fim de obter o identificador e a senha dos usuários. 
+
+Deste modo, é essencial definir políticas de proteção de senhas adequadas, fornecer técnicas para forçar os usuários a definirem senhas difíceis de quebrar, seguindo certos critérios e padrões para obter uma senha forte. 
+
+
+Vulnerabilidades na Autenticação
+Em geral, os sistemas baseados em senhas mantêm um arquivo de senhas, este arquivo dispõe do identificador do usuário associado à sua respectiva senha. Para que as senhas não sejam armazenadas em formato "bruto" (ao efetuar a leitura do arquivo a senha fica exposta) uma das estratégias é adotar a aplicação de funções hash. Deste modo, ao invés de armazenar efetivamente a senha, adicionamos no arquivo o hash criptográfico da senha correspondente.  
+
+Ao longo das unidades iremos nos aprofundar em relação as funções hash criptográficas. Neste momento, é suficiente que você compreenda que uma função hash criptográfica utiliza algoritmos matemáticos para gerar uma saída de tamanho fixo independentemente do tamanho da entrada, mas principalmente, que esta função é praticamente impossível de ser invertida. Deste modo, um indivíduo, mesmo que tenha acesso ao arquivo de senhas do sistema não terá acesso efetivo as senhas dos usuários. 
+
+Contudo, mesmo adotando tal estratégia a autenticação pode ser alvo de ataques, entre os mais comuns:
+•Ataques de dicionário;
+
+•Ataque a conta específica;
+
+•Ataque a senha popular;
+
+•Adivinhação de senha contra usuário único;
+
+•Explorar erros do usuário;
+
+•Monitoração eletrônica;
+
+•Explorar reutilização de senhas.
+
+
+
+Fonte: ©Vitalii Vodolazskyi/Adobe Stock
+Ataques de dicionário: 
+
+Na técnica de ataques de dicionário off-line o atacante obtém acesso ao arquivo de senhas. Por meio de um ataque de força bruta o "adversário" (hacker) compara os hashes de senhas comumente usadas com as senhas do sistema armazenadas no arquivo obtido. Em geral são utilizados programas que vão testando exaustivamente os hashes com as senhas. Ao encontrar um hash igual o atacante terá acesso ao sistema, sendo que ele terá acesso ao identificador do usuário e sua senha. Entre as contramedidas destacam-se a adoção de controle de acessos robustos visando impedir o acesso não autorizado ao arquivo de senhas, sistemas de detecção de intrusão para identificar se o sistema foi comprometido, um processo rápido de reemissão de senhas em caso de ocorrer um comprometimento no arquivo de senhas, adotar técnicas de criptografias adequadas. 
+
+ 
+
+Ataque a conta específica: 
+
+Neste ataque o adversário visa o acesso a uma conta específica, tenta descobrir a senha por meio de adivinhações, realiza tentativas até descobrir qual é a senha correta. Para este tipo de ataque a contramedida mais comum é utilizar uma política de lockout, ou seja, realizar o bloqueio da conta após a realização de um número de tentativas incorretas. Seguindo boas práticas de segurança da informação, o ideal que o número de tentativas de login não ultrapasse mais de cinco tentativas consecutivas de acesso. 
+
+ 
+
+Ataque utilizando senha populares: 
+
+O ataque de senha popular consiste em utilizar um conjunto de senhas "populares" (muito utilizado pelos usuários) e testar estas senhas sobre vários identificadores de usuários.  É bastante comum os usuários definir senhas que sejam fáceis de recordar, porém tais senhas acabam sendo muito fáceis de decifrar. Como contramedida é possível estabelecer políticas para definição de senhas, inibindo que os usuários cadastrem senhas comuns nos sistemas, adicionalmente é ideal monitorar os endereços IP´s em busca de padrões de pedidos de autenticação, restringindo o acesso de tais IP´s ao identificar em casos de anomalias. 
+
+Adivinhação de senha contra usuário específico:  
+
+Este tipo de ataque consiste em descobrir informações sobre um determinado usuário e sobre as políticas de senha do sistema, utilizando tais informações o adversário realiza um ataque direcionado, tenta adivinhar a senha por meio do conhecimento obtido. As contramedidas incluem treinamento e a efetiva execução das políticas de senha, tornar as senhas difíceis de serem adivinhadas. 
+
+Explorar erros do usuário: 
+
+As senhas que são definidas pelos sistemas acabam sendo mais difíceis do usuário recordar, muito provavelmente o usuário acaba realizando uma anotação desta senha. Consequentemente isto pode acabar gerando um problema, uma pessoa mal-intencionada pode acabar lendo a senha escrita. Ainda, o usuário pode compartilhar intencionalmente a senha com outros usuários, para conceder privilégios de acesso a outros colegas (por exemplo acessar um arquivo ou e-mail). Visando evitar problemas com a exposição de senhas é necessário que o usuário tenha consciência que a senha é pessoal e de uso exclusivo dele, para que ele não passe a senha para outras pessoas. Outro aspecto que o usuário deve estar atento, são as táticas de engenharia social, onde o atacante pode tentar enganar o usuário a fim de fazer que este revele sua senha. Entre as contramedidas destaca-se a realização de treinamentos com os usuários, detecção de intrusão e autenticação multifator (utilização de senhas mais simples combinadas com outros mecanismos de autenticação). 
+
+Monitoramento eletrônico: 
+
+A senha ao ser comunicada na rede para realização de um acesso a um sistema remoto pode se tornar vulnerável a interceptação. Um adversário poderá monitorar a rede a fim de capturar os pacotes que trafegam na rede, podendo ter acesso a senha do usuário que está sendo encaminhada. Ainda que esta senha seja criptografada, existe um certo potencial de perigo, pois esta pode ser observada e reutilizada pelo adversário. Apesar existir algumas limitações no processo, a criptografia é uma das contramedidas mais adequadas, outro fator que deve ser realizado é o processo de treinamento dos usuários. 
+
+Um fator fundamental para combater as vulnerabilidades de senhas é estabelecer políticas de senhas adequadas. Na definição das políticas de senha alguns critérios devem ser levados em consideração, as senhas dos usuários devem contemplar certos requisitos: a senha deve ter tamanho mínimo (quantidade de caracteres), estabelecer o conjunto de caracteres (letras maiúsculas/minúsculas, números e caracteres especiais), proibir que o usuário utilize identificadores de usuário bastante conhecido (palavras do dicionário, nome, sobrenome), senha deve ser de uso exclusivo e caráter sigiloso, definir intervalos de tempo adequados para realização da troca da senha. 
+
+Ainda, norteados por padrões e boas práticas devemos evitar que os sistemas sejam deixados com senhas defaults. É bastante comum que os ativos dos sistemas de informação (hardware e software) sejam entregues com senhas pré-configuradas para os administradores do sistema. Geralmente, as senhas defaults são dispostas na documentação. Neste sentido, ao implementar uma nova solução de TI (tecnologia da informação) as senhas defaults devem ser trocadas, evitando que sejam facilmente adivinhadas. 
+
+Observando que não é raro os usuários utilizarem a mesma senha em diferentes sistemas e dispositivos, devemos ressaltar que isto pode trazer graves problemas. A utilização de senhas repetidas é extremamente desaconselhável, pois caso a senha seja comprometida em um dos sistemas, todos os demais sistemas que possuem a mesma senha também estarão comprometidos, onde os danos serão bem maiores. Neste sentido, é necessário que as senhas sejam diferentes, sendo necessário "educar" os usuários, bem como definir políticas de senha que restrinjam utilização de senha iguais ou semelhantes principalmente em dispositivos de redes.   
+
+Associado as vulnerabilidades na autenticação existe o sequestro da estação de trabalho do usuário. Neste tipo de ataque o adversário aguarda que a estação de trabalho no qual um usuário legítimo se autenticou esteja desatendida. Como contramedida para este ataque o usuário deve bloquear automaticamente o acesso a sua estação de trabalho quando a estação não estiver sendo utilizada. Destaca-se que por meio da detecção de intrusão é possível detectar mudanças no comportamento do usuário, verificar quando o usuário realmente está utilizando a máquina. 
+
+
+Meios de Autenticação
+No decorrer desta unidade conhecemos os diferentes mecanismos de autenticação, esses baseados nos quatro fatores básicos de autenticação: o que o indivíduo sabe, o que ele possui, características físicas e comportamentais. Ainda, constatamos que a autenticação baseada em senha é o principal mecanismo de autenticação. Contudo, observamos que este mecanismo possui suas limitações. A fim de fortalecer o procedimento de autenticação podemos associar mais de um mecanismo, conforme já mencionado denominamos esta abordagem como autenticação multifator. A combinação de diferentes tecnologias para autenticação permite alcançar níveis maiores de segurança. 
+
+Ao refletir no cenário de estudo do Banco de Tóquio, introduzido na Unidade 1, observamos que não havia presença de autenticação multifator nos sistemas interno do banco, tão pouco um mecanismo para rastrear as atividades dos indivíduos. Provavelmente, a existência de uma autenticação multifator nos sistemas do banco evitaria a rápida disseminação do malware. O malware poderia até comprometer a primeira linha de defesa do sistema do banco, ou seja, a autenticação baseada em senha, porém, havendo um segundo mecanismo de autenticação por meio de biometria ou utilização de um token, seria um pouco mais difícil do código malicioso passar por esta outra barreira.  
+
+Neste sentido, para que o malware tivesse sucesso na sua investida, seria necessário que o usuário fornecesse um segundo fator de autenticação, muito provável um dispositivo físico por meio de token ou uma característica física como a própria digital do usuário. Devemos analisar um aspecto secundário, não existe nenhum registro de quem exatamente introduziu o malware nos sistemas interno do banco. Conforme disposto na norma ISO 27002, no processo de identificação e autenticação os identificadores dos usuários deveriam permitir o rastreamento das atividades dos indivíduos.  Observando que estamos tratando de uma instituição bancária tal registro é imprescindível. Não existe nenhum tipo de registro após o processo de autenticação com a senha, a rotina de código malicioso pode ter sido executada de forma acidental ou proposital, desta forma, não temos como identificar o responsável. 
+
+Uma instituição financeira ou bancária necessita de mecanismos de autenticação adequados, tais mecanismos devem ser proporcionais a sensibilidade da informação do banco. Ressalta-se que a combinação de diferentes tecnologias e mecanismos de segurança resultam em uma autenticação mais forte. A implementação de um mecanismo de autenticação multifator em primeira instância pode parecer um pouco complexa, porém é uma ação simples e altamente eficiente para manter a segurança das informações corporativas. Em outras palavras, este processo consiste em apenas um passo adicional onde o usuário será solicitado durante o processo de conexão para obter uma segunda forma de validação da sua identidade, seja por inserir um código no smartphone ou por fornecer uma impressão digital.  
+
+Neste sentido, o banco de Tóquio precisa de um mecanismo de autenticação robusto, nossa missão é garantir que as propriedades de segurança da informação do banco sejam preservadas. Para isto, esta “Unidade” tratou alguns dos principais aspectos do mecanismo de autenticação. Nas próximas unidades vamos conhecer outros mecanismos para garantir a segurança dos ativos de informação do banco, conhecer e saber como aplicá-los.  Mas não se preocupe, vamos nortear você nesta caminhada, ao longo das próximas unidades vamos te preparar para lidar com este e outros problemas de segurança da informação no âmbito real. 
+
+
+
+Explorando a Autenticação Multifator
+Este vídeo vai fornecer uma visão mais ampla sobre o mecanismo de autenticação multifator, quais os benefícios de utilizar uma autenticação de dois ou mais fatores, dicas e boas práticas para implementação deste mecanismo de segurança.
+
+
+
+
+EXERCÍCIOExercícios de Fixação
+Quais as etapas fundamentais para gestão da Quais as etapas de um mecanismo de autenticação? E como são utilizadas?
+Quais os principais fatores de autenticação?
+Cite 3 recomendações estabelecidas na norma ISO 27002 que orientam o processo de identificação e autenticação.
+Cite 3 mecanismos de autenticação e como eles funcionam.
+Explique como funciona um mecanismo de autenticação baseado em token.
+Explique como funciona um mecanismo de autenticação baseado em biometria.
+Com suas palavras descreva o procedimento que o atacante (hacker) utiliza para quebrar uma senha no sistema.
+O que é um Rainbow Table?
+Cite alguns requisitos que devem ser considerados para definição de uma senha forte.
+O que é um ataque de dicionário?
+Como funciona a autenticação multifator?
+Conclusão
+Esta unidade abordou o mecanismo de autenticação, principal linha de defesa contra os ataques cibernéticos. Foi analisado cada uma das etapas do mecanismo de autenticação. Adicionalmente, apresentamos as diretrizes estabelecidas na norma ISO 27002 que permite orientar o processo de identificação e autenticação, aplicando as melhores práticas. Ainda, foram apresentados os quatro fatores principais que permitem autenticar a identidade de um indivíduo. Correspondente ao que o indivíduo sabe, o que ele possui, características físicas e comportamentais do indivíduo. 
+
+Na sequência abordamos os diferentes tipos de autenticação, estabelecidos através dos fatores de autenticação. Neste sentido, existem diferentes mecanismos de autenticação, autenticação baseado em senha, token e utilizando biometria. Ainda, foi apresentado a autenticação multifator que permite a combinação de diferentes mecanismos de autenticação. Conforme discutido, a autenticação multifator permite reforçar a segurança no Ciberespaço, fornecendo uma camada a mais no processo de autenticação do usuário.   
+
+Apresentamos a autenticação baseada em senha, atualmente o mecanismo de autenticação mais comum encontrado nos sistemas de informação. Demostramos que o mecanismo de autenticação deve ser adequado e fortemente proporcional a sensibilidade da informação que o sistema contém. Foi destacado que a autenticação baseada em senha possui suas limitações. Enfatizado alguns critérios e requisitos para obter uma senha razoavelmente segura. Ainda, reforçamos a importância de as organizações estabelecer políticas de definição de senhas adequadas e treinamento para seus usuários.    
+
+Abordamos também os mecanismos autenticação baseados em tokens, como funcionam, e de que maneira eles podem reforçar o processo de segurança nos mecanismos de autenticação. Foram apresentadas duas tecnologias de autenticação baseado em token, mecanismos utilizando dispositivos físicos como cartões de memória e os smart tokens. Observamos que token como cartão de memória permite armazenar informações, contudo não realiza nenhum tipo de processamento, um exemplo bastante comum são os cartões bancários que possuem uma fita magnética no verso. Em contrapartida, foi exposto os mecanismos que utilizam os smart tokens, dispositivo que em geral possui um microchip embutido, presente nos smart cards e outros tipos de smart tokens.    
+
+Também abordamos os mecanismos de autenticação baseados na biometria. Enfatizamos como que funciona este tipo de mecanismo. Demostramos que os mecanismos de autenticação biométrica são segmentados em duas classes, mecanismos que utilizam características estáticas e outros dinâmicas. Observamos que entre as características estáticas temos as impressões digitais, a geometria da palma da mão, padrões da retina e íris dos olhos e identificação facial. Já entre os mecanismos associados as características dinâmicas temos assinatura, padrão da escrita, padrão do reconhecimento de voz e ritmo de digitação. 
+
+Por fim, resgatamos o caso de uso do “banco de Tóquio”, onde foi analisado o mecanismo de autenticação dos sistemas internos do banco. O objetivo foi identificar problemas de segurança da informação relacionados a autenticação, mas sobretudo como poderiam ter sido evitados se os mecanismos de segurança tivessem sido adequadamente implementados. Demostramos a importância de tais mecanismos dentro da organização, quanto mais significativo é a informação a ser preservada, mais robusto deve ser o mecanismo de autenticação. Concluímos que os mecanismos de autenticação são essenciais, contudo, só serão realmente efetivos por meio da aplicação de outras boas práticas de segurança da informação, principalmente no que se refere ao fator pessoa. 
+
+
+
+https://www.youtube.com/watch?v=eNyH3Vc86mQ
+https://www.youtube.com/watch?v=cnBVHZRF4fc
+https://www.youtube.com/watch?v=y0e8fwMYIBI
+
+
+Referências Bibliográficas
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27002: Tecnologia da informação - Técnicas de segurança - Código de prática para controles de segurança da informação. Rio de Janeiro. 2006. 
+
+COELHO, Flávia E. S.; ARAÚJO, L. G. S. Gestão da Segurança da Informação - NBR 27001 e 27002. Rio de Janeiro: Escola Superior de Redes, RNP, 2013. Disponível em: http://pt.scribd.com/doc/58008255/Gestao-da-Seguranca-da-Informacao-NBR-27001-e-NBR-27002. 
+
+HINTZBERGEN, Jule; HINTZBERGEN, Kees; SMULDERS, André; BAARS, Hans. Fundamentos de Segurança da Informação – Com Base na ISO 27001 e na ISO 27002. 3. ed. Rio de Janeiro: Brasport, 2018. [Biblioteca Virtual 3.0]. 
+
+KASPERSKY. “O que é um ataque de força bruta?”. Kaspersky, 2021. Disponível em: < https://www.kaspersky.com.br/resource-center/definitions/brute-force-attack>. Acesso em: 24 de jun. de 2021. 
+
+SHIREY R. RFC 2828 - Internet Security Glossary. The Internet Society, 2000.  
+
+SIMPSON, Daniel. A senha deve atender aos requisitos de complexidade. Microsoft, 2021. Disponível em: < https://docs.microsoft.com/pt-br/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements>. Acesso em: 24 de jun. de 2021. 
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008. 
+
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014. 
+

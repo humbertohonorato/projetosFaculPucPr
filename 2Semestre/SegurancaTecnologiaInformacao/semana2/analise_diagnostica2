@@ -1,0 +1,38 @@
+A segunda etapa da diagnóstica compreende na aplicação de exercícios envolvendo raciocínio algorítmico direcionado a algum tema de segurança da informação, nesta etapa você poderá utilizar a ferramenta Google Colab ou Replit. 
+
+Google Colab
+ 
+
+Replit
+Implemente um algoritmo em Python para manipular sua lista de filmes favoritos. 
+Especificação: 
+Crie uma lista vazia em Python; 
+Adicione o nome de 5 filmes na lista de favoritos; 
+O usuário deverá solicitar o nome de cada filme (usar o comando while); 
+Posteriormente imprima todos os filmes e sua posição na lista; 
+Para imprimir a lista utilizar o comando for e conjunto da função enumerate(). 
+Implemente um algoritmo em Python para manipular uma lista de material escolar. 
+Especificação: 
+Crie duas estruturas de dicionário:  
+Armazenar 3 itens escolares no primeiro dicionário; 
+Criar o segundo dicionário vazio; 
+Os itens devem ser solicitados ao usuário (usar o comando while); 
+Código do produto (chave do dicionário); 
+Tipo do material (valor do dicionário); 
+Permita que o usuário adicione apenas 5 elementos na lista; 
+Atualize o primeiro dicionário com o conteúdo do segundo (usar a função update()); 
+Posteriormente imprima todos os elementos da lista (usar o comando for). 
+Implemente um algoritmo em Python para manipular o sistema de cadastro de um aluno. 
+Especificação: 
+Utilize uma estrutura lista para adicionar os dados dos alunos (nome, sobrenome e e-mail); 
+Crie uma estrutura dicionário para armazenar os dados de cada aluno associado a uma chave (matrícula); 
+Cadastre cinco alunos no sistema; 
+Imprima os dados de todos dos alunos e sua matrícula. 
+ 
+Exemplo de entrada: 
+Adicione um valor para matrícula: 123456; 
+Adicione um valor para nome: Maria; 
+
+Adicione um valor para sobrenome: Silva; 
+
+Adicione um valor para e-mail: maria.silva@gmail.com; 

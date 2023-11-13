@@ -1,0 +1,104 @@
+UNIDADE 08
+Temas complementares
+Ao fazer parte de um time técnico, de desenvolvimento de software, por exemplo, temos de entender que fazemos parte de algo maior. Esse time, em conjunto com outras áreas da empresa, oferece um produto ou um serviço para clientes em uma busca de sucesso. Nesta Unidade, estudaremos outros temas complementares à linha de pensamento ágil, que usualmente fazem parte de uma empresa que adota tal linha de pensamento.
+
+Temas complementares
+Vamos começar assistindo um breve resumo de alguns dos mais importantes pontos estudados até agora.
+
+
+Métodos ágeis: padrão no mercado como processo de trabalho no desenvolvimento de software
+Neste vídeo, vamos revisar alguns dos mais importantes pontos sobre a linha de pensamento ágil.
+
+Agora, vamos introduzir outras linhas de pensamento sinérgicas à ágil.
+
+Agilidade de negócios
+Acredita-se que estamos na terceira onda da linha de pensamento ágil. A primeira foi sobre times ágeis adotando métodos como scrum, kanban e extreme programming. A segunda onda foi sobre escalar a agilidade, em que as organizações levam métodos ágeis para outras áreas, operando em larga escala. A terceira, por sua vez, é a agilidade nos negócios. Para atingir um estado de agilidade de negócios, toda a organização precisa adotar a linha de pensamento ágil, criando efetivamente um ecossistema ágil de ponta a ponta. Inovação é o nome do jogo, ou pelo menos, é a chave para permanecer no jogo. O método lean startup, descrito por Eric Ries, que sofre forte influência da linha de pensamento lean, é usado para criar e sustentar a inovação de produtos. Outra opção que está recebendo muita atenção atualmente é o design thinking, conforme demonstrado na Figura 1, apresentada a seguir.
+
+Figura 1: Design thinking
+Comece sempre pela imersão e pela ideação, antes de partir para a prototipação e o desenvolvimento. Fonte: Fuller, 2016.
+Design thinking
+Design thinking é o termo utilizado para se referir ao processo de pensamento crítico e criativo, possibilitando a organização de ideias de modo a estimular tomadas de decisão e a busca por conhecimento. Não se trata de um método específico, mas, sim, de uma linha de pensamento. Ele consiste em testar as ideias criativas que você tem em mente, usando as mãos para dar forma a essas ideias e, em seguida, colocando essas soluções em potencial nas mãos do usuário final ou cliente para feedback precoce e frequente.
+
+Ele surgiu da Stanford Design School, e de uma empresa líder de consultoria em design e inovação, chamada IDEO. O design thinking existe na intersecção entre o que é viável para o negócio, em termos de tecnologia disponível, e desejável para o consumidor.
+
+Todo processo que busca resolver um problema deve, geralmente, começar com o entendimento completo do obstáculo a ser superado. Depois, vem a análise de possíveis soluções, a definição da melhor delas e a sua aplicação. No design thinking, sugere-se que o procedimento seja dividido em quatro etapas.
+
+https://www.youtube.com/watch?v=ytqTjYm4ejc
+
+Imersão
+A primeira etapa sugere imersão em tudo o que envolve e afeta a empresa ou o produto. Não hesite em coletar feedbacks de clientes, observar o desempenho de colaboradores e se aprofundar na política organizacional da firma.
+
+Ideação
+É hora de produzir ideias relevantes para realizar as melhorias necessárias. Reúna as equipes envolvidas e adote técnicas como o brainstorming, que incentivam e valorizam o compartilhamento de muitas ideias.
+
+Prototipação
+Para reduzir o risco de falhas, é recomendado criar protótipos do que foi idealizado antes de realmente investir em sua execução. Se você está desenvolvendo um novo produto, por exemplo, essa é a hora de investir em uma versão beta, ou seja, não definitiva.
+
+Desenvolvimento
+Finalmente, chegamos ao desenvolvimento. É a hora de tirar tudo do papel e colocar para funcionar de verdade. Então, formamos times, adotamos métodos ou práticas estudados nesta disciplina, e desenvolvemos propriamente o produto ou o projeto idealizado. É muito comum, durante trabalhos orientados pela linha de pensamento design thinking, concentrar-se na visão dos clientes (ou usuários) do nosso produto. A isso, se dá o nome de user experience (experiência do usuário), ou UX.
+
+
+UX
+UX é o estudo responsável por projetar experiências de uso encantadoras para fidelizar e conquistar clientes.
+
+A primeira vez em que houve registro do termo UX foi em 1993, quando Don Norman se referiu a esses processos e cunhou o termo. Na época, Norman trabalhava como arquiteto da experiência do usuário na Apple. O desejo era um termo e função que incluísse a usabilidade, a interface do produto, o design industrial e a interação humana, nos âmbitos físico e mental.
+
+Com esse objetivo, os desenvolvedores de UX estudam o comportamento humano e o serviço oferecido para encontrar meios de melhorar a satisfação e a lealdade dos clientes.
+
+Isso é alcançado normalmente por meio de três pilares.
+
+Utilidade
+O quão útil é o serviço para o cliente; o quanto é melhor fazer as coisas usando o serviço, e não as alternativas.
+
+Facilidade de uso
+O quão fácil e rápido é usar o serviço e resolver o que for preciso usando-o, e não as alternativas.
+
+Prazer
+O quão prazeroso (divertido, interessante, recompensador etc.) é usar o serviço, e não as alternativas.
+
+
+Quanto melhor for a experiência do usuário desde o primeiro contato – e incluímos aqui também as emoções desses momentos –, maior deve ser a satisfação do cliente e mais provável será a sua fidelização. A experiência ao longo da jornada deve ser intuitiva, suave, agradável. Em suma, deve ser prazerosa e útil ao cliente.
+
+E, conforme demonstrado na Figura 1 anteriormente, após desenvolvermos o produto certo usando as linhas de pensamento design thinking e UX e desenvolvermos o produto do jeito certo usando métodos ágeis, precisamos entregar o produto e aprender com nosso cliente rapidamente. Para isso, usamos a linha de pensamento DevOps.
+
+DevOps
+A palavra "DevOps" é a combinação dos termos "desenvolvimento" e "operações".  É uma abordagem de cultura, automação e design de plataforma que tem como objetivo agregar mais valor aos negócios e aumentar sua capacidade de resposta às mudanças por meio de entregas de serviços rápidas e de alta qualidade. Tudo isso é possível por meio da disponibilização de serviços de TI rápidos e iterativos.
+
+DevOps descreve abordagens que ajudam a acelerar os processos necessários para levar uma ideia do desenvolvimento à implantação em um ambiente de produção no qual ela seja capaz de gerar valor para o usuário. Essas ideias podem ser um novo recurso de software, uma solicitação de aprimoramento ou uma correção de bug etc. Essas abordagens exigem comunicação frequente entre as equipes de desenvolvimento e operações, trabalho colaborativo e empatia com os demais membros das equipes.
+
+Figura 2: DevOps
+A interação entre as áreas de desenvolvimento e operações. Fonte: Pandya, 2021.
+Exemplo
+Imagine que fazemos parte do time de desenvolvimento de um produto: aplicativo de celular para locação de imóveis. O aplicativo está funcionando perfeitamente.
+Usando design thinking, o analista de negócios analisa os dados de utilização das telas do aplicativo e percebe que estamos perdendo muitos usuários na tela de informar um fiador para a locação. Utilizando práticas de design thinking, ele convida os membros do time para discutir a questão e as possíveis soluções. O time define que testará a solução de oferecer um seguro locação.
+
+Usando UX, o designer do time concebe uma tela para o aplicativo, chamando a atenção para essa opção, tornando-a opção primária durante o fluxo de locação. O time de desenvolvimento planeja uma outra funcionalidade: a integração com o sistema de seguros.
+
+Usando agilidade, todos concordam que a primeira funcionalidade a ser entregue é a tela, a fim de validar se os clientes realmente aceitam o seguro como opção ao fiador, minimizando as perdas de contratos de locação nessa etapa. A integração pode ser feita após essa validação, pois os corretores podem gerar o seguro manualmente no sistema de seguros, por enquanto.
+
+Usando DevOps, o time todo entrega a tela com a opção de seguro locação duas semanas depois do problema identificado. Testes automatizados, integração contínua e deploy facilitado proporcionam ao time a confiança necessária para mudar o sistema rapidamente. A monitoria do sistema vai continuar trazendo os dados que permitirão ao analista de negócios validar se a hipótese do seguro locação vai trazer o valor imaginado para os clientes.
+
+Vimos alguns temas complementares que podem ser associados à linha de pensamento ágil. Acompanhe a entrevista apresentada a seguir com um profissional da área, para entender a sua utilidade na prática.
+
+
+Entrevista sobre os temas complementares
+Neste vídeo, será entrevistado um profissional de métodos ágeis. Discutiremos os conceitos apresentados nesta Unidade, que cercam a linha de pensamento ágil, com uma visão atual e prática de mercado.
+
+Conclusão
+Quando comparamos as mentalidades do design thinking com os valores e princípios do manifesto ágil, fica claro que há muita sinergia e compatibilidade entre os dois, e é por isso que várias organizações já estão tendo sucesso em abraçar o design thinking como uma chave componente de sua estratégia geral de agilidade de negócios.
+
+Melhoramos o desenvolvimento dos nossos produtos adotando métodos ágeis como processo de trabalho de nossos times. E, ao final da cadeia da empresa, incluímos práticas que permitem à organização implantar valor para o cliente rapidamente, como DevOps.
+
+
+https://www.youtube.com/watch?v=XgxMwo7xwg4
+
+
+
+
+
+Referências
+FULLER, D. Design Thinking and the Business Agility Ecosystem. SOLUTIONSIQ, 2016. Disponível em: https://www.solutionsiq.com/resource/blog-post/design-thinking-and-the-business-agility-ecosystem/. Acesso em: 30 maio 2021.
+
+RED HAT. Introdução ao DevOps. RedHat, 2021. Disponível em: https://www.redhat.com/pt-br/topics/devops. Acesso em: 30 maio 2021.
+
+PANDYA, S. How DevOps Will Evolve in 2021. DZone, 2021. Disponível em: https://dzone.com/articles/how-will-devops-evolve-in-2021. Acesso em: 01 jun. 2021.

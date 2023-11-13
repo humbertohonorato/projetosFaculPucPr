@@ -1,0 +1,88 @@
+https://us.bbcollab.com/collab/ui/session/playback/load/b8c035cd612a433fb922a508c190fabc?authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYkNvbGxhYkFwaSIsInJlY29yZGluZ1VpZCI6ImI4YzAzNWNkNjEyYTQzM2ZiOTIyYTUwOGMxOTBmYWJjIiwiaXNzIjoiYmJDb2xsYWJBcGkiLCJleHAiOjE2OTk5MjQ1NzksInR5cGUiOjEsImlhdCI6MTY5OTkxNzM3OSwiY29uc3VtZXIiOiJlMDU0ZmIzYzk0NWU0ZmIzOWRiNTMwMTVjZGYyMWY0OCJ9.d5Q-4cOb2wqZjwlngVByYr1Uob5ZwRBjKl-vqXQd0H8
+
+https://pucpr.grupoa.education/plataforma/course/486628
+https://www.youtube.com/watch?v=MWjIYVkKbiU
+
+
+Avaliação de IHC por meio da inspenção
+A avaliação de IHC, visando a avaliar a usabilidade de uma interface pode ser realizada por peritos (especialistas em usabilidade). É um tipo de avaliação que não requer a participação do usuário. Mas, é desejável a participação de pessoas experientes em usabilidade para atingir os objetivos da elaboração de um sistema com uma interface fácil de usar, atendo as necessidades dos usuários.  Portanto, neste capítulo será apresentado:
+
+O que é uma avaliação heurística.
+Quais os procedimentos de uma avaliação heurística.
+Avaliação de IHC
+Introdução
+Em IHC,a avaliação é importante na etapa inicial de um sistema interativo para avaliar por meio de um protótipo se as necessidades dos usuários vão ser atendidas. Em etapas mais avanças avaliar se o sistema que foi desenvolvido tem uma interface fácil de usar. No entanto, para que a avaliação de IHC seja eficiente é  necessário definir objetivos e relacionar aos diferentes estakholders do projeto do sistema ou produto interativo. Além disso, os aspectos a serem avaliados vai depender do tipo de produto que está sendo desenvolvido, e a importância para o público alvo em que esse produto está sendo desenvolvido.
+
+Existem diferentes formas de avaliar, como (ROGERS et al., 2013):
+
+Avaliação em ambiente natural
+Avaliação com o usuário
+Avaliação sem a participação dos usuários
+Uma forma de avaliar sem a participação dos usuários é por meio de métodos de inspeção. Esses métodos são empregados para prever o comportamento do usuário, nos contextos em que o sistema será usado e nos tipos de atividades que os usuários realizam (ROGERS et al., 2013). As técnicas que podem ser utilizadas são: Avaliação heurística (NIELSEN E MACK, 1994); Percursos cognitivos (simular resolução de problema de usuário NIELSEN E MACK, 1994) e Analytics (Web analytics).
+
+Na próxima seção vai ser tratada a avaliação por inspençao do tipo heurística.
+
+Inspeções: Avaliação heurística
+A avaliação heurística é uma forma de avaliar sistemas interativos utilizado para encontrar os problemas de usabilidade em uma interface para que sejam corrigidos em um processo de desenvolvimento interativo (BARBOSA et al., 2013). Envolve um pequeno grupo de peritos (especialistas) em usabilidade para avaliar a interface com base nos princípios de usabilidade (Heurísticas) propostos por Nielsen e outros profissionais de desigeners  (BENION, 2015). Estes principios de usabilidade podem ser utilizados pela equipe de designer a definir um designer mais aderente as necessidades dos usuários. Além disso, é partir destes principios que a interface de um sistema pode ser avaliado.
+
+A vantagem de uma avaliação realizada por especialistas é que não precisa de laboratório ou equipamento. Portanto, torna-se uma avaliação de usabilidade mais barata. É uma avaliação mais rápida de realizar. Um dia para aplicar. É uma avaliação que pode ser aplicada em qualquer estágio do projeto, incluindo protótipos precoce. O treinamento é simples. Pode ser ensinada em poucas horas (para os peritos).
+
+A avaliação heurística utiliza como base princípios de usabilidade, que são características desejáveis a uma interface (BARBOSA et al., 2013):
+
+H1. Visibilidade do status do sistema: significa tornar as coisas visíveis para o usuário. Barbosa et al. (2010) diz que o estado do sistema, ações e opções do sistema e as opções devem estar atualizados
+
+e facilmente perceptíveis.  Não é necessário o usuário se lembrar, os ícones existentes devem ajudar na execução da tarefa.  Exemplo: a ação de feedback ajuda o usuário a saber o que está ocorrendo durante a execução de uma atividade.
+
+H2. Correspondência entre o sistema e o mundo real: significa usar conceitos e símbolos que os futuros usuários vão usar. Exemplo: botões
+
+H3. Controle do usuário e Liberdade: significa dar controle ao usuário para realização de uma tarefa. De forma que ele consiga decidir cancelar, avançar e confirmar uma determina ação. Exemplo: botão de cancelar, botão de avançar.
+
+H4. Consistência e padrões: significa interfaces para ter operações similares e utilizar elementos similares para tarefas similares. Exemplo: consistência em termos de botões, cores, alinhamento e etc.
+
+H5. Prevenção de erros: significa dar a oportunidade do usuário desfazer ações para reparar enganos e erros cometidos pelo usuário. Exemplo: restaurar arquivos da lixeira.
+
+H6. Reconhecimento em vez de lembrança: significa que as instruções de uso do sistema devem estar visíveis ou facilmente acessíveis sempre que necessário.
+
+H7. Flexibilidade e eficiência de uso: significa dar a possibilidade de dar ao usuário a chance de configurar seu ambiente de trabalho, ou seja, personalizar o sistema. Exemplo: a funcionalidade de configuração da tela do windons. Nesta tela, o usuário consegue confirgurar seu ambiente de trabalho aumentar a letra, mudar papel de parede e outras configurações.
+
+H8. Estética e design minimalista: significa apresentar ao usuário a informação precisa no momento, nem mais nem menos. Exemplo: tela do google.
+
+H9. Recuperação de erros: significa dar a oportunidade do usuário desfazer ações para reparar enganos e erros cometidos pelo usuário. Exemplo: restaurar arquivos da lixeira.
+
+H10. Ajuda e documentação: significa a facilidade do usuário encontrar um documento ou tutorial de ajuda para explicar alguma informação do sistema. Exemplo: tutorial de ajuda do word.
+
+Procedimentos de avaliação
+Em Barbosa et al. (2010) é apresentado os procedimentos para realização de avaliação heurística e descreve as seguintes atividades:
+
+Preparação
+Tarefa: reunião com todos os avaliadores.
+- os avaliadores tomam ciência sobre a situação atual: usuários, domínio do sistema e etc.
+
+- é decido o que cada avaliador irá avaliar.
+
+Coleta de dados
+Tarefa: cada avaliador individualmente fará:
+- a inspeção da interface requerida para identificar a não consistência com a interface.
+
+- a lista com os problemas identificados pela inspenção, indicando o local, gravidade, justificativa e recomendações para solução.
+
+Consolidação dos resultados
+Tarefa: reunião com todos os avaliadores:
+- revisam os problemas encontrados, julgando sua relevância
+
+- geram um relatório final, com as não-conformidades em relação as heurísticas de usabilidade.
+
+
+
+
+
+
+Referências Bibliográficas
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015. [Minha Biblioteca].
+
+BARBOSA, S. D. J.; SILVA, B. S. 2010. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de Interação – Além da interação humano-computador. Editora: bookman – 3ª edição,2013, 585p.
+
+KRONBAUER, A.H.; SANTOS, C.A.S. Um modelo de avaliação da usabilidade baseado na captura automática de dados de interação do usuário em ambientes reais. Conference: Proceedings of the 10th Brazilian Symposium on on Human Factors in Computing Systems and the 5th Latin American Conference on Human-Computer Interaction, 2013.
+

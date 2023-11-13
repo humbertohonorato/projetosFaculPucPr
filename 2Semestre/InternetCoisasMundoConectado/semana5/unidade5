@@ -1,0 +1,165 @@
+UNIDADE 05
+Protocolo MQTT para IoT
+Nesta unidade você irá entender na prática como funciona o protocolo MQTT. Para isto iremos acessar um serviço on-line e gratuito que permitirá realizar todos os testes necessários para a compreensão deste protocolo. Vamos lá.?
+
+Estudo
+Bem, inicialmente começaremos nosso estudo fazendo uma breve revisão do protocolo MQTT.
+
+O protocolo MQTT é baseado em um conceito de assinatura (subscribe) e publicação (publish). Um serviço on-line chamado MQTT Broker é responsável por receber as mensagens dos diferentes dispositivos e copiá-la para outros dispositivos que previamente manifestaram interesse nestes dados. Observe a Figura 1.
+
+Arquitetura MQTT
+Fonte:https://www.javatpoint.com/mqtt-protocol
+Nesta figura, podemos ver a esquerda um dispositivo chamado Publisher que é responsável por ler as informações de sensores e enviá-las ao MQTT Broker através da mensagem (message) a um tópico. Ao receber esta mensagem, o MQTT Broker avalia quais dispositivos ou aplicativos estão interessados nessa informação. Neste caso, temos um aplicativo celular e algum serviço rodando no computador que manifestaram previamente interesse neste tópico. Sabendo disso, o MQTT Broker copia esta mensagem recebida para os dois destinatários.
+
+O processo de manifestar interesse em algum tópico é chamado de Subscribe, enquanto o envio da mensagem é chamado de Publish.
+
+Agora vamos para a prática! O que iremos fazer exatamente é o mostrado acima, porém utilizando o navegador de seu próprio computador. Para realizarmos esta atividade você precisará ter instalado em seu computador dois navegadores diferentes. Como sugestão, recomendo instalar em seu computador dois dos seguintes navegadores a sua escolha:
+
+Microsoft Edge;
+Google Crome;
+Firefox;
+Apple Safari.
+Observe que você não precisa instalar todos, apenas dois são necessários para esta atividade. Para localizar o instalador desses navegadores, basta fazer uma busca por seus nomes na internet.
+
+Uma vez tendo dois desses navegadores instalados em sua máquina, podemos entender qual será a dinâmica desta atividade.
+
+Na internet temos disponível um MQTT Broker totalmente gratuito disponibilizado exatamente para testes on-line. O nome deste serviço é HiveMQ (https://www.hivemq.com).  Apesar de ser uma companhia que vende soluções para Internet das Coisas, ela disponibiliza tanto este Brooker, como páginas que funcionam como um dispositivo cliente para Internet das Coisas.
+
+Para entender qual a dinâmica de nossa atividade, observe a Figura 2.
+
+Estrutura dos testes que iremos realizar
+Fonte: o autor
+Uma vez que você não tem dispositivos para conectar na internet, utilizaremos os dois navegadores recentemente instalados. O primeiro navegador instalado fará o papel de um dispositivo chamado Dispositivo1. O segundo navegador fará o papel do segundo dispositivo que iremos chamar de Dispositivo2. Através destes dois dispositivos (navegadores) iremos realizar a conexão com o MQTT Broker (HiveMQ) através da internet enviando mensagens do tipo Publish e  Subscribe, avaliando o funcionamento de toda uma estrutura MQTT para Internet das coisas. Normalmente utilizaríamos os módulos recentemente estudados (Arduino, Raspberry Pi ou ESP32 – ver Tabela 1) como dispositivos. Porém, para evitar um investimento inicial desnecessário, adotaremos estes dois navegadores em seu lugar. O funcionamento será muito parecido.
+
+Alguns dispositivos utilizados para Internet das Coisas
+    
+
+
+
+Entendendo o ambiente cliente
+Inicialmente abra o seu primeiro navegador e acesse o endereço Clique aqui.
+
+Observe todas as informações que estão disponíveis para um dispositivo se conectar a um Broker (ver Figura 3).
+
+Informações disponíveis para conectar seu dispositivo a um broker MQTT
+Fonte: http://www.hivemq.com/demos/websocket-client/
+O campo Host é o endereço de internet do Broker sugerido (HiveMQ). Se você tivesse um outro Broker, poderia pensar em alterar esse valor. Por enquanto, deixe como está.
+
+O campo Port é a porta de internet utilizada pelo MQTT Broker neste Host. Também deixe como está.
+
+O campo ClientID é uma identificação única do seu dispositivo que está sendo simulado pelos seu navegador. De fato, esta identificação é apenas uma string (texto) aleatória que cada dispositivo (navegador) conectado a este Host deve ter distintamente. Ao conectar ao site do HiveMQ, o próprio serviço atribui um valor aleatório e distinto. Você precisaria alterar esse valor apenas se estivesse conectando a um Host diferente do sugerido. Então deixe este campo exatamente como está.
+
+Os campos e Username (nome do usuário), Password (senha) e Keep Alive (mantenha conectado) seriam necessários caso estivesse acessando um outro servidor MQTT Broker. Para o HiveMQ, esses campos não são necessários, pois este Broker é totalmente aberto. É claro que para uma implementação real você precisaria se preocupar em criar contas específicas tanto para os usuários como para os dispositivos e informar estes campos. Por agora, deixe os três campos como estão.
+
+Os demais campos irão ser tratados a seguir. Pode deixá-los como estão.
+
+[subtituloEstabelecendo uma conexão inicial do Dispositivo 1
+
+A primeira ação que nós iremos realizar é a conexão do nosso Dispositivo1 (primeiro navegador) ao serviço de MQTT Broker da HiveMQ. Daqui para a frente iremos descrever os procedimentos utilizando um dos diagramas mais importantes da computação: o diagrama de sequência. O diagrama de sequência é um diagrama comportamental que possui raias verticais descrevendo cada um dos elementos envolvidos nas ações. Observe a Figura 4.
+
+Diagrama de sequência da conexão do Dispositivo1 ao MQTT Broker
+Fonte: o autor
+Nesta figura podemos ver quatro raias distintas para cada um dos elementos envolvidos nas ações:
+
+Usuário: que representa você interagindo com os dispositivos (navegadores);
+Dispositivo1: que representa o primeiro dispositivo. Mas você está usando como substituto o primeiro navegador instalado;
+Dispositivo2: que representa o segundo dispositivo. Mas você está usando como substituto o segundo navegador instalado (aguarde que em breve iremos usá-lo);
+MQTT Broker: É o Broker da HiveMQ que usaremos para permitir a conexão de nossos dispositivos (navegadores). Observe que este é um serviço na nuvem e você não visualizará em seu computador. A única interação feita será através dos dispositivos (navegadores).
+Observe que existem algumas linhas numeradas, indicando a sequência de operações a serem realizadas:
+
+Linha número 1: a linha 1 indica que ação “observar o ClientID” deve ser realizada entre o Dispositivo1 e o Usuário. Na prática, é apenas ação que usuário realiza ao olhar para a tela do primeiro navegador identificando o ClientID. Nada mais do que isso.
+
+Linha número 2: a segunda ação a ser realizada parte do Usuário (você) clicando no botão Connect no Dispositivo1. Pode realizar esta ação agora (ver Figura 5)!
+
+Realizando a ação 2 do Diagramas de Sequência - > Clicando no botão Connect
+(Fonte: o autor)
+Ao clicar no botão conecte, o seu dispositivo (navegador) irá estabelecer a conexão com o Host (Broker da HiveMQ).
+
+Linha número 3: esta linha indica que o seu Dispositivo1 (primeiro navegador) estará realizando a conexão com o MQTT Broker. Você terá a certeza de que seu dispositivo está conectado com o host percebendo a mensagem perto do círculo verde (veja a mensagem connected).
+
+Ao clicar no botão Connect, seu dispositivo estará conectado com o Broker MQTT (HiveMQ)
+Fonte: próprio autor/legenda]
+Observe que neste diagrama de sequência o Dispositivo2 (segundo navegador) ainda não é envolvido.
+
+Enviando a primeira mensagem para o MQTT Broker
+Agora vamos enviar nossa primeira mensagem de nosso Dispositivo1 para o MQTT Broker. Observe a Figura 7 e tente interpretar os procedimentos e numerados neste diagrama de sequência.
+
+Procedimentos para enviar a primeira mensagem
+Fonte: o autor
+Agora verifique se você interpretou adequadamente este diagrama. A sequência apresentada neste diagrama é a seguinte:
+
+A primeira ação é digitar no campo Topic a mensagem “PUCPR\temperatura”. Faça isto agora!
+A segunda ação é digitar a mensagem “Olá mundo!” no campo Message. Faça isto agora!
+Até o momento, a tela do Dispositivo1 (primeiro navegador) deve estar como mostrada na Figura 8.
+
+Preenchimento dos campos Topic e Message
+Fonte: o autor
+Antes de realizar a terceira ação, vamos entender o que estamos fazendo. Ao preenchermos o campo Topic com a mensagem mostrada, estamos preparando nossa mensagem para ser enviada a este tópico que ainda não foi criado no servidor. O tópico em questão será a temperatura dentro de um espaço chamado PUCPR. Para o Broker o significado deste campo é relevante. O que ele sabe é apenas que teremos a intenção de inserir uma mensagem qualquer dentro do um tópico chamado “PUCPR/temperatura, e se algum dispositivo qualquer estiver previamente observando (Subscribe) este mesmo tópico, ele enviará uma cópia desta mensagem para este dispositivo.
+
+Terceira ação é você pressionar o botão Publish que fará o envio da mensagem para o respectivo tópico. Faça isso agora!
+Conforme nosso diagrama de sequência, o Dispositivo1 enviará esta mensagem ao Broker MQTT. Você consegue perceber alguma mudança na tela de seu Dispositivo1 (primeiro navegador)? Espero que a resposta a esta pergunta seja não.
+De fato, a mensagem que você enviou ao respectivo tópico foi completamente descartada, porque nenhum dispositivo fez uma assinatura prévia a este tópico. Para vermos esta mensagem sendo recebida por outro dispositivo, precisamos estabelecer a conexão pelo o segundo navegador. Vamos lá!
+
+Estabelecendo uma conexão do Dispositivo2
+Agora vamos estabelecer a conexão do Dispositivo2 (segundo navegador) com o mesmo MQTT Broker. Para isto, abra o segundo navegador e reorganize as janelas dos dois navegadores para ficarem lado a lado, conforme a Figura 9.
+
+Dispositivo1 e Dispositivo2 dispostos lado a lado na janela de seu computador
+Fonte: o Autor
+O objetivo de termos os dois navegadores (Dispositivo1 e Dispositivo2) na mesma tela é que enviaremos a mensagem por um deles e veremos esta mesma mensagem sendo recebida pelo outro.
+
+Para conectar o Dispositivo2 (segundo navegador – da direita) siga as ações apresentadas no diagrama de sequência mostrado na Figura 10.
+
+Estabelecendo a conexão do Dispositivo2 (segundo navegador) com o MQTT Broker
+Fonte: o autor
+Este diagrama tem os procedimentos de conexão semelhantes ao que realizamos com o Dispositivo1, mas agora para o Dispositivo2. Se tiver dúvida, consulte os passos que já realizamos anteriormente.
+
+Se você realizou procedimento corretamente, sua tela deve estar parecida com a Figura 11.
+
+Os dois dispositivos conectados com o mesmo Broker (HiveMQ)
+Fonte: o autor
+Enviando nossa primeira mensagem com sucesso
+Previamente tínhamos tentado enviar uma mensagem, mas como nenhum dispositivo havia realizado Subscribe neste tópico, esta mensagem foi descartada. Tente novamente enviar a mesma mensagem pelo Dispositivo1 (navegador da esquerda) clicando no mesmo botão Publish que já havíamos pressionado antes (Figura 12).
+
+Mais uma vez enviando a mesma mensagem
+Fonte: o autor
+Como era de se esperar, esta mensagem enviada pela segunda vez também é descartada, pois ainda nenhum dos dispositivos realizou um Subscribe.
+
+Agora sim, vamos realizar um Subscribe pelo Dispositivo2 (navegador da direita).  Para isto, interprete o diagrama da Figura 13.
+
+Sequência realizada para efetuar um Subscribe do Dispositivo2 no MQTT Broker
+Fonte: o autor
+Veja se você interpretou corretamente o diagrama:
+
+1. No Dispositivo2 (ATENÇÃO: é no navegador da direita), clique em “Add New Topic Subscription”. Uma pequena janela irá se abrir pedindo as informações do tópico que este dispositivo irá assinar no Broker MQTT (ver Figura 14).
+
+Dispositivo2 solicitando as informações de um tópico que ele assinará (Subscribe) no MQTT Broker
+Fonte: o autor
+2. Conforme a figura mostrada, preencha o campo Topic com o tópico que já conhecemos ("PUCPR\temperatura");
+
+3. Pressione o botão Subscribe.
+
+Ao pressionar o botão Subscribe, o Dispositivo2 enviará uma solicitação de Subscribe ao MQTT Broker. Ao receber esta solicitação, o Broker ficará sabendo da intenção do Dispositivo2 em ficar observando todas as mensagens encaminhadas para este tópico ("PUCPR\temperatura").
+
+Agora sim, envie mais uma vez a mensagem a partir do Dispositivo1 (pressionando Publish do navegador da esquerda) e observe que esta será recebida pelo Dispositivo2 (da direita). Veja o resultado na Figura 15.
+
+Mensagem enviada pelo Dispositivo1, agora sendo recebida pelo Dispositivo2
+Fonte: o autor
+Mas o que ocorreu de verdade? O diagrama da Figura 16 explica isso... Tente entender o que apresenta este diagrama antes de continuar o texto.
+
+A sequência de ações realizadas para o envio da mensagem com sucesso
+Fonte: o autor
+Vamos a resposta... Ao clicar no botão Publish do Dispositivo1, este enviará ao MQTT Broker a mensagem para o tópico indicado. O MQTT Broker avaliará se alguém já havia realizado um Subscribe neste tópico. Como o Dispositivo2 já havia feito Subscribe neste tópico, o Broker copiará esta mensagem para ele. Ao recebê-la, o Dispositivo2 apenas exibe esta mensagem na tela.
+
+Todas estas trocas de mensagens entre os diversos elementos envolvidos (Dispositivo1, Dispositivo2 e MQTT Broker) são baseadas no protocolo MQTT. É ele quem define o formato da mensagem e a sequência exigida.
+
+Por enquanto é o suficiente para nós. Na próxima unidade, iniciaremos a construção de um programa que enviará as mensagens ao MQTT Broker simulando um dispositivo para Internet das Coisas.
+
+Conclusão
+Nesta unidade realizamos os testes iniciais para compreender como funciona a troca de mensagens utilizando o protocolo e MQTT. Aprendemos que é uma mensagem enviada para um tópico no Broker é replicada para dispositivos que realizaram uma assinatura prévia (Subscribe) neste mesmo tópico. Na próxima unidade, iniciaremos a construção de um programa que enviará as mensagens ao MQTT Broker simulando um dispositivo para Internet das Coisas. Até mais!
+
+Referências Bibliográficas
+MQTT protocol. Java T Point, 20201. Disponível em: <https://www.javatpoint.com/mqtt-protocol>. Acesso em: 23 jun. 2021.
+
+YUAN, M. Conhecendo o MQTT. IBM Developer, 2017. Disponível em: <https://developer.ibm.com/br/technologies/iot/articles/iot-mqtt-why-good-for-iot/>. Acesso em: 21 jun. 2021.
+
+NERI, R.; LOMBA, M.; BULHÕES, G. MQTT: Como surgiu. Departamento de Eletrônica - Escola Politécnica UFRJ, Rio de Janeiro, 2019. Disponível em: <https://www.gta.ufrj.br/ensino/eel878/redes1-2019-1/vf/mqtt/>. Acesso em: 21 jun. 2021.

@@ -1,0 +1,168 @@
+https://us.bbcollab.com/collab/ui/session/playback
+https://us.bbcollab.com/collab/ui/session/playback
+https://us.bbcollab.com/collab/ui/session/playback
+https://www.youtube.com/watch?v=qAlBcTXA4-U
+https://www.youtube.com/watch?v=3_tMwrUqECc
+
+UNIDADE 04
+Princípios e diretrizes para o design interativo
+A usabilidade sempre foi a principal busca da Interação Humano-Computador (IHC) (BENYON, 2015), sendo sua definição original a de que os sistemas devem ser fáceis de usar e de aprender, flexíveis e despertar nas pessoas uma boa atitude. Assim, os objetivos desta unidade são:
+
+Apresentar a diferença entre acessibilidade e usabilidade.
+Apresentar os princípios de usabilidade para IHC e exemplos de seu uso.
+Usabilidade e ergonomia
+De acordo com Cybis (2007), a ergonomia está na origem da usabilidade, porque visa a proporcionar eficácia e eficiência, além do bem-estar e saúde do usuário, por meio da adaptação do trabalho ao homem. Isso significa que seu objetivo é garantir que sistemas e dispositivos estejam adaptados à maneira como o usuário pensa, comporta-se e trabalha, proporcionando usabilidade. A usabilidade refere-se à eficiência e eficiência dos sistemas, ou seja, à qualidade da interação das pessoas com os sistemas, medida por parâmetros como tempo para realização de uma tarefa e número de erros cometidos. Já a acessibilidade refere-se a identificar as dificuldades do usuário para o uso de um sistema ou produto, visando a remover as barreiras que podem excluir as pessoas de usar um sistema ou produto interativo.
+
+Usabilidade
+Um sistema com alto grau de usabilidade terá as seguintes características (BENYON, 2015):
+
+• Será eficiente no sentido de que as pessoas poderão fazer coisas mediante uma quantidade adequada de esforço.
+
+• Será eficaz no sentido de que conterá as funções e o conteúdo de informações adequadas e organizadas de forma apropriada.
+
+• Será fácil aprender como fazer as coisas e será fácil lembrar como fazê-las após algum tempo.
+
+• Será seguro de operar na variedade de contextos em que será usado.
+
+• Terá um alto grau de utilidade no sentido de que fará as coisas que as pessoas querem que sejam feitas.
+
+Acessibilidade
+É importante que a equipe de design considere seu público-alvo e identifique suas necessidades físicas, para evitar a exclusão de pessoas. Por exemplo, o designer tem de criar um produto para ser usado por crianças ou idosos; como pode ocorrer a exclusão? De acordo com Benyon (2015), ela pode ocorrer:
+
+Fisicamente, devido à localização inadequada do equipamento ou porque dispositivos de entrada e saída exigem demais de suas habilidades.
+Conceitualmente, devido às pessoas não conseguirem entender instruções complicadas ou comandos obscuros.
+Economicamente, por falta de recursos financeiros para comprar alguma tecnologia que seja essencial.
+Culturalmente, quando os designers fazem suposições inadequadas sobre como as pessoas trabalham e organizam a vida.
+Socialmente, se o equipamento não estiver disponível em hora e local adequados ou se as pessoas não forem membros de determinado grupo social e não conseguirem entender certas normas ou mensagens sociais.
+A fim de proporcionar a inclusão social, pode-se fazer uso de tecnologia assistiva.
+
+Tecnologia Assistiva é uma área do conhecimento, de característica interdisciplinar, que engloba produtos, recursos, metodologias, estratégias, práticas e serviços que objetivam promover a funcionalidade, relacionada à atividade e participação de pessoas com deficiência, incapacidades ou mobilidade reduzida, visando sua autonomia, independência, qualidade de vida e inclusão social (GALVÃO FILHO et al., 2009, p. 26)
+
+.
+Existem aplicativos a serviço da acessibilidade muito eficazes que auxiliam pessoas com deficiência a encontrar locais acessíveis, se comunicar, identificar objetos ou cores etc., tais como (BENYON, 2015):
+
+Navegadores que leem páginas da internet.
+Ampliadores de tela que permitem às pessoas ajustar e movimentar a área de interesse.
+Entrada de voz, não só para entrada de texto, mas também para substituir o controle pelo mouse/teclado.
+Princípios de usabilidade
+Esta seção apresenta um conjunto de propostas de ergonomistas, engenheiros de usabilidade e designers. Ao longo dos anos, a área de IHC evoluiu em termos de técnicas e princípios de usabilidade que ajudam a equipe de desenvolvimento na construção de bom design em todas as etapas. De acordo com Rogers, Sharp e Preence (2013), princípios de usabilidade são “derivados de uma mistura de conhecimento baseado em teoria, experiência e bom senso [...] sugerindo aos designers o que utilizar e o que evitar na interface – os prós e os contras do designem de interação”.
+
+Princípios de usabilidade
+ Fonte: Adaptado de Benyon (2015).
+Visibilidade
+Objetivo: manter as funções visíveis ou pelo menos facilitar a localização do controle apropriado para a tarefa com agilidade.
+
+Quanto mais visíveis estiverem as funções, mais fácil os usuários saberão como proceder.
+
+Esta é uma parte importante do princípio psicológico, segundo o qual é mais fácil reconhecer coisas do que ter de lembrar delas. A Figura 2 apresenta um exemplo de visibilidade: a tela do Windows indicando para o usuário quanto do disco C já foi utilizado em barras, além da mesma informação quantitativa.
+
+ Figura 2. Exemplo de visibilidade
+Consistência
+Objetivo: projetar interfaces para ter operações similares e utilizar elementos similares para tarefas similares (ROGERS; SHARP; PREENCE, 2013).
+
+A vantagem é que as interfaces se tornam fáceis de aprender e de utilizar.
+
+Resultados da inconsistência:
+
+dificuldade para lembrar procedimentos;
+grandes chances de acontecerem erros; 
+frustração na troca de versão.
+A Figura 3 apresenta um exemplo de consistência do pacote Office. Veja que organização de ícones com consistência de conceito e uso para os aplicativos Word, Excel e PowerPoint. Os botões têm o mesmo ícone e fazem a mesma tarefa nos três aplicativos.
+
+Figura 3. Exemplo de consistência
+Já a Figura 4 apresenta um exemplo de consistência em termos de padrão de tela, alinhamento e cor dos botões. Portanto, a consistência pode aparecer em ícones, alinhamento, localização, tamanho de caixas, tipos de barra de rolagem etc.
+
+Figura 4. Exemplo de consistência de alinhamento.Fonte: Viva Real (2021).
+Familiaridade
+Objetivo: utilizar linguagem e símbolos com os quais os futuros usuários estão familiarizados.
+
+Enfatize semelhanças, usando metáforas de familiaridade (BENYON, 2015).
+
+A Figura 5 traz o exemplo da função Inserir do Office.
+
+Figura 5.Exemplo de familiaridade
+Affordance
+Objetivo: permitir ao usuário saber como usar o produto interativo.
+
+De acordo com Benyon (2015), affordance (do inglês afford, propiciar) refere-se às propriedades que as coisas têm (ou que se interpreta que elas tenham) e como elas se relacionam com a forma como as coisas poderiam ser usadas. Botões propiciam ser apertados, cadeiras propiciam que se sente nelas, bloquinhos de Post-It propiciam escrever um bilhete e grudá-lo em alguma coisa.
+
+Affordances devem respeitar a cultura do local. Benyon (2015) cita como exemplos:
+
+Cadeado indica segurança.
+Raio indica energia.
+Cor vermelha significa perigo ou atenção.
+Cor amarela significa estado de alerta.
+Cor verde significa liberdade de ações.
+O benefício deste princípio é minimizar o uso de instruções ou ajuda. Veja, no exemplo da Figura 6, um notebook com entradas USB com figuras e formatos que indicam o uso ao usuário.
+
+ Figura 6.Exemplo de affordance
+Atenção! O uso de soluções distantes da realidade do usuário pode causar fadiga, irritabilidade e desistência da tarefa.
+
+Navegação
+Objetivo: auxiliar o usuário a se movimentar pelo sistema (BENYON, 2015).
+
+Podemos citar como exemplos os mapas e sinais orientadores e de informação. A Figura 7 mostra uma cor diferente (azul mais claro) na aba superior do site, indicando para o usuário a tela atual.
+
+ Figura 7. Exemplo de navegação.Fonte: Viva real (2021).
+Controle
+Objetivo: deixar claro quem ou o que está no controle e permitir que as pessoas possam também assumi‑lo (BENYON, 2015).Trata-se de funcionalidades pelas quais o usuário pode controlar o sistema, como cancelar ou dar continuidade a uma tarefa, retornar ao estado anterior. A Figura 8 apresenta um exemplo de controle, em que a tela do Windows oferece botão para confirmar ou cancelar determinada ação, dando a oportunidade para o usuário decidir o que fazer em relação à tarefa.
+
+Figura 8. Exemplo de controle
+Feedback
+Objetivo: retornar ao usuário a informação do que foi executado, permitindo continuar ou concluir a tarefa (BENYON, 2015).
+
+O retorno constante e consistente intensificará a sensação de controle. Assim, considerar este princípio é importante para garantir a continuidade de uma tarefa. O sistema precisa mostrar mensagens de tarefas executadas e alertas para confirmação de tarefas, sendo importante selecionar a forma adequada de dar retorno, como mensagens de alerta em negrito ou vermelho, contanto que chame a atenção do usuário. Ainda, a mensagem não pode ser ambígua; ela precisa ser clara para evitar erros cometidos pelos usuários.
+
+A Figura 9 apresenta um exemplo de uso do princípio de feedback, quando o usuário tenta apagar um arquivo. O sistema mostra a mensagem que o arquivo não pode ser deletado, porque está aberto.
+
+ Figura 9. Exemplo de feedback
+Existem diferentes tipos de feedback, como sons de alerta, mas o mais comumente utilizado é a mensagem na tela.
+
+Recuperação
+Objetivo: dar a oportunidade de o usuário desfazer ações para reparar enganos e erros cometidos.
+
+Mais uma vez, o sistema operacional Windows é um bom exemplo, porque oferece botões para voltar e cancelar, além de ter a recuperação da ação de deletar um arquivo, a partir da Lixeira (Figura 10). Outro exemplo é o pacote Office, com o botão de desfazer (Figura 11).
+
+Figura 10. Exemplo de recuperação de arquivo.
+ Figura 11. Exemplo de recuperação
+Restrições
+Objetivo: determinar formas de delimitar os tipos de interação de usuário que podem ocorrer em determinado momento (ROGERS; SHARP; PREENCE, 2013).
+
+A vantagem é impedir que o usuário cometa erros graves, por meio de restrições apropriadas às ações permitidas e da necessidade de confirmação para operações perigosas. A Figura 12 apresenta um exemplo de restrição lógica, em que o menu mostra a disponibilidade das opções – restringe a maneira de perceber a informação.
+
+Figura 12. Exemplo de restrição lógica
+A Figura 13 mostra um exemplo de restrição física, ou seja, a maneira como os objetos ou formas restringem o movimento do usuário. Veja que a entrada de USB restringe a entrada de dispositivos como fone de ouvido.
+
+ Figura 13. Exemplo de restrição física
+A Figura 14 apresenta um exemplo de restrição cultural. Na maioria dos países, esse símbolo representa um estabelecimento que serve comida, ou seja, um restaurante; no entanto, em outros, como a China, o mais usual seriam os hachis. Então, as convenções de cores e símbolos podem variar de acordo com a localização.
+
+Figura 14. Exemplo de restrição cultural
+Flexibilidade
+Objetivo: possibilitar ao usuário a chance de configurar seu ambiente de trabalho, ou seja, personalizar o sistema (BENYON, 2015), proporcionando múltiplas maneiras de fazer as coisas, de forma a atender às pessoas com diferentes graus de experiência e interesse pelo sistema.
+
+A Figura 15 apresenta um exemplo de uso do princípio de flexibilidade. Veja que a tela inicial do Windows traz a possibilidade de realizar diversas configurações.
+
+Figura 15. Exemplo de flexibilidade
+Estilo
+Objetivo: ser elegante e atraente, apresentando ao usuário a informação precisa no momento, nem mais nem menos.
+
+A Figura 16 mostra um exemplo de estilo minimalista. A barra de pesquisa do Google é um exemplo perfeito, porque os usuários conseguem executar a tarefa, que é realizar pesquisas sobre qualquer assunto, sem surgir qualquer dúvida.
+
+Figura 16. Exemplo de estilo minimalista. Fonte: Google (2021)
+Sociabilidade
+Objetivo: ter uma linguagem adequada e amistosa (BENYON, 2015).
+
+Nada estraga tanto a experiência de usar um sistema interativo quanto uma mensagem agressiva ou uma interrupção abrupta. Portanto, busque o design bem-educado.
+
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+GALVÃO FILHO, T. A. et al. Conceituação e estudo de normas. In: BRASIL. Secretaria Especial dos Direitos Humanos. Tecnologia assistiva. Brasília, DF: CAT/SEDH/PR, 2009. p. 13-39. Disponível em: http://www.galvaofilho.net/livro-tecnologia-assistiva_CAT.pdf. Acesso em: 18 ago. 2021.
+
+GOOGLE. Disponível em: www.google.com.br. Acesso em: 18 ago. 2021.  
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.
+
+VIVA Real. Disponível em: https://www.vivareal.com.br/aluguel/. Acesso em: 18 ago. 2021.

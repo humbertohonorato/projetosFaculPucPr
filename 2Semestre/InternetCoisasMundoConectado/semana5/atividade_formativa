@@ -1,0 +1,21 @@
+Faça uma pesquisa na Internet localizando informações dos diferentes protocolos da camada de aplicação para Internet das Coisas. Esta pesquisa deve incluir os protocolos:
+
+MQTT – Message Queue Telemetry Transport;
+CoAP – Constrained Application Protocol;
+AMQP – Advanced Message Queuing Protocol;
+HTTP – HyperText Transfer Protocol.
+Nesta pesquisa, você deve avaliar os seguintes itens montando uma tabela:
+
+Segurança: o protocolo permite incluir camadas adicionais de segurança/criptografia?
+Exigencias de hardware: quão pesado é este protocolo para ser utilizado em dispositivos com poucos recusos (pouca capacidade de processamento, pouca memória)?
+Necessidade de um servidor: este protocolo permite a comunicação direta entre dispositivos ou exige um servidor (Broker)?
+Formatos de mensagem: as mensagens são na forma de dados binários ou textos?
+Confiabilidade e QoS: o protocolo permite a configuração da Qualidade do Serviço (QoS) garantido diferentes níveis de confiabilidade conforme a infraestrutura de rede?
+Observações
+
+As informações aqui solicitadas podem ser obtidas pela busca na Internet, principalmente e artigos. Como sugestão, recomendo realizar a busca também em inglês. Se tiver dificuldade com o idioma, use tradutores online e legendas em português (para vídeos).
+
+
+Conteúdo concluído
+
+https://www.youtube.com/watch?v=M23kssYzFO4

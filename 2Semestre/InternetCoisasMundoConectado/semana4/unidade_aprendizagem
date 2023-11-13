@@ -1,0 +1,217 @@
+Protocolo MQTT
+Apresentação
+São muitos os setores econômicos e de recursos de utilidade pessoal que usam o protocolo MQTT (Message Queue Telemetry Transport). Essa tecnologia pode ser vista em diversos dispositivos de Internet das Coisas (IoT) empregados em sistemas de sensores nas chamadas cidades inteligentes, sistemas de irrigação em fazendas de produção agrícola, em sistemas de criação de animais com controle de temperatura ambiente, entre outros. Além dos setores econômicos, qualquer dispositivo pessoal poderia se beneficiar dos recursos desse protocolo, como celulares, smartwatches, tablets, óculos inteligentes, entre outros dispositivos de IoT.
+
+Nesta Unidade de Aprendizagem, você vai saber sobre as principais características, estruturas e o objetivo do protocolo MQTT em dispositivos de IoT. Verá também que o uso do MQTT se tornou amplo, principalmente por ter um bom desempenho em redes de largura de banda restrita e com latência alta, como ocorre no uso de smartphones.
+
+Bons estudos.
+
+Ao final desta Unidade de Aprendizagem, você deve apresentar os seguintes aprendizados:
+Identificar os objetivos do protocolo MQTT.
+Reconhecer as características do protocolo MQTT.
+Descrever a estrutura do protocolo MQTT.
+
+Conteúdo concluído
+Desafio
+O protocolo MQTT permite a comunicação entre diversos dispositivos de IoT em diferentes cenários. Todos os dados gerados na rede via MQTT podem ser compartilhados por todos os objetos de IoT dentro de uma mesma rede de acesso. Dessa maneira, podem trabalhar de forma cooperativa utilizando a mesma assinatura no broker. Entender como implementar as estruturas e reconhecer os principais comandos de comunicação é fundamental para permitir que os clientes (por exemplo, sensores) consigam compartilhar os dados gerados na rede sem eventuais problemas gerados nas mensagens.
+
+Imagine a seguinte situação:
+
+Descrição da imagem não disponível
+​​​​​​​
+​​​​​​​A partir do exposto, responda:
+
+a) Nesse cenário, é possível implementar topics (tópicos) para verificar os parâmetros do sistema? O que seriam os topics nas mensagens do MQTT?
+
+b) Depois de o sensor de luminosidade (cliente) conectar ao servidor broker com o envio de uma mensagem CONNECT, qual parâmetro poderia indicar alguma falha na mensagem?
+
+c) De que forma o protocolo MQTT garante a qualidade dos serviços para a sua aplicação?
+
+Padrão de resposta esperado
+- O que esperamos da sua resposta
+Resposta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 PALAVRAS
+DISTRIBUÍDO POR TINY
+Envio em: 22/08/2023 - 23:24
+
+Infográfico
+O protocolo MQTT é responsável pela troca de mensagens entre sensores e pequenos dispositivos móveis que são baseados no
+modelo publicador/subscritor. Esse tipo de protocolo é ideal para aplicações de IoT, principalmente na comunicação máquina a máquina (M2M - Machine to Machine). As aplicações de IoT podem envolver abordagens avançadas de telemetria em dispositivos inteligentes. Normalmente, as atividades mais comuns que apresentam esse tipo
+de comunicação são no controle, no monitoramento e no sensoriamento de algum dispositivo interligado na Internet ou em um sistema de controle central.
+
+Veja, neste Infográfico, um exemplo de aplicação de controle de
+sistema eólico a partir de dados enviados por sensores com o uso
+​​​​​​​do modelo publicador/subscritor aplicado no protocolo MQTT.
+
+Descrição da imagem não disponível
+​​​​​​
+
+
+Conteúdo concluído
+Conteúdo do Livro
+Com a expansão dos recursos de IoT, diversos protocolos surgiram para suprir a necessidade de uma comunicação entre objetos de forma eficaz. O grande desafio foi desenvolver recursos tecnológicos capazes de atingir um desempenho satisfatório mesmo em condições desfavoráveis de baixa taxa de conexão e de segurança da informação no momento da transmissão de dados. O protocolo MQTT, criado pela IBM, trouxe para o mundo da IoT benefícios que tornam confiáveis as comunicações publisher/subscriber em tecnologias aplicadas a objetos inteligentes. Essa confiabilidade fez com que esse protocolo ganhasse espaço no mercado atual.   
+
+No capítulo Protocolo MQTT, da obra Arquitetura e infraestrutura de IoT, base teórica desta Unidade de Aprendizagem, você vai estudar os objetivos do protocolo MQTT, suas características e sua estrutura. 
+
+Boa leitura.
+Descrição da imagem não disponível
+
+
+Conteúdo concluído
+Dica do Professor
+O protocolo MQTT pode ser manipulado a partir de códigos implementados em diversas linguagens de programação. Bibliotecas disponibilizadas por essas linguagens possibilitam a comunicação
+com o servidor MQTT, que pode ser instalado em um computador
+na rede; isso auxilia na criação de projetos com comunicação aos dispositivos de IoT, implementação de servidores de aplicação web
+e armazenamento de dados em Sistemas Gerenciadores de Banco
+de Dados.
+
+Nesta Dica do Professor, aprenda a codificar um cliente para acesso
+​​​​​​​ao servidor MQTT utilizando a linguagem de programação Python.
+
+
+
+
+
+
+Conteúdo concluído
+Exercícios
+Questão 1
+No decorrer dos anos, muitas aplicações, direcionadas às mais diversas atividades econômicas, foram criadas com o uso da tecnologia de IoT. Várias empresas do ramo da tecnologia criam diversos protocolos de comunicação para os objetos conseguirem se comunicar de forma eficiente.
+
+Escolha a afirmação correta sobre as especificidades do protocolo CoAP em relação ao MQTT.
+
+Selecione a resposta:
+A
+Por ser um protocolo mais antigo, o CoAP, definido antes da publicação do protocolo MQTT, apresenta maior aceitação e, portanto, é aplicado na comunicação de diversos dispositivos de IoT.
+
+Você não acertou
+Comentários da resposta
+
+A empresa IBM foi a responsável pela criação do protocolo MQTT nos anos 90. O objetivo da IBM era a padronização das comunicações com o uso de IoT.
+
+O protocolo CoAP surgiu em 2014 com a publicação do RFC 7252, ou seja, após a criação do MQTT.
+
+O  MQTT é o mais aceito no desenvolvimento de aplicações usando a tecnologia de IoT. Mesmo mais recente, o CoAP fica como segunda opção em relação ao protocolo MQTT para aplicações IoT.
+
+Os protocolos adotados pela empresa Amazon foram o Websockets, o HTTP e o MQTT. Eles são utilizados em seus servidores (AWS – Amazon Web Services) para aplicações em IoT.
+
+Quando comparados o MQTT e o CoAP, observa-se que o CoAP é um protocolo de baixa complexidade por ser executado em uma camada acima da UDP. Porém, a falta de recursos de retransmissão de pacotes no UDP provoca perda de pacotes no CoAP.
+
+Em relação ao CoAP, o protocolo MQTT tem maior confiabilidade na transmissão de mensagens; isso é percebido pelo tráfego adicional menor gerado pelo CoAP.  ​​​​​​​
+
+B
+A empresa IBM foi a responsável pela criação do protocolo CoAP. Já a Amazon desenvolveu a estrutura do MQTT e adotou outros protocolos como o HTTP e o Websockets.
+
+Comentários da resposta
+
+A empresa IBM foi a responsável pela criação do protocolo MQTT nos anos 90. O objetivo da IBM era a padronização das comunicações com o uso de IoT.
+
+O protocolo CoAP surgiu em 2014 com a publicação do RFC 7252, ou seja, após a criação do MQTT.
+
+O  MQTT é o mais aceito no desenvolvimento de aplicações usando a tecnologia de IoT. Mesmo mais recente, o CoAP fica como segunda opção em relação ao protocolo MQTT para aplicações IoT.
+
+Os protocolos adotados pela empresa Amazon foram o Websockets, o HTTP e o MQTT. Eles são utilizados em seus servidores (AWS – Amazon Web Services) para aplicações em IoT.
+
+Quando comparados o MQTT e o CoAP, observa-se que o CoAP é um protocolo de baixa complexidade por ser executado em uma camada acima da UDP. Porém, a falta de recursos de retransmissão de pacotes no UDP provoca perda de pacotes no CoAP.
+
+Em relação ao CoAP, o protocolo MQTT tem maior confiabilidade na transmissão de mensagens; isso é percebido pelo tráfego adicional menor gerado pelo CoAP.  ​​​​​​​
+
+C
+O protocolo MQTT, por ter mecanismos de retransmissão variável que foram herdados do  UDP, perde mais pacotes no momento da comunicação, em relação ao CoAP.
+
+Comentários da resposta
+
+A empresa IBM foi a responsável pela criação do protocolo MQTT nos anos 90. O objetivo da IBM era a padronização das comunicações com o uso de IoT.
+
+O protocolo CoAP surgiu em 2014 com a publicação do RFC 7252, ou seja, após a criação do MQTT.
+
+O  MQTT é o mais aceito no desenvolvimento de aplicações usando a tecnologia de IoT. Mesmo mais recente, o CoAP fica como segunda opção em relação ao protocolo MQTT para aplicações IoT.
+
+Os protocolos adotados pela empresa Amazon foram o Websockets, o HTTP e o MQTT. Eles são utilizados em seus servidores (AWS – Amazon Web Services) para aplicações em IoT.
+
+Quando comparados o MQTT e o CoAP, observa-se que o CoAP é um protocolo de baixa complexidade por ser executado em uma camada acima da UDP. Porém, a falta de recursos de retransmissão de pacotes no UDP provoca perda de pacotes no CoAP.
+
+Em relação ao CoAP, o protocolo MQTT tem maior confiabilidade na transmissão de mensagens; isso é percebido pelo tráfego adicional menor gerado pelo CoAP.  ​​​​​​​
+
+D
+O protocolo CoAP tem maior confiabilidade na transmissão de mensagens em relação ao MQTT. Essa confiabilidade é constatada pela menor quantidade de tráfego do MQTT.
+
+Comentários da resposta
+
+A empresa IBM foi a responsável pela criação do protocolo MQTT nos anos 90. O objetivo da IBM era a padronização das comunicações com o uso de IoT.
+
+O protocolo CoAP surgiu em 2014 com a publicação do RFC 7252, ou seja, após a criação do MQTT.
+
+O  MQTT é o mais aceito no desenvolvimento de aplicações usando a tecnologia de IoT. Mesmo mais recente, o CoAP fica como segunda opção em relação ao protocolo MQTT para aplicações IoT.
+
+Os protocolos adotados pela empresa Amazon foram o Websockets, o HTTP e o MQTT. Eles são utilizados em seus servidores (AWS – Amazon Web Services) para aplicações em IoT.
+
+Quando comparados o MQTT e o CoAP, observa-se que o CoAP é um protocolo de baixa complexidade por ser executado em uma camada acima da UDP. Porém, a falta de recursos de retransmissão de pacotes no UDP provoca perda de pacotes no CoAP.
+
+Em relação ao CoAP, o protocolo MQTT tem maior confiabilidade na transmissão de mensagens; isso é percebido pelo tráfego adicional menor gerado pelo CoAP.  ​​​​​​​
+
+E
+Perdas de pacotes são mais prováveis de ocorrer no protocolo CoAP do que no MQTT, mesmo que o CoAP seja executado em uma camada acima da UDP.​​​​​​​
+
+Esta é a resposta correta
+Comentários da resposta
+
+A empresa IBM foi a responsável pela criação do protocolo MQTT nos anos 90. O objetivo da IBM era a padronização das comunicações com o uso de IoT.
+
+O protocolo CoAP surgiu em 2014 com a publicação do RFC 7252, ou seja, após a criação do MQTT.
+
+O  MQTT é o mais aceito no desenvolvimento de aplicações usando a tecnologia de IoT. Mesmo mais recente, o CoAP fica como segunda opção em relação ao protocolo MQTT para aplicações IoT.
+
+Os protocolos adotados pela empresa Amazon foram o Websockets, o HTTP e o MQTT. Eles são utilizados em seus servidores (AWS – Amazon Web Services) para aplicações em IoT.
+
+Quando comparados o MQTT e o CoAP, observa-se que o CoAP é um protocolo de baixa complexidade por ser executado em uma camada acima da UDP. Porém, a falta de recursos de retransmissão de pacotes no UDP provoca perda de pacotes no CoAP.
+
+Em relação ao CoAP, o protocolo MQTT tem maior confiabilidade na transmissão de mensagens; isso é percebido pelo tráfego adicional menor gerado pelo CoAP.  ​​​​​​​
+
+1 de 5 perguntas
+
+ 
+Na prática
+A automação industrial permite sanar problemas como a má qualidade na produção de produtos, automatizar processos complexos, controlar processos minuciosos que requerem maior detalhamento de produção, evitar desperdícios desnecessários e agilizar processos de produção. Na área de produção agrícola e de criação animal, não é diferente. 
+Com os recursos disponibilizados com a tecnologia de IoT e do protocolo MQTT, é possível obter vários benefícios de produção.
+
+Neste Na Prática, conheça o projeto de automação industrial da empresa AmpariusRobotic, com dispositivo IoT via protocolo MQTT,
+​​​​​​​para a resolução de problemas relacionados ao controle de temperatura na criação de aves em granjas do sul do País.
+
+Descrição da imagem não disponível​​​​​
+
+
+Conteúdo concluído
+Saiba mais
+Para ampliar o seu conhecimento a respeito desse assunto, veja abaixo as sugestões do professor:
+
+MQTT - Como comunicar 2 dispositivos via Internet
+Veja, neste vídeo, como funciona o protocolo MQTT de uma forma bem didática e prática em um projeto real, lembrando que o MQTT é um poderoso e simples protocolo que nos permite a comunicação entre dois ou mais equipamentos via Internet.
+Curso de MQTT - Parte 1 - Internet e Coisas
+Aprenda a utilizar um dos principais protocolos de comunicação utilizados na IoT. Trata-se de um conteúdo exclusivo e completo sobre MQTT, desde os conceitos básicos até sua aplicação prática.
+Um projeto de sala de aula inteligente para a Faesa com o uso da IoT e MQTT
+Conheça um projeto interessante relacionado a uma interface para o controle remoto de apoio didático em salas de aula com a utilização prática do protocolo MQTT.
+Localizador de objetos em curtas distâncias baseado em bluetooth BLE com monitoramento IoT via MQTT
+Conheça a tecnologia bluetooth BLE (Bluetooth Low Energy) aplicada em projetos MQTT. Nesse projeto, você entenderá como ocorre o monitoramento da presença de objeto dentro do feixe RSSI (Received Signal Strength Indication) via IoT com o uso do protocolo MQTT.
+
+
+Nos anos de 1990, a IBM desenvolveu o protocolo MQTT com objetivo de padronizar as comunicações via satélite de dispositivos espalhados em uma grande área. Recentemente esse protocolo teve sua visibilidade aumentada com o advento da internet das coisas. Conhecer esse protocolo permitirá a você um conhecimento maior de como as informações são traficadas dentro de um sistema para Internet das coisas. Permitirá a você um conhecimento maior de como as informações são traficadas dentro de um sistema para Internet das coisas.
+
+
+https://us.bbcollab.com/collab/ui/session/playback/load/bdfdb579ceca4cfcafba9a09a9ea78c8?authToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYkNvbGxhYkFwaSIsInJlY29yZGluZ1VpZCI6ImJkZmRiNTc5Y2VjYTRjZmNhZmJhOWEwOWE5ZWE3OGM4IiwiaXNzIjoiYmJDb2xsYWJBcGkiLCJleHAiOjE2OTk5MjUxMzYsInR5cGUiOjEsImlhdCI6MTY5OTkxNzkzNiwiY29uc3VtZXIiOiJlMDU0ZmIzYzk0NWU0ZmIzOWRiNTMwMTVjZGYyMWY0OCJ9.IBdAtYg_-CwQoghGXq0qp17S_O5A2U2sCiCVRVyjh8A
+
+https://us.bbcollab.com/collab/ui/session/playback

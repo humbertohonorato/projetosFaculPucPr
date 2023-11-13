@@ -1,0 +1,80 @@
+UNIDADE 01
+Introdução à IHC
+Introdução à interação humano-computador
+Desenvolver produtos de software que sejam fáceis de usar por seus usuários nunca foi tão crucial quanto atualmente, com o aumento de sua demanda. Assim, os objetivos desta unidade são:
+
+Explicar a importância de ter produtos de fácil interação.
+Apresentar exemplos de bons designs de produtos interativos.
+Apresentar a área de Interação Humano-Computador (IHC).
+Mostrar a diferença entre interface e interação.
+Design de interação
+Devido à demanda do mercado e à existência de clientes cada vez mais exigentes, nunca foi tão crucial para as organizações que desenvolvem produtos de software considerar a experiência do usuário. Cada vez mais, as organizações buscam entender as necessidades e melhorar não só os seus produtos, como também seus serviços, visando a garantir uma ótima experiência do usuário. Nesse cenário, surge o design de interação, cujo foco é desenvolver produtos interativos, fáceis de usar.
+
+O termo design de interação refere-se a “projetar produtos interativos para apoiar o modo como as pessoas se comunicam e interagem em seus cotidianos, seja em casa ou no trabalho” (ROGERS; SHARP; PREENCE, 2013). Utilizamos diversos produtos interativos em nosso cotidiano, como, por exemplo, aplicativos de celulares, que nos apoiam em diversas atividades, seja para o entretenimento, seja para assuntos relacionados ao trabalho. O iPhone é um bom exemplo de produto interativo e, ao mesmo tempo, inovador que trouxe o conceito de touch screen, que facilita a execução das tarefas por meio do toque.
+
+EXERCÍCIOA seção 1.1 do livro Interação humano-computador apresenta cinco exemplos de produtos interativos que vale conhecer para compreender que o design de sistemas interativos diz respeito a muitos tipos de produto, como sistemas que serão executados em computador para projetar sites, jogos e produtos interativos como aparelhos MP3, câmeras digitais, laptops, projetores digitais, além de produtos e serviços para o lar.
+Para acessar o livro, clique no link: BENYON, D. chrome_reader_modeInteração humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+O que é IHC?
+O design de interação é entendido como fundamental para todas as disciplinas, campos e abordagens que se preocupam com pesquisar e projetar sistemas baseados em computador para pessoas.
+
+Figura 1. Relação entre disciplinas acadêmicas, práticas de design e campos interdisciplinares que se preocupam com o design de interação
+
+Fonte: Rogers, Sharp e Preence (2013, p. 10).
+
+A disciplina básica que mais contribui para o design centrado no humano é a IHC, que surgiu no início da década de 1980 e evoluiu para se tornar uma matéria "preocupada com o design, avaliação e implementação de sistemas computacionais interativos para o uso humano e com o estudo dos principais fenômenos que os cercam" (ACM SIGCHI, 1992 apud ROGERS; SHARP; PREENCE, 2013, p. 6).
+
+A área de IHC vem colocando no centro do desenvolvimento de sistemas computacionais interativos as pessoas, ou seja, investiga quais são as reais necessidades dos diferentes usuários, por meio da observação do ambiente e do contexto de uso no qual o usuário está inserido, para posteriormente propor intervenções na interface com o usuário.
+
+A IHC pode ser conceituda como uma disciplina interessada no projeto, implementação e avaliação de sistemas computacionais interativos (BARBOSA; SILVA, 2010). Para isso, o design de produtos interativos precisa considerar: pessoas, tecnologia e contexto de uso.
+
+Normalmente, as pessoas usam a tecnologia para realizar suas atividades dentro de contextos diversos.
+
+EXEMPLO
+Os vendedores de uma loja de eletrodomésticos utilizam sistemas de informação para verificar informações sobre determinando produto e realizar uma venda.
+Em sites de venda de passagens aéreas, os consumidores podem realizar a compra de uma viagem via celular, computador ou telefone.
+Em um sistema de controle de tráfego aéreo, é importante que o piloto receba os dados corretos da sua rota para evitar desastres aéreos.
+Veja que, independentemente do contexto, houve o uso de tecnologia para que as pessoas conseguissem realizar suas atividades.
+
+É um verdadeiro desafio para os designers projetar sistemas interativos, devido à diversidade de pessoas e tecnologias existentes. Benyon (2011) enfatiza que as atividades, no contexto no qual ocorrem, estabelecem requisitos para as tecnologias, que oferecem formas de automatizar as atividades, resultando na modificação da natureza destas. Assim, o designer precisa estar ciente desse ciclo ao tentar compreender o contexto de uso no qual o usuário está inserido.
+
+A imagem a seguir mostra a relação da atividade inserida em um contexto de uso e como a tecnologia pode modificar os requisitos, apresentando novas oportunidades de uso.
+
+Figura 2. Relação entre atividades e tecnologia
+Fonte: Benyon (2015, p. 16).
+Em relação às pessoas, vale destacar que as características humanas podem influenciar o desenvolvimento de sistemas interativos, como a capacidade cognitiva para compreender e realizar uma tarefa. Também é importante considerar características físicas, como visão, audição, tato e capacidade de movimentar o corpo, porque são responsáveis pela sua capacidade de percepção de mundo e de atuação sobre ele (BARBOSA; SILVA, 2010). Assim, deve-se considerar suas limitações no momento de elaborar interfaces de produtos interativos.
+
+Em relação à tecnologia, o designer precisa conhecer os diferentes recursos de hardware e software disponíveis e como se comunicam.
+
+Por fim, a interação normalmente acontece no contexto de alguma comunidade de prática, termo usado para denotar grupos de pessoas que compartilham ideias e valores e se envolvem em atividades semelhantes (BENYON, 2011). É importante, na observação do contexto de uso, verificar a interação das pessoas, considerando a cultura, sociedade, organização e linguagem. Normalmente, entender o contexto de uso ajuda a compreender o problema e a possível solução.
+
+Interface e interação
+Definição
+Interação pode-se entender como uma troca de informações entre o usuário e o sistema ou produto de software que deseja realizar uma ação. De acordo com Barbosa e Silva (2010, p. 20), a “interação usuário-sistema pode ser considerada como tudo que acontece quando uma pessoa e um sistema computacional se unem para realizar tarefas, visando a um objetivo”. Assim, o processo de interação configura uma sequência de ações entre o usuário e o sistema interativo para realização de uma tarefa.
+
+Nesse processo de interação entre máquina e usuário, a interface é o meio de contato que auxilia o usuário a realizar suas atividades. Por isso, é importante que seja fácil de usar. Barbosa e Silva (2010, p. 25) indicam que se trata de “toda a porção do sistema com a qual o usuário mantém contato físico (motor ou perceptivo) ou conceitual durante a interação”. Por essa razão, a interface (front-end) é confundida com o sistema, mas, na verdade, é o meio de comunicação entre o usuário e o sistema (back-end, local de implementação da lógica do sistema). Existem diferentes meios físicos pelos quais o usuário faz contato com o sistema, como os dispositivos de entrada (estímulos), como teclado, mouse, microfone e outros, e os dispositivos de saída (resposta aos estímulos), como o monitor, impressora e comandos de voz, que permitem que o usuário tenha uma resposta do sistema ou produto interativo. 
+
+Conforme apresentado na figura seguir, o contexto de uso influencia a forma como é definido um produto interativo, como, por exemplo, um comando de voz do notebook quando utilizado em um ambiente barulhento. Além disso, as características físicas do usuário influenciam a construção das interfaces; no caso da construção de um sistema EAD, espera-se que o sistema alcance todos os públicos-alvo, como pessoas com facilidade em tecnologia e pessoas com dificuldades em tecnologia. Para isso, é necessário identificar as necessidades básicas de cada perfil e desenvolver uma interface que não desestimule o uso por esses indivíduos. Em outro exemplo, envolvendo pessoas com problemas visuais (miopia), é importante que o sistema forneça meios de configuração para atender às necessidades desse usuário. Portanto, em um projeto de design interativo, a equipe precisa avaliar o ambiente no qual o usuário está inserido e os perfil de usuários existentes naquele contexto de uso.
+
+A Figura 3 mostra os elementos envolvidos no processo de interação que ajudam a compreender o que são interação e interface e como esses elementos se complementam.
+
+Figura 3. Elementos envolvidos no processo de interação
+Fonte: Barbosa e Silva (2010, p. 18).
+Exemplo de affordance
+Um bom projeto de sistema interativo, além de considerar o contexto de uso e o perfil do usuário, deve conhecer as tecnologias e os hardwares existentes para saber as possibilidades e a melhor maneira de utilizá-las. Em IHC, isso se classifica como affordance, que é um conjunto de características do hardware e software perceptíveis ao usuário que vão direcionar para um conjunto de ações que podem ser realizadas por um sistema interativo, ou seja, é um princípio de IHC que indica a forma de guiar o usuário a fazer determinada atividade. Por exemplo, em computadores, nos símbolos de portas USB, o usuário vai utilizar um dispositivo que se encaixe.
+
+Karolina Grabowska
+Resumidamente, um produto interativo significa que o usuário consegue atingir o objetivo de uma tarefa em determinado contexto de uso. Para isso, a equipe de design deve considerar pessoas, ambiente e tecnologias disponíveis.
+
+
+
+https://www.youtube.com/watch?v=CEFnbVtutKY
+
+
+
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.

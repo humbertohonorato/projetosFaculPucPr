@@ -1,0 +1,56 @@
+UNIDADE 01
+Linha de Pensamento Ágil
+O objetivo deste material não é detalhar com precisão todos os eventos históricos do desenvolvimento de software, mas oferecer uma visão geral suficiente para suportar a explicação do sucesso de todo esse movimento acerca da linha de pensamento ágil.
+
+Uma breve história
+Antigamente
+No início do século XIX, Frederick W. Taylor, a partir de uma visão mecanicista de organização, criou a administração científica e apresentou as bases do modelo de gestão, amplamente difundido e ainda hoje utilizado. Seus estudos sugerem que os trabalhadores devem seguir padrões rígidos e pré-estabelecidos pela gestão, para atingir a produtividade máxima. Neste momento, não é importante ter empregados qualificados, uma vez que as tarefas são manuais, repetitivas e monótonas.
+
+Por sua vez, Henry Fayol, em suas contribuições à teoria clássica da administração, entende como pontos necessários a uma boa estrutura organizacional, a centralização e a cadeia escalar, ou seja, a divisão vertical do trabalho em departamentos superiores e subordinados, estando a autoridade centrada no topo da hierarquia. Para ele, quanto mais departamentalizada, mais eficiente seria uma organização.
+
+Toda a teoria desses dois grandes nomes da administração contribuiu para o desenvolvimento das organizações e para o presente, mas é imprescindível entendermos que esse modelo foi construído em outro contexto, a partir de outros paradigmas que já não correspondem às nossas necessidades atuais. Os desafios hoje são outros e não é o caminho que nos trouxe até aqui que nos levará adiante.
+
+Vivemos, hoje, em um ambiente altamente complexo, exposto a rápidas mudanças, com novas tecnologias despontando a cada momento e trazendo novas definições de como nos relacionamos uns com os outros, com as coisas e com as empresas. A única certeza que temos é a de que precisamos estar atentos e flexíveis, para nos adaptarmos sempre que necessário. As empresas que não o fizerem, podem rapidamente perder sua relevância. Assim, é essencial que as empresas tenham uma cultura de inovação e que esse não seja apenas um conceito departamentalizado, e sim parte do mindset dos seus colaboradores.
+
+Entendemos que o maior problema dos antigos modelos de gestão que citamos é que engessam as pessoas e os processos, dificultando a criatividade, a inovação e impedindo essa adaptação necessária aos tempos atuais. Concordamos com o jornalista J. J. Sutherland, coautor do livro Scrum: a arte de fazer o dobro do trabalho na metade do tempo, quando ele expõe, em entrevista à VOCÊ S/A
+
+hoje, as empresas precisam ser capazes de reagir rapidamente a eventos oportunidades, mas as velhas formas de trabalhar são simplesmente lentas demais para possibilitar isso. Aqueles que continuam fazendo as coisas do mesmo jeito são dinossauros em vias de extinção, mas muitos nem sequer perceberam isso
+
+As empresas tradicionais constroem suas práticas a partir de valores de comando e controle, com formatos hierarquizados, microgerenciamento, competitividade entre as pessoas e os setores, dividindo-se em silos em uma constante disputa pelo poder. Já nas empresas ágeis, valorizam-se as redes colaborativas, a comunicação clara e eficaz, a transparência, a autonomia, a experimentação, havendo tolerância ao erro e estímulo a um aprendizado constante.
+
+Isso impacta diretamente o vínculo entre pessoas e empresas, que já não pode ser o mesmo, sob o risco de não entregar valor, nem às pessoas, nem ao negócio. Como diz Françoise Trapenard, então diretora da Associação Brasileira de Recursos Humanos (ABRH), a Marco Ornellas, em seu livro DesigneRHs para um novo mundo:
+
+No modelo da Revolução Industrial, o ser humano era apenas uma engrenagem a mais das máquinas a vapor e esteiras rolantes, e a área de RH se limitava à pagadoria e aos controles. À medida que esse modelo se move para a Sociedade do Conhecimento, evolui também a percepção de que o real valor dos colaboradores está no intangível das ideias e de seu aprendizado e desenvolvimento. Desenvolver o negócio passa a ser sinônimo de desenvolver pessoas, e o RH é chamado a ocupar uma mesa muito ampla e estratégica. Agora que estamos vivendo a Revolução Digital e a sociedade em rede, ambos estão em profunda mudança. Não estão claros nem os contornos que os negócios terão daqui pra frente e nem como será o trabalho nesta sociedade digital. Mas já sabemos que os resultados de longo prazo dependem cada vez mais do intangível: fique sem inovar e seu negócio morre; não ofereça experiências ao seu cliente e seu negócio definha, não partilhe causas e se contente com colaboradores bem pouco engajados.
+
+Desenvolvimento de software
+E como essa história aconteceu no mundo do desenvolvimento de software? Assista ao vídeo para saber.
+
+
+Conhecendo a história do desenvolvimento de softwares e pensamento ágil
+Este vídeo introdutório apresenta um breve histórico do desenvolvimento de software e o surgimento da linha de pensamento ágil.
+
+Iterativo e incremental
+A principal característica que difere os métodos da linha de pensamento ágil dos métodos anteriores, como o cascata, é a orientação pelo desenvolvimento iterativo e incremental. O diagrama a seguir (Figura 1) demonstra a diferença nas entregas intermediárias de um projeto, que segue uma linha de entregas incrementais, comparadas às intermediárias do mesmo projeto, seguindo uma linha de entregas iterativas. A linha de pensamento ágil indica que mais ágil será um projeto quanto melhor ele conseguir combinar essas duas características para suas entregas.
+
+Figura 1: Desenvolvimento Iterativo e Incremental
+Fonte: Adaptado de: PATTON, 2020.
+Conclusão
+Foi apresentado nesta Unidade o histórico sobre administração de empresas, produtos e projetos, principalmente sob a ótica do desenvolvimento de software. Vimos o surgimento de uma linha de pensamento ágil, que possui diversos métodos de trabalho, denominados métodos ágeis, à disposição dos profissionais de desenvolvimento de software. Durante as próximas semanas, estudaremos os principais métodos e responderemos perguntas como: devo escolher um método qualquer e iniciar o trabalho? Devo olhar cada uma das metodologias que existem e tentar criar uma própria?
+
+
+Entrevista sobre a linha de pensamento ágil
+Neste vídeo, um profissional de métodos ágeis será entrevistado. Discutiremos as principais características desse movimento. Abordaremos os principais métodos usados atualmente. Tudo com uma visão atual e prática, de mercado.
+
+
+https://www.youtube.com/watch?v=zL6jAAwsC2s
+
+https://www.youtube.com/watch?v=Jj5Rs_CnAmw
+
+
+Referências
+PATTON, J. Don’t know what I want, but I know how to get it. JPattonAssociates, 2020. Disponível em: https://www.jpattonassociates.com/dont_know_what_i_want/. Acesso em 17 abr. 2021.
+
+SUTHERLAND, J. Scrum: a arte de fazer o dobro do trabalho na metade do tempo. Portugal: LeYa, 2016.
+
+ORNELLAS, M. Designerhs para um novo mundo: Como transformar o RH em Designer Organizacional. São Paulo: Polen Livros, 2017.
+

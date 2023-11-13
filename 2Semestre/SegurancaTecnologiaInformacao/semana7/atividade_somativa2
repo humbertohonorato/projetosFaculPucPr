@@ -1,0 +1,47 @@
+Olá estudante,
+
+A atividade somativa 2 será realizada em grupo e será necessário estar cadastrado em um grupo de até 3 estudantes. Fiquem atentos às orientações de instalação, realização da atividade e o que será necessário entregar.
+Para iniciar a atividade somativa 2, você deverá acessar o arquivo em PDF com as orientações para semana 7 e 8, que está logo abaixo, para verificar a descrição completa da atividade.
+Esta atividade necessita da instalação de uma VM, conforme orientações no arquivo. Na sequência, deve realizar as 3 etapas da atividade, mas somente a ETAPA 3 (Detecção de ataque negação de serviço) precisa ser entregue e será avaliada.
+
+
+Detecção de Intrusão através da ferramenta Snort 
+
+Acesse o arquivopara ler a descrição completa da atividade. 
+
+
+
+
+ATENÇÃO PARA AS INSTRUÇÕES DE ENTREGA:
+
+- Ao salvar o arquivo para entrega, atente-se à extensão dele. O ambiente virtual aceita apenas as seguintes extensões de arquivo: .doc; .xls; .pdf; .jpeg; .png; .zip e .rar (no caso de arquivos compactados). Confira os tipos de arquivos aceitos em cada atividade.
+
+- Lembramos que é de sua responsabilidade a integridade e execução do arquivo. Caso o arquivo entregue esteja corrompido ou impossibilitado de execução o mesmo não será aceito.
+
+- Caso o exercício/trabalho necessite de entrega de dois ou mais arquivos, estes devem ser compactados em um único arquivo (zipado).
+
+
+
+Importante:
+
+Leia e entenda todos os critérios de correção da atividade que o professor-tutor irá seguir para avaliar sua entrega. Esses critérios estão dispostos no quadro de rubricas.
+Verifique se todos os itens avaliados nas rubricas estão sendo contemplados na sua entrega. Atenção! Este é o momento para você fazer as correções e ajustes finais.
+Lembrando que no arquivo Semanas_7_e_8_Atividade_Somativa_2.pdf, temos 3 etapas, sendo que as duas primeiras são de caráter formativo, ou seja, darão base para execução da Etapa 3 – que será avaliada com nota.
+
+
+SERÁ APENAS UM ITEM PARA A ENTREGA:
+
+Vídeo com a explicação da Etapa 3 – Detecção de ataque negação de serviço. Faça um vídeo de até 3 minutos de duração. O vídeo obrigatoriamente deve conter:
+
+Número do grupo e nome de seus integrantes que efetivamente participaram da atividade;
+Configuração do snort para detectar o ataque de negação de serviço;
+Breve explicação (narração) da configuração ou regra implementada no snort e o seu funcionamento (somente da Etapa 3).
+Faça upload do vídeo no YouTube. Atenção! Ele precisa estar configurado como “Não listado”.
+
+Teste se o seu link do vídeo está funcionando.
+
+Entregue o link do vídeo gerado no local indicado dentro do AVA, disponível na semana 8.
+
+IMPORTANTE: O link do vídeo deve ser inserido em um arquivo .PDF, juntamente com os nomes dos integrantes da equipe. Sugerimos como precaução, enviar os nomes dos participantes e o link do vídeo também, na caixa de texto da entrega.
+
+Ótima atividade!!

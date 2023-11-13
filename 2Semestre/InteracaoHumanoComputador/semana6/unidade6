@@ -1,0 +1,82 @@
+https://www.youtube.com/watch?v=c90v2tGnUKA
+
+
+UNIDADE 06
+Planejamento da Avaliação de IHC
+A avaliação é parte integrante do processo de design e tem a finalidade de avaliar o sistema ou produto interativo, visando a identificar problemas em sistemas existentes ou num produto novo no mercado, de modo a evitar o desenvolvimento de um sistema em produto interativo que não atenda às necessidades dos clientes. As avaliações precisam ser planejadas considerando os objetivos e os diferentes stakeholders do projeto de TI. Portanto, nesta unidade, veremos:
+
+A importância da avaliação.
+Por quê, o que e como realizar uma avaliação.
+Os diferentes tipos de avaliação, para compreender qual é mais adequado utilizar.
+Avaliação de IHC
+Introdução
+De acordo com Benyon (2015), a avaliação é o quarto dos principais processos do design de sistemas interativos. Note, na Figura 1, que a avaliação está no meio e tem interação com os demais processos de design. Neste caso, o termo avaliar significa revisar, experimentar ou testar uma ideia de design, um software, um produto ou serviço e descobrir se ele atende às reais necessidades dos usuários. Em projeto de sistemas interativos, é importante que o designer se preocupe não só com aspectos como cores e organização de informações, mas também avalie se o sistema é adequado para o seu propósito, agradável, envolvente e assim por diante.
+
+Figura 1. Processo de design de interação
+Fonte: Benyon (2015).
+Na avaliação, os avaliadores coletam informações sobre experiência dos usuários ao interagir com um protótipo, um sistema de computador ou um artefato de design, como um esboço de tela. O foco é considerar as metas de usabilidade (quão fácil é usar) e a experiência do usuário (quão satisfatória ou motivadora é a interação) ao interagir com o sistema.
+
+Por que avaliar?
+Redes sociais como Facebook e dispositivos como iPods, iPads e e-readers têm aumentado a percepção sobre a importância da usabilidade. Mas muitos designers supõem que, se eles e seus colegas podem usar um produto e achá-lo atraente, outros também o farão. O problema dessa hipótese é que os designers podem projetar só para eles mesmos, o que pode excluir determinado público-alvo, seja por questões físicas, seja sociais (ROGERS; SHARP; PREENCE, 2013). A avaliação permite verificar se seu design é apropriado e aceitável para uma população maior de usuários.
+
+Os usuários querem um sistema que, além de fácil de usar, proporcione uma experiência agradável de uso. Dessa forma, pode-se entender que, de uma perpectiva de negócio e marketing, um produto com bom design vende. Por isso, é importante a realização de avaliações que envolvam os usuários, visando a identificar problemas reais e as necessidades dos diferentes grupos de usuários (ROGERS; SHARP; PREENCE, 2013). Assim, as correções necessárias são feitas antes do lançamento dos sistemas ou produtos interativos.
+
+O que avaliar?
+Para Barbosa e Silva (2010), uma questão importante na avaliação de IHC é a definição da avaliação, a quem ela interessa e por quê. Os autores explicam que os objetivos de uma avaliação vão determinar quais aspectos relacionados ao uso será necessário investigar. Esses objetivos dependerão das necessidades dos stakeholders, podendo ser motivados por reclamações dos usuários em relação a um produto existente ou pelas necessidades do setor de marketing para o lançamento de um produto no mercado. A decisão sobre o que é necessário avaliar vai direcionar a equipe de design no planejamneto e na execução da avaliação.
+
+Uma avaliação pode variar desde protótipos de baixa tecnologia a sistemas completos, de uma função de uma tela em particular ao fluxo de trabalho inteiro, desde a concepção estética até características de segurança (BARBOSA; SILVA, 2010). Por exemplo, uma empresa de software pode querer avaliar a reação do mercado com relação à ideia de um novo aplicativo de relacionamento.
+
+IMPORTANTEO que deve ser considerado para avaliar o site de um sistema de livraria? E no caso de um dispositivo móvel, como o celular, que aspectos deveriam ser considerados nessa avaliação?
+Para o site da livraria, você precisaria descobrir se é fácil para o usuário fazer a busca dos livros, se as pessoas têm facilidade para realizar um cadastro e concluir uma compra. Então, as principais preocupações seriam a navegação no site, a visibilidade dos ícones e a segurança, porque envolve dados pessoais, como CPF e dados bancários. Já com relação ao celular, os aspectos importantes seriam o desempenho e a navegação para realização das tarefas.
+
+Para organizar as decisões que devem ser tomadas com respeito a uma avaliação de IHC, propõe-se utilizar o esquema DECIDE (ROGERS; SHARP; PREENCE, 2013) para ajudar avaliadores inexperientes no planejamento e realização de uma avaliação. Os pontos relevantes a ser considerados são os seguintes:
+
+Determine (determinar)
+Visa a determinar os objetivos gerais da avaliação e responder às perguntas gerais: quais são os objetivos gerais da avaliação? Quem quer realizá-la e por quê?
+
+Explore (explorar)
+Visa a explorar perguntas específicas a ser respondidas, decompondo as gerais em perguntas específicas para o sistema a ser avaliado, considerando os usuários-alvo e suas atividades.
+
+Choose (escolher)
+Visa a escolher o paradigma e as técnicas de avaliação que responderão às perguntas, considerando o prazo, o custo, os equipamentos e o grau de conhecimento e experiência dos avaliadores exigidos por cada técnica.
+
+Identify (identificar)
+Visa a identificar questões práticas que devem ser tratadas. Para isso, consideram-se fatores como: perfil e número de usuários que participarão da avaliação; ambiente em que a avaliação será realizada; seleção das tarefas; planejamento e preparação do material de avaliação; alocação de pessoal, recursos e equipamentos para a realização da avaliação.
+
+Decide (decidir)
+Visa a decidir como lidar com questões éticas. Quando uma avaliação envolve pessoas como participantes de testes, os avaliadores devem se certificar de que os direitos delas estão sendo respeitados.
+
+Evaluate (avaliar)
+Visa a interpretar e apresentar os dados.
+
+
+Em resumo, uma avaliação deve definir objetivos e relacionar os diferentes stakeholders do projeto do sistema ou produto interativo. Os aspectos a ser avaliados dependerão do tipo de produto que está sendo desenvolvido e do que é importante para o público-alvo.
+
+Tipos de avaliação
+ A usabilidade de produtos tem sido testada com o objetivo de saber se o produto desenvolvido será utilizado pelos usuários para realizar as tarefas para as quais foi projetado. Rogers, Sharp e Preence (2013) classificam a avaliação em três categorias: ambiente controlado; ambiente natural; e qualquer ambiente não envolvendo o usuário. Essa classificação vai depender do ambiente, do envolvimento do usuário e do nível de controle da avaliação Por exemplo, numa avaliação em ambiente controlado, a finalidade é avaliar se uma interface é usável pelos usuários-alvo para realizar as tarefas para as quais foi projetada. Essa abordagem enfatiza o quão usável é um produto, envolvendo a coleta de dados a partir de uma combinação de métodos – experimentos, observação, entrevistas, questionários – em ambientes controlados (ROGERS; SHARP; PREENCE, 2013).
+
+Veja que, nessa abordagem de avaliação, a equipe de design pode controlar o que o usuário vai fazer. De acordo com Rogers, Sharp e Preence (2013), em avaliações realizadas em ambiente controlado, pode ser medida a quantidade de erros cometidos pelo usuário para realizar uma tarefa ou quanto tempo ele leva para tal. Esses experimentos podem ser registrados por meio de vídeos, registros de log, questionários de satisfação, observação direta do usuário realizando a tarefa e outros.
+
+O local de realização dessas avaliações requer a configuração de um ambiente controlado (Figura 2). Então, normalmente ocorrem em laboratórios, em que os avaliadores buscam remover todas as variáveis externas que podem interferir na avaliação (ROGERS; SHARP; PREENCE, 2013), como, por exemplo, colegas conversando. Note, na Figura 2, o exemplo de um laborarório de usabilidade que envolve usuários, avaliador responsável e avaliadores auxiliadores para observar, anotar e analisar o comportamento dos usuários.
+
+Figura 2. Exemplo de laboratório de usabilidade
+Fonte: Blasco (2021).
+No entanto, existem limitações com o uso de avaliações em ambiente controlado, como não ser feito no hábitat do usuário, ou seja, não é considerado o contexto de uso do usuário (BARBOSA; SILVA, 2010). Portanto, quando é importante avaliar a experiência do usuário em seu contexto de uso, as avaliações feitas no ambiente natural são mais recomendadas (ROGERS; SHARP; PREENCE, 2013).
+
+De acordo com Rogers, Sharp e Preence (2013), avaliações realizadas em campo, ou seja, em ambiente natural, estão cada vez mais sendo feitas, com pouco ou nenhum controle sobre as atividades dos participantes. Essa mudança é em grande parte em resposta às tecnologias móveis disponíveis em qualquer ambiente. Elas são realizadas no ambiente em que a tecnologia testada é ou vai ser usada.
+
+Um exemplo de avaliação para dispositivos móveis é a captura automática diretamente da aplicação. Essa técnica de avaliação de usabilidade consiste na monitoração e coleta automática de dados referentes ao uso de aplicativos. A equipe analisa os dados coletados e pode decidir alterar procedimentos operacionais, aperfeiçoar tarefas ou inserir outras (KRONBAUER; SANTOS, 2011).
+
+A última abordagem de avaliação pode ser realizada em qualquer ambiente não envolvendo o usuário (ROGERS; SHARP; PREENCE, 2013). Os chamados métodos de inspeção são usados para prever o comportamento do usuário nos contextos em que o sistema será usado e nos tipos de atividade que os usuários realizam. Rogers, Sharp e Preence (2013) citam as seguintes técnicas desta abordagem de avaliação: avaliação heurística (avaliação com uso de princípios de usabilidade), percursos cognitivos (simular resolução de problema de usuário) e analytics (web analytics).
+
+Referências
+BARBOSA, S. D. J.; SILVA, B. S. Interação humano-computador. Rio de Janeiro: Elsevier, 2010.
+
+BENYON, D. Interação humano-computador. 2. ed. São Paulo: Pearson, 2015.
+
+BLASCO, E. C. ABC da usabilidade – testes empíricos com usuários (fase 1 – preparação). Linha de Código,Gerência.Disponível em: http://www.linhadecodigo.com.br/artigo/2374/abc-da-usabilidade-testes-empiricos-com-usuarios-fase-1-preparacao.aspx. Acesso em: 10 ago. 2021.
+
+KRONBAUER, A. H.; SANTOS, C. A. S. Um modelo de avaliação da usabilidade baseado na captura automática de dados de interação do usuário em ambientes reais. In: BRAZILIAN SYMPOSIUM ON HUMAN FACTORS IN COMPUTING SYSTEMS, 10., 2011, Porto de Galinhas. Proceedings [...]. [S.l.: s.n.], 2011.
+
+ROGERS, Y.; SHARP, H.; PREENCE, J. Design de interação: além da interação humano-computador. 3. ed. Porto Alegre: Bookman, 2013.
+

@@ -1,0 +1,414 @@
+UNIDADE 04
+Controle de Acesso e Gestão da Identidade
+Nesta Unidade, iremos estudar os principais mecanismos de controle de acesso e gestão de identidade. Conhecer os princípios e políticas de controle de acesso. Ainda, iremos nos aprofundar nos três modelos de controle de acesso: discricionário, mandatório e baseado em papéis. Apresentar algumas vantagens e desvantagens na implementação de tais modelos. Ainda, iremos explorar a matriz de acesso e as listas de controle de acesso. Também, demostraremos como podemos aplicar este tipo de controle de acesso sobre o sistema de arquivo, conheceremos o modelo tradicional e as listas de controle de acesso estendida. Ainda, conheceremos os principais modelos de acesso mandatório, modelo de Bell-LaPadula e o modelo Biba. Adicionalmente, apresentaremos a proposta do gerenciamento de identidades, mostraremos os principais elementos, mas sobretudo os benefícios da implementação desta abordagem. Por fim, apresentaremos algumas estratégias e boas práticas para implementar um mecanismo de acesso adequado.
+
+Princípios de Controle de Acesso
+O controle de acesso é o mecanismo de segurança que visa a proteção dos recursos dos sistemas de informação. Este mecanismo foi projetado para limitar as ações ou operações que determinado usuário autorizado pode realizar sobre determinado recurso. O mecanismo de controle de acesso deve coexistir com outros mecanismos de segurança, conforme estudamos na unidade anterior, esse mecanismo está fortemente interligado com o mecanismo de autenticação. O mecanismo de controle de acesso passa a exercer sua atividade logo após um usuário ser devidamente autenticado, sua responsabilidade é controlar os privilégios dos usuários legítimos, ou seja, o que este usuário pode fazer no sistema.
+
+Basicamente toda área de segurança da informação depende do controle de acesso. Abordada, inclusive na definição de segurança da informação proposta na RFC 2828, que dispõe: "medidas que implementam e asseguram serviços de segurança em um sistema de computador, em particular as que asseguram o serviço de controle de acesso".
+
+Por resolução o controle de acesso estabelece políticas de segurança da informação específicas que permite determinar quem pode ter acesso a cada recurso fornecido no sistema e qual é o tipo de acesso concedido a cada ativo do sistema de informação. O controle de acesso está estreitamente associado com outras funções relativas à segurança da informação:
+
+Autenticação: este tópico foi estudado amplamente na unidade anterior, mas em linhas gerais este mecanismo permite verificar se as credenciais de determinado indivíduo são válidas;
+
+Autorização: esta propriedade visa fornecer permissão a uma entidade (usuário, grupo ou processo) do sistema permitindo ou restringindo o acesso a algum recurso do sistema.
+
+Auditoria: esta função visa garantir que as políticas e procedimentos operacionais sejam devidamente cumpridos, além de permitir detectar falhas no processo e na segurança, por conseguinte solicitando mudanças prescrita nos termos de controle, processos e políticas.
+
+O controle de acesso faz uma intermediação entre um usuário e o recurso que este está tentando acessar, tais como sistemas operacionais, aplicações, banco de dados entre outros. Primeiramente, o sistema necessita validar uma entidade que está solicitando acesso. Neste sentido, o mecanismo de autenticação é utilizado para determinar se o usuário tem realmente permissão para acessar o sistema. Posteriormente, o mecanismo de controle de acesso verifica se o acesso solicitado pelo usuário é permitido - por exemplo, o usuário abre um arquivo e tenta modificar o arquivo, o controle de acesso deve verificar se este usuário tem permissão de escrita sobre este arquivo.
+
+
+Fonte: ©leowolfert/Adobe Stock
+
+ 
+Dependendo do mecanismo de controle de acesso as permissões de acesso são definidas em um banco de dados de autorização. O administrador do sistema manipula este banco de dados e define as permissões de acesso de cada usuário, ou seja, estabelece o tipo de acesso e quais são os recursos que este usuário pode acessar. Então, a função de controle de acesso consulta o banco de dados para determinar se o mecanismo deve ou não liberar o acesso solicitado. Por fim, é necessário que todas as operações sejam registradas, neste seguimento a função de auditoria deve registrar as atividades do usuário no sistema, registrando tudo que foi acessado e modificado.
+
+Visando garantir o funcionamento efetivo do controle de acesso, vários componentes são implementados, agem de forma cooperativa para proteger os sistemas. Os sistemas operacionais possuem pelo menos um componente de controle de acesso principal, em geral este componente é bastante robusto. Ainda, existem sistemas operacionais que permitem alterar o componente padrão de controle de acesso, mais comum em distribuições Linux, por exemplo habilitar o SELinux1. Além disso, determinadas aplicações também agregam funções de controle de acesso, tal como os SGBD (Sistemas de Gerenciamento de Banco de Dados). Adicionalmente, existem componentes de controle de acesso externos que provem uma outra camada de segurança, normalmente a arquitetura de segurança contempla o uso de firewalls que também fornecem o serviço de controle de acesso.
+
+
+Políticas de Controle de Acesso
+As políticas de controle de acesso permitem definir quais os tipos de acesso são permitidos no sistema e sobre quais condições. Tais políticas normalmente são armazenadas no banco de dados de autorização. Em geral, as políticas de controle de acesso são classificadas em três grupos:
+
+Controle de acesso discricionário: fornece o controle de acesso baseado na identidade do solicitante e em regras de acesso, permissões que definem o que este indivíduo está autorizado a fazer. Política nomeada discricionário devido ao fato de uma entidade poder conceder direitos de acesso a outras entidades sobre os recursos que lhe pertence.
+
+Controle de acesso mandatório: fornece o controle de acesso baseado na comparação de rótulos de segurança com autorização de segurança. Os rótulos de segurança permitem determinar quão crítico são os recursos do sistema. Por sua vez, a autorização de segurança permite definir quais entidades do sistema têm permissão para acessar determinados recursos. Política nomeada mandatória (obrigatória), porque neste caso uma entidade que está autorizada a acessar um certo recurso no sistema não tem privilégios de conceder acesso a aquele recurso a outras entidades.
+
+Controle de acesso baseado em papéis: fornece o controle de acesso baseado nos papéis que um indivíduo desempenha dentro do sistema e por meio de regras que estabelecem quais acessos podem ser concedidos ao indivíduo que exerce tais papéis.
+
+Um mecanismo de controle de acesso pode implementar mais de uma política, aplicadas a diferentes categorias dos recursos do sistema.
+
+
+Elementos Fundamentais do Controle de Acesso
+Os elementos fundamentais do controle de acesso são: sujeito, objeto e direito de acesso.
+
+O sujeito corresponde a uma entidade capaz de acessar um recurso no sistema, podendo ser um usuário, grupo ou processo. O conceito de sujeito é equivalente ao de processo. Os usuários obtêm acesso a um recurso por meio de um processo que atua em nome do usuário. O processo obtém as propriedades do usuário como as permissões de acesso.
+
+No contexto de segurança da informação o sujeito é responsável pelas atividades relacionadas ao seu identificador, ou seja, ações executadas em nome do usuário. Os procedimentos de auditoria do controle de acesso devem ser utilizados para rastrear e registrar as atividades do usuário realizadas sobre algum recurso do sistema. Os sistemas de controle de acesso em geral definem três categorias de sujeito, concedendo privilégios distintos para cada categoria. Segue as principais categorias:
+
+Proprietário: o proprietário é o dono de um recurso, por exemplo um diretório ou arquivo. Em geral, o usuário responsável em criar determinado recurso automaticamente torna-se proprietário deste recurso.
+
+Grupo: adicional aos privilégios concedidos ao proprietário, um conjunto de usuários pode receber privilégios de acesso por pertencer a um determinado grupo. Em geral um usuário pode se associar a diversos grupos.
+
+Outros: esta categoria se aplica aos usuários autenticados no sistema que não são proprietários e nem pertencem a um grupo de determinado recurso, neste sentido são concedidos privilégios mínimos de acesso a este recurso.
+
+Um objeto é caracterizado como sendo qualquer recurso cujo acesso deve ser controlado. O objeto em geral dispõe de alguma informação. Entre alguns exemplos de objeto podemos citar arquivos, diretórios, programas, mensagens, registros, páginas entre outros. Ainda, em um nível mais baixo alguns sistemas de controle de acesso englobam, bits, bytes, processadores, registradores, portas de comunicação, entre outros.
+
+A quantidade e tipos de objetos que devem ser protegidos pelo mecanismo de controle de acesso variam conforme o ambiente em qual este mecanismo está inserido. Ainda, outros aspectos devem ser analisados, o nível de segurança necessário, complexidade do mecanismo, facilidade de uso e capacidade de processamento.
+
+A permissão de acesso deve descrever a maneira que o sujeito deve acessar o objeto. Entre as principais permissões de acesso destacamos as seguintes:
+
+Criar: permissão que possibilita que os usuários criem tipos de objetos como arquivos, diretórios, registros, instâncias entre outros.
+
+Excluir: permissão que possibilita que os usuários excluam determinados recursos do sistema, tais como arquivos, diretórios, registros, instâncias entre outros.
+
+Listar: permissão que possibilita que os usuários visualizem os recursos, permite listar os arquivos e diretórios do sistema, e ainda realizar buscas nestes diretórios.
+
+Leitura: permissão que possibilita que os usuários visualizem informações de um determinado recurso do sistema, incluindo capacidade de copiar ou imprimir. Um exemplo típico é o privilégio de leitura fornecida em um arquivo.
+
+Escrita: permissão que possibilita que os usuários realizem alterações em determinado recurso, podendo incluir, excluir e modificar os dados do sistema. Em muitos casos o acesso de escrita ele inclui o acesso a permissão de leitura. Por exemplo editar algum arquivo.
+
+Executar: permissão que possibilita que os usuários executem determinados programas ou rotinas de códigos, em geral programas executáveis ou scripts.
+
+
+Controle de Acesso Discricionário
+Controle de acesso discricionário ou DAC, tradução do termo inglês Discretionary Access Control. Conforme mencionado anteriormente no controle de acesso discricionário, uma entidade pode receber privilégios de acesso que permitem que esta entidade habilite outras entidades a acessar certo recurso. Em geral, a abordagem implementada pelo controle de acesso discricionário é a matriz de acesso, adotada na grande maioria dos sistemas operacionais e SGBD. O conceito da matriz de acesso foi proposto por Lampson [LAMPSON, 1969].
+
+Disposto em uma das dimensões (linhas ou colunas) da matriz são inseridos os sujeitos devidamente identificados que podem requisitar acesso a algum recurso. Geralmente, essa matriz consiste em uma lista de usuários e grupos. Em outra dimensão da matriz são inseridos os objetos que podem ser acessados. Considerando um detalhamento maior, os objetos são as instâncias dos dados cadastrados individualmente. Esses são agrupados com um maior nível de associação, como registros, arquivos e inclusive o banco de dados pode ser um objeto nesta matriz. Consequentemente, cada uma das entradas da matriz corresponde a uma permissão de acesso do sujeito (usuário ou grupo) a um determinado objeto (recurso).
+
+Na figura abaixo um exemplo simples de uma matriz de acesso. Onde Bob é o proprietário do arquivo 1 e diretório 1, tem acesso de leitura e escrita sobre o arquivo 1 e permissão de leitura sobre o diretório 1, recebendo as permissões mínimas definidas por padrão, ainda recebe permissão de leitura sobre o arquivo 3 e escrita no diretório 2. Alice é proprietária do arquivo 3 possui permissão de leitura e escrita sobre este objeto, ainda permissão de leitura, escrita e execução sobre o arquivo 1, leitura sobre o arquivo 2 e leitura e escrita sobre o diretório 1, e assim por diante.
+
+
+#ParaTodosVerem
+
+
+Fonte: Autor
+A matriz de acesso é regularmente esparsa, onde uma grande quantidade dos elementos não está presente. Esta matriz poder ser analisada por colunas, por meio das listas de controle de acesso denominadas ACLs (Acess Control Lists). Nesta abordagem, para cada objeto a ACL dispõe dos usuários e as permissões de acesso autorizadas. As ACLs podem fornecer uma entrada padrão ou pública, isto possibilita que um sujeito (usuário ou grupo) que possua privilégios especiais, que não estão explicitamente contidos na ACL, recebam um conjunto de permissões padrão. As permissões definidas por padrão devem fornecer privilégios mínimos, em geral fornecido apenas acesso de leitura. Os elementos desta lista podem incluir usuários ou grupos. Abaixo a lista de controle de acesso (ACL) correspondente a matriz de acesso representada anteriormente.
+
+
+#ParaTodosVerem
+
+
+Fonte: Autor
+
+ 
+A análise realizada por linhas estabelece os rótulos de capacidade. O rótulo de capacidade permite especificar os objetos e permissões concedidas para cada usuário em específico. Utilizando esta abordagem cada usuário possui uma quantidade de rótulos, onde os rótulos podem ser fornecidos (emprestar ou dar) para autorizar outros usuários. Porém os rótulos de capacidade apresentam uma limitação quando comparado com as listas de controle de acesso, em relação à segurança são mais vulneráveis, pois os rótulos podem estar espalhados no sistema. Assim, a integridade do rótulo de capacidade deve ser garantida pelo mecanismo que a implementa, ou seja, proteger o rótulo para que não seja possível falsificá-lo.
+
+Uma das maneiras que garantir que os rótulos não sejam falsificados é forçar o sistema operacional a manter todos os rótulos em nome dos seus respectivos usuários. Tais rótulos deveriam ser alocados em uma região que não seja acessível pelos usuários. Alternativamente, uma outra estratégia seria vincular um token não falsificável no rótulo. O token poderia gerar uma senha aleatória com um tamanho considerável, ou ainda hash criptográfica, onde o valor deve verificado no recurso sempre que este for solicitado. Os rótulos de capacidade são indicados para ambientes distribuídos, nos casos em que a segurança do recurso não tem como ser garantida. Na figura abaixo a representação do rótulo de capacidade correspondente a matriz de acesso.
+
+
+#ParaTodosVerem
+
+Fonte: Autor
+
+ 
+Existem vantagens e desvantagens de implementar os rótulos de capacidade. A vantagem que é fácil de determinar o conjunto de permissões que um usuário possui. A desvantagem que é mais difícil gerar uma lista de usuários com direitos de acesso específico a um determinado recurso. 
+
+
+Controle de Acesso a Arquivos
+Indiferente de qual seja o sistema operacional, todos implementam um mecanismo de controle de acesso sobre seus arquivos. Em geral os sistemas Windows e Unix implementam o controle de acesso a arquivos por meio das ACLs.   Nesta secção vamos explorar o controle de acesso a arquivos no Linux (sendo que este teve sua origem baseada no Unix).  
+
+No Linux todos os recursos do sistema operacional são manipulados por meio de arquivos. Por sua vez, todos os tipos de arquivos no Linux são gerenciados pelo sistema operacional por meio de uma estrutura denominada inodes. Os inodes ou "nó de índice" são estruturas de controle que compreende as informações fundamentais que o sistema operacional precisa manter para gerenciar o sistema de arquivos e controle de acesso. Cada inode está associado a um único arquivo, este armazena informações do arquivo, seus atributos, permissões e outras informações necessárias que permitem controlar este arquivo.  Na unidade de disco, com a criação do sistema de arquivos uma tabela de inodes é gerada, está tabela contém todos os inodes dos arquivos do sistema. Sendo assim, quando um arquivo é acessado, seu inode é trazido para memória principal então este é armazenado em uma tabela de inodes que se encontra na memória. 
+
+O sistema operacional organiza a estrutura do sistema de arquivos utilizando os diretórios, são estruturados de forma hierárquica. Deste modo, um diretório que se encontra disposto dentro de outro é denominado como subdiretório. Ressalta-se que um diretório na verdade é um arquivo que contém uma lista de nomes de arquivos e ponteiros associados a inodes, em outras palavras uma representação do sistema de arquivos. Tendo isto em vista, cada diretório também está associado a um inode. 
+
+
+Modelo tradicional de controle de acesso a arquivos no Linux
+O sistema operacional Linux é estruturado a partir do seu sistema de arquivos. Para garantir o funcionamento adequado do sistema operacional o controle de acesso a arquivos foi introduzido logo nas primeiras versões do Unix que serviu de base para implementação do Linux. Cada usuário no Linux possui um identificador (ID), valor numérico único que permite identificar um usuário. Todo usuário no Linux também é membro de pelo menos um grupo, este definido como grupo primário, além do grupo primário um usuário pode se associar a outros vários grupos. Semelhante ao usuário cada grupo é identificado por um ID, neste caso um ID de grupo. Assim que um arquivo é criado no Linux, ele será automaticamente associado ao ID de usuário e ID de grupo do seu criador. Adicionalmente, associado a cada arquivo existe um conjunto de 12 bits que permite definir as permissões para proteger o arquivo. As informações do ID de usuário, ID de grupo e bits de proteção compõe parte da estrutura do inode. 
+
+
+
+Fonte: ©Julien Tromeur/Adobe Stock
+
+Em sequência, nove dos bits de proteção alocados no inode são utilizados para definir as permissões do arquivo, para ler, escrever e executar para o proprietário do arquivo, grupo que o arquivo está associado e todos os demais usuários autenticados no sistema. Neste sentido é possível definir uma hierarquia compreendendo o usuário proprietário, o grupo e demais usuários, fornecendo um conjunto de permissões de maior valor. Na figura abaixo é apresentado o esquema de permissões do Linux, as três primeiras permissões são direcionadas ao usuário proprietário, na sequência são definidas outras três permissões que são utilizadas para definir as permissões do grupo, por fim as últimas três permissões são reservadas para definir as permissões de todos os outros usuários. 
+
+#ParaTodosVerem
+
+
+Fonte: Autor
+
+As permissões no Linux representam respectivamente read (r), write(w) e execute (x). Vejamos um exemplo de como as permissões são aplicadas, a figura abaixo mostra um exemplo das permissões aplicadas sobre o arquivo “arquivo1.txt”, este arquivo o proprietário possui permissão de leitura e escrita.
+
+
+#ParaTodosVerem
+
+Fonte: Autor
+Na sequência no arquivo “arquivo1.txt” é definido as permissões do grupo, referente as próximas três posições. Neste exemplo o grupo tem apenas permissão de leitura.
+
+ Fonte: Autor
+Por fim, as últimas três posições são utilizadas para definir as permissões de outros usuários que não são nem o proprietário do arquivo e não estão no grupo ao qual este arquivo está associado.
+
+ Fonte: Autor
+Neste exemplo mostramos as permissões aplicadas a um arquivo, quando aplicamos as permissões em um diretório, os bits de leitura e escrita são respectivamente utilizados para listar o diretório e modificar os arquivos dentro do diretório (criar, excluir e renomear). Por sua vez, o bit de execução permite acessar o diretório ou localizar algum arquivo dentro deste diretório. Para determinar o tipo de objetos que está sendo manipulado é utilizado um bit adicional antecedendo os bits de proteção. Entre os principais tipos de objetos são arquivos (-), diretórios (d), links simbólicos (l), arquivo de bloco (b), arquivo especial de caractere(c), canal(p) e socket (s).
+
+Fonte: Autor
+ 
+
+Observe que no exemplo das permissões definidas anteriormente o primeiro caractere que antecedem os bits de proteção é utilizado um traço (-), ou seja, este objeto é um arquivo, se tivéssemos utilizado a letra “d” estaríamos trabalhando como um diretório, a letra “l” um link simbólico e assim por diante.
+
+  Fonte: Autor
+Os três últimos bits são utilizados para definir permissões adicionais para os arquivos e diretórios. Os três modelos especiais para controle de acesso são denominados Set User ID (SUID), Set Group ID (SGID) e Sticky Bit (Sticky).
+
+Fonte: Autor
+As permissões especiais alteram o comportamento padrão do sistema operacional na manipulação dos arquivos que possuem tais permissões.  Então, vejamos qual o funcionamento do sistema operacional para cada uma dessas permissões.
+
+A propriedade SUID permite ajustar o ID do usuário (SetUID), é aplicada apenas para arquivos executáveis não tendo qualquer efeito sob diretórios. Quando um arquivo executável com a propriedade SUID aplicada, entrar em execução, o programa deverá rodar com o ID do proprietário do arquivo, não com o ID do usuário que o executou. Em outras palavras, o processo do arquivo executável utilizando o acesso SUID será executado como se estivesse sido iniciado pelo dono do arquivo. Esta permissão de acesso só pode ser definida no campo de execução do proprietário do arquivo, atribuição realizada com a letra “s”. Tal funcionalidade proporciona a criação e utilização de programas privilegiados que podem usar arquivos que são normalmente inacessíveis a outros usuários.
+
+Fonte: Autor
+Alternativamente, a propriedade SGID é utilizada para ajustar o ID do grupo. Esta propriedade tem uma função bastante semelhante a propriedade SUID para arquivos executáveis, contudo esta propriedade tem um efeito especial quando aplicado sob diretórios. Quando esta permissão é aplicada em um diretório, os novos arquivos que serão criados dentro deste diretório assumem o mesmo ID de grupo do diretório com a propriedade SGID aplicada. Esta permissão de acesso especial só pode ser definida no campo que habilita a execução para o grupo, atribuição realizada com a letra “s”.
+
+Fonte: Autor
+Por último, o bit de permissão Sticky, em português o termo mais adequado seria “Aderente”. Esta propriedade quando habilitada em arquivos executáveis faz com que o sistema mantenha uma imagem do programa em memória depois que o programa finalizar. Deste modo, é possível aumentar o desempenho, pois isto permite realizar um cache do programa para a memória, a próxima vez que este arquivo for executado, ele será carregado mais rápido.
+
+Adicionalmente, a propriedade Sticky pode ser utilizada para aumentar a segurança, pois quando aplicada sobre os diretórios, impede que outros usuários excluam ou renomeiem os arquivos nos quais não são donos. Assim, este diretório estará em modo append-only (somente incremento), apenas o proprietário do arquivo pode excluir e renomear esses arquivos. Esta propriedade é útil para gerenciar arquivos em diretórios temporários. Esta permissão de acesso especial é definida no campo que habilita a execução para outros usuários, atribuição realizada com a letra “t”.
+
+Fonte: Autor
+Dados as características das permissões especiais mencionadas, é necessário ter certo cuidado ao definir as permissões. Em particular existe os ID de usuário que possui privilégios de "superusuário", comumente denominado nas distribuições Linux como usuário de "root". O usuário com privilégios de root está isento das restrições designadas pelo mecanismo de controle de acesso, este usuário tem amplo acesso a sistema e arquivos. Neste sentido, qualquer arquivo que pertença ao usuário de "root" e seja concedido permissão de SUID, consequentemente ele fornecerá acesso irrestrito ao sistema a qualquer usuário que execute tal arquivo. Portanto, é necessária muita cautela ao definir tais permissões.
+
+Outro aspecto que deve ser avaliado no esquema tradicional de controle de acesso a arquivos no Linux é que por padrão ele propõe uma estrutura simples de domínios de proteção. O domínio está associado aos usuários, alterar o domínio reflete em substituir o ID do usuário temporariamente. Por exemplo, um usuário comum solicitar privilégios de superusuário para instalar um pacote no sistema ou efetuar uma configuração nos arquivos de sistema.
+
+
+Listas de controle de acesso no Linux
+A maioria dos sistemas operacionais baseados no Unix suportam as listas de controle de acesso. No Linux denominada como lista de controle de acesso estendida.
+
+No Linux é possível conceder uma lista de ID´s de usuários e grupos a um arquivo ou diretório, para isto é utilizado o comando setfacl. Este comando permite associar qualquer número de usuário ou grupo a um determinado tipo de objeto (arquivo ou diretório), fornecendo as permissões de leitura, escrita e execução de forma individual.
+
+Esta abordagem fornece uma flexibilidade maior na hora de atribuir as permissões de acesso. Neste sentido, um arquivo além ser protegido pelo mecanismo de acesso a arquivos tradicional, adicionalmente pode dispor de uma ACL estendida. Os arquivos Linux fornecem um bit de proteção adicional para indicar se este arquivo possui uma ACL estendida ou não, este bit é representado por um sinal de adição (+).
+
+ Fonte: Autor
+O proprietário do arquivo “arquivo1.txt” é o usuário “aluno”, por sua vez o grupo proprietário é “equipe1”. Podemos utilizar o comando getfacl para visualizar as permissões na ACL estendida. Observe que adicionalmente, foram concedidas duas outras permissões na ACL estendida, conforme disposto na imagem abaixo existem dois usuários nomeados, usuários aluno2 e aluno3, ambos com permissão de leitura e escrita.
+
+ Fonte: Autor
+ O Linux e grande parte das implementações baseadas em UNIX suportam ACLs estendidas e adotam as seguintes abordagens
+
+As permissões das classes proprietário e outros, estabelecido pelos 9 bits de proteção do modelo de controle de acesso tradicional são correspondente as ACLs estendidas.
+
+A permissões da classe grupo representam as permissões máximas que podem ser atribuídas aos usuários ou grupos nomeados, com exceção do proprietário do arquivo. Neste último, a permissão funciona como uma máscara.
+
+Todos os usuários e grupos definidos na ACLs estendidas que estão associados a um arquivo, definem sua permissão na ACL estendida utilizando um campo de permissão de 3 bits (leitura, escrita e execução). As permissões listadas para um usuário ou grupo nomeado são verificadas no campo referente a máscara. Qualquer permissão que não esteja presente neste campo deve ser automaticamente desabilitada.
+
+Assim, quando determinado processo solicita acesso a um tipo de objeto do sistema de arquivos duas etapas são realizadas. Na primeira etapa é selecionado a entrada da ACL estendida que correspondente ao processo solicitante. Então as entradas das permissões definidas na ACL estendida são examinadas na seguinte ordem: proprietário, usuários nomeados, grupos (proprietário ou nomeados), outros. Apenas uma das entradas é utilizado para definir a permissão de acesso. Posteriormente, na etapa seguinte é analisado se a entrada fornecida detém privilégios de acesso suficientes. Destaca-se que um processo pode fazer parte de mais de um grupo, consequentemente, mais de uma entrada de grupo pode ser fornecida a este processo. Então, se qualquer das entradas contiver a permissão solicitada o acesso é concedido. Em contrapartida, se nenhuma das entradas de grupo possui as permissões solicitadas o acesso deverá ser negado.
+
+
+Controle de Acesso Baseado em Papéis (RBAC)
+O controle de acesso RBAC é baseado nos papéis que os usuários assumem no sistema. O Modelo RBAC define um papel como sendo uma função que é desempenhada dentro de uma organização. Neste sentido, os sistemas que implementam o modelo RBAC atribuem as permissões de acesso a papéis em vez das permissões de acesso de usuários individuais e grupos de usuários. Utilizando esta abordagem os papéis são atribuídos aos usuários, de maneira estática ou dinâmica, estabelecidos de acordo com sua responsabilidade. 
+
+Fonte: ©shane/Adobe Stock
+O RBAC estabelece a relação entre os usuários e seus papéis de muitos para muitos, semelhante a relação entre os papéis e os recursos do sistema. Neste modelo, o conjunto de usuário pode ser alterado, em determinados ambientes com um a certa frequência, a atribuição de um ou mais papéis para o usuário pode ser realizado de forma dinâmica. Em geral, na grande maioria dos ambientes o conjunto de papéis é relativamente estático, ocorrendo adição ou remoção somente ocasionais. Nesta abordagem cada papel fornece permissões de acesso específicos a um ou mais recursos. Deste modo, o conjunto de recursos e as permissões de acesso não serão alteradas frequentemente. Na figura abaixo é representado a relação entre usuários, seus papéis e os recursos do sistema, observe que temos uma relação de muitos para muitos.
+
+Fonte: Autor
+Para representar os elementos fundamentais de um sistema RBAC é possível utilizar uma matriz de acesso. Observe que na figura abaixo a matriz permite relacionar os usuários individuais a seus respectivos papéis. Geralmente, a quantidade de usuário é bem maior do que a quantidade de papéis. As posições marcadas na matriz indicam que um usuário foi designado a determinado papel, ao contrário este espaço deve ser deixado em branco. Destaca-se que um usuário pode receber vários papéis, e ainda um único papel pode ser atribuído a vários usuários. 
+
+Fonte: Autor
+Esquematizado na figura abaixo, definimos uma segunda matriz, com papéis como sujeitos. Em geral, existem poucos papéis e uma quantidade maior de objetos e recursos. Nesta outra matriz as entradas da matriz são as permissões de acesso que os papéis possuem. É importante destacar que nesta estrutura um papel pode ser definido como um papel, estratégia bastante interessante pois possibilita que seja definido hierarquias de papéis. 
+
+Fonte: Autor
+O RBAC possibilita a implementação do princípio do privilégio mínimo. Proposta do conceito que cada papel deve possuir um conjunto mínimo de permissões de acesso necessário para desempenhar aquele papel. Um usuário designado a desempenhar um determinado papel terá permissões somente para executar o que for requerido por este papel. Ainda, vários usuários que sejam designados para os mesmos papéis irão usufruir do mesmo conjunto mínimo de permissões de acesso.
+
+
+Controle de Acesso Mandatório (MAC)
+Controle de acesso obrigatório ou MAC, tradução do termo inglês Mandatory Access Control. As políticas de controle de acesso definidas no MAC são estabelecidas pelo sistema e não pelo proprietário do recurso. Em geral este mecanismo é utilizado em sistemas onde os dados são extremamente sensíveis, tais como dados governamentais, segurança pública e militares.
+
+Fonte: ©Gorodenkoff/Adobe Stock
+
+Em um sistema de controle de acesso mandatório todos os sujeitos e objetos estão associados a um rótulo de sensibilidade. O rótulo de sensibilidade permite definir o grau de confiança de um sujeito. Quando aplicado em um objeto este define qual o grau de confiança necessário para acessar este objeto. Neste sentido, para um sujeito consiga acessar um objeto, esse deve possuir um rótulo de sensibilidade igual ou superior ao rótulo solicitado pelo objeto.
+
+Um sistema baseado em MAC precisa garantir que os rótulos de sensibilidade sejam manipulados de maneira apropriada. Para tal, é definido o controle de importação e exportação dos dados, destaca-se que esta uma das funções críticas dos sistemas baseados em MAC, pois é necessário que a informação sensível seja protegida a todo momento.
+
+Em geral, dois métodos são utilizados na implementação de um controle de acesso obrigatório, controle baseado em regras e controle de acesso baseado no modelo lattice.
+
+Controle de acesso baseado em regras: Basicamente todos os sistemas de controle de acesso obrigatório implementam uma forma simples de controle de acesso baseado em regras, isto permite definir que o acesso seja permitido ou recusado baseado no rótulo de sensibilidade do objeto e do sujeito.
+
+Controle de acesso baseado no modelo lattice: Este tipo de controle permite que sejam tomadas certas decisões complexas que envolvem múltiplos objetos e sujeitos. Basicamente o conceito do modelo lattice é utilizar um grafo dirigido sem ciclos para definir níveis de prioridade a partir de uma ordenação parcial (exemplo: soldado -> cabo -> sargento).
+
+
+Modelo de Bell-LaPadula
+O modelo de Bell-LaPadula (BLP), desenvolvido por David Elliott Bell e Leonard J. LaPadula em 1970 [BELL, 1973]. Neste modelo de controle de acesso, cada sujeito e objeto é atribuído a uma determinada classe. As classes formam uma hierarquia específica e são denominados níveis de segurança [BELL, 2005]. Um típico exemplo da utilização deste modelo é o esquema de classificação do exército americano dos EUA. 
+
+Fonte: Autor
+Ressalta-se que é possível adicionar um conjunto de categorias a cada nível de segurança, atribuindo a um sujeito o nível de segurança e a categoria adequada para poder acessar o objeto.
+
+Esta abordagem pode ser aplicada em outras áreas, as informações podem ser estruturadas em níveis e categorias gerais, deste modo os usuários podem obter permissões para acessar categorias de dados específicas. Por exemplo, considerando um ambiente corporativo, poderia ser atribuído um nível de segurança maior nos documentos e dados de planejamento estratégico, concedendo permissões de acesso apenas aos diretores corporativos e sua equipe, na sequência dados financeiros e dados pessoais sensíveis, dados liberados apenas para o pessoal administrativo e diretores da empresa, em seguida os dados que podem ser acessíveis a quaisquer colaborares. Tal classificação pode seguir conforme exposto na figura abaixo.
+
+Fonte: Autor
+Neste esquema um sujeito possui autorização de segurança em dado nível, ainda a classificação de segurança em dado nível. Deste modo, as classes de segurança permitem controlar o modo pelo qual o sujeito pode acessar um objeto. Este modelo propõe quatro modos de acesso:
+
+Leitura: este modo concede permissão ao usuário apenas de leitura sobre o objeto.
+
+Adição: este modo concede permissão ao usuário apenas de escrita sobre o objeto.
+
+Escrita: este modo concede as permissões ao usuário tanto de leitura como escrita sobre o objeto.
+
+Execução: este modo concede permissão ao usuário apenas de execução do objeto, poderá invocar o objeto.
+
+Seguindo esta abordagem é possível implementar vários níveis de segurança (categorias), requisito denominado como segurança multinível. Neste escopo, a segurança multinível centrada em confidencialidade estipula que um sujeito em nível alto não pode transmitir informações para um sujeito de nível mais baixo. Para que a transmissão seja realizada o sujeito que possui o nível mais alto deve ser rebaixado ao mesmo nível do sujeito de nível mais baixo, então pode efetuar a transmissão da mensagem, assim que finalizar a transmissão o sujeito retorna ao nível anterior, técnica denominada como desclassificação autorizada. Um sistema de segurança multinível que visa garantir a confidencialidade deve estabelecer os seguintes requisitos:
+
+Não ler para cima: Um sujeito só pode realizar a leitura de um objeto de nível de segurança equivalente ou menor que o seu. Este conceito é denominado como propriedade de segurança simples.
+
+Não escrever para baixo: Um sujeito só pode efetuar escrita em um objeto de nível de segurança equivalente ou inferior ao seu. Este conceito é denominado como propriedade-* (propriedade estrela - curiosamente quando este modelo foi criado não foi definido nenhum nome para esta propriedade, no lugar foi colocado um coringa (*), o que acabou se tornando definitivo).
+
+Fonte: Autor
+Por meio da figura abaixo, expomos a importância da propriedade * na segurança multinível. Conforme disposto na figura, um atacante (sujeito com intenção maliciosa) pode passar informações "teoricamente" confidenciais adicionando as informações em um container com um rótulo de classificação mais baixo que rotulado com classificação de segurança mais baixa que o seu. Desta maneira o adversário poderá obter acesso de leitura a informação consecutiva escrita pelo sujeito de nível de autorização mais baixo.
+
+
+
+
+Essas duas propriedades são extremamente importantes, elas fornecem os princípios de confidencialidade que estabelecem o controle de acesso mandatório. Sobre tais aspectos, qualquer tipo de acesso que não atenda as duas propriedades deverá ser negado.
+
+
+Modelo de Integridade Biba
+O modelo de Bell-LaPadula visa garantir confidencialidade, preocupa-se que informações não sejam expostas sem autorização. Utilizando uma estrutura similar foi proposto o modelo Biba. O modelo Biba foi concebido para proteger a integridade, visa garantir que não haja modificação não autorizada nos dados [BIBA, 1977].
+
+Este modelo trata a situação dos casos que existem dados que devem ser visíveis aos sujeitos em todos os níveis de segurança (permissão de leitura), porém devem ser modificados apenas por agentes autorizados. O modelo Biba implementa uma estrutura bastante semelhante ao modelo Bell-LaPadula, incluindo os elementos básicos, lida com sujeitos e objetos. Para cada sujeito e objeto é atribuído um nível de integridade, representado por I(S) e I(O), onde a letra "S" é utilizado para definir o sujeito e a letra "O" para definir o objeto. Para implementar este modelo é possível utilizar uma classificação hierárquica simples, determinado uma ordenação específica de níveis, do nível mais baixo até o nível mais alto. Da mesma que o modelo Bell-LaPadula, neste modelo é possível adicionar um conjunto de classes ao esquema de classificação. Este modelo considera os seguintes modos de acesso:
+
+Modificar: permite escrever e atualizar informações em um determinado objeto.
+
+Observar: permite ler as informações de um objeto.
+
+Executar: permite executar um objeto.
+
+Invocar: permite realizar comunicação de um sujeito com outro.
+
+Os primeiros três modos de acesso são equivalentes aos modos implementados no Bell-LaPadula. Adicionalmente, um novo modo de acesso é incluído no Biba, o modo de acesso invocar. O modelo Biba propõe outras políticas alternativas que podem ser incorporadas ao modelo. Entre as mais relevantes, destaca-se a política de integridade estrita que dispõe as seguintes regras:
+
+Integridade simples: esta regra determina que um sujeito apenas pode alterar um objeto se o nível de integridade que o sujeito possui for maior ou igual ao nível de integridade do objeto, regra representada por:texto I(S) ≥ I(O) fim do texto
+
+Confinamento de integridade: esta regra determina que um sujeito apenas pode ter acesso de leitura sobre um objeto apenas se o nível de integridade do objeto for maior ou igual a nível de integridade que o sujeito possui, regra representada por: texto I (S) ≤ I (O) fim do texto
+
+Propriedade de invocação: esta regra determina que um sujeito pode invocar um segundo sujeito apenas se nível de integridade do sujeito for maior ou igual ao nível de integridade do segundo sujeito, regra representado por: texto I fim do texto parêntese esquerdo grande s com 1 subscrito parêntese direito maior ou igual a texto I fim do texto parêntese esquerdo grande s com 2 subscrito parêntese direito
+
+ 
+
+As primeiras duas regras são equivalentes às regras implementadas no modelo Bell-LaPadula, contudo tais regras têm por interesse a integridade, ainda invertem o significado do acesso de leitura e da escrita. A regra de integridade simples restringe que o acesso de escrita seja concedido para cima, deste modo evitando a contaminação dos dados de alta integridade. Por sua vez, um processo de baixa integridade permite a leitura de dados de baixa integridade, contudo a regra de integridade simples impede que este processo contamine um arquivo de alta integridade. Em via de regras, um processo de alta integridade não contaminaria um arquivo de alta integridade, porém qualquer erro de processo ou a disseminação de malware poderia ocasionar tal contaminação, neste sentido a regra de confinamento de integridade é necessária.
+
+
+Gerenciamento de Identidades
+O gerenciamento de identidades trata-se de uma abordagem centralizada e automatizada para fornecer acesso a recursos de uma organização aos colaboradores e outros indivíduos autorizados. Destaca-se a também a difusão deste termo em inglês, Identity and Access Management (IAM). A proposta desta abordagem é conceder uma identidade para cada usuário, vinculando atributos a esta identidade e estabelecendo uma maneira para que o usuário valide sua identidade. Os principais elementos de um sistema de gerenciamento de identidade são:
+
+Autenticação: conforme estudado na unidade anterior, este mecanismo permite confirmar a identidade fornecida por usuário.
+
+Autorização: esta propriedade permite conceder acesso aos recursos/serviços baseados no mecanismo de autenticação.
+
+Contabilidade: este processo tem por finalidade registrar os acessos e autorizações.
+
+Habilitação: este elemento é responsável pelo processo inserção dos usuários no sistema.
+
+Automação de fluxo de trabalho: este elemento é responsável pela manipulação dos dados em um processo de negócio.
+
+Administração delegada: este elemento é utilizado para fornecer controle de acesso baseado em papéis, consequentemente fornecendo as permissões.
+
+Federação: este processo permite migrar a autenticação e permissão de um sistema para outro, normalmente processo realizado entre várias empresas, estratégia que permite reduzir o número de autenticações necessárias de um usuário.
+
+Serviço próprio de mudança de senha: este processo habilita o usuário a alterar sua própria senha.
+
+Sincronização de senha: este processo pode ser de dois tipos, autenticação única ou de autenticação reduzida. Na autenticação única um usuário pode acessar todos os recursos da rede depois de realizar uma única autenticação. Na autenticação reduzida são implementados vários processos de autenticação única, esta estratégia que permite reduzir o esforço necessário de adicionar um mecanismo de autenticação para cada processo individual.
+
+
+
+Fonte: ©stanciuc/Adobe Stock
+
+ 
+Na figura abaixo é apresentado uma arquitetura genérica de gerenciamento de identidades, demostrando o fluxo dos dados e as entidades. A entidade é um portador de uma identidade, em geral trata-se de um usuário que deseja acessar um recurso do sistema. Destaca-se que os dispositivos do usuário, processos agentes e sistemas servidores podem atuar como entidades. As entidades se autenticam em um provedor de identidades. Por sua vez, o provedor de identidades associa as informações de autenticação a uma entidade, contemplando os atributos e seus identificadores.
+
+Fonte: Autor
+Existe um número cada vez maior de identidades digitais, atualmente vem sendo incluindo atributos no lugar de simplesmente utilizar um identificador tradicional (login e senha). Um serviço de atributos permite gerenciar a criação e manutenção de tais atributos. O gerenciador de identidades estimula que o usuário forneça suas informações de autenticação, tais informações são mantidas em um único lugar, então são liberadas para entidades consumidora de dados conforme as políticas de autorização e privacidade estabelecidas (em destaque a LGPD que trabalhamos na unidade 2). Os usuários podem adicionar atributos que desejam incluir na sua identidade digital, por exemplo: endereço, e-mail, telefone entre outros.
+
+Os administradores do sistema também conseguem designar atributos aos usuários, por exemplo, podem fornecer papéis, definir permissões de acesso e manipular informações dos colaboradores.
+
+Consumidores de dados são entidades que usam os dados fornecidos pelo provedor de identidades, frequentemente utilizados para dar suporte na tomada de decisões para autorizar o acesso ou manipular informações para auditoria. Um típico exemplo de consumidor de dados pode ser representado por um servidor de banco de dados ou servidor de arquivos que necessita das credenciais do usuário para saber qual acesso deve ser concedido a este usuário.
+
+
+Mecanismo de Controle de Acesso do Banco de Tóquio
+Nesta secção vamos resgatar o estudo de caso do banco de Tóquio, introduzido na primeira unidade. A rápida disseminação do malware no banco demostra que o banco de Tóquio não implementou um mecanismo adequado de controle de acesso. Provavelmente, se um mecanismo de controle de acesso estivesse devidamente aplicado muitos dos problemas ocasionados no banco poderiam ter sido evitados.
+
+O banco utiliza uma variedade de sistemas internos. Nas instituições bancárias é muito comum que tais sistemas sejam desenvolvidos para um ambiente de mainframe. No banco de Tóquio algumas dessas aplicações antigas foram migradas para uma arquitetura cliente-servidor, enquanto outras aplicações mais sensíveis ainda permanecem nos mainframes. As aplicações mais novas são hospedadas nos servidores, tais aplicações foram o principal alvo do malware. Antes do incidente, o banco implementava um simples sistema de controle de acesso discricionário. Os administradores do sistema definiam manualmente as permissões de acesso de cada funcionário, onde era criado um arquivo local de controle de acesso em cada uma das estações de trabalho. Essa abordagem era bastante inconveniente pois além do esforço exigido era propenso a erros, um dos grandes fatores que ocasionou o incidente no banco.
+
+Para melhorar o sistema, o banco de Tóquio pode implementar um esquema de controle de acesso baseado em papéis, o que seria mais apropriado. Os papéis internos da organização podem ser definidos a partir da combinação do cargo oficial e a função que o colaborador realiza no banco. Esta estruturação baseada em papéis estabelecida no banco acaba sendo direcionada de forma natural para uma hierarquia de heranças baseado nos cargos estipulados no banco. Observe que no banco existe uma certa ordenação dos cargos oficiais dentro da organização, o que denota um certo nível de responsabilidade e poder. Por exemplo, estagiário, caixa, analista, gerente e diretor. Podemos definir os direitos de acesso levando em consideração a hierarquia do cargo. Deste modo, como boa prática um usuário designado a desempenhar um determinado papel terá permissões somente para executar o que for requerido por este papel.
+
+Neste momento, o banco de Tóquio precisa de um mecanismo de controle de acesso adequado, nossa missão é garantir que as propriedades de segurança da informação do banco sejam preservadas. Para isto, esta “Unidade” tratou alguns dos principais aspectos do mecanismo de controle de acesso. Nas próximas unidades vamos conhecer outros mecanismos para garantir a segurança dos ativos de informação do banco, conhecer e saber como aplicá-los.  Mas não se preocupe, vamos nortear você nesta caminhada, ao longo das próximas unidades vamos te preparar para lidar com este e outros problemas de segurança da informação no âmbito real. 
+
+
+Explorando o Processo de Gestão de Identidade
+Este vídeo vai fornecer uma visão mais ampla sobre a gestão de identidade, vamos apresentar os elementos fundamentais associados a este processo, quais as vantagens e desvantagens de utilizar esta abordagem, dicas e boas práticas para implementação deste mecanismo de segurança.
+
+
+
+
+EXERCÍCIOExercícios de Fixação
+Defina com suas palavras qual a finalidade do mecanismo de controle de acesso?
+
+Quais as áreas/funções diretamente interligada com controle de acesso?
+
+Quais os elementos fundamentais do controle de acesso?
+
+Cite os três principais modelos de controle de acesso.
+
+Cite as principais permissões de acesso que estão relacionadas aos elementos fundamentais de controle de acesso.
+
+Qual a abordagem mais utilizada para implementar o controle de acesso discricionário?
+
+O que é uma ACL? Como é utilizada?
+
+Qual a finalidade do rótulo de capacidade?
+
+O que é um inode?
+
+Como é implementado o controle de acesso a arquivos no Linux?
+
+Quais as permissões básicas do controle de acesso tradicional no Linux?
+
+Quais as três permissões especiais no Linux? Como são utilizadas?
+
+O que é uma lista de controle de acesso estendida no Linux?
+
+Qual o conceito do modelo RBAC?
+
+Quais requisitos de segurança multinível devem ser implementados no modelo de Bell-LaPadula para garantir a confidencialidade? 
+
+Qual a principal diferença entre o modelo Bell-LaPadula e o modelo Biba? 
+
+Quais os principais elementos de um sistema de gestão de identidade?
+
+
+
+Conclusão
+Esta unidade abordou os principais mecanismos de controle de acesso. Em resumo, toda área de segurança da informação depende do controle de acesso. Conforme discutido, este mecanismo foi estruturado a fim de restringir as ações/operações que determinado usuário autorizado pode realizar sobre os recursos do sistema.  
+
+Ainda, destacamos que o mecanismo de controle de acesso deve coexistir com outros mecanismos de segurança. Adicionalmente, abordamos a definição estabelecida na RFC 2828, conforme disposto sobre o mecanismo de segurança existem "medidas que implementam e asseguram serviços de segurança em um sistema de computador, em particular as que asseguram o serviço de controle de acesso". Observamos que o mecanismo de controle de acesso está fortemente associado a outras funções de segurança tais como autenticação, autorização e auditoria.  
+
+Enfatizamos que o mecanismo de controle de acesso somente passa a exercer sua atividade após o processo de autenticação do usuário. Conforme amplamente discutido, o mecanismo de controle de acesso tem como responsabilidade controlar os privilégios dos usuários legítimos, impondo o que este usuário pode ou não fazer no sistema. Apresentamos ainda as principais políticas de controle de acesso. Conforme discutido, tais políticas permitem definir quais os tipos de acesso são permitidos no sistema e sobre quais condições. Na sequência estudamos os elementos fundamentais do controle de acesso, o sujeito, objeto e a permissão de acesso. Posteriormente, analisamos cada um dos modelos de controle de acesso.  
+
+Primeiramente, o controle de acesso discricionário que fornece o controle de acesso baseado na identidade do solicitante e em regras de acesso, conforme estudado são permissões que definem o que este indivíduo está autorizado a fazer. Ainda, exploramos as políticas de acesso discricionário, destacamos que esta política permite que uma entidade conceda direitos de acesso a outras entidades sobre os recursos que lhe pertence. Neste modelo, apresentamos a matriz de acesso, bem como as listas de controle de acesso denominadas ACLs. Explorando as ACLs, nos aprofundamos em controle de acesso a arquivos no Linux, tanto o modelo tradicional de controle de acesso a arquivos como também as listas de controle de acesso estendidas. 
+
+Por seguinte, conhecemos o controle de acesso baseado em papéis, acrônimo do termo em inglês RBAC. Descobrimos que este modelo fornece o controle de acesso baseado nos papéis que um indivíduo desempenha dentro do sistema. Vimos também que tais papéis permitem definir regras que serão utilizadas para conceder acesso aos indivíduos. 
+
+Esta unidade, abordou também o controle de acesso mandatório, vimos que este modelo concede o acesso a partir da comparação de rótulos de segurança com autorização de segurança. Conforme exposto, os rótulos de segurança permitem determinar quão crítico são os recursos do sistema. Por sua vez, a autorização de segurança permite definir quais entidades do sistema têm permissão para acessar determinados recursos.  
+
+Adicionalmente, apresentamos a estratégias utilizada na gestão de identidades. Vimos que esta abordagem permite conceder uma identidade para cada usuário, vinculando atributos a esta identidade e estabelecendo uma maneira para que o usuário valide sua identidade. 
+
+Por último, foi evidenciado a importância de implementar mecanismo de controle de acesso adequados nas organizações, ressaltamos os benefícios e as etapas necessárias. Por fim, resgatamos o caso de uso do “banco de Tóquio”. Foi exposto as fraquezas no controle de acesso do banco, além de apresentar os problemas de segurança da informação que desencadearam o incidente de segurança, destacamos a importância do mecanismo de controle de acesso para evitar este episódio.  
+
+
+https://www.youtube.com/watch?v=TXGd6vPHBPE
+
+
+
+Referências Bibliográficas
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27002: Tecnologia da informação - Técnicas de segurança - Código de prática para controles de segurança da informação. Rio de Janeiro. 2006. 
+
+BELL, D. Looking Back at the Bell-Lapadula Model. Proceedings, 21st Annual IEEE Computer Security Applications Conference, 2005. 
+
+BELL, D., LaPadula, L. Secure Computer Systems: Mathematical Foundations. MTR–2547, Vol. I, The MITRE Corporation, Bedford, MA, 1. ° de mar. de 1973. 
+
+BIBA, K. Integrity Considerations for Secure Computer Systems. ESDTR-76-372, ESD/AFSC, Hanscom AFB, Bedford, MA, abril de 1977. 
+
+COELHO, Flávia E. S.; ARAÚJO, L. G. S. Gestão da Segurança da Informação - NBR 27001 e 27002. Rio de Janeiro: Escola Superior de Redes, RNP, 2013. Disponível em: http://pt.scribd.com/doc/58008255/Gestao-da-Seguranca-da-Informacao-NBR-27001-e-NBR-27002. 
+
+HINTZBERGEN, Jule; HINTZBERGEN, Kees; SMULDERS, André; BAARS, Hans. Fundamentos de Segurança da Informação – Com Base na ISO 27001 e na ISO 27002. 3. ed. Rio de Janeiro: Brasport, 2018. [Biblioteca Virtual 3.0]. 
+
+LAMPSON, Butler W. Dynamic Protection Structures. Proceedings, AFIPS Fall Joint Computer Conference, 1969. 
+
+SHIREY R. RFC 2828 - Internet Security Glossary. The Internet Society, 2000.  
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008. 
+
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014. 

@@ -1,0 +1,417 @@
+UNIDADE 01
+Introdução a Segurança da Informação
+Nesta Unidade, vamos trabalhar os aspectos introdutórios da disciplina abordando, primeiramente, os principais conceitos de segurança da informação, introduzindo as propriedades de segurança da informação e seus requisitos. Adicionalmente, refletiremos sobre a importância da segurança da informação no contexto organizacional, quais os desafios de segurança da informação, tipos de ameaças e ataques aos ativos dos sistemas de informação, bem como políticas e mecanismos de segurança que serão trabalhados ao longo da disciplina. É necessário ter um bom entendimento destes conceitos básicos de forma sólida, pois isso permitirá um melhor desenvolvimento na sequência da disciplina, permitindo uma evolução gradativa da sua aprendizagem. Seja muito bem-vindo aos primeiros passos em sua carreira como profissional da área de segurança da informação!
+
+Conceitos de Segurança de Computadores
+A informação é um conjunto de dados que devidamente tratado produz conhecimento, fornece significado e compreensão no contexto que está inserido. Em geral a informação é um elemento extremamente valioso, tanto para um indivíduo quanto para uma organização. A informação é considerada um dos principais ativos de uma empresa, essencial que seja devidamente protegida.  
+
+Atualmente, dado o avanço da tecnologia estamos em mundo cada vez mais conectado com a internet, deste modo, a informação se não tratada corretamente pode acabar sendo exposta. Nesta “era digital” existem inúmeras ameaças e vulnerabilidades, proteger a informação tem se tornado um desafio. Para ajudar a vencer este desafio surge a Segurança da Informação. 
+
+O conceito de segurança da informação está diretamente ligado à proteção concedida a um conjunto de informações e têm como objetivo preservar o valor que esta informação possui. Deste modo, fornece proteção a informação contra diversos tipos de ameaças, bem como permite garantir a continuidade do negócio e reduzir riscos associados. 
+
+A segurança da informação é obtida a partir da implementação adequada de diversos mecanismos de segurança, contemplando políticas, processos, procedimentos, estratégias, estruturas organizacionais e aspectos de configuração de hardware e software. Tais mecanismos devem ser implementados, monitorados e analisados constantemente para garantir a segurança da organização, como também dos objetivos do negócio. Para preservar a informação, a área de segurança de computadores é estruturada sobre três pilares fundamentais, também conhecidos como propriedades de segurança: confidencialidade, integridade e disponibilidade. 
+
+
+©beebright/Adobe Stock
+
+Propriedades de Segurança
+Essas três propriedades de segurança, estabelecem os princípios fundamentais da segurança para proteção dos dados e informações, bem como os serviços de computação a esses associados. Na sequência vamos conhecer cada uma dessas propriedades básicas de segurança. 
+
+
+Confidencialidade
+Visa garantir que o acesso às informações seja realizado apenas por pessoas autorizadas. 
+Esta propriedade estende dois conceitos integrados. Primeiramente a confidencialidade dos dados que permite garantir que as informações privadas não sejam disponibilizadas para indivíduos que não tenham autorização. E o segundo conceito a privacidade que permite garantir que os indivíduos possam determinar quais informações sobre ele possam ser coletadas, armazenadas e compartilhadas.  
+
+Conforme o conceito descrito nos padrões de segurança definido pela FIPS PUB 199, a confidencialidade propõe: “Preservar restrições autorizadas ao acesso e revelação de informações, proprietárias. Uma perda de confidencialidade consiste na revelação não autorizada de informações” [NIST, 2021].  
+
+Para compreender melhor este conceito, podemos fazer a analogia a uma correspondência que deve ser entregue pelo correio ou por meio de uma transportadora, o conteúdo desta correspondência é de caráter privado, onde apenas o destinatário deve abrir e ler esta correspondência. Neste sentido, a quebra da confidencialidade seria uma outra pessoa sem o consentimento do destinatário abrir e ler o conteúdo da correspondência.  
+
+Assim, no que trata o aspecto da segurança da informação é necessário estabelecer mecanismos que garantam que esta propriedade de segurança seja preservada. No cenário da correspondência seria a garantia que apenas o destinatário tenha acesso ao que foi escrito na correspondência.
+
+
+Integridade
+Destinada a garantir que as informações sejam protegidas contra alterações não autorizadas.  
+Esta propriedade também estende outros dois conceitos associados. Primeiramente a integridade dos dados que permite garantir que as informações sejam apenas alteradas conforme autorização. O segundo conceito é a integridade de sistemas. Este permite garantir que um sistema desempenhe a função no qual foi projetado sem que haja alteração ou acesso não autorizado ao sistema.  
+
+Conforme o conceito descrito nos padrões de segurança definido pela FIPS PUB 199, a integridade propõe: “Defender contra a modificação ou destruição imprópria de informações, garantindo a irretratabilidade (ou não repúdio) e a autenticidade das informações. Uma perda de integridade consiste na modificação ou destruição não autorizada de Informações”. 
+
+Utilizando o mesmo cenário da correspondência, podemos também associar o envelope com a propriedade da integridade, além de garantir a propriedade de confidencialidade o envelope quando lacrado permite garantir que o conteúdo dentro desse envelope não foi alterado. Porém, podemos observar a quebra da integridade caso a correspondência chegue ao destinatário sem estar devidamente lacrada, caso o envelope seja violado o destinatário não terá garantia do conteúdo original da correspondência.  
+
+De forma similar, quando tratamos de segurança da informação é necessário dispor de mecanismos, tal como o envelope, para garantir a propriedade da integridade.
+
+
+Disponibilidade
+Esta propriedade visa garantir que as informações estarão sempre disponíveis, para que os sistemas funcionem de imediato sem haver negação dos serviços aos usuários que estão autorizados.  
+Ainda, conforme o conceito descrito nos padrões de segurança definido pela FIPS PUB 199, a disponibilidade propõe: “Assegurar que o acesso e o uso das informações sejam confiáveis e realizado no tempo adequado. Uma perda de disponibilidade consiste no rompimento do acesso ou da utilização de informações ou de um sistema de informação” [NIST, 2021].  
+
+Retornado ao cenário da correspondência, ao enviar o envelope podemos optar que a correspondência seja enviada como carta registrada ou Sedex, ao utilizar este recurso recebemos um protocolo que permite rastrear a correspondência, tratando-se de um lugar distante é possível levar dias para entregar a correspondência ao destinatário. Neste sentido, sempre que desejarmos consultar onde está a correspondência, a informação do rastreamento deve estar disponível, ressalta-se apenas que quem tem o número do protocolo tem autorização para consultar está informação. 
+
+Tratando-se da segurança da informação, a propriedade da disponibilidade visa garantir que o serviço fornecido esteja sempre disponível, devendo ser acessado por uma pessoa autorizada sempre que necessário.
+
+
+Propriedades de segurança adicionais
+Essas três propriedades básicas de segurança seguem os padrões internacionais definidos na ISO/IEC 27002, formam uma tríade comumente conhecida como CID (confidencialidade, integridade e disponibilidade). Embora a CID tenha sido bem constituída para a fim de atingir os objetivos de segurança da informação, alguns pesquisadores defendem o uso de outras duas propriedades complementares de segurança: autenticidade e legalidade.
+
+
+Autenticidade
+Esta propriedade visa garantir a veracidade da informação, se é confiável e se pode ser verificada. Assim, fornece confiança da validade da transmissão e sua origem. Isto significa verificar se o usuário é quem diz ser e ainda que os dados que chegam no sistema são provenientes de uma fonte confiável - não sofreram nenhuma alteração durante o processo de transmissão. Desta forma, esta propriedade garante a identidade de quem está enviando a informação, gerando irretratabilidade ou não-repúdio, onde o emissor não tem como negar a autoria da mensagem.
+
+
+Legalidade
+Esta propriedade visa garantir que o uso da tecnologia de informação e comunicação siga de acordo com a legislação vigente no local onde está inserida. O objetivo desta propriedade de segurança recorre a certas exigências, as ações de uma entidade devem ser rastreadas e atribuídas unicamente a esta entidade. Assim, os sistemas devem manter registros de suas atividades, permitindo realizar análise e rastrear violações de segurança.
+
+
+Requisitos de Segurança
+É extremamente importante que as organizações identifiquem os requisitos de segurança da informação. Conforme a norma ISO/IEC 27002, os requisitos de segurança da informação podem ser identificados a partir de três fontes: 
+
+Análise e avaliação de riscos da organização alinhados com os objetivos e estratégias de negócio da organização – na análise de risco é realizado a identificação das ameaças e vulnerabilidades aos ativos, onde deve ser realizado uma estimativa da probabilidade da ocorrência de uma ameaça e qual seu impacto ao negócio. 
+
+Legislação vigente, estatutos, regulamentação e cláusulas contratuais da organização (parceiros, contratados e provedores de serviço). 
+
+Conjunto particular de princípios, objetivos e requisitos do negócio para o processamento da informação – o que exatamente a organização tem que desenvolver para apoiar suas operações.  
+
+Os resultados obtidos da análise de risco ajudam a determinar ações gerenciais apropriadas, estabelecendo as prioridades dos riscos na implementação dos controles e mecanismos de proteção. Existem vários modos para classificar as contramedidas que são utilizadas para lidar com as ameaças e vulnerabilidades. Seguindo a classificação definida no FIPS PUB 200, as contramedidas são estruturadas em termos de requisitos funcionais, esse padrão lista um conjunto de 17 áreas de segurança que estão relacionadas a proteção dos pilares da segurança (confidencialidade, integridade e disponibilidade). As áreas de segurança da informação estabelecidas no FIPS PUB 200 foram elencadas abaixo. 
+
+Controle de acesso; 
+
+Conscientização e treinamento; 
+
+Auditoria e responsabilidade; 
+
+Avaliação de certificação, credenciamento e segurança; 
+
+Gerenciamento de configuração; 
+
+Planejamento de contingência; 
+
+Identificação e autenticação; 
+
+Respostas a incidentes; 
+
+Manutenção 
+
+Proteção da mídia; 
+
+Proteção física e ambiental;  
+
+Planejamento estratégico; 
+
+Segurança de pessoal; 
+
+Avaliação de risco; 
+
+Aquisição de sistemas e serviços; 
+
+Proteção de sistemas e comunicações; 
+
+Integridade de sistemas e informações. 
+
+
+IMPORTANTENa próxima unidade veremos os requisitos funcionais de cada uma dessas áreas, ressaltando as contramedidas adotadas para lidar com as ameaças e vulnerabilidades.
+
+Desafios da Segurança de Computadores
+A Segurança da Informação é uma área extremamente fascinante, atualmente em ascensão no mercado de trabalho, setor que busca cada dia mais por profissionais qualificados. Contudo, a área de Segurança da Informação pode ser bastante complexa e desafiadora, exige que o profissional esteja em constante atualização. É uma batalha contra o tempo, enquanto os adversários (crackers/hackers) motivados por uma “sensação” de impunidade exploram brechas de segurança nos sistemas (realizando atividades criminosas para tentar levar vantagem financeira ou por puro vandalismo), o profissional de segurança da informação deve proteger os sistemas computacionais.
+
+
+Fonte: Adaptado de Symantec, 2020.
+É uma luta constante e diária contra os crimes cibernéticos, pesquisadores na área de segurança demostrar que quase 500 milhões de consumidores foram vítimas de crime cibernético, sendo que quase 350 milhões realizados apenas no último ano [Norton, 2021]. Os dados comprovam a importância e necessidade de profissionais qualificados na área de segurança. 
+
+O crime cibernético continua constantemente evoluindo, os criminosos cibernéticos exploram/encontram sempre novas formas de atingirem os consumidores. Em definição os crimes cibernéticos são caracterizados como sendo um crime pessoal cometido por meio de um dispositivo conectado na internet. Em geral, são crimes nos quais um computador é utilizado para prejudicar um indivíduo, através de roubo, fraude e extorsão, ainda há crimes que visam outros computadores/dispositivos conectados na internet para acessar os seus dados ou recursos, ou ainda apenas para afetar a operação do dispositivo. Entre os crimes cibernéticos mais comuns podemos citar: 
+
+Criar e disseminar software com conteúdo malicioso, tais como: vírus, ransomware, spyware, vírus, worms, cavalos de tróia, adware, entre outros;  
+Exposição de informações pessoais e financeiras, violação dos dados; 
+Solicitar dinheiro em resposta a um e-mail, mensagem de texto ou sites fraudulentos;
+Roubar informações pessoais e uso sem permissão;
+Extorsão ou ameaça de publicação de fotos, vídeos ou informações pessoais confidenciais roubadas no meio online;
+Efetuar acesso não autorizado à rede pessoal ou organizacional;
+Efetuar acesso não autorizado em uma conta pessoal (rede social, e-mail, conta bancária ou financeira, contas de compras online e outras;
+Perseguição, intimidação e assédio.
+Para dificultar a realização dos crimes cibernéticos é necessário adotar todos os requisitos de segurança. Os requisitos de segurança podem parecer simples no primeiro contato, entretanto ao se aprofundar nos mecanismos utilizados para satisfazer esses requisitos observamos que o processo pode ser bastante complexo. Compreender efetivamente em detalhes o mecanismo de segurança vai exigir empenho e raciocínio.  
+
+Ao desenvolver um mecanismo ou algoritmo de segurança, devemos sempre considerar possíveis ataques aos requisitos de segurança. Em geral, nos casos de ataques "bem-sucedidos" os atacantes enxergam o problema de uma maneira um pouco diferente, deste modo conseguem explorar uma fraqueza inesperada no mecanismo de segurança. 
+
+Neste sentido, os procedimentos realizados para fornecer determinado serviço não são intuitivos. O mecanismo de segurança não deixa óbvio o que foi implementado, apenas quando consideramos os vários aspectos de ameaças ao mecanismo que conseguimos captar o sentido. 
+
+Após projetar um mecanismo de segurança é necessário decidir onde deve ser adicionado, definir o posicionamento físico e lógico. No posicionamento físico é necessário determinar em quais pontos específicos da rede o mecanismo de segurança deve atuar. Já no sentido lógico, estabelecer em qual camada da arquitetura o mecanismo deve ser introduzido (modelo OSI ou modelo TCP/IP).
+
+
+©sabelskaya/Adobe Stock
+A implementação de um mecanismo de segurança normalmente envolve mais que apenas um algoritmo ou protocolo em específico. Normalmente, exige que os envolvidos tenham posse de alguma informação secreta (uma chave criptográfica por exemplo), onde é necessário levantar questões sobre a criação, armazenamento, distribuição e proteção dessa informação secreta. Também é necessário analisar aspectos e restrições em relação a dependência de protocolos envolvidos. Tais como o protocolo de comunicações, onde o comportamento pode complicar a tarefa do desenvolvimento do mecanismo de segurança - por exemplo a implementação de um mecanismo de segurança que exige que os limites de tempo sejam fixados para o intervalo de transporte entre a mensagem do remetente e o destinatário, o protocolo rede pode inserir atrasos variáveis e imprevisíveis o que pode inviabilizar o desenvolvimento do mecanismo. 
+
+Como mencionado anteriormente na área de segurança de informação existe uma batalha entre a capacidade do atacante que visa encontrar uma brecha de segurança e o profissional de segurança (projetista ou administrador) que tenta remover esta brecha. Um dos grandes problemas é que o atacante está em vantagem, pois esse só precisa descobrir uma única fraqueza no sistema. Em contrapartida, o profissional de segurança deve localizar e eliminar todas as fraquezas para conseguir uma efetiva segurança no sistema. 
+
+Apesar de tantas evidências, existe uma certa resistência da parte dos usuários e gerentes de sistemas de perceberem os benefícios em fazer investimento em segurança, acabam dando a devida importância apenas depois que ocorre uma falha de segurança. O processo de segurança de informação requer que haja um monitoramento constante, difícil de ser alcançado em um ambiente de curto prazo e sobrecarregado. Onde muito frequentemente, a segurança acaba sendo incorporada a um sistema apenas depois do projeto ser concluído, em vez de ser parte integral de todo ciclo de vida no desenvolvimento do projeto. 
+
+Existe um outro aspecto que deve ser levado em consideração, a segurança da informação deve ser ajustada sob medida, semelhante a tarefa de apertar um parafuso, o parafuso deve ser apertado com a pressão necessária, caso o parafuso seja apertado com muita força este poderá espanar, porém se o parafuso for apertado pouco ficará frouxo.  
+
+Este estudo é delicado, deve ser avaliado todo cenário envolvido, as restrições nem sempre são bem aceitas, muitos usuários e até mesmo administradores de segurança consideram que a segurança forte atrapalha a operação eficiente dos sistemas computacionais ou a utilização da informação. Um exemplo típico é fornecer políticas eficazes para controles spam, ao definir políticas muito rígidas de controle de spam podemos restringir e-mails com conteúdo legítimo, por outro lado, quando definimos políticas muito permissivas teremos um problema com a grande quantidade de spam. Em reflexão a analogia do parafuso, as regras antispam definidas no servidor de e-mail devem ser realizadas sob medida, aplicar a força necessária. 
+
+Neste sentido, é preciso equilíbrio e bom senso do administrador do sistema, analisar cada um dos requisitos de segurança caso a caso, mas, principalmente, as vulnerabilidades associadas a eles. 
+
+
+Ameaças, Ataques e Ativos
+Considerando que exista vulnerabilidades em um ativo de sistema, uma ameaça visa explorar tais vulnerabilidades. A ameaça representa um potencial dano na segurança de um ativo. Os ativos do sistema de informação contemplam hardware, software, dados e rede. Por sua vez, um ataque é uma ameaça executada direcionada a um ativo e, quando "bem-sucedida", resulta na violação de um requisito de segurança. Podemos classificar os ataques em dois tipos diferentes:
+
+Ataque ativo: este ataque é definido com uma tentativa de alterar ativos de sistemas ou afetar sua operação (indisponibilidade de serviços).
+
+Ataque passivo: este ataque é definido como tentativa de descobrir ou utilizar informações obtidas dos sistemas, este tipo de ataque não afeta diretamente os ativos do sistema.
+
+Em geral, as ameaças ferem as propriedades básicas de segurança, a RFC 2828, descreve quatro tipos de consequências de ameaças e os ataques provenientes de cada uma dessas consequências. As consequências das ameaças são: revelação não autorizada, fraude, disrupção e usurpação. Vejamos do que se trata cada uma dessas consequências das ameaças. 
+
+©ivan mogilevchik/Adobe Stock
+
+Revelação não autorizada
+Esta é uma ameaça investida sobre a propriedade de confidencialidade, pode ser consequência de três tipos de ataques:
+Exposição: Pode ser realizada de propósito por uma pessoa interna com intenção de divulgar informações sensíveis de forma deliberada a um indivíduo externo à organização. Ainda, pode ser ocasionado por um erro humano, de software ou hardware, resultando na exposição não autorizada de dados sensíveis;
+
+Interceptação: A interceptação é tipo de ataque bastante comum no contexto de comunicações. Dado a comunicação realizada entre uma rede de computadores, os dispositivos conectados a esta rede podem receber uma cópia dos pacotes de rede cujo destino pretendido era outro dispositivo. Neste sentido, um atacante captura e analisa os pacotes de rede para obter determinadas informações;
+
+Intrusão: Neste tipo de ataque o adversário consegue obter o acesso não autorizado ao sistema computacional, este burla as proteções definidas por meio do controle de acesso, deste modo tem acesso às informações contendo dados sensíveis.
+
+
+Fraude
+Esta ameaça é investida sobre a propriedade da segurança de integridade, a integridade pode ser definida no âmbito de sistemas ou sobre os dados. Pode ser consequência dos seguintes tipos de ataques:
+Personificação: o ataque de personificação é a tentativa do atacante de obter acesso a um sistema fazendo-se passar por um outro usuário autorizado. Ainda, o atacante pode introduzir/substituir um dispositivo de rede ou até mesmo reproduzir um site para induzir outros a se conectarem a estes. A vítima ao invés de se conectar a um dispositivo legítimo, acaba sendo direcionado a um dispositivo “adulterado”, o que permite que o atacante capture senhas de acesso e informações sensíveis que por este trafegue. Outro exemplo de personificação é o uso de um cavalo de troia, programa malicioso que parece executar uma função útil ou desejável, porém na verdade sua real intenção é conceder o acesso não autorizado ao sistema;
+
+Falsificação: este ataque refere-se à alteração ou substituição de dados válidos ou ainda a introdução de dados falsos em um arquivo ou banco de dados. Podemos ter a combinação de diferentes tipos de ataques, muitos ataques de falsificação também compõe um ataque de personificação. A falsificação de e-mail (e-mail spoofing) pode ser um exemplo disto, esta técnica consiste em alterar os campos do cabeçalho de e-mail, para que o destinatário receba um e-mail aparentando ser de uma origem, contudo o e-mail vem de outro local;
+
+Retratação (repúdio): Nesta investida um usuário do sistema nega que foi realizado o envio de dados, recebimento ou ainda que detém posse dos dados.
+
+
+Disrupção
+Esta é uma ameaça investida sobre duas das propriedades de segurança, disponibilidade ou integridade do sistema. Pode ser consequência de três tipos de ataques:
+Incapacitação: este ataque visa atingir a disponibilidade dos serviços e sistemas. Um ataque de incapacitação bem conhecido é o ataque de negação de serviço, também conhecido como DoS (Denial Of Service), neste tipo de ataque o adversário tenta sobrecarregar as requisições no servidor para que os recursos do sistema fiquem indisponíveis para seus usuários. Para alcançar seu objetivo o atacante utiliza técnicas de enviar diversas requisições com a finalidade de que o servidor fique tão sobrecarregado que não consiga mais responder a nenhum pedido;
+
+Corrupção: este ataque visa atingir a integridade do sistema. Uma rotina de software malicioso pode criptografar os arquivos do usuário ou ainda fazer o sistema e serviços funcionarem de uma maneira não pretendida. Ainda, um atacante pode obter acesso não autorizado a um sistema e modificar determinadas funções, este pode adicionar uma porta backdoor (porta dos fundos), fornecendo acesso aos sistemas e ativos por meio de um procedimento alternativo (não usual).
+
+Obstrução: neste ataque o adversário procura um modo de obstruir as operações do sistema, uma das maneiras utilizadas é interferir na comunicação. Neste sentido, o atacante incapacita os enlaces de comunicação ou altera as informações de controle da comunicação. Também podendo utilizar como outro modo de sobrecarregar o sistema, onde o atacante cria uma carga excessiva de processamento ou tráfego de comunicação.
+
+
+Usurpação
+É uma ameaça investida sobre a integridade do sistema. Pode ser consequência de dois tipos de ataques.
+Apropriação indevida: este tipo de ataque concede a característica de se apropriar de um dado ou informação que lhe pertence, podendo ser incluído neste cenário o roubo de serviço. Para um hacker realizar um ataque de negação de serviço distribuído, o atacante contamina diversas máquinas com um software malicioso, estas máquinas serão usadas todas em conjunto para direcionar o tráfego para seu alvo (servidor ou serviço). Neste sentido, o software malicioso faz uso não autorizado dos recursos da máquina e do sistema operacional, caracterizando como um ataque de apropriação indevida.
+
+Utilização indevida: este ataque ocorre por ação de um malware (programas maliciosos) ou hacker que obteve um acesso não autorizado ao sistema, como consequência as funções de segurança do sistema acabam sendo desativadas ou limitadas.
+
+
+Ameaças e Ativos
+Conforme mencionado anteriormente os ativos no contexto de sistema de informação podem ser categorizados em quatro categorias: hardware, software, dados e redes de comunicação. Nesta subseção, vamos verificar essas quatro categorias e sua relação com as propriedades de segurança (integridade, confidencialidade e disponibilidade). 
+
+Hardware
+A principal ameaça ao hardware no sistema de informação está relacionada a propriedade de segurança da disponibilidade. O hardware é um elemento bastante vulnerável a ataques, porém menos sujeito a controles automatizados. As ameaças podem incluir dano acidental ou intencional a determinado equipamento, bem como desvio. 
+Atualmente, existe um conceito que está se tornando bastante comum o BYOD (Bring Your Own Device) que é a utilização de dispositivos pessoais como ferramenta de trabalho. Porém, o aumento do uso de computadores pessoais como estações de trabalho na rede local (LAN) da instituição pode introduzir problemas relacionados à segurança da informação, visto que isso adiciona novas falhas e ameaças na rede. 
+
+Ainda, com a miniaturização dos dispositivos de hardware (ex.: pendrive, memória, cartão sd) facilita o roubo de informação o que pode ocasionar perda da confidencialidade. Neste sentido, é necessário adotar medidas de segurança físicas e administrativas a fim de lidar com tais ameaças.
+
+
+Software
+Tratando de ativos de software devemos contemplar os sistemas operacionais, utilitários e software aplicativos. Uma das ameaças fundamentais realizadas contra os softwares é o ataque realizado sobre a propriedade de disponibilidade. Em geral, os softwares, principalmente softwares de aplicação são muito fáceis de se destruir - podendo ser alterados ou danificados para que se tornem inúteis. Realizar um gerenciamento efetivo na configuração de softwares pode garantir uma alta disponibilidade, processo que deve incluir atualização constante do software e backup das versões mais recentes.  
+Um problema um pouco mais difícil de tratar é uma modificação realizada no software, o programa ainda funciona, porém se comporta diferentemente do anterior, resultando em uma ameaça à integridade/autenticidade. Um ataque realizado por um vírus de computador pode inserir alguma rotina maliciosa que pode ser responsável por esta modificação.  
+
+Ainda, um problema amplamente difundido é pirataria de software. Embora existam estratégias para combater a pirataria de software, a cópia não autorizada de software ainda é um problema em aberto (não resolvido).
+
+
+Dados
+As preocupações de segurança referentes aos dados são amplas, envolve os arquivos e outras formas de dados que podem ser manipulados por indivíduos, grupos e organizações. As preocupações de segurança relacionadas aos dados abrangem questões referente a disponibilidade, ao sigilo e integridade. Tratando-se da propriedade disponibilidade, a preocupação está diretamente ligada à perda de arquivos de dados (exclusão/destruição), que pode ocorrer por acidente ou de forma deliberada. 
+A preocupação em relação ao sigilo é evidente, corresponde a leitura não autorizada de arquivos de dados ou a bancos de dados, esta é uma área de segurança que recebe bastante atenção, foco de diversas pesquisas. Uma outra ameaça ao sigilo, sendo um pouco menos óbvia, envolve a análise de dados e a utilização de bancos de dados estatísticos. Os dados estatísticos fornecem resumos de informações ou informações agregadas. Acredita-se que informações agregadas não ameaçam a privacidade dos indivíduos. Contudo, à medida que a utilização dos bancos de dados estatísticos vem crescendo, tem se observado um potencial cada vez maior para a divulgação de informações de cunho pessoal. Em geral, para comparar a consistência dos dados em diferentes conjuntos de dados em níveis de agregação distintas é necessário ter acesso as unidades individuais. Deste modo, as unidades individuais são motivo de grandes preocupações para privacidade, pois acabam ficando expostas em vários estágios no processamento dos conjuntos de dados. 
+
+Por fim, a integridade dos dados que é uma preocupação bastante importante para maioria das instituições. As modificações dos arquivos de dados podem gerar consequências em diferentes grandezas, do insignificante até as consequências mais desastrosas.
+
+
+Redes de Comunicação
+Os ataques à segurança da rede podem ser classificados em dois tipos, ataques passivos e ataques ativos. O ataque passivo tenta adquirir informações do sistema, podendo fazer uso de tais informações, contudo isto não afeta ativos do sistema. Por outro lado, o ataque ativo tenta modificar os ativos do sistema, afetando sua operação. 
+Ataque passivo: este tipo de ataque por natureza consiste em especular/monitorar transmissões. Onde a meta do atacante é obter informações que estejam sendo transmitidas. Existem dois tipos de ataques passivos a revelação do conteúdo de mensagens e a análise de tráfego. 
+
+Revelação do conteúdo de mensagens: este ataque consiste em obter informações sensíveis/confidenciais das quais gostaríamos que apenas pessoas específicas tivessem acesso, podendo ser uma mensagem em e-mail, arquivo transferido ou até mesmo uma conversa por telefone. Neste sentido é necessário impedir que um adversário conheça o conteúdo dessas transmissões.
+Análise de tráfego: este tipo de ataque é um pouco mais sagaz, o atacante analisa o tráfego e os pacotes de rede a fim de obter informações. Poderíamos utilizar um meio para tentar disfarçar o conteúdo das mensagens ou tráfego de informações, de tal maneira que os adversários mesmo que capturassem a mensagem não teriam acesso a informações contida na mensagem. A técnica mais comum para esconder o conteúdo é através de cifração.
+Os ataques passivos são extremamente difíceis de detectar pois não realizam qualquer alteração nos dados. Geralmente, o tráfego da rede e as trocas de mensagens (enviar e receber) ocorrem de maneira normal, de modo que o remetente e o receptor não percebem que um outro individuo teve acesso ao conteúdo das mensagens. Neste sentido, é recomentado impedir o sucesso deste tipo ataque, pode ser aplicado uma técnica de cifração. De maneira que o tratamento contra-ataques passivos está na prevenção, em vez de tentar detectar este tipo de ataque. 
+
+Ataque ativo: este tipo de ataque envolve uma modificação no fluxo de dados ou até mesmo realizar a criação de um fluxo falso. O ataque de rede ativo é estruturado em quatro categorias: repetição, personificação, modificação de mensagens e negação de serviço. 
+
+Repetição: este tipo de ataque consiste na captura passiva de uma unidade de dados e posteriormente sua retransmissão a fim de produzir um efeito não autorizado.
+Personificação: este tipo de ataque ocorre quando uma entidade finge ser uma entidade diferente.
+Modificação de mensagens: este ataque consiste em alterar uma parte da mensagem legítima ou ainda atrasar ou reordenar a ordem das mensagens a fim de produzir um efeito não autorizado.
+Negação de serviço: este tipo de ataque impossibilita o gerenciamento normal dos equipamentos de rede e comunicação. Outra vertente do ataque de negação de serviço é a disrupção da rede inteira, ataque que sobrecarrega a na rede com mensagens a fim de degradar o serviço e seu desempenho.
+Os ataques ativos possuem características opostas aos ataques passivos. À medida que os ataques passivos são extremamente difíceis de detectar, existem medidas que podem ser aplicadas para impedir o seu sucesso. Em contrapartida, os ataques ativos são bem difíceis de impedir, pois isto exigiria uma proteção física para de todas os equipamentos e rotas de comunicação utilizados constantemente. Em vez disso, a estratégia é detectar e recuperar o sistema de qualquer disrupção ou lentidão ocasionadas por eles. Este caso a detecção pode contribuir com a prevenção.
+
+
+
+Cenário de Estudo (Insegurança/Intrusão)
+O Capítulo anterior ressalta a existência de diversas ameaças, o profissional de segurança da informação deve estar pronto para lidar com cada uma dessas ameaças, deve visar a proteção de cada um dos ativos do sistema de informação. Convém a este profissional efetuar uma análise e avaliação dos riscos de segurança da informação associados à sua organização.  
+
+As organizações podem atuar em diferentes frentes: saúde, educação, política, economia, tecnologia, segurança entre outras. Neste sentido temos diferentes cenários de estudo, contudo ressalta-se que em todas as organizações é imprescindível adotar as medidas de segurança da informação. Os mecanismos de segurança da informação serão os mesmos indiferentemente de qual seja o campo de atuação da organização, o que pode mudar são as políticas de segurança da informação que devem ser avaliadas caso a caso. Distintos setores de atuação refletem diferentes níveis de segurança, porém nenhum dos setores está isento de problemas de segurança da informação. Na figura abaixo alguns dos incidentes de segurança da informação que se tornaram públicos no ano de 2020 [RNP, 2021].
+
+
+Fonte: Adaptado de Rede Nacional de Ensino e Pesquisa (RNP), 2020.
+Destaca-se que não existe nenhum sistema computacional que seja totalmente seguro, sendo passiveis a falhas e vulnerabilidades. Ao definir exatamente o escopo no qual a segurança da informação deve atuar estaremos mais equipados/preparados para combater a causa da insegurança ou intrusão dos sistemas.
+
+O banco de Tóquio
+Para não expor nenhuma organização, ao longo das unidades vamos trabalhar sobre um cenário de estudo fictício, porém este sendo baseado em situações que ocorrem no mundo real.  
+
+Nosso cenário de estudo é “O banco Tóquio”.  Esta instituição bancária está tendo problemas com segurança da informação. Foi identificado que alguém internamente no banco executou de maneira deliberada e proposital uma rotina de código maliciosa, este foi replicado rapidamente a todos os dispositivos conectados na rede, onde inúmeros computadores foram contaminados, inclusive servidores que hospedam serviços essenciais para o funcionamento do banco e possuem acesso externos.  
+
+Ao realizar um diagnóstico minucioso em um dos computadores contaminados, foram identificados alguns dos comportamentos deste malware, entre os quais o malware: insere informações no registro do computador, libera determinadas portas no firewall e ainda escala privilégios de administrador na máquina que foi alvo do ataque. Adicionalmente, o malware ao conseguir ter acesso a um usuário com privilégios de administrador altera a senha de todos os usuários da máquina. Este malware é bastante engenhoso, permite que o atacante explore vulnerabilidades causando danos e obtendo acesso indevido a informações restritas. Ataque realizado sobre todas as três propriedades de segurança.  
+
+Contudo, neste momento um dos maiores problemas são as portas do firewall que foram liberados no servidor de aplicação, a grande preocupação este servidor possui acesso externo – está conectado na internet. No momento seguinte em que o servidor foi contaminado e as portas no firewall foram abertas, foi constatado que foram realizadas inúmeras tentativas de intrusão ao sistema. Analisando a origem dos pacotes do tráfego de rede foi observado endereços IP’s de diferentes partes do mundo. O que tudo indica que este servidor está sendo alvo de uma botnet – conjunto de dispositivos conectado à internet, infectados por uma malware, que permite que os atacantes os controlem. Este servidor não pode ficar fora do ar, seria um prejuízo imensurável para o banco. O backup do servidor está sendo restaurado, porém pode levar algumas horas para que o servidor esteja pronto. 
+
+Estabeleceu-se o caos dentro do banco de Tóquio, as consequências são desastrosas. Os diretores do banco de Tóquio convocaram imediatamente uma reunião. Agora você, o mais novo membro da equipe de segurança, foi designado como responsável para liderar a equipe de segurança na resolução deste problema. A princípio você se sente um pouco ansioso e intimidado, você ainda tem pouco contato com os diretores do banco. Contudo, pode estar surgindo uma ótima oportunidade: então é hora de aproveitar! 
+
+Após efetuar uma análise do cenário, você realiza um mapeamento do incidente, então apresenta um plano estratégico para os diretores, ressalta que serão necessárias diversas atividades para a contenção e a recuperação dos sistemas, entre essas: 
+
+Isolar e restabelecer os computares/ativos que foram contaminados; 
+
+Aplicar os procedimentos de segurança da informação baseados em normas e boas práticas; 
+
+Redefinir as políticas de segurança de informação da instituição; 
+
+Realiza processo de auditoria nos computadores, sistemas e ativos na rede;  
+
+Aplicar todos os mecanismos de segurança necessários; 
+
+Definir critérios de autenticação mais robustos para os usuários; 
+
+Utilizar funções hash criptográficas sem colisões nos sistemas; 
+
+Introduzir autenticação multifator para os sistemas do banco; 
+
+Verificar as políticas de controle de acesso e gestão de identidade; 
+
+Revogar, criar e substituir os certificados digitais; 
+
+Alterar as chaves públicas e simétricas dos sistemas; 
+
+Analisar o comportamento do malware; 
+
+Utilizar Sistemas de Detecção de Intrusão (IDS); 
+
+Conter os ataques de intrusão aos sistemas;  
+
+Analisar o comportamento dos atacantes utilizado um honeyspot; 
+
+Explorar as vulnerabilidades de segurança de forma ética e responsável. 
+
+
+MUNDO DO TRABALHO
+A partir de agora, sua missão é conter o incidente, colocar o novo servidor em produção, restabelecer todos os serviços e garantir que as propriedades de segurança da informação no “banco de Tóquio” sejam preservadas. Para isso será necessário observar todos os aspectos e requisitos de segurança da informação, conhecer as normas, políticas, mecanismos e boas práticas de segurança de segurança da informação, bem como saber como aplicá-los. Mas não se preocupe, vamos nortear você nesta caminhada, ao longo das unidades prepararemos você para lidar com este e outros problemas de segurança da informação de âmbito real.
+
+Relatórios e Procedimentos de Segurança
+Este Capítulo, foi estruturado para demonstrar em números que o cenário de estudo apresentado anteriormente reflete o que acontece na realidade. Para isto, trazemos as informações mais recentes contidas no relatório de segurança de informação da Rede Nacional de Ensino e Pesquisa (RNP) e Centro de Atendimento a Incidentes de Segurança (CAIS). 
+
+Conforme o relatório da RNP, o destaque de 2020 foram os ataques de ransomware, não apenas pela grande quantidade, mas também a evolução deste tipo de ataque. Este ataque que consiste em sequestrar os dados de uma vítima, de forma geral utilizam um malware para criptografar os seus dados. Os atacantes cobram dinheiro (geralmente exigem o pagamento em criptomoedas) das vítimas para devolver-lhes o acesso aos seus dados. Em 2020, muitos ataques de ransomware foram combinados com o ataque de vazamento de dados, onde o atacante além de cobrar para devolver os dados da vítima, cobraram para que estes dados não fossem divulgados na internet. 
+
+Outro aspecto destacado em 2020, foi a realização de diversas campanhas de phishing, os atacantes exploram vastamente temas relacionados à COVID-19: pandemia, novas vacinas, planos assistenciais do governo, entre outros. O ataque de phishing é uma técnica de engenharia social, onde o atacante tenta enganar suas vítimas para obter informações confidenciais. Os alvos e métodos não tiveram muita mudança, porém o aumento na quantidade de phishing foi bastante expressivo. Adicionalmente, o interesse a estes temas foi reforçado pelo cenário de isolamento social e riscos iminente de contaminação. 
+
+O relatório da RNP ainda traz como estudo de caso o incidente ocorrido no Supremo Tribunal de Justiça (STJ), em novembro de 2020. O STJ foi alvo de um ataque de ransomware que criptografou os dados, impedindo a restauração dos serviços. Outras instituições governamentais também foram alvos de ataques. Neste sentido, o CAIS tomou uma série de medidas internas e externas para impedir a ocorrência de incidentes na própria RNP e instituições associadas ao Sistema RNP. 
+
+Abaixo, os gráficos A, B e C apresentados fazem parte do relatório da RNP [RNP,2021]. Primeiramente, no gráfico A apresentamos informações do volume de notificações de vulnerabilidades e incidentes ocorridos ao longo dos três últimos anos. O cenário em evidências compreende todo sistema da RNP, composto por mais de 800 organizações espalhadas pelo país.
+
+
+Fonte: Adaptado de Rede Nacional de Ensino e Pesquisa (RNP), 2020.
+
+Fonte: Adaptado de Rede Nacional de Ensino e Pesquisa (RNP), 2020.
+O gráfico B, dispõe do percentual de notificações de vulnerabilidades e incidente que ocorreram em cada região do Brasil nos últimos três anos. Adicionalmente o gráfico C possui os dados referente ao volume das notificações de vulnerabilidades separadas por ano. Os dados evidenciam que houve um crescimento gradual de notificações principalmente no estado do Rio de Janeiro, cerca de 46% do número das notificações [RNP,2021], já no estado do Paraná e Pernambuco houve uma redução sistemática na incidência das notificações com o passar dos últimos três anos.
+
+Apenas no primeiro semestre de 2020, foram reportados mais de 318 mil incidentes no Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil (CERT.br).  Sem mencionar os inúmeros incidentes que ocorrem e não são registrados. No gráfico a seguir é apresentado a distribuição dos tipos de incidentes reportados neste período, cerca de 58% dos incidentes notificados trata-se de scan na rede [CERT,2021], onde o atacante faz uma varredura nas redes de computadores, com o intuito de identificar quais computadores estão ativos e quais serviços estão sendo disponibilizados, assim consegue identificar vulnerabilidades e potenciais alvos. 
+
+
+Fonte: CERT.br, 2020.
+Conforme o relatório de segurança da HornetSecurity1 de 2020, o Brasil está entre os seis países que mais disseminam malware por meio de e-mail, chegando em 4,7% no cenário global, ressalta-se também um número expressivo no percentual dos e-mails contaminados de origem vinda dos USA, chegando em 22,94% no cenário global [HornetSecurity,2021].
+
+
+Fonte: Hornet Security, 2020.
+Por fim, consultamos o boletim de ocorrências da Fortinet2, conforme os dados do primeiro trimestre de 2021, foram detectados mais de 53 mil vírus apenas aqui no Brasil, correspondente a 3,94% do percentual global [FORTIGUARD,2021]. 
+
+
+Fonte: Fortinet, 2021.
+No mesmo período, foram identificados mais de 1,8 milhões computadores no Brasil infectados por software malicioso de botnet, percentual de 4,27% no cenário mundial.
+
+
+Fonte: Fortinet, 2021.
+Ainda, cerca de 158 mil detecções de exploit no Brasil. No exploit o atacante explora as vulnerabilidades em aplicativos, redes, sistemas operacionais ou hardwares para invadir sistemas, roubar dados e danificar os programas. 
+
+
+Fonte: Fortinet, 2021.
+ Durante o trimestre de 2021, a Fortinet reportou que foram detectadas na América Latina várias tentativas de execução de código remoto em dispositivos que oferecem serviços de conectividade residencial (modem). Devido a COVID-19, uma grande parte das pessoas está trabalhando home office. Os criminosos estão tentando comprometer os trabalhadores remotos, interceptando suas comunicações e redirecionando-os para sites maliciosos. 
+
+Conforme o boletim de segurança da Forninet, foi detectado novamente um aumento crescente na distribuição de malware baseado na web em toda região da América Latina. Para isso, diferentes campanhas de phishing foram utilizadas, no qual as contas das redes sociais dos usuários comprometidos são utilizadas para compartilhar anúncios e sites falsos sem que haja consentimento do usuário. Este tipo de campanha utiliza um método de propagação automática, replicando para os contatos da rede social da vítima. 
+
+Além disso, foi detectado também um aumento significativo na atividade das botnets, especificamente uma botnet conhecida como Trochilus RAT. Esta botnet é conhecida por usar várias técnicas que permite dos firewall e antivirus, além de ter a capacidade de procurar novas vítimas. 
+
+
+EXERCÍCIO
+Exercícios de Fixação
+
+Quais são as três principais propriedades de segurança da informação?
+
+Cite cinco áreas de atuação da segurança da informação.
+
+Cite cinco dos crimes cibernéticos mais comuns. 
+
+Como podemos classificar os tipos de ataques?
+
+Quais os quatro tipos de consequências de ameaças definidas pela RFC2828?
+
+O que é uma ameaça?
+
+Quais são os ativos de um sistema de informação?
+
+Identifique três desafios de segurança da informação.
+
+No cenário de estudo do banco de Tóquio identifique uma das ameaças investida sobre uma das propriedades de segurança da informação.
+
+O alicerce da segurança da informação
+Este vídeo vai fornecer uma visão de como os três pilares da segurança da informação são utilizados para proteger os sistemas e ativos de informação, dicas e boas práticas para atuação do profissional de segurança da informação. 
+
+
+Conclusão
+Esta unidade abordou os princípios e conceitos básicos da segurança de computadores. Destacando que a área de segurança de informação é estruturada sobre três pilares fundamentais: confidencialidade, integridade e disponibilidade. Ainda, é exposto que segurança da informação é alcançada a partir da implementação adequada de diversos mecanismos de segurança, contemplando políticas, processos, procedimentos, estratégias, estruturas organizacionais e aspectos de configuração de hardware e software.  
+
+Conforme ressaltado, não basta apenas implementar os mecanismos, é necessário monitorar e analisar constantemente para garantir a segurança na organização, consequentemente, alcançar os objetivos estratégicos de negócio. 
+
+Adicionalmente, foi apresentado outras duas propriedades de segurança, a autenticidade e legalidade. Segundo alguns pesquisadores da área, essas propriedades adicionais permitem contemplar melhor todos os objetivos de segurança.  
+
+Ainda, foi exposto os desafios da segurança da informação, quais os crimes cibernéticos e atuação do profissional de segurança da informação. Observamos a relação das vulnerabilidades com as ameaças da segurança da informação. Verificamos a consequências das ameaças sobre as propriedades de seguranças, bem como os ataques direcionados aos ativos de sistema se informação.  
+
+No caso de uso foi apresentado alguns dos principais incidentes de segurança da informação que acabaram se tornando públicos em 2020. Apresentamos também, o caso de uso do “banco de Tóquio”, um problema de segurança da informação que trabalharemos ao longo das unidades.  
+
+Por meio dos relatórios técnicos foi apresentado uma visão dos incidentes de segurança aqui no Brasil. Primeiramente, o relatório de segurança da informação da RNP, realizado na rede de pesquisa nos últimos três anos. Este relatório fornece uma visão geral dos incidentes ocorridos em cada uma das regiões do Brasil. Foi destacando a grande quantidade de ataques phishing com temas relacionados a COVID-19, e ataques ransonware combinados com vazamento de dados. Ainda, compartilhado a experiência do CAIS, atuando com medidas preventivas para proteção da rede RNP. 
+
+Ainda, no âmbito nacional são apresentados os relatórios de incidentes reportados para o CERT.br no primeiro semestre de 2020, fornecido o percentual de ataques categorizados pelo tipo. Um outro relatório da HornetSecurity, expõe a origem de e-mail com disseminação de malware, onde o Brasil está em sexto lugar. Por fim, o boletim de ocorrência da Fortinet, obtido do primeiro trimestre de 2021, demostrando a quantidades de incidências na detecção de vírus, botnets e exploit especificamente no Brasil. 
+
+Esta unidade foi estruturada para alcançar dois objetivos: Primeiramente, apresentar os principais conceitos de segurança da informação, importantes para formar um alicerce que será utilizado nas unidades posteriores. Um segundo objetivo, não menos importante, mostrar quais são alguns dos desafios que esperam você como profissional de segurança da informação. 
+
+
+https://www.youtube.com/watch?v=I7iodGDjUug
+
+
+Referências Bibliográficas
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27001: Tecnologia da informação - Técnicas de segurança – Técnicas de segurança – Sistemas de gestão de segurança da informação – Requisitos. Rio de Janeiro. 2006. 
+
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBRISO/IEC27002: Tecnologia da informação - Técnicas de segurança - Código de prática para controles de segurança da informação. Rio de Janeiro. 2006. 
+
+CERT.BR. Cartilha de Segurança para Internet. CERT.br., 2021. Disponível em: https://cartilha.cert.br/. Acesso em: 7 de mai. de 2021. 
+
+CERT.BR. Estatísticas dos Incidentes Reportados ao CERT.br, CERT.br., 2021. Disponível em: <https://www.cert.br/stats/incidentes/>. Acesso em: 7 de mai. de 2021. 
+
+HINTZBERGEN, Jule; HINTZBERGEN, Kees; SMULDERS, André; BAARS, Hans. Fundamentos de Segurança da Informação – Com Base na ISO 27001 e na ISO 27002. 3. ed. Rio de Janeiro: Brasport, 2018. [Biblioteca Virtual 3.0]. 
+
+HORNETSECURITY. Cyberthreat Report - 2020. Hornetsecurity, 2021. Disponível em: <https://www.hornetsecurity.com/en/cyberthreat-report/>. Acesso em: 7 de mai. de 2021. 
+
+NBRISO/IEC27002: Tecnologia da Informação - Técnicas de segurança - Código de Prática para Controles de Segurança da Informação. 
+
+NIST. FIPS PUB 199 - Federal Information Processing Standards Publication. National Institute of Standards and Technology (NIST), 2021. Disponível em: <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf>. Acesso em: 7 de mai. de 2021. 
+
+NIST. FIPS PUB 200 - Federal Information Processing Standards Publication. National Institute of Standards and Technology (NIST), 2021. Disponível em: <https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.200.pdf>. Acesso em: 7 de mai. de 2021. 
+
+NORTON. Relatório de Informações de Segurança Cibernética do NortonLifeLock. NortonLifeLock, 2021. Disponível em: <https://br.norton.com/nortonlifelock-cyber-safety-report>. Acesso em: 7 de mai. de 2021. 
+
+RNP. Relatório Anual de Segurança 2020 - RNP. Rede Nacional de Ensino e Pesquisa (RNP), 2021. Disponível em: <https://www.rnp.br/noticias/rnp-lanca-relatorio-anual-de-seguranca-2020>. Acesso em: 7 de mai. de 2021. 
+
+RNP. Relatório Anual de Segurança 2020 - RNP. Rede Nacional de Ensino e Pesquisa (RNP), 2021. Disponível em: <https://www.rnp.br/noticias/rnp-lanca-relatorio-anual-de-seguranca-2020>. Acesso em: 7 de mai. de 2021. 
+
+SHIREY R. RFC 2828 - Internet Security Glossary. The Internet Society, 2000.  
+
+STALLINGS, William. Criptografia e Segurança de Redes: Princípios e Práticas. São Paulo: Pearson Prentice Hall, 2008. 
+
+STALLINGS, William; BROWN, Lawrie. Segurança de computadores: princípios e práticas. Rio de Janeiro: Elsevier Campus, 2014. 
+

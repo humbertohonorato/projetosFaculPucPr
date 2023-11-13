@@ -1,0 +1,81 @@
+UNIDADE 06
+Kanban
+Nesta Unidade, estudaremos o método kanban. Ele foi influenciado pela linha de pensamento lean e vem ganhando muita força atualmente.
+
+Kanban
+O método kanban deriva do lean, que nasceu no Japão com o objetivo de gerenciar o abastecimento e fluxo dos materiais em estoque para as linhas de produção, sem desperdícios ou atrasos, de uma forma bastante visual e fácil de perceber: usando cartões coloridos.
+
+Na verdade, kanban pode ser traduzido do japonês como “cartão” ou “sinal”.
+
+Ele foi idealizado pela Toyota na década de 60 e acabou sendo adaptado para gerenciar outros fluxos de processos, por meio de um quadro com listas de tarefas como: “entrada”, “em execução”, “revisão” e “pronto”. Os cartões representando as tarefas fluem pelas listas até a sua conclusão.
+
+Acompanhe no vídeo a seguir.
+
+
+Método kanban
+Neste vídeo, estudaremos o método kanban, seus princípios e principais práticas.
+
+Como acabamos de ver no vídeo , visualizar o fluxo de trabalho é um dos pontos de partida na adoção do método kanban e serve como base para as outras práticas do método, principalmente para iniciativas de melhoria contínua.
+
+Construindo um bom quadro
+O primeiro passo para criar um quadro, depois de ter um, fisicamente falando, é mapear o seu processo. É necessário colocar no papel todo o seu processo, iniciando de maneira simples, com um quadro com colunas básicas, como “a fazer”, “fazendo” e “feito”. Deve-se entregar isso para o time e pedir para que eles detalhem a fase do “fazendo”. É importante guiar o time para que não se coloque colunas demais nesse quadro, afinal, vão existir etapas que não se aplicam a todas as atividades e isso pode causar uma falsa observação no seu fluxo.
+
+Conforme os dias passam e o trabalho caminha dentro do fluxo demonstrado no quadro, algumas coisas vão ficando mais claras. Nesse momento, alguns “gargalos” podem ficar expostos no quadro, indicados por colunas sem espaço para mais cartões. Outras etapas podem estar sem atividades suficientes. Um exemplo pode ser visto na Figura 1, apresentada a seguir.
+
+Figura 1: Quadro kanban
+Quadro kanban e suas lacunas. Fonte: Oliveira (2020).
+É muito comum, ao adotarmos o quadro do método kanban, percebermos que temos muitas coisas iniciadas, ou seja, muito trabalho em progresso, ou ainda em inglês, Work In Progress (WIP). Portanto, esse trabalho em progresso gera estoques, o que diminui a responsividade a mudanças. Assim, caso algo mude rapidamente e todas as histórias em progresso percam a sua validade, teríamos todo esse trabalho em progresso, que seria jogado fora ou teria de ser terminado antes que novas atividades entrassem no fluxo. O mesmo aconteceria para tarefas urgentes. Uma abordagem mais inteligente seria limitar a quantidade de trabalho em progresso dentro do seu fluxo. Veja como seria uma solução para esse problema na Figura 2 a seguir.
+
+Figura 2: Quadro kanban
+Quadro kanban, com limites de trabalho em progresso. Fonte: Oliveira (2020).
+Assim, mesmo limitando o trabalho em progresso, teremos um caminhar das histórias dentro do quadro de maneira mais fluida. Aumentamos também, consequentemente, o nível de interação entre os membros do time. É muito comum ver os times limitarem o trabalho em progresso para um número inferior à quantidade de membros capazes de realizá-la. Por exemplo, num time com três desenvolvedores e dois testadores, um padrão visível é limitar em dois itens o trabalho em progresso na coluna de desenvolvimento e em um item na coluna de testes. Assim, obrigatoriamente, as pessoas vão ter de se ajudar, para que ninguém fique ocioso.
+
+Controle o lead time
+Uma outra maneira de realizar estimativas sem necessidade de tomar tempo do seu time é por meio da observação. É importante ressaltar que não estamos dizendo faça dessa forma ou daquela, estamos apenas apresentando novas maneiras de fazer, fica ao critério de quem aprendeu todas essas técnicas que as aplique quando achar mais adequado.
+
+O processo para gerar esses dados é muito simples. Assim que um cartão avançar do ponto de comprometimento dentro do seu quadro, você marca a data inicial desse ciclo no cartão. Ao completar o ciclo, realiza-se uma nova marcação no cartão. A diferença entre o dia em que o time se comprometeu  com o cartão e a data em que ele saiu é chamada de lead time.
+
+Uma boa forma de visualizar essa informação é o gráfico de dispersão. Nele, para cada cartão que saiu do quadro, é calculado o lead time e é feita uma marca no gráfico para representar essa medição. Ao final de um período, haverá um gráfico talvez semelhante, conforme mostra a Figura 3, apresentada a seguir.
+
+Figura 3: Quadro kanban
+Quadro kanban, com limites de trabalho em progresso. Fonte: Oliveira (2020).
+Esse gráfico mostra claramente que a maioria (mais ou menos 83%) dos cartões levou entre dois e cinco dias. Mas também é possível inferir que nenhum cartão foi realizado com prazo superior a nove dias. Com isso, podemos realizar estimativas para os próximos cartões, em que 100% das anteriores foi realizada com nove dias ou menos. Portanto, pode-se afirmar que a chance de repetir esse padrão é alta, pois a grande maioria, 83%, foi realizada em até cinco dias, então, pode até passar esse prazo, mas não é possível garantir isso em 100%.
+
+Cumulative flow diagram
+Um outro gráfico que pode mostrar muitos problemas acontecendo é o gráfico de fluxo cumulativo. A cada dia, algum membro do time anota quanto existe em progresso em cada uma das etapas demonstradas no quadro e o coloca em um gráfico. Ao final de um período, há um gráfico semelhante ao que está na Figura 4 a seguir.
+
+Figura 4: Diagrama de fluxo cumulativo
+Diagrama de fluxo cumulativo. Fonte: Oliveira (2020).
+Em um gráfico como esse, podemos identificar disfunções. Uma distância grande entre a área que indica o recebimento ou comprometimento do time com uma atividade e a área da entrega indica um tempo muito grande de execução, ou seja, um alto lead time. Áreas muito largas indicam muito trabalho sendo executado simultaneamente, que conforme estudamos, é uma provável fonte de desperdícios. A área da entrega, em amarelo no exemplo anterior, indica como está a saída das atividades desse time. Quanto mais íngreme e contínua, melhor.
+
+Exemplos
+Nas fotos a seguir, confira alguns quadros que demonstram a criação kanban.
+
+Figura 5: Exemplo real de quadro kanban
+Fonte: Foto por Air Focus no Unsplash
+
+Figura 6: Exemplo real de quadro kanban
+Fonte: Foto por Air Focus no Unsplash
+
+Figura 7: Exemplo real de quadro kanban
+Fonte: Foto por Lala Azizli no Unsplash
+Figura 8: Exemplo real de quadro kanban
+Fonte: Foto por Bonneval Sebastien no Unsplash
+Aproveite para assistir à entrevista com um profissional sobre o método kanban e entender mais a respeito do assunto.
+
+
+Entrevista sobre kanban
+Neste vídeo, será entrevistado um profissional de métodos ágeis. Discutiremos as principais características do kanban. Tudo com uma visão atual e prática, de mercado.
+
+Conclusão
+O método kanban é bastante orientado a métricas. Promove entendimento sobre o andamento do produto ou projeto, suportando ações de melhoria contínua. Não exige mudanças radicais nos papéis ou cerimônias que já fazem parte dos times, podendo, inclusive, ser adotado em conjunto com outros métodos. É um método bastante moderno de gestão de projetos ou produtos, e é escalável.
+
+
+https://www.youtube.com/watch?v=BufnoJrDYrM
+https://www.youtube.com/watch?v=qylQA4afTGU
+
+
+
+Referências
+OLIVEIRA, R. A. Kanban não é um cartão, mas um espaço. Aspercom, 2020. Disponível em: https://aspercom.com.br/2020/10/30/kanban-nao-e-um-cartao-mas-um-espaco/. Acesso em: 18 abr. 2021.
+

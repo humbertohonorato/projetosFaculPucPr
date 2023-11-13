@@ -1,0 +1,139 @@
+Acesso a aplicações Web e Web das Coisas (WoT)
+Apresentação
+A internet das coisas (IOT) pode ser caracterizada como uma rede que conecta objetos inteligentes. Porém, para a IOT realmente ser amplamente utilizada e adotada, é necessário que existam protocolos que permitam a conexão entre os objetos. No entanto, a IOT ainda é considerada uma coleção de Intranets isoladas, nas quais os objetos encontram dificuldades em se comunicar. Nesse sentido, a web das coisas (WOT) propõe que sejam utilizados os padrões e protocolos já existentes na web tradicional para permitir a conexão entre os objetos das diferentes redes isoladas, padrões já conhecidos, como REST, WebServices entre outros.
+
+Nesta Unidade de Aprendizagem, você verá como diferenciar os conceitos de internet das coisas (IOT) e de web das coisas (WOT), conhecer REST e ROA como padrões para comunicação através da web e os modelos de acesso CBAC (context based access control) ​​​​​​​e ABAC (attribute based access control).
+
+Bons estudos.
+
+Ao final desta Unidade de Aprendizagem, você deve apresentar os seguintes aprendizados:
+Diferenciar internet das coisas (IOT) de web das coisas (WOT).
+Conceituar REST e ROA.
+Analisar os modelos de acesso CBAC (context based access control) ​​​​​​​e ABAC (attribute based access control).
+
+Conteúdo concluído
+Desafio
+A WOT (web of things) ou web das coisas surge para possibilitar que, por meio do uso de recursos já utilizados para comunicação entre dispositivos e sistemas, seja possível que os objetos das diferentes redes de IOT (internet of things) se comuniquem mais facilmente.
+
+Veja a seguinte situação:
+
+Você está participando da arquitetura de um projeto de internet das coisas em uma indústria de grande porte que fabrica peças para montadoras de automóveis. Por questões de logística, a indústria possui fábricas em cinco estados do Brasil e resolveu apostar em um projeto de IOT para monitorar dados referente à produção, como a ociosidade de máquina, montagem de peças por hora, etc.
+
+Sabendo que as fábricas já têm os dispositivos conectados, mas não existe comunicação entre os dispositivos de fábricas diferentes, você deve propor uma arquitetura utilizando WebServices ​​​​​​​e protocolos de comunicação da web para a interligação das fábricas. Descreva como seria o projeto arquitetural e quais os tipos de recursos a serem utilizados.
+
+Padrão de resposta esperado
+- O que esperamos da sua resposta
+Resposta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0 PALAVRAS
+DISTRIBUÍDO POR TINY
+Envio em: 22/08/2023 - 23:06
+
+Infográfico
+A internet das coisas trouxe o conceito de conectar basicamente qualquer dispositivo à internet e/ou entre si. Isso inclui desde telefones celulares, cafeteiras, máquinas de lavar, fones de ouvido, lâmpadas, dispositivos vestíveis e quase tudo o que você pode imaginar. Essa tecnologia também se aplica a componentes de máquinas, por exemplo, um motor a jato de um avião ou a broca de uma plataforma de petróleo. Porém, ainda enfrenta alguns desafios frente a protocolos e padrões para se comunicar na web e, nesse sentido, surge o conceito de web das coisas.
+
+No Infográfico a seguir, veja alguns exemplos e utilidades de dispositivos que, por meio da web of things, podem se comunicar através da rede mundial.​​​​​​nicar na web e, nesse sentido, surge o conceito de web das coisas.
+
+Descrição da imagem não disponível
+​​​​​​
+
+
+Conteúdo concluído
+Conteúdo do Livro
+A web das coisas (WOT) é um conceito de computação que descreve um futuro em que os objetos do cotidiano são totalmente integrados à web. O prerrequisito para o WOT é que as "coisas" implementem protocolos já utilizados por sistemas de computadores e possibilitem a comunicação com a web. Esses dispositivos inteligentes seriam capazes de se comunicar usando os padrões da web existentes.
+
+Na obra Aplicações de internet das coisas, base teórica para essa Unidade de Aprendizagem, leia o capítulo Acesso a aplicações web e web das coisas (WOT), e conheça as diferenças entre IOT (internet das coisas) e WOT (web das coisas), veja como REST e ROA podem ser usados como alternativas para implementar a comunicação através do protocolo HTTP na web e o que são os modelos de acesso CBAC (context based access control) e ABAC (attribute based access control).
+
+Boa leitura.
+
+Descrição da imagem não disponível
+
+Conteúdo concluído
+Dica do Professor
+A necessidade de criar um padrão que os objetos utilizem para executarem a comunicação e a transferência de arquivos é um dos fatores que atrapalha a expansão da internet das coisas. Nesse sentido, o termo web das coisas é usado para identificar o uso de padrões já adotados na web tradicional para a comunicação entre sistemas.
+
+O padrão REST, amplamente adotado para comunicação com APIs de WebServices é uma das apostas de grupos de estudos que procuram estabelecer padrões que facilitem a implantação da web das coisas.
+
+Nesta Dica do Professor, conheça um pouco mais sobre a importância da criação de um padrão e a utilização do REST nesse sentido.​​​​​​​
+
+
+
+
+
+
+Conteúdo concluído
+Exercícios
+Questão 1
+O termo web das coisas pode gerar confusão com o termo mais escutado, internet das coisas, e é comum encontrar alguns casos em que são citados se tratando do mesmo conceito. Assinale a alternativa correta acerca do conceito de web das coisas.
+
+Selecione a resposta:
+A
+A web das coisas é um termo mais novo do que internet das coisas, pois traz novas funcionalidades.
+
+Comentários da resposta
+
+A web das coisas traz a possibilidade de utilização de padrões já adotados na web, bem como protocolos de comunicação para a ampliação da utilização do conceito da IOT, visto que muitos objetos encontram dificuldade de comunicação por falta de uma padronização. A web das coisas não é um conceito novo de IOT e nem se reduz à comunicação de objetos dentro de uma única Intranet. A utilização de placas instaladas nos dispositivos para comunicação já é um conceito da IOT e não se trata de uma abstração da IOT.
+
+B
+A web das coisas se refere ao conceito de objetos se comunicando dentro de uma Intranet através da web.
+
+Comentários da resposta
+
+A web das coisas traz a possibilidade de utilização de padrões já adotados na web, bem como protocolos de comunicação para a ampliação da utilização do conceito da IOT, visto que muitos objetos encontram dificuldade de comunicação por falta de uma padronização. A web das coisas não é um conceito novo de IOT e nem se reduz à comunicação de objetos dentro de uma única Intranet. A utilização de placas instaladas nos dispositivos para comunicação já é um conceito da IOT e não se trata de uma abstração da IOT.
+
+C
+A web das coisas traz a possibilidade de usar padrões e protocolos da web para comunicação de objetos.
+
+Você acertou!
+Comentários da resposta
+
+A web das coisas traz a possibilidade de utilização de padrões já adotados na web, bem como protocolos de comunicação para a ampliação da utilização do conceito da IOT, visto que muitos objetos encontram dificuldade de comunicação por falta de uma padronização. A web das coisas não é um conceito novo de IOT e nem se reduz à comunicação de objetos dentro de uma única Intranet. A utilização de placas instaladas nos dispositivos para comunicação já é um conceito da IOT e não se trata de uma abstração da IOT.
+
+D
+A web das coisas tem como diferencial a utilização de placas instaladas nos objetos que se comunicam pela web.
+
+Comentários da resposta
+
+A web das coisas traz a possibilidade de utilização de padrões já adotados na web, bem como protocolos de comunicação para a ampliação da utilização do conceito da IOT, visto que muitos objetos encontram dificuldade de comunicação por falta de uma padronização. A web das coisas não é um conceito novo de IOT e nem se reduz à comunicação de objetos dentro de uma única Intranet. A utilização de placas instaladas nos dispositivos para comunicação já é um conceito da IOT e não se trata de uma abstração da IOT.
+
+E
+A web das coisas é uma abstração da internet das coisas que possibilita a implantação em alto nível da IOT.
+
+Comentários da resposta
+
+A web das coisas traz a possibilidade de utilização de padrões já adotados na web, bem como protocolos de comunicação para a ampliação da utilização do conceito da IOT, visto que muitos objetos encontram dificuldade de comunicação por falta de uma padronização. A web das coisas não é um conceito novo de IOT e nem se reduz à comunicação de objetos dentro de uma única Intranet. A utilização de placas instaladas nos dispositivos para comunicação já é um conceito da IOT e não se trata de uma abstração da IOT.
+
+1 de 5 perguntas
+
+ 
+Na prática
+A utilização da estrutura de protocolos e padrões disponíveis para microsserviços e comunicação entre aplicações na web, fazendo uso de padrão REST ROA, arquitetura orientada a serviços, foi a solução encontrada pela empresa Entrega Total para comunicação e gestão de sua frota espalhada no território nacional.
+
+A seguir, veja como foi a implantação desse sistema de comunicação entre dispositivos que já utilizavam tecnologia disponível para a IOT e a implantação de microsserviços que consumiam e disponibilizavam informações captadas pelos dispositivos.
+
+Descrição da imagem não disponível
+
+
+Conteúdo concluído
+Saiba mais
+Para ampliar o seu conhecimento a respeito desse assunto, veja abaixo as sugestões do professor:
+
+Por que você deve aprender REST?
+Para conhecer um pouco mais sobre o assunto assista ao vídeo e veja por que é importante aprender sobre o padrão REST.
+Conferência Web.br 2014: internet e web das coisas
+Para saber mais, assista a este vídeo, que apresenta a conferência Web.br sobre a internet das coisas.
+Web das coisas (WOT)
+Para saber mais, confira neste site um bom exemplo de explicação sobre o conceito de WOT.
