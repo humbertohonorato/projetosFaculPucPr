@@ -12,7 +12,7 @@ while True:
     try:
         # Leitura de temperatura e umidade
         temp, humid = dht11_sensor.ler_temperatura_umidade()
-        server.send_data_to_thingspeak(temp,humid)s
+        server.send_data_to_thingspeak(temp,humid)
 
         # Verificação de limites para ligar o rele
         if temp > LIMIT_TEMP and humid > LIMIT_HUMID:
