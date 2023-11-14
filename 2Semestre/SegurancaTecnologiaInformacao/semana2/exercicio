@@ -1,0 +1,45 @@
+Exercícios de Fixação
+Quais as etapas fundamentais para gestão da segurança da informação estabelecidas na norma ISO 27001?
+Contexto organizacional, liderança, planejamento, suporte, operação, avaliação de desempenho, melhoria. Essas etapas seguem a abordagem de ciclo PDCA (Plan, Do, Chack, Act).
+
+Cite três atividades estabelecidas na norma ISO 27001?
+Avaliação de riscos e oportunidades, estabelecimento de controles de segurança, auditorias internas.
+
+Quais os benefícios de ser certificado pela norma ISO 27001?
+Credibilidade e confiança, conformidade legal, gestão de riscos, melhoria continua, vantagem competitiva, confidencialidade, integridade, disponibilidade, melhoria nas relações com clientes e parceiros, redução de riscos financeiros, atendimento ás expectativas dos stakeholders, melhoria na gestão de incidentes.
+
+Qual o objetivo da norma da norma ISO 27002?
+A ISO/IEC 27002 fornece diretrizes para a estabelecer, implementar e manter as boas práticas de um SI. Serve como um complemento à norma  ISO/IEC 27001.
+
+Quais os benefícios que a norma ISO 27002 pode trazer?
+Proteção de ativos e informação, gestão de riscos, conformidade com requisitos legais, reputação e confiança ,  gestão eficiente de incidentes,  eficiência operacional, resiliência organizacional, economia de recursos, melhoria continua, competitividade no mercado, conscientização e treinamento.
+
+O que propõe o FIPS PUB 200?
+A FIPS PUB 200 ou Federal Information Processing Standards Publication 200, é um documento criado em conjunto com a NIST (National Institute of Standards and Technology)  e SP 800-53 (Security and Privacy controls for federal information systems and organizationss)   , que estabelece diretrizes e padrões para sistemas federais, como a categorização de informações e sistemas, seleção de controles de segurança, implementação de controles, avaliação de controles, Relacionamento com outros padrões, abordagem de gerenciamento de riscos.
+
+Cite três das áreas definidas no FIPS PUB 200?
+Confidencialidade, integridade, disponibilidade.
+
+Do que se trata a Lei Brasileira N° 12.737 (Lei Carolina Dieckmann)? 
+O principal objetivo é punir crimes cibernéticos como invasão de dispositivos, e a divulgação não autorizada de informações. Com penas e sanções, como detenção e multa.  E agravantes para crimes cometidos com autoridades públicas.
+
+O que estabelece o Marco Civil da Internet?
+É uma legislação brasileira que estabelece princípios, garantias, direitos e deveres para o uso da internet. Tais como princípios fundamentais; neutralidade de rede; privacidade; proteção de dados; guarda de registros; responsabilidade dos provedores de serviço; remoção de conteúdo; colaboração em casos criminais; armazenamento de dados.
+
+Qual a importância da LGPD e da GDPR?
+LGPD (Lei Geral de Proteção de dados) no brasil e GDPR (Regulamento Geral de Proteção de Dados) na Europa, visão a privacidade e proteção dos dados. Como a proteção à privacidade; direitos dos titulares de dados; responsabilidade; transparência; estimulo a inovação responsável; sanções por violações; consistência e cooperação; 
+
+Cite três tipos de crimes cibernéticos, descreve do que se trata cada um desses crimes.
+Phishing, os criminosos tentam enganar a vítima com e-mails, mensagens, sites falsos para tentar obter informações confidenciais;
+Ransomware, é uma malware que criptografa arquivos de um sistema e exige um resgate;
+Ataque de negação de serviço (DDoS), busca sobrecarregar o serviço, site ou rede, para derrubar o servidor ou torna-lo inacessível.
+
+O que é o crime contra propriedade intelectual?
+Envolve a violação dos direitos relacionados a criações intelectuais, como invenções, obras artísticas, designs, marcas registradas e segredos comerciais.  Podendo incluir pirataria, violação de direitos autorais.
+
+Qual a importância das políticas de segurança da informação dentro de uma organização?
+São fundamentais para o bom funcionamento e a proteção da organização, estabelecendo diretrizes, procedimentos e práticas visando a confidencialidade, integridade e disponibilidade das informações.
+Buscando proteção de ativos críticos; conformidade legal; gestão de riscos; cultura de conscientização; prevenção contra ameaças internas e externas; gestão de incidentes; preservação da reputação; eficiência operacional; preparação para o futuro.
+
+Avalie o caso de uso do "Banco de Tóquio", baseado nas normas e padrões que foram estudados apresente três medidas que poderiam ter sido tomadas para evitar o incidente.
+A implementação de controles de acesso; gestão de identidade e acessos; monitoramento e detecção de anomalias.
