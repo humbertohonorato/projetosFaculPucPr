@@ -1,0 +1,39 @@
+Exercícios de Fixação
+	1. Quais as etapas fundamentais para gestão da Quais as etapas de um mecanismo de autenticação? E como são utilizadas?
+Em geral, é na identificação o usuário fornece uma identificação única ao sistema, como nome de usuário, matricula, e-mail, entre outros;
+prova de identidade o usuário prova sua identidade, geralmente com senha, token, pin, entre outros;
+verificação de identidade verifica se a prova de identidade condiz com a identidade associada, com comparação de senha, validação biométrica, entre outros;
+concessão de acesso, concede o acesso ao usuário; 
+registro e auditoria, registra a autenticação bem sucedida para fins de auditoria.
+
+	2. Quais os principais fatores de autenticação?
+Algo que você sabe (senha, perguntas de segurança); algo que você possui (tokens, cartões inteligentes, telefone celular); algo que você é (biometria, digital, facial, voz, íris); algo que você faz (comportamento, assinaturas dinâmicas, digitação); algo que você está (localização, geolocalização); algo que você recebe (métodos 2mfa, código por Email, código por aplicativos).
+
+	3. Cite 3 recomendações estabelecidas na norma ISO 27002 que orientam o processo de identificação e autenticação.
+Política de identificação e autenticação (acesso controlado); controle de aesso aos sistemas e aplicativos; gerenciamento de identidade e acessos.
+
+  4.   Cite 3 mecanismos de autenticação e como eles funcionam.
+Senha tradicional, o usuário fornece um identificador e uma senha. O sistema compara a senha fornecida com a armazenada. Se for igual ele é autenticado;
+Token, além da senha o usuário utiliza um dispositivo de token, podendo ser físico ou virtual. Usuário fornece senha e token para ser autenticado.
+Biometria, utiliza características físicas ou comportamentais únicas do usuário. No caso da impressão digital é lida e comparada com o modelo já armazenado, se igual autentica.
+
+  5.    Explique como funciona um mecanismo de autenticação baseado em token.
+O usuário registra-se no sistema, cadastra um dispositivo token, esse dispositivo gera valores que alternam de acordo com um tempo, durante o processo de login usuário fornece a senha, o sistema pede o token temporário, verifica o tempo e se estão iguais, também é comum que ele precise ser renovado depois de um tempo passado, gerando uma nova chave.
+
+  6.    Explique como funciona um mecanismo de autenticação baseado em biometria.
+Utilizando características comportamentais ou físicas exclusivas do usuário é pedido um cadastro dessa característica, no processo de login é pedido esse fator, feita uma extração de acordo com a biometria, é feita a comparação, o sistema estabelece um tipo de score para definir a similaridade, quanto maior melhor. Se a comparação for bem sucedida o usuário é autenticado.
+
+   7.    Com suas palavras descreva o procedimento que o atacante (hacker) utiliza para quebrar uma senha no sistema.
+Se for um ataque de força bruta, o atacante tenta todas as combinações possíveis de caracteres até encontrar a senha correta.
+
+  8.     O que é um Rainbow Table?
+É uma técnica utilizada para quebrar senhas, especialmente as armazenadas como hash. Á ideia é precomputar um grande conjunto de hash para diferentes combinações de senhas e armazena-las em um tabela.
+
+   9.    Cite alguns requisitos que devem ser considerados para definição de uma senha forte.
+É recomendado senhas grande com pelo menos 12 caracteres, combinar com letras maiúsculas e minúsculas, números e caracteres especiais, evitar palavras comuns ou pessoais como seu nome, data de nascimento, entre outros. Evitar caracteres sequenciais, como 123, abc. Não compartilhar a senha.
+
+   10.   O que é um ataque de dicionário?
+É uma técnica para quebrar senhas usando uma lista de palavras comuns, senhas conhecidas, combinações de caracteres para tentar adivinhar ou quebrar a senha.
+
+   11.   Como funciona a autenticação multifator?
+É um método de verificação de segurança que exige ao usuário dois ou mais métodos  diferentes de autenticação antes de conceder acesso a um sistema
