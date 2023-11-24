@@ -1,0 +1,57 @@
+Exercícios de Fixação
+Defina com suas palavras qual a finalidade do mecanismo de controle de acesso?
+Em resumo, a finalidade do mecanismo de controle de acesso é garantir a segurança, a integridade e a confidencialidade dos recursos, permitindo que apenas usuários autorizados realizem operações específicas, enquanto impedem o acesso não autorizado e potencialmente prejudicial.
+
+Quais as áreas/funções diretamente interligada com controle de acesso?
+Segurança da Informação, Gerenciamento de Identidade, Segurança Física, Administração de Sistemas, Desenvolvimento de Software, Recursos Humanos, Compliance e Auditoria, Suporte Técnico e Help Desk.
+
+Quais os elementos fundamentais do controle de acesso?
+Autenticação, Autorização, Identificação, Políticas de Controle de Acesso, Auditoria e Monitoramento, Controle Físico, Controle Lógico, Gerenciamento de Identidade, Criptografia, Mecanismos de Recuperação de Senha.
+
+Cite os três principais modelos de controle de acesso.
+Controle de Acesso Baseado em Papéis (Role-Based Access Control - RBAC), 
+Controle de Acesso Obrigatório (Mandatory Access Control - MAC), 
+Controle de Acesso Baseado em Atributos (Attribute-Based Access Control - ABAC).
+
+Cite as principais permissões de acesso que estão relacionadas aos elementos fundamentais de controle de acesso.
+Leitura (Read), Escrita (Write), Execução (Execute), Criação (Create), Exclusão (Delete), Controle de Acesso (Access Control), Listagem (List), Controle de Permissões (Permission Control).
+
+Qual a abordagem mais utilizada para implementar o controle de acesso discricionário?
+Listas de Controle de Acesso (ACLs), Capacidades.
+
+O que é uma ACL? Como é utilizada?
+Uma ACL (Listas de Controle de Acesso) é um mecanismo de controle de acesso que define as permissões de usuários ou sistemas em relação a recursos específicos, como arquivos, pastas, ou outros objetos.
+Um exemplo, em um sistema de arquivos, a ACL de um arquivo específico pode ter entradas que permitem a um usuário específico ler e escrever nesse arquivo, enquanto outro usuário pode ter apenas permissão de leitura. ACLs são amplamente utilizadas em sistemas operacionais e ambientes de rede para garantir um controle de acesso efetivo e seguro.
+
+Qual a finalidade do rótulo de capacidade?
+técnica usada em sistemas de controle de acesso obrigatório (MAC - Mandatory Access Control) para impor restrições sobre o acesso a recursos com base em categorias ou níveis de segurança. A finalidade principal é garantir a confidencialidade e a integridade da informação.
+
+O que é um inode?
+ignifica "index node," é uma estrutura de dados fundamental em sistemas de arquivos Unix e Linux. Ele é usado para armazenar informações sobre um arquivo ou diretório no sistema de arquivos.
+
+Como é implementado o controle de acesso a arquivos no Linux?
+é implementado principalmente por meio do modelo de permissões de acesso
+
+Quais as permissões básicas do controle de acesso tradicional no Linux?
+Leitura (r), gravação (w), e execução (x),  aplicadas para o proprietário, grupo e outros,
+
+Quais as três permissões especiais no Linux? Como são utilizadas?
+Setuid (s), Setgid (s), Sticky bit (t)
+
+O que é uma lista de controle de acesso estendida no Linux?
+é um mecanismo que estende as permissões tradicionais do sistema de arquivos.
+
+Qual o conceito do modelo RBAC?
+está centrado na atribuição de permissões com base nos papéis (roles) que os usuários desempenham em uma organização. 
+
+Quais requisitos de segurança multinível devem ser implementados no modelo de Bell-LaPadula para garantir a confidencialidade? 
+Regra do Não Vazamento (Simple Security Property - SSP), 
+Regra da Estrela (Star Property), 
+Regra da Descarga (Strong Star Property)
+
+Qual a principal diferença entre o modelo Bell-LaPadula e o modelo Biba? 
+A principal diferença entre esses dois modelos está relacionada ao foco nas propriedades e objetivos de segurança
+Em resumo, enquanto o modelo de Bell-LaPadula está preocupado com a confidencialidade e se concentra em evitar vazamentos de informações, o modelo de Biba está preocupado com a integridade e busca evitar a corrupção de dados. 
+
+Quais os principais elementos de um sistema de gestão de identidade?
+Autenticação, Autorização, Contabilidade, Habilitação, Automação de fluxo de trabalho, Administração delegada, Federação, Serviço próprio de mudança de senha, Sincronização de senha.
