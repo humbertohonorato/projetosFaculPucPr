@@ -1,0 +1,106 @@
+Descreva com suas palavras como funciona o algoritmo de criptografia simétrica.
+A criptografia simétrica é um método em que a mesma chave é usada tanto para cifrar quanto para decifrar uma mensagem. As partes envolvidas compartilham essa chave secreta, que é usada para transformar a mensagem original em uma forma ilegível (cifragem). A mensagem cifrada é transmitida de maneira segura, e o destinatário, que também possui a chave, pode decifrar a mensagem, revertendo o processo e obtendo a informação original. A segurança depende da proteção da chave compartilhada. Exemplos de algoritmos incluem DES, AES e 3DES.
+
+Quais os elementos fundamentais da criptografia simétrica?
+Chave Compartilhada:
+	As partes envolvidas concordam antecipadamente sobre uma chave secreta compartilhada.
+	Essa chave é usada tanto para cifrar quanto para decifrar mensagens.
+Cifragem:
+	Utiliza a chave compartilhada para transformar a mensagem original em uma forma cifrada.
+Transmissão Segura:
+	A mensagem cifrada é transmitida de forma segura para o destinatário.
+Decifragem:
+	O destinatário utiliza a mesma chave compartilhada para reverter o processo, obtendo a mensagem original.
+
+
+Quais os dois requisitos necessários para utilização da criptografia simétrica de forma segura?
+Chave Secreta Compartilhada:
+	As partes que desejam se comunicar de forma segura precisam concordar sobre uma chave secreta compartilhada.
+	A segurança do sistema depende significativamente da proteção efetiva dessa chave, pois o comprometimento dela pode comprometer a segurança de todas as comunicações.
+Canal Seguro para a Transmissão da Chave:
+	A chave compartilhada precisa ser transmitida de uma parte para outra de maneira segura.
+	Se um terceiro não autorizado obtiver acesso à chave durante a transmissão, ele poderá descriptografar as mensagens e comprometer a segurança do sistema.
+
+
+Quais os principais tipos de ataques direcionados a criptografia simétrica?
+Ataque de Força Bruta
+Ataque de Dicionário
+
+Cite 3 algoritmos de criptografia simétrica.
+DES, AES e 3DES.
+
+Quais os problemas relacionados a distribuição das chaves na criptografia simétrica?
+Troca Segura de Chaves:
+	Desafios em garantir que as chaves sejam transmitidas de forma segura.
+Gestão de Chaves:
+	Complexidade na geração, armazenamento e atualização de chaves.
+Chaves de Sessão:
+	Dificuldades na distribuição segura de chaves específicas para sessões.
+Compartilhamento Seguro de Chaves:
+	Problemas em garantir que várias partes legítimas compartilhem chaves sem acesso não autorizado.
+Vulnerabilidade à Engenharia Social:
+	Riscos de ataques que visam obter chaves por meio de manipulação de pessoas.
+Armazenamento Seguro de Chaves:
+	Necessidade de proteger o local de armazenamento contra acessos não autorizados.
+Atualização de Chaves:
+	Desafios na transição suave para novas chaves.
+Chaves de Recuperação:
+	Introdução de vulnerabilidades ao implementar chaves de recuperação.
+Quantidade de Chaves Necessárias:
+	Gerenciamento complexo de um grande número de chaves.
+
+O que é um KDC, e para que é utilizado?
+O KDC (Centro de Distribuição de Chaves) é um componente essencial em sistemas de segurança de redes que utilizam o protocolo Kerberos. Ele desempenha funções cruciais, incluindo autenticação de usuários e serviços, distribuição segura de chaves, emissão de tickets criptografados para usuários autenticados e facilitação da comunicação segura em redes. O KDC desempenha um papel fundamental na criação de um ambiente de rede confiável, onde as entidades podem se autenticar e comunicar de forma segura.
+
+
+Qual a diferença da chave mestra e chave de sessão no KDC?
+A chave mestra no protocolo Kerberos é uma chave criptográfica principal associada ao KDC, usada para cifrar a transmissão segura de chaves de sessão durante a autenticação inicial. Por outro lado, a chave de sessão é uma chave única gerada para cada comunicação entre um cliente e um serviço, garantindo a confidencialidade da comunicação. A chave mestra não é usada diretamente para cifrar as comunicações subsequentes; em vez disso, as chaves de sessão, específicas para cada sessão, são utilizadas para proteger a privacidade e a integridade dos dados transmitidos entre o cliente e o serviço.
+
+Descreva com suas palavras como funciona o algoritmo de criptografia assimétrica.
+A criptografia assimétrica envolve o uso de um par de chaves, uma pública e outra privada. Cada pessoa tem um conjunto de chaves: uma para cifrar informações (chave pública) e outra para decifrar (chave privada). Se alguém deseja enviar uma mensagem segura para outra pessoa, ela usa a chave pública do destinatário para cifrar a mensagem. Somente o destinatário, que possui a chave privada correspondente, pode decifrar e ler a mensagem. Isso proporciona uma forma segura de comunicação, pois a chave privada não é compartilhada ou revelada durante o processo. Além disso, a chave pública pode ser distribuída amplamente, permitindo que qualquer pessoa cifre mensagens para o detentor da chave privada correspondente. Em resumo, a criptografia assimétrica utiliza pares de chaves para permitir a cifragem com uma chave pública e a decifragem com a chave privada correspondente, proporcionando um meio seguro de comunicação.
+
+Quais os elementos fundamentais da criptografia assimétrica?
+Par de Chaves (Pública e Privada):
+	Cada entidade possui uma chave pública para cifragem e uma chave privada correspondente para decifragem.
+Cifragem e Decifragem:
+	Processos de transformação de dados usando chave pública e privada, respectivamente.
+Assinatura Digital:
+	Permite autenticar e garantir a integridade de mensagens, utilizando a chave privada do remetente.
+Troca de Chaves Segura:
+	Necessidade de um meio seguro para distribuir chaves públicas, geralmente através de infraestruturas de chave pública (PKI).
+Geração de Números Primos:
+	Importante para criar chaves seguras, garantindo aleatoriedade e complexidade.
+Algoritmos Criptográficos Assimétricos:
+	Incluem RSA, DSA, ECDSA, cada um com métodos específicos de cifragem e assinatura digital.
+Infraestrutura de Chave Pública (PKI):
+	Sistema que gerencia distribuição e verificação de chaves públicas, incluindo autoridades de certificação (CAs).
+Hash Criptográfico:
+	Usado para criar resumos únicos de dados, frequentemente assinados em assinaturas digitais para garantir a integridade dos dados.
+
+Cite 3 algoritmos de criptografia assimétrica.
+RSA , 
+DAS, 
+ECC 
+
+Cite 3 aplicações para criptografia de chave pública.
+Comunicação Segura na Internet (SSL/TLS):
+	Usada para estabelecer chaves de sessão seguras entre clientes e servidores, garantindo comunicações seguras online.
+Assinaturas Digitais em Transações Eletrônicas:
+	Utilizadas para autenticar e assegurar a integridade de documentos eletrônicos em transações online, como operações bancárias.
+Infraestrutura de Chave Pública (PKI):
+	Cria uma base de confiança para emissão e verificação de certificados digitais, amplamente empregada em ambientes corporativos e governamentais para autenticação e segurança em comunicações digitais.
+
+Para que é utilizado a assinatura digital?
+A assinatura digital é usada para autenticar, garantir a integridade e fornecer não repúdio em documentos e transações eletrônicas. Ela verifica a origem da mensagem, protege contra alterações não autorizadas, e oferece uma prova legalmente vinculativa da autoria do documento. Além disso, é amplamente aplicada em transações online, documentos legais e contratuais, contribuindo para a segurança e confiabilidade em ambientes digitais.
+
+O que é uma CA?
+Uma CA (Autoridade de Certificação) é uma entidade confiável que emite certificados digitais, contendo chaves públicas e informações de identificação. Suas principais funções incluem verificar a identidade das entidades, assinar digitalmente certificados, revogar certificados comprometidos, manter listas de certificados válidos e, em algumas instâncias, organizar uma hierarquia de CAs para descentralização da confiança. A presença de CAs é essencial para estabelecer uma infraestrutura de chave pública (PKI) e garantir a segurança e autenticidade em comunicações digitais.
+
+
+Para que é utilizado um certificado de chave pública?
+Um certificado de chave pública é utilizado para autenticar a identidade de entidades digitais, como sites e usuários. Ele desempenha papéis essenciais, como estabelecer comunicações seguras (SSL/TLS), criar assinaturas digitais em documentos, cifrar informações sensíveis e facilitar autenticação em redes e sistemas. Essa certificação proporciona confiança e segurança em várias transações e interações digitais.
+Para que serve os envelopes digitais?
+Os envelopes digitais são usados para proteger e autenticar documentos digitais durante a transmissão ou armazenamento. Resumidamente, eles servem para encapsular documentos ou informações digitais, aplicando medidas de segurança, como criptografia, assinaturas digitais e integridade de dados. Esse processo assegura a confidencialidade, autenticidade e integridade das informações durante sua transferência ou armazenamento eletrônico. Envelopes digitais são comumente utilizados em comunicações seguras e transações digitais.
+
+Quais são as principais abordagens para distribuição das chaves públicas?
+As principais abordagens para a distribuição de chaves públicas incluem o modelo de confiança direta, autoridades de certificação (CA) e infraestrutura de chave pública (PKI), diretórios públicos online, plataformas sociais, troca pessoal de chaves e assinatura digital de chaves públicas. Cada abordagem tem suas vantagens e é escolhida com base no contexto, requisitos de segurança e conveniência. A PKI é comumente usada, especialmente na Internet, para estabelecer uma hierarquia de confiança por meio de CA
