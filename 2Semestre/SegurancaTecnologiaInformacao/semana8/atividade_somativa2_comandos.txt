@@ -1,0 +1,12 @@
+HUMBERTO HONORATO
+GRUPO 41
+LINK YOUTUBE: https://www.youtube.com/watch?v=qij6nRhm4_s
+
+COMANDO USADO NO KALI PARA ENVIAR AS REQUISIÇÕES
+sudo hping3 -c 10000 -d 120 -S -p 80 --flood --rand-source <IP_DESTINO>
+
+COMANDO USADO NO LINUX PARA CONFIGURAR O SNORT
+sudo snort -T -c /etc/snort/snort.conf -i enp0s3
+sudo gedit /etc/snort/rules/local.rules
+alert tcp any any -> <IP_HOME> any (msg:"DDoS Attack"; sid:10000002;)
+sudo /usr/local/bin/snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i enp0s3

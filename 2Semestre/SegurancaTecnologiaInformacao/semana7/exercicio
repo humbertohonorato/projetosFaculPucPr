@@ -1,0 +1,39 @@
+
+O que é uma intrusão de segurança?
+Uma intrusão de segurança ocorre quando uma pessoa não autorizada acessa, compromete ou manipula um sistema, rede ou aplicativo, com o objetivo de roubar dados, interromper serviços ou causar danos. 
+
+O que um IDS?
+ é uma ferramenta de segurança que monitora e analisa o tráfego de rede em busca de atividades suspeitas ou padrões de comportamento indicativos de intrusões. Ele alerta os administradores de sistema quando detecta possíveis ameaças, auxiliando na identificação e resposta a atividades maliciosas. Existem dois tipos principais de IDS: o IDS de rede, que monitora o tráfego na rede, e o IDS de host, que analisa as atividades em um sistema específico.
+
+Qual a diferença entre um IDS baseado em rede e baseado em estação?
+É o monitoramento, enquanto o baseado em rede monitora, analisa, identifica atividades suspeitas padrões em todo tráfego na rede. O baseado em estação (host), monitora e analisa um sistema, aplicativo ou servidor específico.
+
+Quais os elementos fundamentais do IDS? Explique qual sua função.
+Os elementos fundamentais do IDS (Sistema de Detecção de Intrusões) incluem sensores para coletar dados, analisadores para examinar padrões suspeitos, uma base de dados de assinaturas para comparação, um motor de correlação para relações contextuais, um console de gerenciamento para interação, um módulo de resposta para ações automáticas, uma base de dados de logs, políticas de detecção, atualizações de assinaturas e integração com outros sistemas de segurança. Esses componentes trabalham em conjunto para identificar e responder a atividades maliciosas.
+
+Qual a diferença entre a arquitetura centralizada e distribuída do IDS?
+Na arquitetura centralizada  todos os principais componentes estão localizados em uma única ponto, o gerenciamento é feito de forma central e fácil, pouco escalável.
+Na arquitetura distribuída os componentes estão espalhados, o gerenciamento é mais complexo e escalável.
+
+O que é um NIDS?
+ é uma ferramenta de segurança que monitora e analisa o tráfego de rede em busca de atividades suspeitas ou padrões de comportamento indicativos de intrusões, alertando os administradores sobre possíveis ameaças à segurança da rede.
+
+O que é um HIDS?
+ é uma ferramenta de segurança que monitora e analisa as atividades em um sistema específico (host), como um computador ou servidor, em busca de comportamentos suspeitos ou indicadores de intrusões, alertando os administradores sobre possíveis ameaças à segurança local do dispositivo.
+
+O que é IDS híbrido?
+refere-se a um Sistema de Detecção de Intrusões que combina características de sistemas de detecção de intrusões de rede (NIDS) e sistemas de detecção de intrusões de host (HIDS). Essa abordagem híbrida permite monitorar e detectar atividades suspeitas tanto no nível da rede quanto no nível do host, oferecendo uma defesa mais abrangente contra ameaças de segurança.
+
+Qual a diferença entre o sensor inline e passivo do NIDS?
+O sensor inline analisa o tráfego em tempo real e pode tomar medidas imediatas.
+O sensor passivo monitora o tráfego sem interferir diretamente.
+
+Qual a diferença entre a detecção baseado em assinatura e anomalia?
+Assinatura usa padrões de ataques já conhecidos para identifica-lo, pouco eficaz com ataques desconhecidos.
+Anomalia estabelece um perfil de comportamento normal para identificar ataques incomuns, mais eficaz com ataques desconhecidos.
+
+Qual o conceito da intrusão adaptativa, quais ações podem ser adotadas para proteger o sistema?
+refere-se a abordagens de segurança que se ajustam dinamicamente às ameaças em evolução. O conceito envolve a capacidade de detectar, adaptar e responder proativamente a intrusões de maneira contínua. Utilizando monitoramento contínuo, análise de comportamento, atualizações dinâmicas e respostas automáticas para proteger o sistema contra ameaças em constante evolução.
+
+O que é um Honeypot? Para que ele é utilizado?
+ é uma ferramenta de segurança que simula um alvo vulnerável para atrair e analisar invasores, sendo usada para detecção de ataques, estudo de ameaças, desvio de ataques, pesquisa de segurança e treinamento.

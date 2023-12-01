@@ -1,0 +1,71 @@
+Exercícios de Fixação
+O que é um malware?
+Trata-se de um tipo de software projetado para danificar, acessar indevidamente ou tomar controle de dispositivos, redes ou sistemas de computadores, sem o consentimento do usuário. Os malwares incluem vírus, worms, trojans, ransomware, spyware e outras formas de código malicioso, sendo disseminados muitas vezes através de emails, downloads suspeitos ou sites comprometidos. O objetivo dos malwares pode variar, desde causar danos aos sistemas até roubar informações confidenciais. O combate eficaz contra malwares geralmente envolve o uso de software antivírus e práticas de segurança cibernética.
+
+Cite três formas que o malware utiliza para infectar um dispositivo.
+Três formas comuns de infecção incluem phishing (por e-mails fraudulentos), exploits de software (explorando vulnerabilidades) e unidades USB infectadas. 
+
+O que é um Vírus?
+é um tipo de malware que se replica e se espalha ao se anexar a programas existentes no sistema. Ele pode ser transmitido através de arquivos infectados, anexos de e-mail ou mídia removível. Uma vez no sistema, o vírus pode causar danos, roubar informações ou permitir o controle remoto do dispositivo. Medidas preventivas, como o uso de software antivírus e a prática de hábitos de navegação seguros, são fundamentais para evitar infecções por vírus.
+
+O que é um Hoax?
+Um hoax é uma informação falsa ou enganosa que é propagada, muitas vezes através de meios digitais, com o objetivo de ludibriar ou enganar as pessoas. Geralmente, hoaxes são boatos ou lendas urbanas que circulam, por exemplo, por e-mails, redes sociais ou mensagens instantâneas. O termo também pode se referir a práticas de desinformação. É importante verificar a veracidade das informações antes de compartilhá-las, a fim de evitar a propagação de hoaxes.
+
+O que é um Worm?
+Um worm é um tipo de malware independente que se espalha automaticamente através de redes de computadores, explorando vulnerabilidades e replicando-se sem a necessidade de intervenção humana. Diferente de vírus, os worms não precisam se anexar a programas existentes. Eles podem se propagar por e-mails, mensagens e redes, afetando sistemas e redes interconectados. O objetivo pode variar, incluindo desde simples replicação até atividades maliciosas, como instalação de backdoors para acesso não autorizado. Medidas de segurança, como atualizações regulares e firewalls, são fundamentais para prevenir infecções por worms.
+
+Descreva o ciclo de progagação de um worm.
+O ciclo de propagação de um worm envolve a infecção inicial de um sistema, a exploração de vulnerabilidades, autoreplicação, propagação pela rede, infecção de novos dispositivos e a execução de funções maliciosas. O worm continua se espalhando, buscando novas vulnerabilidades e repetindo o processo em outros dispositivos conectados, enquanto alguns podem persistir no sistema infectado.
+
+Descreva o que é um Bot e uma Botnet.
+um bot é um programa automatizado, enquanto uma botnet é uma coleção de dispositivos comprometidos por bots, operando de maneira coordenada para realizar atividades maliciosas.
+
+Quais são os tipos de Spyware? Descreva como funciona cada um deles.
+Keyloggers (Registradores de Teclas):
+	Gravam todas as teclas digitadas pelo usuário, incluindo senhas e informações confidenciais.
+Adware:
+	Exibe anúncios indesejados no computador do usuário, muitas vezes recolhendo dados sobre os hábitos de navegação para personalizar os anúncios exibidos.
+Trojans de Espionagem:
+	Disfarçados como programas legítimos, esses trojans coletam informações do usuário, como senhas e dados bancários, e as enviam para o atacante.
+Cookies de Rastreamento:
+	Pequenos arquivos armazenados no navegador que rastreiam a atividade online do usuário, coletando informações sobre preferências e comportamentos de navegação.
+Spyware de Webcam e Microfone:
+	Ativa a webcam ou o microfone do dispositivo sem o conhecimento do usuário, permitindo que o atacante capture áudio e vídeo sem autorização.
+Spyware de Captura de Tela:
+	Tira capturas de tela periódicas do computador infectado, possibilitando ao atacante visualizar a atividade do usuário.
+Spyware de GPS:
+	Projetado para dispositivos móveis, rastreia a localização do usuário por meio do GPS, muitas vezes sem o conhecimento ou consentimento do mesmo.
+	
+O que é um Trojan?
+Um Trojan, ou cavalo de Troia, é um tipo de malware disfarçado como um programa aparentemente legítimo e inofensivo. Ao contrário de vírus ou worms, os Trojans não se replicam, mas enganam os usuários ao fazer com que eles instalem o software malicioso voluntariamente. Uma vez no sistema, os Trojans podem realizar diversas ações prejudiciais, como roubo de dados, instalação de outros malwares, controle remoto do dispositivo ou danificação do sistema. Medidas de segurança, como evitar downloads suspeitos e manter o software atualizado, são cruciais para prevenir infecções por Trojans.
+
+Cite três mecanismos de segurança da informação. Descreva o que se trata cada um deles.
+Firewall:
+	Um firewall atua como uma barreira de segurança para controlar o tráfego de rede, monitorando e permitindo ou bloqueando comunicações com base em regras predefinidas, protegendo contra acessos não autorizados.
+Criptografia:
+	A criptografia transforma dados legíveis em formato ilegível durante a transmissão ou armazenamento, protegendo sua confidencialidade. Apenas aqueles com a chave correta podem descriptografar e acessar as informações.
+Autenticação de Dois Fatores (2FA):
+	A autenticação de dois fatores exige duas formas de verificação para conceder acesso, como senha e um código enviado para um dispositivo móvel, aumentando a segurança contra acesso não autorizado.
+
+O que é um Ransomware?
+Ransomware é um tipo de malware que criptografa os arquivos de um sistema, impedindo o acesso do usuário aos seus próprios dados. O atacante, então, exige o pagamento de um resgate, geralmente em criptomoedas, para fornecer a chave de descriptografia. Esse tipo de ataque visa extorquir dinheiro das vítimas, e o pagamento não garante a recuperação total dos dados. Medidas preventivas, como backups regulares e práticas de segurança cibernética, são essenciais para mitigar os riscos associados ao ransomware.
+
+O que é um Phishing?
+Phishing é uma técnica de ataque cibernético em que os criminosos tentam enganar os usuários para que divulguem informações confidenciais, como senhas e dados financeiros. Isso geralmente é feito por meio de e-mails, mensagens ou sites falsos que parecem legítimos. Os phishers frequentemente se passam por entidades confiáveis, como bancos, empresas ou serviços online, para induzir as vítimas a fornecerem informações sensíveis. A prevenção envolve a verificação cuidadosa de comunicações online, evitando clicar em links suspeitos e mantendo a conscientização sobre práticas seguras na internet.
+
+Quais os componentes estruturais de malware?
+Carga Útil: Executa ações maliciosas.
+Propagador: Espalha o malware para outros sistemas.
+Mecanismo de Disfarce: Esconde-se para evitar detecção.
+Módulo de Comunicação (C2): Conecta-se a servidores remotos controlados por atacantes.
+Persistência: Garante a permanência no sistema.
+Dropper: Entrega e instala outros malwares.
+Exploits: Aproveita vulnerabilidades em software.
+Rootkit: Oculta a presença do malware no sistema.
+
+O que é uma técnica de engenharia social?
+A engenharia social é uma técnica utilizada para manipular indivíduos a fim de obter informações confidenciais, acesso a sistemas ou realizar ações específicas. Isso envolve a exploração da psicologia humana e pode incluir o uso de manipulação emocional, persuasão enganosa, ou criação de pretextos falsos. O objetivo é induzir as pessoas a agirem de maneira que beneficie o atacante, como revelar senhas, informações bancárias ou fornecer acesso não autorizado a sistemas. Em resumo, a engenharia social explora a confiança e o comportamento humano para alcançar objetivos maliciosos.
+
+Qual a diferença entre um ataque DoS e DDoS?
+Ataques de Negação de Serviço (DoS) e Ataques Distribuídos de Negação de Serviço (DDoS) são ambos destinados a prejudicar a disponibilidade de serviços online, mas diferem na escala e na forma como são executados.
+enquanto um ataque DoS utiliza uma única fonte para sobrecarregar um sistema, um ataque DDoS envolve várias fontes coordenadas, aumentando significativamente sua capacidade de causar danos e dificultando a defesa.
